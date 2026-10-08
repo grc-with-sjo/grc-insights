@@ -3,6 +3,7 @@ title: "Canada's privacy rulebook is being written in findings, not statutes"
 issue: 1
 series: catch-up
 date: 2026-10-11
+calendar_date: 2026-10-11
 regions: [CA]
 sectors: [tech, saas, cloud, banking, retail]
 categories: [privacy-law, ai-governance, enforcement, third-party-risk]

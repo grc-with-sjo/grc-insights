@@ -32,6 +32,10 @@ If `gh` is unavailable, use
 Keep `mode`, `today`, `nextIssue`, `windowStart`, `series`, `theme`, `feature`, `pendingCount` from the JSON.
 (For a dry run only, a human may add `--today YYYY-MM-DD`.)
 
+**Early runs.** A human may pass `--today <calendar Sunday>` to draft an issue ahead of schedule. Then
+`calendar_date` = that Sunday and `date` = the actual date. The branch name still uses the plan's `<today>`
+(the calendar date). The scheduled run on that Sunday will see the issue and do a radar-check.
+
 ## Step 2: Research (deep-research)
 
 ### If `mode` is `issue`
@@ -70,7 +74,7 @@ status update ("Update: …"), not as new news. Drop low-confidence findings unl
 ## Step 4a: Draft the issue
 
 1. Create `_issues/<today>-<slug>.md` from `routine/issue-template.md`. The slug is 3–6 kebab-case words from the headline.
-   Front matter: `issue: <nextIssue>`, `series: <series>`, `date: <today>`; regions/sectors/categories use ids from
+   Front matter: `issue: <nextIssue>`, `series: <series>`, `date: <actual date, America/Vancouver>`, `calendar_date: <today from plan>` (normally the same); regions/sectors/categories use ids from
    `_data/taxonomy.yml`; `description` is ≤ 200 chars.
 2. REQUIRED: load and follow the `drafting-grc-insights-issues` skill
    (`.claude/skills/drafting-grc-insights-issues/SKILL.md`) for structure, flow and voice. It governs shape only;

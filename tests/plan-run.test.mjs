@@ -57,6 +57,14 @@ test('an existing issue for today (merged or pending) prevents a duplicate', () 
   assert.equal(planRun({ today: '2026-10-18', editorial, issues: [...issues, { issue: 1, date: '2026-10-18' }] }).mode, 'radar-check');
 });
 
+test('an issue published early still claims its calendar Sunday', () => {
+  const early = [{ issue: 2, date: '2026-10-09', calendarDate: '2026-10-18' }];
+  assert.equal(planRun({ today: '2026-10-18', editorial, issues: early }).mode, 'radar-check');
+  const fri = planRun({ today: '2026-10-09', editorial, issues: early });
+  assert.equal(fri.mode, 'radar-check');
+  assert.equal(fri.nextIssue, 3);
+});
+
 test('parsePendingBranches keeps only issue branches', () => {
   assert.deepEqual(
     parsePendingBranches(['issue/01-2026-10-18-canada-privacy', 'radar/2026-11-29', 'main']),

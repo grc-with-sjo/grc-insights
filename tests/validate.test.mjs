@@ -75,6 +75,12 @@ test('Sources section must contain a link', () => {
   assert.ok(validateIssue(issue({}, body), tax).some(e => e.includes('at least one http(s) link')));
 });
 
+test('calendar_date is optional but must be an ISO Sunday', () => {
+  assert.deepEqual(validateIssue(issue({ date: '2026-10-09', calendar_date: '2026-10-18' }, goodBody, '2026-10-18-x.md'), tax), []);
+  assert.ok(validateIssue(issue({ calendar_date: '18/10/2026' }), tax).some(e => e.includes('calendar_date must be YYYY-MM-DD')));
+  assert.ok(validateIssue(issue({ calendar_date: '2026-10-19' }), tax).some(e => e.includes('calendar_date must be a Sunday')));
+});
+
 test('description over 200 chars and filename/date mismatch are reported', () => {
   const errs = validateIssue(issue({ description: 'x'.repeat(201) }, goodBody, '2026-11-01-x.md'), tax);
   assert.ok(errs.some(e => e.includes('200 characters')));

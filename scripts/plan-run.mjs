@@ -17,7 +17,7 @@ export function planRun({ today, editorial, issues, pending = [] }) {
   const windowStart = issues.map(i => i.date).sort().at(-1) ?? null;
   const base = { today, nextIssue, windowStart, pendingCount: pending.length };
 
-  if ([...issues, ...pending].some(i => i.date === today)) {
+  if (issues.some(i => (i.calendarDate ?? i.date) === today || i.date === today) || pending.some(p => p.date === today)) {
     return { ...base, mode: 'radar-check', reason: 'an issue for this date already exists' };
   }
   const entry = editorial.calendar?.[today];
@@ -44,6 +44,6 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   const editorial = parse(readFileSync(join(root, '_data/editorial.yml'), 'utf8'));
   const issues = readIssues(root)
     .filter(d => d.data && Number.isInteger(d.data.issue))
-    .map(d => ({ issue: d.data.issue, date: String(d.data.date) }));
+    .map(d => ({ issue: d.data.issue, date: String(d.data.date), calendarDate: d.data.calendar_date ? String(d.data.calendar_date) : undefined }));
   console.log(JSON.stringify(planRun({ today, editorial, issues, pending }), null, 2));
 }

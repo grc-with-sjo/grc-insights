@@ -48,6 +48,10 @@ export function validateIssue({ file, data, body }, tax) {
   if (!tax.series.has(data.series)) fail(`series: unknown value "${data.series}"`);
   if (!isIsoDate(data.date)) fail('date must be YYYY-MM-DD');
   else if (!file.startsWith(data.date.slice(0, 7))) fail('filename must start with the issue date (YYYY-MM)');
+  if (data.calendar_date !== undefined) {
+    if (!isIsoDate(data.calendar_date)) fail('calendar_date must be YYYY-MM-DD');
+    else if (weekdayOf(data.calendar_date) !== 0) fail('calendar_date must be a Sunday');
+  }
   if (typeof data.description !== 'string' || !data.description.trim()) fail('description is required');
   else if (data.description.length > 200) fail('description must be 200 characters or fewer');
   for (const m of subsetErrors('regions', data.regions, tax.regions)) fail(m);

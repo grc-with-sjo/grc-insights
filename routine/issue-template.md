@@ -2,7 +2,8 @@
 title: "<Specific, opinionated headline (≤ 90 chars)>"
 issue: <nextIssue>
 series: <series>
-date: <today>
+date: <actual run date>
+calendar_date: <today from plan>
 regions: [<ids from _data/taxonomy.yml>]
 sectors: [<ids, only sectors actually affected>]
 categories: [<ids>]
