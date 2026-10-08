@@ -39,6 +39,10 @@ description: A GRC practitioner's living notebook on how AI is evolving and how 
   </a>
   {% endif %}
 
+  <p class="section-label">On the radar</p>
+  <ul class="upcoming" data-upcoming data-days="90" data-limit="3"></ul>
+  <p><a class="chip" href="{{ '/radar/' | relative_url }}">Open the Regulation Radar →</a></p>
+
   <section id="archive" data-filter-root>
     <p class="section-label">All issues</p>
     {% include filter-chips.html label="Topic" group="category" items=site.data.taxonomy.categories %}
@@ -59,4 +63,5 @@ description: A GRC practitioner's living notebook on how AI is evolving and how 
 
   {% include subscribe.html %}
 </main>
+{% include radar-data.html %}
 <script type="module" src="{{ '/js/filters.js' | relative_url }}"></script>

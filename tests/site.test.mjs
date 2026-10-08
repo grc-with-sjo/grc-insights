@@ -2,6 +2,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { existsSync, readFileSync, readdirSync, statSync } from 'node:fs';
 import { join } from 'node:path';
+import { parse as parseYaml } from 'yaml';
 
 const SITE = process.env.SITE_DIR;
 const BASE = '/grc-insights';
@@ -73,4 +74,13 @@ test('homepage shows the latest issue and an archive linking every issue', { ski
   assert.match(html, /href="\/grc-insights\/issues\/2026-05-field-notes\/"/);
   assert.match(html, /data-filters="[^"]*category:ai-governance/);
   assert.match(html, /class="latest-card"/);
+});
+
+test('radar page renders one row per tracker entry and embeds the data', { skip }, () => {
+  const rows = parseYaml(readFileSync('_data/tracker.yml', 'utf8')) ?? [];
+  const html = page('radar/index.html');
+  assert.equal((html.match(/<tr id="/g) || []).length, rows.length);
+  assert.match(html, /id="radar-data"/);
+  assert.match(page('index.html'), /data-upcoming/);
+  assert.match(page('index.html'), /href="\/grc-insights\/radar\/"/);
 });
