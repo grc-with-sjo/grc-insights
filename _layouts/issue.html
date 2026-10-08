@@ -1,0 +1,27 @@
+---
+layout: default
+---
+{% assign series = site.data.taxonomy.series | where: 'id', page.series | first %}
+{% if page.series == 'field-notes' %}{% assign fmt = '%B %Y' %}{% else %}{% assign fmt = '%-d %B %Y' %}{% endif %}
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-tag">{{ series.label }}{% if page.issue > 0 %} · Issue {{ page.issue }}{% endif %} · {{ page.date | date: fmt }}</div>
+    <h1>{% if page.hero_title_html %}{{ page.hero_title_html }}{% else %}{{ page.title }}{% endif %}</h1>
+    <p class="hero-intro">{{ page.hero_intro | default: page.description }}</p>
+    <div class="author-row">
+      <div class="author-avatar">SJ</div>
+      <div class="author-info">
+        <div class="name">{{ site.author.name }}</div>
+        <div class="meta">{{ site.author.role }} · {{ site.author.location }} · {{ page.date | date: '%B %Y' }}</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<main class="content{% if page.series != 'field-notes' %} issue-body{% endif %}">
+  {{ content }}
+  {% include share.html %}
+  {% include subscribe.html %}
+  <p class="back-to-archive"><a href="{{ '/' | relative_url }}#archive">← All issues</a></p>
+  {% include about.html %}
+</main>

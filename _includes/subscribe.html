@@ -1,0 +1,9 @@
+<div class="subscribe">
+  <p class="subscribe-title">Get the next issue</p>
+  <p class="muted">A new issue every month, plus Regulation Radar updates as laws move.</p>
+  <div class="subscribe-links">
+    {% if site.linkedin_newsletter and site.linkedin_newsletter != "" %}<a class="chip" href="{{ site.linkedin_newsletter }}" target="_blank" rel="noopener">Subscribe on LinkedIn</a>{% endif %}
+    <a class="chip" href="{{ site.author.url }}" target="_blank" rel="noopener">Follow on LinkedIn</a>
+    <a class="chip" href="{{ '/feed.xml' | relative_url }}">RSS feed</a>
+  </div>
+</div>

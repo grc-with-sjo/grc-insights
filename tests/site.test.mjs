@@ -50,3 +50,16 @@ test('Atom feed is served and declared', { skip }, () => {
 test('sitemap lists the about page', { skip }, () => {
   assert.match(page('sitemap.xml'), /https:\/\/grc-with-sjo\.github\.io\/grc-insights\/about\//);
 });
+
+test('Issue 0 renders at its permanent URL with original content', { skip }, () => {
+  const html = page('issues/2026-05-field-notes/index.html');
+  assert.match(html, /Field Notes · May 2026/);
+  assert.equal((html.match(/class="trend-card /g) || []).length, 7);
+  assert.match(html, /The Bottom Line/);
+  assert.match(html, /href="\/grc-insights\/sources.html"/);
+  assert.match(html, /linkedin\.com\/sharing\/share-offsite/);
+});
+
+test('sources.html links back to Issue 0', { skip }, () => {
+  assert.match(page('sources.html'), /href="issues\/2026-05-field-notes\/"/);
+});
