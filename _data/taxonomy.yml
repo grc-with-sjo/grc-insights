@@ -1,0 +1,34 @@
+# Single source of truth for every enum used by templates (Liquid) and scripts/validate.mjs.
+regions:
+  - { id: CA, label: "🇨🇦 Canada" }
+  - { id: US, label: "🇺🇸 United States" }
+  - { id: EU, label: "🇪🇺 EU" }
+  - { id: UK, label: "🇬🇧 UK" }
+  - { id: APAC, label: "🌏 APAC" }
+  - { id: IN, label: "🇮🇳 India" }
+  - { id: GLOBAL, label: "🌐 Global standards" }
+sectors:
+  - { id: tech, label: "Tech", standing: true }
+  - { id: saas, label: "Product / SaaS", standing: true }
+  - { id: cloud, label: "Cloud", standing: true }
+  - { id: hardware, label: "Hardware", standing: true }
+  - { id: banking, label: "Banking / FinServ", standing: true }
+  - { id: retail, label: "Retail", standing: true }
+  - { id: healthcare, label: "Healthcare", standing: false }
+  - { id: public-sector, label: "Public sector", standing: false }
+categories:
+  - { id: ai-governance, label: "AI governance" }
+  - { id: privacy-law, label: "Privacy law" }
+  - { id: enforcement, label: "Enforcement" }
+  - { id: frameworks, label: "Frameworks" }
+  - { id: third-party-risk, label: "Third-party risk" }
+  - { id: practitioner, label: "Practitioner" }
+series:
+  - { id: field-notes, label: "Field Notes" }
+  - { id: catch-up, label: "Catch-up series" }
+  - { id: weekly, label: "Weekly" }
+  - { id: monthly, label: "Monthly" }
+  - { id: flash, label: "Flash" }
+tracker_types: [privacy-law, ai-law, sector-rule, standard, guidance]
+tracker_statuses: [proposed, passed, in-force, phasing-in, amended, lapsed, repealed]
+relevance: [high, medium, watch]

@@ -1,0 +1,13 @@
+{
+  "name": "grc-insights",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "validate": "node scripts/validate.mjs",
+    "plan-run": "node scripts/plan-run.mjs"
+  },
+  "devDependencies": {
+    "yaml": "2.5.1"
+  }
+}
