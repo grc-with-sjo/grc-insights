@@ -9,7 +9,7 @@ US cyber deadlines keep slipping while Europe's reporting clock already runs. Do
 
 → US defence-contractor certification (CMMC) and critical-infrastructure incident reporting (CIRCIA) have both slipped, with no new dates (still to verify against official sources).
 → In Europe, makers of connected products must now send an early warning within 24 hours of an actively exploited vulnerability (to verify).
-→ FedRAMP 20x is moving US federal cloud authorization to automated evidence, and ISO 42001 is landing as a customer credential, not a legal requirement.
+→ FedRAMP 20x is moving US federal cloud authorization to automated evidence, and ISO 42001, the AI management-system standard, is landing as a customer credential, not a legal requirement.
 
 My take: build one base layer (ISO 27001, SOC 2, NIST controls, a 24-hour incident process) and let the regulators' calendars catch up.
 
@@ -25,10 +25,10 @@ Full issue + sources: https://grc-with-sjo.github.io/grc-insights/issues/2026-11
 
 1. Cover: Cyber deadlines keep slipping. Build assurance that travels.
 2. CMMC Phase 2 suspended on 2026-07-13 pending a reform review; CIRCIA's final rule missed its deadlines (to verify).
-3. EU Cyber Resilience Act: 24-hour early warning for actively exploited vulnerabilities since 2026-09-11 (to verify).
+3. EU Cyber Resilience Act: 24-hour early warning for actively exploited vulnerabilities since 2026-09-11 (to verify). Canada's Bill C-8 cyber regime has no designations yet (to verify).
 4. Sector lens: Cloud. FedRAMP 20x moves to automated Key Security Indicators, and new Rev5 certifications are planned to stop on 2027-06-11.
 5. My take: one base layer reused everywhere; ISO 42001 is a procurement credential, not EU AI Act compliance.
-6. What to do now: run a 24-hour early-warning tabletop; map controls once; check vendors hold ISO 27001:2022.
+6. What to do now: run a 24-hour early-warning tabletop; map controls once; ask vendors for their current ISO 27001:2022 certificate.
 7. Follow for the next issue + Radar link
 
 ## LinkedIn newsletter edition
