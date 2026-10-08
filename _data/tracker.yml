@@ -1,3 +1,596 @@
 # Regulation Radar rows. Schema: docs/superpowers/specs/2026-10-07-grc-insights-live-notebook-design.md §3.
 # Quote every date ("YYYY-MM-DD"). Seeded in Task 7 via anthropic-skills:deep-research.
-[]
+- id: ca-pipeda
+  name: "Personal Information Protection and Electronic Documents Act (PIPEDA)"
+  region: CA
+  jurisdiction: "Canada (federal)"
+  type: privacy-law
+  status: in-force
+  key_dates:
+    - { date: "2026-06-15", what: "Bill C-36 introduced to replace PIPEDA; no repeal date set" }
+  sectors: [tech, saas, cloud, hardware, banking, retail]
+  applies_to_me: high
+  summary: "⚠️ verify: Federal baseline private-sector privacy law (consent, accountability, breach reporting); stays in force until C-36 is enacted."
+  source: "https://laws-lois.justice.gc.ca/eng/acts/P-8.6/"
+  last_reviewed: "2026-10-07"
+- id: ca-bill-c36
+  name: "Bill C-36, Protecting Privacy and Consumer Data Act"
+  region: CA
+  jurisdiction: "Canada (federal)"
+  type: privacy-law
+  status: proposed
+  key_dates:
+    - { date: "2026-06-15", what: "First reading in the House of Commons; no later stage scheduled" }
+  sectors: [tech, saas, cloud, hardware, banking, retail]
+  applies_to_me: high
+  summary: "Federal bill to replace PIPEDA, introduced June 2026 and stalled at first reading; it is privacy-only and carries no AI act."
+  source: "https://www.parl.ca/legisinfo/en/bill/45-1/c-36"
+  last_reviewed: "2026-10-07"
+- id: ca-federal-ai-strategy
+  name: "Canada federal AI law (AIDA lapsed) and national AI strategy"
+  region: CA
+  jurisdiction: "Canada (federal)"
+  type: ai-law
+  status: lapsed
+  key_dates:
+    - { date: "2026-06-04", what: "National AI strategy announced; no replacement AI statute" }
+  sectors: [tech, saas, cloud, banking]
+  applies_to_me: medium
+  summary: "⚠️ verify: Canada has no binding AI law after AIDA lapsed; policy direction is to cover AI through privacy, online-safety and sector measures."
+  source: "https://www.canada.ca/en/innovation-science-economic-development/news/2026/06/minister-solomon-highlights-canadas-national-artificial-intelligence.html"
+  last_reviewed: "2026-10-07"
+- id: ca-bc-pipa
+  name: "British Columbia Personal Information Protection Act (PIPA)"
+  region: CA
+  jurisdiction: "British Columbia"
+  type: privacy-law
+  status: in-force
+  key_dates: []
+  sectors: [tech, saas, cloud, hardware, banking, retail]
+  applies_to_me: high
+  summary: "⚠️ verify: BC's private-sector privacy statute; unchanged, with reform advocated by the Commissioner but no bill found."
+  source: "https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/03063_01"
+  last_reviewed: "2026-10-07"
+- id: ca-bc-fippa
+  name: "British Columbia Freedom of Information and Protection of Privacy Act (FIPPA), incl. 2026 amendments"
+  region: CA
+  jurisdiction: "British Columbia (public bodies)"
+  type: privacy-law
+  status: amended
+  key_dates:
+    - { date: "2023-02-01", what: "Mandatory breach notification and privacy management programs in force" }
+  sectors: [public-sector, saas, cloud, tech]
+  applies_to_me: high
+  summary: "⚠️ verify: BC public-sector privacy law with breach-reporting and privacy-program duties since 2023; 2026 amendments mostly touch access requests."
+  source: "https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/96165_00"
+  last_reviewed: "2026-10-07"
+- id: ca-qc-law25
+  name: "Québec Law 25 (Act to modernize legislative provisions as regards the protection of personal information)"
+  region: CA
+  jurisdiction: "Québec"
+  type: privacy-law
+  status: in-force
+  key_dates:
+    - { date: "2022-09-22", what: "Privacy officer and incident register/reporting" }
+    - { date: "2023-09-22", what: "Consent, privacy policy, PIAs, de-indexation, children's data rules" }
+    - { date: "2024-09-22", what: "Data portability right" }
+  sectors: [tech, saas, cloud, hardware, banking, retail]
+  applies_to_me: high
+  summary: "⚠️ verify: Canada's strictest private-sector privacy regime; every phase is already in effect."
+  source: "https://www.legisquebec.gouv.qc.ca/en/document/cs/P-39.1"
+  last_reviewed: "2026-10-07"
+- id: ca-on-bill194
+  name: "Ontario Bill 194 (Strengthening Cyber Security and Building Trust in the Public Sector Act, 2024)"
+  region: CA
+  jurisdiction: "Ontario (public sector)"
+  type: privacy-law
+  status: passed
+  key_dates:
+    - { date: "2025-01-29", what: "FIPPA housekeeping amendments in force" }
+    - { date: "2025-07-01", what: "FIPPA PIAs, breach reporting to IPC and IPC order powers in force" }
+  sectors: [public-sector, saas, cloud, tech]
+  applies_to_me: medium
+  summary: "⚠️ verify: Ontario public-sector cyber and AI law; the FIPPA privacy parts are live, while the AI/cyber statute (EDSTA) still awaits proclamation."
+  source: "https://www.ontario.ca/laws/statute/s24024"
+  last_reviewed: "2026-10-07"
+- id: ca-ab-pipa-reform
+  name: "Alberta Personal Information Protection Act (PIPA) reform"
+  region: CA
+  jurisdiction: "Alberta"
+  type: privacy-law
+  status: proposed
+  key_dates:
+    - { date: "2026-02-02", what: "Public survey on PIPA reform opens" }
+    - { date: "2026-02-17", what: "Public survey closes" }
+  sectors: [tech, saas, retail, banking]
+  applies_to_me: medium
+  summary: "Alberta's private-sector privacy law is unamended; a 2026 consultation ran but no bill was confirmed as of March 2026."
+  source: "https://www.alberta.ca/personal-information-protection-act-engagement"
+  last_reviewed: "2026-10-07"
+- id: ca-osfi-e23
+  name: "OSFI Guideline E-23, Model Risk Management (2027)"
+  region: CA
+  jurisdiction: "Canada (federally regulated financial institutions)"
+  type: sector-rule
+  status: passed
+  key_dates:
+    - { date: "2025-09-11", what: "Final guideline issued" }
+    - { date: "2027-05-01", what: "Guideline takes effect" }
+  sectors: [banking]
+  applies_to_me: high
+  summary: "Enterprise-wide model risk management expectations, explicitly covering AI/ML models, for federally regulated banks and insurers from May 2027."
+  source: "https://www.osfi-bsif.gc.ca/en/guidance/guidance-library/guideline-e-23-model-risk-management-2027"
+  last_reviewed: "2026-10-07"
+- id: ca-osfi-b13
+  name: "OSFI Guideline B-13, Technology and Cyber Risk Management"
+  region: CA
+  jurisdiction: "Canada (federally regulated financial institutions)"
+  type: sector-rule
+  status: in-force
+  key_dates:
+    - { date: "2022-07-31", what: "Final guideline published" }
+    - { date: "2024-01-01", what: "Guideline takes effect" }
+  sectors: [banking]
+  applies_to_me: high
+  summary: "OSFI's technology and cyber risk expectations for federally regulated banks and insurers; flows to vendors via bank contracts."
+  source: "https://www.osfi-bsif.gc.ca/en/guidance/guidance-library/technology-cyber-risk-management"
+  last_reviewed: "2026-10-07"
+- id: ca-ised-genai-code
+  name: "Voluntary Code of Conduct on the Responsible Development and Management of Advanced Generative AI Systems"
+  region: CA
+  jurisdiction: "Canada (federal)"
+  type: standard
+  status: in-force
+  key_dates: []
+  sectors: [tech, saas, cloud, banking]
+  applies_to_me: medium
+  summary: "A voluntary federal code for developers and operators of generative AI; not legally binding, with dozens of signatories."
+  source: "https://ised-isde.canada.ca/site/ised/en/voluntary-code-conduct-responsible-development-and-management-advanced-generative-ai-systems"
+  last_reviewed: "2026-10-07"
+- id: ca-c8-cyber
+  name: "Bill C-8, An Act Respecting Cyber Security (Critical Cyber Systems Protection Act)"
+  region: CA
+  jurisdiction: "Canada (federal)"
+  type: sector-rule
+  status: passed
+  key_dates: []
+  sectors: [banking, cloud, tech]
+  applies_to_me: high
+  summary: "Federal cyber-security duties for designated critical-infrastructure operators; passed June 2026, with the main regime still awaiting commencement."
+  source: "https://www.canada.ca/en/public-safety-canada/news/2026/06/government-of-canada-strengthens-cyber-security-and-critical-infrastructure-with-royal-assent-of-bill-c8.html"
+  last_reviewed: "2026-10-07"
+- id: us-ca-ccpa-regs
+  name: "California CCPA/CPRA and CPPA regulations (ADMT, risk assessments, cybersecurity audits)"
+  region: US
+  jurisdiction: "California"
+  type: privacy-law
+  status: phasing-in
+  key_dates:
+    - { date: "2025-09-22", what: "OAL approved and filed the CPPA regulations" }
+    - { date: "2026-01-01", what: "Regulations effective; risk-assessment compliance begins" }
+    - { date: "2027-01-01", what: "ADMT requirements for significant decisions" }
+    - { date: "2028-04-01", what: "Risk-assessment attestation and first cybersecurity audit certifications (large businesses)" }
+  sectors: [tech, saas, cloud, hardware, banking, retail]
+  applies_to_me: high
+  summary: "⚠️ verify: California privacy law now adds risk assessments, automated-decision notice and opt-out, and phased independent cybersecurity audits."
+  source: "https://cppa.ca.gov/regulations/ccpa_updates.html"
+  last_reviewed: "2026-10-07"
+- id: us-co-ai-act
+  name: "Colorado AI Act (SB 24-205), replaced by SB 26-189"
+  region: US
+  jurisdiction: "Colorado"
+  type: ai-law
+  status: amended
+  key_dates:
+    - { date: "2026-05-14", what: "SB 26-189 signed, replacing SB 24-205" }
+    - { date: "2027-01-01", what: "SB 26-189 takes effect" }
+  sectors: [tech, saas, cloud, banking, retail]
+  applies_to_me: high
+  summary: "⚠️ verify: Colorado swapped its impact-assessment AI law for a narrower notice, explanation and human-review regime starting 2027-01-01."
+  source: "https://leg.colorado.gov/bill_files/116236/download"
+  last_reviewed: "2026-10-07"
+- id: us-tx-traiga
+  name: "Texas Responsible AI Governance Act (TRAIGA, HB 149)"
+  region: US
+  jurisdiction: "Texas"
+  type: ai-law
+  status: in-force
+  key_dates:
+    - { date: "2025-06-22", what: "Signed into law" }
+    - { date: "2026-01-01", what: "Act takes effect" }
+  sectors: [tech, saas, cloud, banking, retail]
+  applies_to_me: medium
+  summary: "⚠️ verify: Bans specific intentionally harmful AI uses; AG-only enforcement with a cure period, safe harbors and a sandbox."
+  source: "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=HB149"
+  last_reviewed: "2026-10-07"
+- id: us-state-privacy
+  name: "US comprehensive state consumer privacy laws (combined)"
+  region: US
+  jurisdiction: "US states"
+  type: privacy-law
+  status: phasing-in
+  key_dates:
+    - { date: "2026-01-01", what: "Indiana, Kentucky and Rhode Island laws take effect" }
+    - { date: "2027-01-01", what: "Oklahoma law takes effect" }
+    - { date: "2027-05-01", what: "Alabama law takes effect" }
+  sectors: [tech, saas, cloud, hardware, banking, retail]
+  applies_to_me: high
+  summary: "⚠️ verify: Around 20 states have similar controller/processor privacy laws; more start in 2026-2027, and Massachusetts is still pending."
+  source: "https://iapp.org/resources/article/us-state-privacy-legislation-tracker/"
+  last_reviewed: "2026-10-07"
+- id: us-glba-safeguards
+  name: "GLBA Safeguards Rule (FTC, 16 CFR Part 314)"
+  region: US
+  jurisdiction: "US (federal, FTC)"
+  type: sector-rule
+  status: in-force
+  key_dates: []
+  sectors: [banking, retail, tech, saas]
+  applies_to_me: medium
+  summary: "FTC-regulated financial firms need a written security program and must report breaches involving 500+ consumers to the FTC within 30 days."
+  source: "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-C/part-314"
+  last_reviewed: "2026-10-07"
+- id: us-eo-14365
+  name: "Executive Order 14365, Ensuring a National Policy Framework for AI"
+  region: US
+  jurisdiction: "US (federal)"
+  type: guidance
+  status: in-force
+  key_dates:
+    - { date: "2025-12-11", what: "Executive order signed" }
+    - { date: "2026-01-09", what: "DOJ AI Litigation Task Force established" }
+  sectors: [tech, saas, cloud, hardware, banking, retail]
+  applies_to_me: medium
+  summary: "⚠️ verify: An executive push to preempt state AI laws; it is an order, not a statute, so state AI laws remain enforceable."
+  source: "https://www.govinfo.gov/content/pkg/FR-2025-12-16/html/2025-23092.htm"
+  last_reviewed: "2026-10-07"
+- id: us-ca-sb53
+  name: "California SB 53, Transparency in Frontier AI Act"
+  region: US
+  jurisdiction: "California"
+  type: ai-law
+  status: in-force
+  key_dates:
+    - { date: "2025-09-29", what: "Signed into law" }
+    - { date: "2026-01-01", what: "Act takes effect" }
+  sectors: [tech, saas, cloud]
+  applies_to_me: medium
+  summary: "⚠️ verify: Large frontier AI developers must publish safety frameworks and report critical incidents to the state."
+  source: "https://leginfo.legislature.ca.gov"
+  last_reviewed: "2026-10-07"
+- id: eu-ai-act
+  name: "EU AI Act (Regulation (EU) 2024/1689), as amended by the AI Digital Omnibus (Regulation (EU) 2026/1744)"
+  region: EU
+  jurisdiction: "EU"
+  type: ai-law
+  status: phasing-in
+  key_dates:
+    - { date: "2026-07-08", what: "AI Digital Omnibus amending the AI Act signed" }
+    - { date: "2027-12-02", what: "Annex III stand-alone high-risk obligations apply" }
+    - { date: "2028-08-02", what: "Annex I product-embedded high-risk obligations apply" }
+  sectors: [tech, saas, cloud, hardware, banking, retail]
+  applies_to_me: high
+  summary: "The EU's risk-based AI law is live for prohibitions and GPAI; high-risk duties are postponed to December 2027 and August 2028."
+  source: "https://eur-lex.europa.eu/eli/reg/2024/1689/oj"
+  last_reviewed: "2026-10-07"
+- id: eu-gdpr
+  name: "General Data Protection Regulation (GDPR, Regulation (EU) 2016/679)"
+  region: EU
+  jurisdiction: "EU"
+  type: privacy-law
+  status: in-force
+  key_dates: []
+  sectors: [tech, saas, cloud, hardware, banking, retail]
+  applies_to_me: high
+  summary: "⚠️ verify: The EU baseline data-protection law; unchanged, with proposed changes in the Digital Omnibus still under negotiation."
+  source: "https://eur-lex.europa.eu/eli/reg/2016/679/oj"
+  last_reviewed: "2026-10-07"
+- id: eu-gdpr-procedural
+  name: "GDPR Procedural Regulation (Regulation (EU) 2025/2518)"
+  region: EU
+  jurisdiction: "EU"
+  type: privacy-law
+  status: phasing-in
+  key_dates:
+    - { date: "2025-12-12", what: "Published in the Official Journal" }
+    - { date: "2026-01-01", what: "Regulation in force" }
+    - { date: "2027-04-02", what: "Applies to cross-border GDPR cases" }
+  sectors: [tech, saas, cloud, hardware, banking, retail]
+  applies_to_me: medium
+  summary: "⚠️ verify: Harmonises how regulators handle cross-border GDPR complaints and speeds up investigations."
+  source: "https://data.europa.eu/eli/reg/2025/2518/oj"
+  last_reviewed: "2026-10-07"
+- id: eu-digital-omnibus-data
+  name: "EU Digital Omnibus, data / GDPR / ePrivacy strand"
+  region: EU
+  jurisdiction: "EU"
+  type: privacy-law
+  status: proposed
+  key_dates:
+    - { date: "2025-11-19", what: "Commission proposal published" }
+    - { date: "2026-02-11", what: "EDPB/EDPS joint opinion opposing parts of it" }
+  sectors: [tech, saas, cloud, hardware, banking, retail]
+  applies_to_me: medium
+  summary: "⚠️ verify: Commission proposal to loosen parts of GDPR, ePrivacy and the Data Act; still a proposal under negotiation."
+  source: "https://www.iubenda.com/en/blog/eu-digital-omnibus-gdpr-changes-proposed-amendments-explained/"
+  last_reviewed: "2026-10-07"
+- id: eu-dora
+  name: "Digital Operational Resilience Act (DORA, Regulation (EU) 2022/2554)"
+  region: EU
+  jurisdiction: "EU"
+  type: sector-rule
+  status: in-force
+  key_dates:
+    - { date: "2025-11-18", what: "ESAs published the first critical ICT third-party provider list" }
+  sectors: [banking, tech, saas, cloud, hardware]
+  applies_to_me: high
+  summary: "EU operational-resilience rules for financial entities and their critical ICT providers; contract terms flow down to vendors."
+  source: "https://eur-lex.europa.eu/eli/reg/2022/2554/oj"
+  last_reviewed: "2026-10-07"
+- id: eu-nis2
+  name: "NIS2 Directive (Directive (EU) 2022/2555)"
+  region: EU
+  jurisdiction: "EU"
+  type: sector-rule
+  status: in-force
+  key_dates:
+    - { date: "2024-10-17", what: "Member-state transposition deadline" }
+    - { date: "2026-01-20", what: "Commission proposed targeted NIS2 amendments with the CSA2 revision" }
+  sectors: [tech, saas, cloud, hardware, banking, retail]
+  applies_to_me: medium
+  summary: "⚠️ verify: EU cyber-security directive; national transposition is still incomplete and amendments are proposed."
+  source: "https://eur-lex.europa.eu/eli/dir/2022/2555/oj"
+  last_reviewed: "2026-10-07"
+- id: eu-data-act
+  name: "EU Data Act (Regulation (EU) 2023/2854)"
+  region: EU
+  jurisdiction: "EU"
+  type: sector-rule
+  status: phasing-in
+  key_dates:
+    - { date: "2025-09-12", what: "General application" }
+    - { date: "2026-09-12", what: "Access-by-design for new connected products" }
+    - { date: "2027-01-12", what: "All cloud switching charges prohibited" }
+  sectors: [tech, saas, cloud, hardware, banking, retail]
+  applies_to_me: high
+  summary: "⚠️ verify: Data-access rules for connected products and cloud-switching rules for cloud and data-processing services."
+  source: "https://eur-lex.europa.eu/eli/reg/2023/2854/oj"
+  last_reviewed: "2026-10-07"
+- id: eu-cra
+  name: "EU Cyber Resilience Act (Regulation (EU) 2024/2847)"
+  region: EU
+  jurisdiction: "EU"
+  type: sector-rule
+  status: phasing-in
+  key_dates:
+    - { date: "2026-09-11", what: "Manufacturer reporting of exploited vulnerabilities and severe incidents begins" }
+    - { date: "2027-12-11", what: "Full application" }
+  sectors: [tech, saas, hardware, retail, banking]
+  applies_to_me: high
+  summary: "⚠️ verify: Security-by-design and vulnerability-reporting duties for products with digital elements; incident reporting started September 2026."
+  source: "https://eur-lex.europa.eu/eli/reg/2024/2847/oj"
+  last_reviewed: "2026-10-07"
+- id: uk-duaa
+  name: "Data (Use and Access) Act 2025"
+  region: UK
+  jurisdiction: "UK"
+  type: privacy-law
+  status: phasing-in
+  key_dates:
+    - { date: "2025-06-19", what: "Royal Assent" }
+    - { date: "2025-08-20", what: "Stage 1 technical provisions in force" }
+    - { date: "2025-12-01", what: "Most of Part 2 (digital verification services) in force" }
+    - { date: "2026-02-05", what: "Main data-protection changes (most of Part 5) in force" }
+  sectors: [tech, saas, cloud, hardware, banking, retail]
+  applies_to_me: medium
+  summary: "Reforms UK GDPR, DPA 2018 and PECR (legitimate interests, automated decisions, cookies, higher PECR fines) and creates smart-data and digital-ID schemes."
+  source: "https://www.gov.uk/guidance/data-use-and-access-act-2025-plans-for-commencement"
+  last_reviewed: "2026-10-07"
+- id: uk-csr-bill
+  name: "UK Cyber Security and Resilience (Network and Information Systems) Bill"
+  region: UK
+  jurisdiction: "UK"
+  type: sector-rule
+  status: proposed
+  key_dates: []
+  sectors: [tech, saas, cloud, hardware]
+  applies_to_me: watch
+  summary: "⚠️ verify: Bill to update the UK's NIS Regulations with wider scope, 24h/72h incident reporting and turnover-based fines; before the House of Lords."
+  source: "https://bills.parliament.uk/bills/4035"
+  last_reviewed: "2026-10-07"
+- id: apac-sg-pdpa
+  name: "Singapore Personal Data Protection Act 2012 (as amended 2020)"
+  region: APAC
+  jurisdiction: "Singapore"
+  type: privacy-law
+  status: in-force
+  key_dates: []
+  sectors: [tech, saas, cloud, hardware, banking, retail]
+  applies_to_me: medium
+  summary: "⚠️ verify: Consent-based private-sector data law with mandatory breach notification and turnover-based fines."
+  source: "https://sso.agc.gov.sg/Act/PDPA2012"
+  last_reviewed: "2026-10-07"
+- id: apac-au-privacy-tranche1
+  name: "Australia Privacy Tranche 1 (Privacy and Other Legislation Amendment Act 2024)"
+  region: APAC
+  jurisdiction: "Australia"
+  type: privacy-law
+  status: phasing-in
+  key_dates:
+    - { date: "2025-06-10", what: "Statutory tort for serious privacy invasions commences" }
+    - { date: "2026-12-10", what: "Automated-decision transparency obligations start" }
+  sectors: [tech, saas, cloud, hardware, banking, retail]
+  applies_to_me: medium
+  summary: "⚠️ verify: Adds a statutory privacy tort, stronger OAIC powers and penalties, overseas-disclosure rules and automated-decision transparency."
+  source: "https://www.legislation.gov.au"
+  last_reviewed: "2026-10-07"
+- id: apac-au-privacy-tranche2
+  name: "Australia Privacy Tranche 2 (exposure draft Privacy Amendment (Personal Data Protection) Bill 2026)"
+  region: APAC
+  jurisdiction: "Australia"
+  type: privacy-law
+  status: proposed
+  key_dates:
+    - { date: "2026-08-31", what: "Exposure draft and consultation paper released" }
+    - { date: "2026-09-18", what: "Submissions closed" }
+  sectors: [tech, saas, cloud, hardware, banking, retail]
+  applies_to_me: watch
+  summary: "⚠️ verify: Exposure draft with 41 proposed reforms, including a fair-and-reasonable test, a controller/processor split and a 72-hour breach statement."
+  source: "https://www.minterellison.com/articles/draft-tranche-2-privacy-reforms-what-they-mean-for-businesses"
+  last_reviewed: "2026-10-07"
+- id: apac-cn-ai-labelling
+  name: "China Measures for Labelling AI-Generated Synthetic Content (with GB 45438-2025)"
+  region: APAC
+  jurisdiction: "China"
+  type: ai-law
+  status: in-force
+  key_dates:
+    - { date: "2025-09-01", what: "Labelling measures take effect" }
+  sectors: [tech, saas, cloud, retail]
+  applies_to_me: medium
+  summary: "⚠️ verify: Requires explicit and implicit labels on AI-generated content, with verification duties for platforms."
+  source: "https://www.covingtonblogs.com/2025/03/18/china-releases-new-labeling-requirements-for-ai-generated-content/"
+  last_reviewed: "2026-10-07"
+- id: apac-kr-ai-basic-act
+  name: "South Korea AI Basic Act (Framework Act on the Development of AI and Establishment of Trust Foundation)"
+  region: APAC
+  jurisdiction: "South Korea"
+  type: ai-law
+  status: in-force
+  key_dates:
+    - { date: "2026-01-22", what: "Act in force" }
+  sectors: [tech, saas, cloud, banking, retail]
+  applies_to_me: watch
+  summary: "⚠️ verify: Risk-based AI duties (high-impact AI, generative AI transparency, local representative for foreign firms) with a fine grace period."
+  source: "https://www.cooley.com/news/insight/2026/2026-01-27-south-koreas-ai-basic-act-overview-and-key-takeaways"
+  last_reviewed: "2026-10-07"
+- id: apac-vn-ai-pdp-laws
+  name: "Vietnam Law on Artificial Intelligence and Law on Personal Data Protection"
+  region: APAC
+  jurisdiction: "Vietnam"
+  type: ai-law
+  status: in-force
+  key_dates:
+    - { date: "2026-01-01", what: "Personal Data Protection Law in force" }
+    - { date: "2026-03-01", what: "AI Law in force" }
+    - { date: "2027-03-01", what: "Transition ends for existing AI systems" }
+    - { date: "2027-09-01", what: "Transition ends for health, education and finance AI systems" }
+  sectors: [tech, saas, cloud, banking, retail]
+  applies_to_me: watch
+  summary: "⚠️ verify: Two new Vietnamese laws in force in 2026, with AI transition periods running into 2027."
+  source: "https://www.allenandgledhill.com/sg/publication/articles/32667/s-new-law-on-artificial-intelligence-risk-based-regulatory-framework-in-force-1-march-2026"
+  last_reviewed: "2026-10-07"
+- id: in-dpdp-act-rules
+  name: "India Digital Personal Data Protection Act, 2023 and DPDP Rules, 2025"
+  region: IN
+  jurisdiction: "India"
+  type: privacy-law
+  status: phasing-in
+  key_dates: []
+  sectors: [tech, saas, cloud, hardware, banking, retail]
+  applies_to_me: medium
+  summary: "⚠️ verify: India's consent-based data law, staged by the 2025 Rules: Board now, consent managers from November 2026, main duties from May 2027."
+  source: "https://www.jsalaw.com/wp-content/uploads/2025/11/JSA-Prism-InfoTech-November-2025-DPDP-Rules.Final_.pdf"
+  last_reviewed: "2026-10-07"
+- id: global-iso-42001
+  name: "ISO/IEC 42001:2023 AI management system"
+  region: GLOBAL
+  jurisdiction: "Global (ISO/IEC)"
+  type: standard
+  status: in-force
+  key_dates: []
+  sectors: [tech, saas, cloud, hardware, banking, retail]
+  applies_to_me: medium
+  summary: "⚠️ verify: A certifiable AI management-system standard, structured like ISO 27001."
+  source: "https://www.iso.org/standard/42001"
+  last_reviewed: "2026-10-07"
+- id: global-iso-27001
+  name: "ISO/IEC 27001:2022 with Amd 1:2024"
+  region: GLOBAL
+  jurisdiction: "Global (ISO/IEC)"
+  type: standard
+  status: amended
+  key_dates:
+    - { date: "2025-10-31", what: "Deadline for certificates to the 2013 edition to transition" }
+  sectors: [tech, saas, cloud, hardware, banking, retail]
+  applies_to_me: high
+  summary: "⚠️ verify: The core information security management certification standard; the 2024 amendment adds a climate-relevance check."
+  source: "https://www.iso.org/standard/88435.html"
+  last_reviewed: "2026-10-07"
+- id: global-nist-ai-rmf
+  name: "NIST AI Risk Management Framework 1.0 (AI 100-1)"
+  region: GLOBAL
+  jurisdiction: "US (NIST), used globally"
+  type: guidance
+  status: in-force
+  key_dates:
+    - { date: "2023-01-26", what: "AI RMF 1.0 released" }
+  sectors: [tech, saas, cloud, hardware, banking, retail]
+  applies_to_me: medium
+  summary: "Voluntary Govern/Map/Measure/Manage framework for AI risk."
+  source: "https://www.nist.gov/itl/ai-risk-management-framework"
+  last_reviewed: "2026-10-07"
+- id: global-nist-ai-600-1
+  name: "NIST AI 600-1, Generative AI Profile"
+  region: GLOBAL
+  jurisdiction: "US (NIST)"
+  type: guidance
+  status: in-force
+  key_dates:
+    - { date: "2024-07-26", what: "Generative AI Profile released" }
+  sectors: [tech, saas, cloud, banking, retail]
+  applies_to_me: watch
+  summary: "Lists generative-AI-specific risks and suggested actions mapped to the AI RMF."
+  source: "https://www.nist.gov/itl/ai-risk-management-framework"
+  last_reviewed: "2026-10-07"
+- id: global-nist-csf-2
+  name: "NIST Cybersecurity Framework 2.0"
+  region: GLOBAL
+  jurisdiction: "US (NIST), used globally"
+  type: guidance
+  status: in-force
+  key_dates: []
+  sectors: [tech, saas, cloud, hardware, banking, retail]
+  applies_to_me: medium
+  summary: "Voluntary outcomes framework with six functions: Govern, Identify, Protect, Detect, Respond, Recover."
+  source: "https://www.nist.gov/cyberframework"
+  last_reviewed: "2026-10-07"
+- id: global-oecd-ai-principles
+  name: "OECD AI Principles (Recommendation on Artificial Intelligence)"
+  region: GLOBAL
+  jurisdiction: "OECD"
+  type: guidance
+  status: amended
+  key_dates: []
+  sectors: [tech, saas, cloud, hardware, banking, retail]
+  applies_to_me: watch
+  summary: "The first intergovernmental AI principles, updated in 2024; their AI-system definition underpins the EU AI Act and others."
+  source: "https://oecd.ai/en/ai-principles"
+  last_reviewed: "2026-10-07"
+- id: global-oecd-haip
+  name: "Hiroshima AI Process (HAIP) Reporting Framework v2.0"
+  region: GLOBAL
+  jurisdiction: "OECD / G7"
+  type: guidance
+  status: in-force
+  key_dates:
+    - { date: "2026-05-28", what: "Version 2.0 launched" }
+    - { date: "2026-09-30", what: "Submission cut-off for the next analytical review" }
+  sectors: [tech, saas, cloud]
+  applies_to_me: watch
+  summary: "A voluntary annual transparency report for AI developers against the G7 Code of Conduct."
+  source: "https://oecd.ai/en/haip-2-launch"
+  last_reviewed: "2026-10-07"
+- id: global-pci-dss
+  name: "PCI DSS v4.0.1"
+  region: GLOBAL
+  jurisdiction: "PCI Security Standards Council"
+  type: standard
+  status: in-force
+  key_dates:
+    - { date: "2025-03-31", what: "Future-dated v4.x requirements became mandatory" }
+  sectors: [banking, retail, saas, cloud, tech]
+  applies_to_me: medium
+  summary: "Card-data security standard; v4.0.1 added no new requirements versus 4.0."
+  source: "https://blog.pcisecuritystandards.org/now-is-the-time-for-organizations-to-adopt-the-future-dated-requirements-of-pci-dss-v4-x"
+  last_reviewed: "2026-10-07"
