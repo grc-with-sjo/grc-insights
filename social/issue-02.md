@@ -1,21 +1,23 @@
-# Social drafts: Issue 02: Cyber deadlines keep slipping. Build assurance that travels.
+# Social drafts: Issue 02: Cyber deadlines keep moving. What should a security team build in the meantime?
 
 Issue URL: https://grc-with-sjo.github.io/grc-insights/issues/2026-11-22-cyber-deadlines-slip-assurance-travels/
 Suggested posting time: Tuesday or Wednesday, 08:00–09:00 PT. Surabhi posts manually.
 
+Unconfirmed claims: phrase them with attribution words ("reportedly", "according to…"), never the ⚠️ marker.
+
 ## LinkedIn post (≤ 1,300 characters; no link in the body)
 
-US cyber deadlines keep slipping while Europe's reporting clock already runs. Don't budget around enforcement dates; build controls and evidence that work across regimes.
+When US and Canadian cyber dates keep moving and Europe's reporting clock is already running, what can a security team build now that holds its value whichever date lands first?
 
-→ US defence-contractor certification (CMMC) and critical-infrastructure incident reporting (CIRCIA) have both slipped, with no new dates (still to verify against official sources).
-→ In Europe, makers of connected products must now send an early warning within 24 hours of an actively exploited vulnerability (to verify).
-→ FedRAMP 20x is moving US federal cloud authorization to automated evidence, and ISO 42001, the AI management-system standard, is landing as a customer credential, not a legal requirement.
+→ Several US and Canadian government cyber programmes have no firm schedule. US defence-contractor audits (CMMC) were reportedly paused in July pending a review.
+→ FedRAMP, which approves cloud services for US federal agencies, is moving to machine-checked evidence and closing its old route to newcomers on 2027-06-11.
+→ ISO/IEC 42001, the international standard for managing AI, is spreading through customer due diligence rather than law.
 
-My take: build one base layer (ISO 27001, SOC 2, NIST controls, a 24-hour incident process) and let the regulators' calendars catch up.
+One way to hedge: build one base layer (ISO 27001 and SOC 2 for customers, NIST controls for government work, an incident process tested against the EU's 24-hour early warning) and map it outward. The trade-off is spending on controls before some regulators require them.
 
-Will commercial customers and auditors accept automated, machine-checked evidence, or keep asking for the narrative?
+A question to take to your team: if one of our products were actively exploited on a Friday night, who would decide within 24 hours whether to report it under the EU Cyber Resilience Act?
 
-#GRC #Cybersecurity #FedRAMP #ISO42001 #CyberResilienceAct
+#GRC #Cybersecurity #FedRAMP #ISO42001
 
 ## LinkedIn first comment
 
@@ -23,17 +25,17 @@ Full issue + sources: https://grc-with-sjo.github.io/grc-insights/issues/2026-11
 
 ## LinkedIn carousel outline (catch-up and feature issues; export as PDF)
 
-1. Cover: Cyber deadlines keep slipping. Build assurance that travels.
-2. CMMC Phase 2 suspended on 2026-07-13 pending a reform review; CIRCIA's final rule missed its deadlines (to verify).
-3. EU Cyber Resilience Act: 24-hour early warning for actively exploited vulnerabilities since 2026-09-11 (to verify). Canada's Bill C-8 cyber regime has no designations yet (to verify).
-4. Sector lens: Cloud. FedRAMP 20x moves to automated Key Security Indicators, and new Rev5 certifications are planned to stop on 2027-06-11.
-5. My take: one base layer reused everywhere; ISO 42001 is a procurement credential, not EU AI Act compliance.
-6. What to do now: run a 24-hour early-warning tabletop; map controls once; ask vendors for their current ISO 27001:2022 certificate.
+1. Cover: Cyber deadlines keep moving. What should a security team build in the meantime?
+2. US dates moving: CMMC's independent-audit phase was reportedly suspended on 2026-07-13, and law-firm reporting says the CIRCIA incident rule missed its deadlines. Canada's Bill C-8 regime reportedly has no designations yet.
+3. Europe's clock is running: according to law-firm briefings, the Cyber Resilience Act has required a 24-hour early warning for actively exploited vulnerabilities since 2026-09-11.
+4. Sector lens: Cloud. FedRAMP 20x moves to machine-checked Key Security Indicators, and new Rev5 certifications are planned to stop on 2027-06-11.
+5. How I'd approach it: plan on what the regimes share, not their dates. One base layer, mapped outward.
+6. What to do now: a 24-hour early-warning tabletop; map controls once; confirm vendors' ISO 27001:2022 certificates.
 7. Follow for the next issue + Radar link
 
 ## LinkedIn newsletter edition
 
-Several cyber deadlines that security teams planned around have moved, while Europe's first product-security reporting clock went live on schedule. This catch-up argues for building controls and evidence that satisfy several regimes at once, instead of budgeting around enforcement dates.
+Several cyber deadlines that security teams planned around have moved, while Europe's first product-security reporting clock reportedly started on schedule. This catch-up asks what a team can build now so the work holds its value whichever date arrives first.
 
 <Paste the issue body here.>
 
@@ -41,12 +43,12 @@ Originally published at https://grc-with-sjo.github.io/grc-insights/issues/2026-
 
 ## X / Bluesky thread (5 posts, ≤ 280 chars each)
 
-1/ Cyber deadlines keep slipping. CMMC Phase 2 was suspended pending a reform review, and the CIRCIA incident-reporting rule missed its deadlines (both still to verify). Don't budget around enforcement dates.
-2/ Europe went the other way: since 2026-09-11, the Cyber Resilience Act requires a 24-hour early warning for actively exploited vulnerabilities (to verify).
-3/ FedRAMP 20x swaps paper packages for automated Key Security Indicators. FedRAMP plans to stop accepting new Rev5 certifications on 2027-06-11.
-4/ My take: ISO 42001 is landing in procurement, not law. Build one base layer (ISO 27001, SOC 2, NIST controls, 24-hour reporting) and reuse it everywhere.
+1/ Cyber deadlines keep moving. CMMC's independent-audit phase was reportedly paused for review, and the CIRCIA incident rule reportedly missed its deadlines. What should a security team build in the meantime?
+2/ Europe went the other way: according to law-firm briefings, the Cyber Resilience Act has required a 24-hour early warning for actively exploited vulnerabilities since 2026-09-11.
+3/ FedRAMP 20x swaps paper packages for machine-checked Key Security Indicators, and plans to stop accepting new Rev5 certifications on 2027-06-11.
+4/ How I'd approach it: plan on what the regimes share, not their dates. One base layer (ISO 27001, SOC 2, NIST controls, a 24-hour incident process), mapped outward.
 5/ Full issue + sources: https://grc-with-sjo.github.io/grc-insights/issues/2026-11-22-cyber-deadlines-slip-assurance-travels/
 
 ## Community summary (optional: only if it adds value; no link-dumping)
 
-US cyber dates have moved: CMMC's third-party certification phase is paused and the CIRCIA final rule is late, both per law-firm sources only. The EU Cyber Resilience Act's 24-hour reporting is the clock that actually started. FedRAMP 20x (primary source) is moving cloud authorization to automated evidence, and ISO 42001 works as a procurement credential, not a legal presumption under the EU AI Act. Several items are marked "to verify" until checked against official sites.
+US cyber dates are moving: CMMC's independent-audit phase is reportedly paused, and the CIRCIA final rule is late according to law-firm sources. The EU Cyber Resilience Act's 24-hour reporting is, per law-firm briefings, the clock that actually started. FedRAMP 20x (primary source) is moving cloud authorization to machine-checked evidence, and ISO 42001 is spreading through customer due diligence rather than law. One way to hedge is a single control base mapped to several regimes; the trade-off is spending before some regulators require it.
