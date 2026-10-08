@@ -12,7 +12,7 @@ description: "Canada's new privacy bill has stalled and there is no federal AI l
 
 ## In brief
 
-- Canada's bill to replace its federal business privacy law has not moved since June, and there is no federal AI law.
+- Canada's bill to replace its federal business privacy law has not moved past its first step since June, and there is no federal AI law.
 - Regulators used today's law instead: OpenAI's early ChatGPT training and deepfakes made with X's Grok tool did not meet consent rules.
 - New federal guidance says a business stays accountable for personal information it hands to vendors.
 
@@ -30,7 +30,7 @@ Meanwhile regulators keep enforcing the laws they already have. That leaves one 
 
 The obvious place to look first is the bill itself. C-36, the Protecting Privacy and Consumer Data Act, would create a new regulator, the Digital Safety and Data Protection Commission of Canada. It sets penalties at the greater of $10M or 3% of prior-year global revenue, lets individuals sue a business directly, and requires businesses to publicly describe automated decision systems with legal or similarly significant effects on people. [Bill text](https://www.parl.ca/DocumentViewer/en/45-1/bill/C-36/first-reading)
 
-The bill had its first reading, the formal step of introducing it, on 2026-06-15. LEGISinfo, Parliament's bill tracker, shows no debate since. [Source](https://www.parl.ca/legisinfo/en/bill/45-1/c-36) It still needs second reading, committee study, the Senate, Royal Assent and an order bringing it into force; until then, PIPEDA applies.
+The bill had its first reading, the formal step of introducing it, on 2026-06-15. LEGISinfo, Parliament's bill tracker, shows no second-reading activity since. [Source](https://www.parl.ca/legisinfo/en/bill/45-1/c-36) It still needs second reading, committee study, the Senate, Royal Assent and an order bringing it into force; until then, PIPEDA applies.
 
 **Takeaway:** Some C-36 requirements are cheap to prepare for now, but its timing is too uncertain to budget around.
 
@@ -40,7 +40,7 @@ The bill had its first reading, the formal step of introducing it, on 2026-06-15
 
 Meanwhile, regulators are applying existing law to AI. A finding is a regulator's published conclusion after investigating a complaint. On 2026-05-06, the OPC and the Québec, BC and Alberta commissioners reported that OpenAI's initial training of ChatGPT, its AI chatbot, did not comply: it collected more data than needed, without valid consent or transparency. The OPC found the federal complaint justified, and resolved on conditions after OpenAI limited personal and sensitive data in training. [Source](https://www.priv.gc.ca/en/opc-news/news-and-announcements/2026/nr-c_260506/)
 
-On 2026-06-11 the OPC went further with Grok, X's AI chatbot and image generator. It found X Corp. and X.AI LLC had no valid express consent for generating sexualized deepfakes, and that the complaint was justified and not resolved. It recommended suspending Grok Imagine, the image tool, plus annual third-party audits and six months of monitoring for workarounds. The companies declined the suspension but committed to four other recommendations and quarterly reports. [Source](https://www.priv.gc.ca/en/opc-actions-and-decisions/investigations/investigations-into-businesses/2026/pipeda-2026-004/)
+On 2026-06-11 the OPC went further with Grok, X's AI chatbot and image generator. It found X Corp. and X.AI LLC had no valid express (explicit) consent for generating sexualized deepfakes, and that the complaint was justified and not resolved. It recommended suspending Grok Imagine, the image tool, plus annual third-party audits and six months of monitoring for workarounds. The companies declined the suspension but committed to four other recommendations and quarterly reports. [Source](https://www.priv.gc.ca/en/opc-actions-and-decisions/investigations/investigations-into-businesses/2026/pipeda-2026-004/)
 
 **Takeaway:** The Grok recommendations (audits, misuse monitoring, progress reports) read like a control set for any generative AI feature.
 
@@ -48,9 +48,9 @@ On 2026-06-11 the OPC went further with Grok, X's AI chatbot and image generator
 
 ### Accountability for vendors stays with the business
 
-The same logic reaches vendors. OPC guidance of 2026-09-10 says accountability stays with the business, which should be able to show due diligence and contract terms. Comments close 2026-12-04. [Source](https://www.priv.gc.ca/en/opc-news/news-and-announcements/2026/nr-c_260910/)
+The same logic reaches the vendors a business relies on. OPC guidance published on 2026-09-10 says accountability for personal information stays with the business when a service provider handles it, and covers due diligence, contract terms and how to demonstrate accountability. Comments close 2026-12-04. [Source](https://www.priv.gc.ca/en/opc-news/news-and-announcements/2026/nr-c_260910/)
 
-The OPC cannot issue binding orders under PIPEDA, so it went to Federal Court against Google on 2026-08-28 to implement its de-listing recommendations. [Source](https://www.priv.gc.ca/en/opc-news/news-and-announcements/2026/nr-c_260828/) Complaints are also rising: 3,044 under PIPEDA in 2025-26, up 109%. [Source](https://www.priv.gc.ca/en/opc-news/news-and-announcements/2026/nr-c_260604/)
+That guidance carries weight, but it has limits. The OPC cannot issue binding orders under PIPEDA, which is why it went to Federal Court against Google on 2026-08-28 to implement its recommendations that certain search results be de-listed (removed). [Source](https://www.priv.gc.ca/en/opc-news/news-and-announcements/2026/nr-c_260828/) Complaints are also rising: 3,044 under PIPEDA in 2025-26, up 109%. [Source](https://www.priv.gc.ca/en/opc-news/news-and-announcements/2026/nr-c_260604/)
 
 **Takeaway:** A complete vendor and AI inventory answers the new guidance today and is likely to stay useful whatever C-36 becomes.
 
@@ -60,7 +60,7 @@ The OPC cannot issue binding orders under PIPEDA, so it went to Federal Court ag
 
 Provincial law adds a second layer. According to law-firm summaries, Québec's Law 25, the province's modernised private-sector privacy law, has applied in full since 2024-09-22, with penalties of up to C$10M or 2% of worldwide turnover ⚠️ verify. [Osler](https://www.osler.com/fr/articles/mises-%C3%A0-jour/loi-25-nouveau-regime-d-application-de-la-loi-quebecoise-sur-la-protection-des-renseignements-pers/) Québec's regulator, the Commission d'accès à l'information (CAI), reportedly proposed 74 changes in a 2026-06-11 report, including limits on mass collection of data to train AI ⚠️ verify. [Bulletin Aylmer](https://bulletinaylmer.com/quebec-s-access-and-privacy-watchdog-seeks-a-sweeping-overhaul-though-its-report-may-go-nowhere-fast)
 
-BC's private-sector Personal Information Protection Act (PIPA) appears unchanged, though that rests on a weak secondary source ⚠️ verify. Its regulator, the Office of the Information and Privacy Commissioner (OIPC), calls for modernised laws, and its annual report reportedly shows privacy complaints nearly doubling ⚠️ verify. [OIPC BC](https://oipc.bc.ca/documents/news-releases/3187)
+In BC, the private-sector privacy law, the Personal Information Protection Act (PIPA), appears unchanged according to a single weak secondary source, while its regulator, the Office of the Information and Privacy Commissioner (OIPC), reportedly calls for modernised laws in its latest annual report ⚠️ verify. [OIPC BC](https://oipc.bc.ca/documents/news-releases/3187)
 
 **Takeaway:** For organisations operating in Québec, Law 25 is a natural reference point for design choices, once its details are confirmed.
 
@@ -72,7 +72,7 @@ BC's private-sector Personal Information Protection Act (PIPA) appears unchanged
 
 The uncertainty is about timing and shape. I expect federal reform to come, but nobody can say when, or what will survive committee. A plan that depends on a date nobody can name is hard to defend in a budget.
 
-What we do know is how regulators apply today's law. The OpenAI and Grok findings asked the same things: was there valid consent, was the use appropriate, how much data was collected, and how fast did the company respond. The vendor guidance adds one more: can you show you kept control of data you handed to someone else.
+What we do know is how regulators apply today's law. Between them, the OpenAI and Grok findings asked: was there valid consent, was the use appropriate, how much data was collected, and how fast did the company respond. The vendor guidance adds one more: can you show you kept control of data you handed to someone else.
 
 So I would build around evidence that answers those questions under any outcome. The centre would be one inventory of vendors and AI systems. For each entry, I would record what personal data is involved, the consent basis, where any training data came from, and the contract terms. That record answers the OPC's vendor guidance today. It maps to C-36's rules on automated decisions if the bill passes. It also gives you something to show a provincial regulator.
 
