@@ -2,14 +2,14 @@
 layout: default
 title: Regulation Radar
 permalink: /radar/
-description: A living tracker of privacy and AI laws, regulations and standards across Canada, the US, EU/UK, APAC and India, with status, key dates and sector impact.
+description: A living tracker of AI, privacy and cybersecurity laws, regulations and standards across Canada, the US, EU/UK, APAC and India, with status, key dates and sector impact.
 ---
 {% assign reviewed = site.data.tracker | map: 'last_reviewed' | sort | last %}
 <section class="hero hero-compact">
   <div class="hero-inner">
     <div class="hero-tag">Living tracker{% if reviewed %} · Last reviewed {{ reviewed }}{% endif %}</div>
     <h1>Regulation <span>Radar</span></h1>
-    <p class="hero-intro">Every privacy and AI law, rule and standard I'm watching, with status, key dates and who it hits. Each entry links to its primary source.</p>
+    <p class="hero-intro">Every AI, privacy and cybersecurity law, rule and standard I'm watching, with status, key dates and who it hits. Each entry links to its primary source.</p>
   </div>
 </section>
 

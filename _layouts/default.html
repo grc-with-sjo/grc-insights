@@ -23,8 +23,8 @@
   {{ content }}
 
   <footer class="page-footer">
-    <p>© {{ site.time | date: '%Y' }} <strong>{{ site.author.name }}</strong> · GRC Practitioner, New Westminster, BC</p>
-    <p style="margin-top:6px;">Views are my own · Not legal or regulatory advice</p>
+    <p>© {{ site.time | date: '%Y' }} <strong>{{ site.author.name }}</strong> · GRC Practitioner, {{ site.author.location }}</p>
+    <p style="margin-top:6px;">Views are my own and do not represent any organisation I work for · Built with AI assistance · Not legal or regulatory advice · <a href="{{ '/about/' | relative_url }}#disclaimer-heading">Disclaimer</a></p>
   </footer>
 </body>
 </html>
