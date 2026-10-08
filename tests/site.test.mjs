@@ -130,3 +130,14 @@ test('analytics script appears only when configured', { skip }, () => {
   if (config.goatcounter) assert.match(html, new RegExp(`https://${config.goatcounter}\\.goatcounter\\.com/count`));
   else assert.doesNotMatch(html, /gc\.zgo\.at/);
 });
+
+test('each issue is published only once its date has arrived', { skip }, () => {
+  const today = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Vancouver', year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date());
+  const dir = '_issues';
+  for (const file of readdirSync(dir)) {
+    const m = readFileSync(join(dir, file), 'utf8').match(/^date: (\d{4}-\d{2}-\d{2})$/m);
+    const built = existsSync(join(SITE, 'issues', file.replace(/\.(md|html)$/, ''), 'index.html'));
+    assert.equal(built, m[1] <= today, `${file} dated ${m[1]} (today ${today}) built=${built}`);
+  }
+});
+

@@ -3,7 +3,7 @@ layout: default
 title: GRC Insights
 description: "Digital trust, decoded: a GRC practitioner's field notes on AI governance, privacy and cybersecurity, and how governance should adapt."
 ---
-{% assign issues = site.issues | sort: 'issue' | reverse %}
+{% assign issues = site.issues | where_exp: "i", "i.date <= site.time" | sort: 'issue' | reverse %}
 {% assign latest = issues | first %}
 {% assign founding = site.issues | where: 'issue', 0 | first %}
 <section class="hero">

@@ -1,0 +1,17 @@
+name: Scheduled publish
+# GitHub Pages only rebuilds on push. This nightly rebuild releases issues whose
+# front-matter `date` has arrived (_config.yml sets `future: false`).
+on:
+  schedule:
+    - cron: "5 8 * * *"   # 08:05 UTC = 00:05 PST / 01:05 PDT
+  workflow_dispatch:
+permissions:
+  pages: write
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Request a GitHub Pages build
+        run: gh api -X POST "repos/${{ github.repository }}/pages/builds"
+        env:
+          GH_TOKEN: ${{ github.token }}

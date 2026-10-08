@@ -8,7 +8,7 @@ Living notebook by Surabhi Joshi: https://grc-with-sjo.github.io/grc-insights/
    `anthropic-skills:deep-research`, drafts the issue, updates the Radar, and opens a PR labelled `issue`
    (or `radar` for tracker-only updates).
 2. You review the PR using its checklist and edit in GitHub's web editor if needed.
-3. Merge = publish. GitHub Pages rebuilds in about a minute.
+3. Merge = publish, on the issue's `date`. Issues dated in the future stay hidden; a nightly workflow (`.github/workflows/scheduled-publish.yml`, 00:05 PT) rebuilds the site so each issue appears on its date.
 4. Post the drafts from `social/issue-NN.md` yourself.
 
 ## Changing the cadence or calendar
