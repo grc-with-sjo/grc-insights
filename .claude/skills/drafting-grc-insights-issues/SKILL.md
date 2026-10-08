@@ -57,3 +57,7 @@ Total 900–1,400 words.
 - **Context after detail.** Fix: move the "who/why" sentence in front of the date and the numbers.
 - **Takeaway that restates the story.** Fix: make it something to do or to say in a meeting.
 - **Open question with an obvious answer.** Fix: ask what regulators, boards or vendors genuinely disagree on.
+- **Markers lost in the rewrite.** Moving a claim into a new sentence drops its `⚠️ verify`. Fix: after drafting, re-check every claim the research marks secondary-only or conflicting and confirm its marker survived.
+- **Verbs stronger than the finding.** Fix: match the legal weight. A regulator "found the company did not comply", not "the company broke the law", unless a court or binding order says so. Never say a company "accepted" a remedy the research does not confirm.
+- **Inference dressed as fact.** Sector rows, takeaways and "Where I land" invite guesses ("will flow down to you"). Fix: put opinions and predictions in first person ("I expect…"), and keep factual sentences to what the research states.
+- **A product or case named without a reason.** Fix: "Grok, X's AI chatbot and image generator" and "a Federal Court application to make Google act on its de-listing recommendations", not a bare "Grok" or "against Google".
