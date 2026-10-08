@@ -534,7 +534,7 @@
     - { date: "2025-10-31", what: "End of the three-year transition; unconverted 2013 certificates are invalid" }
   sectors: [tech, saas, cloud, hardware, banking, retail]
   applies_to_me: high
-  summary: "⚠️ verify: The current ISMS certification standard; a vendor still showing a 2013-edition certificate should be treated as non-compliant."
+  summary: "⚠️ verify: The current ISMS certification standard; 2013-edition certificates have been invalid since 2025-10-31."
   source: "https://www.iso.org/standard/27001"
   last_reviewed: "2026-10-08"
 - id: global-nist-ai-rmf
@@ -799,11 +799,10 @@
   jurisdiction: "Global (ISO/IEC)"
   type: standard
   status: in-force
-  key_dates:
-    - { date: "2026-03-10", what: "BSI announced ANAB accreditation to certify ISO/IEC 42001" }
+  key_dates: []
   sectors: [tech, saas, cloud]
   applies_to_me: watch
-  summary: "⚠️ verify: Adds AI-specific competence and audit rules for bodies that certify ISO/IEC 42001; more accredited certification bodies are expected."
+  summary: "⚠️ verify: Adds AI-specific competence and audit rules for bodies that certify ISO/IEC 42001."
   source: "https://www.iso.org/standard/42006"
   last_reviewed: "2026-10-08"
 - id: global-iso-27701
@@ -846,18 +845,6 @@
   applies_to_me: medium
   summary: "⚠️ verify: Defense contractors still self-assess against NIST SP 800-171; third-party certification (Phase 2) is paused pending a reform review with no published outcome."
   source: "https://www.crowell.com/en/insights/client-alerts/department-of-war-immediately-suspends-cmmc-phase-ii-requirements-launches-60-day-reform-review"
-  last_reviewed: "2026-10-08"
-- id: us-circia
-  name: "CIRCIA cyber incident reporting final rule (CISA)"
-  region: US
-  jurisdiction: "US (federal, CISA)"
-  type: sector-rule
-  status: proposed
-  key_dates: []
-  sectors: [tech, cloud, banking, retail, hardware]
-  applies_to_me: medium
-  summary: "⚠️ verify: Proposed rule: covered critical-infrastructure entities report significant cyber incidents within 72 hours and ransom payments within 24; final rule overdue."
-  source: "https://www.hunton.com/privacy-and-cybersecurity-law-blog/cisa-plans-to-finalize-cyber-incident-reporting-regulations-in-september-2026"
   last_reviewed: "2026-10-08"
 - id: us-nydfs-part500
   name: "NYDFS 23 NYCRR Part 500 (Second Amendment)"
@@ -953,7 +940,7 @@
     - { date: "2026-09-18", what: "ITRE draft report" }
   sectors: [tech, saas, cloud, hardware, banking, retail]
   applies_to_me: high
-  summary: "Proposal to replace the 2019 Cybersecurity Act with ICT supply-chain rules for high-risk suppliers and certification reforms; no committee vote yet."
+  summary: "Proposal to repeal and replace Regulation (EU) 2019/881 (the Cybersecurity Act); no committee vote yet."
   source: "https://oeil.europarl.europa.eu/oeil/en/procedure-file?reference=2026/0011(COD)"
   last_reviewed: "2026-10-08"
 - id: eu-nis2-amendments
@@ -992,7 +979,7 @@
   key_dates: []
   sectors: [cloud, saas]
   applies_to_me: high
-  summary: "⚠️ verify: The EU cloud security label is still not adopted; the sovereignty dispute over it has moved into CSA2 and the Cloud and AI Development Act."
+  summary: "⚠️ verify: The EU cloud security label is still not adopted; sovereignty arguments over cloud certification now feature in CSA2 and the CADA proposal."
   source: "https://www.eurosmart.com/wp-content/uploads/2025/07/2025_06_19_Enhancing-the-Cybersecurity-Act-to-Finalise-a-Robust-EUCS-Scheme_Final.pdf"
   last_reviewed: "2026-10-08"
 - id: eu-cada
@@ -1046,7 +1033,7 @@
   key_dates: []
   sectors: [saas, cloud, tech]
   applies_to_me: high
-  summary: "⚠️ verify: The assurance report customers ask for first; criteria remain 2017 with 2022 points of focus and AICPA has published no AI-specific criteria."
+  summary: "⚠️ verify: The assurance report customers ask for first; criteria remain 2017 with 2022 points of focus; a CSA note (2026-08-30) says AICPA has published no AI-specific criteria."
   source: "https://www.aicpa-cima.com"
   last_reviewed: "2026-10-08"
 - id: global-csa-star
@@ -1086,7 +1073,7 @@
     - { date: "2026-01-08", what: "Annotated outline for the Predictive AI overlay (feedback due 2026-02-13)" }
   sectors: [cloud, tech]
   applies_to_me: watch
-  summary: "AI-specific overlays on SP 800-53 controls, still at outline stage with no final overlays; page not updated since January 2026."
+  summary: "AI-specific overlays on SP 800-53 controls, still at outline stage with no final overlays; last checked page dates from January 2026."
   source: "https://csrc.nist.gov/projects/cosais"
   last_reviewed: "2026-10-08"
 - id: global-nist-cyber-ai-profile
