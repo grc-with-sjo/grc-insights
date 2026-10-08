@@ -84,3 +84,15 @@ test('radar page renders one row per tracker entry and embeds the data', { skip 
   assert.match(page('index.html'), /data-upcoming/);
   assert.match(page('index.html'), /href="\/grc-insights\/radar\/"/);
 });
+
+test('every page carries the default social card', { skip }, () => {
+  assert.match(page('index.html'), /<meta property="og:image" content="https:\/\/grc-with-sjo\.github\.io\/grc-insights\/assets\/og-card\.png"/);
+  assert.match(page('issues/2026-05-field-notes/index.html'), /og:image/);
+});
+
+test('analytics script appears only when configured', { skip }, () => {
+  const config = parseYaml(readFileSync('_config.yml', 'utf8'));
+  const html = page('index.html');
+  if (config.goatcounter) assert.match(html, new RegExp(`https://${config.goatcounter}\\.goatcounter\\.com/count`));
+  else assert.doesNotMatch(html, /gc\.zgo\.at/);
+});

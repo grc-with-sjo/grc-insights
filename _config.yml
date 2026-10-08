@@ -31,6 +31,8 @@ collections:
     permalink: /issues/:name/
 
 defaults:
+  - scope: { path: "" }
+    values: { image: /assets/og-card.png }
   - scope: { path: "", type: issues }
     values: { layout: issue }
 
