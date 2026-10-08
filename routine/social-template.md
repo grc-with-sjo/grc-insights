@@ -27,7 +27,7 @@ Full issue + sources: <Issue URL>
 2. <Development 1 in one line>
 3. <Development 2>
 4. Sector lens: <the most-affected sector>
-5. My take: <one sentence>
+5. How I'd approach it: <one consideration>
 6. What to do now: <top 3 actions>
 7. Follow for the next issue + Radar link
 
