@@ -33,13 +33,13 @@ description: A living tracker of privacy and AI laws, regulations and standards 
           {% assign rows = site.data.tracker | sort: 'region' %}
           {% for r in rows %}
           <tr id="{{ r.id }}" data-filters="region:{{ r.region }} status:{{ r.status }} relevance:{{ r.applies_to_me }}{% for s in r.sectors %} sector:{{ s }}{% endfor %}">
-            <td><a href="{{ r.source }}" target="_blank" rel="noopener">{{ r.name }}</a><span class="radar-type">{{ r.type }}</span></td>
-            <td>{{ r.jurisdiction }} <span class="muted">({{ r.region }})</span></td>
+            <td><a href="{{ r.source | escape }}" target="_blank" rel="noopener">{{ r.name | escape }}</a><span class="radar-type">{{ r.type | escape }}</span></td>
+            <td>{{ r.jurisdiction | escape }} <span class="muted">({{ r.region }})</span></td>
             <td><span class="status status-{{ r.status }}">{{ r.status }}</span></td>
-            <td>{% for k in r.key_dates %}<div><time datetime="{{ k.date }}">{{ k.date }}</time> {{ k.what }}</div>{% endfor %}</td>
+            <td>{% for k in r.key_dates %}<div><time datetime="{{ k.date }}">{{ k.date }}</time> {{ k.what | escape }}</div>{% endfor %}</td>
             <td>{{ r.sectors | join: ', ' }}</td>
             <td><span class="relevance relevance-{{ r.applies_to_me }}">{{ r.applies_to_me }}</span></td>
-            <td>{{ r.summary }}<div class="muted">Reviewed {{ r.last_reviewed }}</div></td>
+            <td>{{ r.summary | escape }}<div class="muted">Reviewed {{ r.last_reviewed }}</div></td>
           </tr>
           {% endfor %}
         </tbody>

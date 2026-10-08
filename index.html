@@ -23,9 +23,10 @@ description: A GRC practitioner's living notebook on how AI is evolving and how 
 
 <main class="content">
   <p class="section-label">Latest issue</p>
+  {% if latest.series == 'field-notes' %}{% assign latest_fmt = '%B %Y' %}{% else %}{% assign latest_fmt = '%-d %B %Y' %}{% endif %}
   {% assign latest_series = site.data.taxonomy.series | where: 'id', latest.series | first %}
   <a class="latest-card" href="{{ latest.url | relative_url }}">
-    <span class="latest-meta">{{ latest_series.label }}{% if latest.issue > 0 %} · Issue {{ latest.issue }}{% endif %} · {{ latest.date | date: '%-d %B %Y' }}</span>
+    <span class="latest-meta">{{ latest_series.label }}{% if latest.issue > 0 %} · Issue {{ latest.issue }}{% endif %} · {{ latest.date | date: latest_fmt }}</span>
     <span class="latest-title">{{ latest.title }}</span>
     <span class="latest-desc">{{ latest.description }}</span>
   </a>

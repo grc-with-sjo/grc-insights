@@ -22,7 +22,8 @@ function localToday() {
 if (typeof document !== 'undefined') {
   const dataEl = document.getElementById('radar-data');
   if (dataEl) {
-    const rows = JSON.parse(dataEl.textContent || '[]') || [];
+    let rows = [];
+    try { rows = JSON.parse(dataEl.textContent || '[]') || []; } catch { rows = []; }
     const radarUrl = dataEl.dataset.radarUrl;
     for (const list of document.querySelectorAll('[data-upcoming]')) {
       const days = Number(list.dataset.days || 90);

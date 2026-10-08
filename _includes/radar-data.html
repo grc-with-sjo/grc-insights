@@ -1,2 +1,2 @@
-<script type="application/json" id="radar-data" data-radar-url="{{ '/radar/' | relative_url }}">{{ site.data.tracker | jsonify }}</script>
+<script type="application/json" id="radar-data" data-radar-url="{{ '/radar/' | relative_url }}">{{ site.data.tracker | jsonify | replace: '<', '\u003c' }}</script>
 <script type="module" src="{{ '/js/radar.js' | relative_url }}"></script>

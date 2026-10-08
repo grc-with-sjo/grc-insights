@@ -48,8 +48,38 @@ test('Atom feed is served and declared', { skip }, () => {
   assert.match(page('about/index.html'), /type="application\/atom\+xml"/);
 });
 
-test('sitemap lists the about page', { skip }, () => {
-  assert.match(page('sitemap.xml'), /https:\/\/grc-with-sjo\.github\.io\/grc-insights\/about\//);
+test('sitemap lists the about page, Issue 0 and the radar', { skip }, () => {
+  const sm = page('sitemap.xml');
+  assert.match(sm, /https:\/\/grc-with-sjo\.github\.io\/grc-insights\/about\//);
+  assert.ok(sm.includes('https://grc-with-sjo.github.io/grc-insights/issues/2026-05-field-notes/'));
+  assert.ok(sm.includes('https://grc-with-sjo.github.io/grc-insights/radar/'));
+});
+
+test('feed contains an entry linking Issue 0', { skip }, () => {
+  const feed = page('feed.xml');
+  assert.match(feed, /<entry[\s>]/);
+  assert.ok(feed.includes('<link href="https://grc-with-sjo.github.io/grc-insights/issues/2026-05-field-notes/"'));
+});
+
+test('every root-relative href/src carries the baseurl', { skip }, () => {
+  const bad = [];
+  for (const f of htmlFiles(SITE)) {
+    for (const [, v] of readFileSync(f, 'utf8').matchAll(/(?:href|src)="(\/(?!\/|grc-insights\/)[^"]*)"/g)) bad.push(`${f.slice(SITE.length)} → ${v}`);
+  }
+  assert.deepEqual(bad, []);
+});
+
+test('no unrendered Liquid in built output', { skip }, () => {
+  const bad = htmlFiles(SITE).filter(f => /\{\{|\{%/.test(readFileSync(f, 'utf8'))).map(f => f.slice(SITE.length));
+  assert.deepEqual(bad, []);
+});
+
+test('radar page emits only the expected script tags', { skip }, () => {
+  const html = page('radar/index.html');
+  // json data + radar.js + filters.js; the optional GoatCounter tag is excluded
+  const scripts = (html.match(/<script\b[^>]*>/g) || []).filter(t => !t.includes('data-goatcounter'));
+  assert.equal(scripts.length, 3);
+  assert.ok(!html.includes('</script></script>'));
 });
 
 test('Issue 0 renders at its permanent URL with original content', { skip }, () => {

@@ -11,7 +11,7 @@ export const REQUIRED_SECTIONS = [
   '## TL;DR', '## What changed', '## Sector lens', '## My take',
   '## What to do now', '## On the radar', '## Sources',
 ];
-const URL_RE = /^https?:\/\/\S+$/;
+const URL_RE = /^https?:\/\/[^\s"<>]+$/;
 
 function subsetErrors(label, values, allowed) {
   if (!Array.isArray(values) || values.length === 0) return [`${label} must be a non-empty list`];

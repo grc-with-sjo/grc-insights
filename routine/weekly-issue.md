@@ -26,6 +26,9 @@ PENDING=$(gh pr list --state open --json headRefName --jq '[.[].headRefName | se
 node scripts/plan-run.mjs --pending "$PENDING"
 ```
 
+If `gh` is unavailable, use
+`PENDING=$(git ls-remote --heads origin 'issue/*' | sed 's#.*refs/heads/##' | paste -sd, -)`.
+
 Keep `mode`, `today`, `nextIssue`, `windowStart`, `series`, `theme`, `feature`, `pendingCount` from the JSON.
 (For a dry run only, a human may add `--today YYYY-MM-DD`.)
 
@@ -98,6 +101,8 @@ deep-research query. If it is still unconfirmed, add `⚠️ verify`. Get the co
 
 ## Step 6: Open the PR
 
+`<NN>` is `nextIssue` zero-padded to 2 digits everywhere (branch, commit title, PR title, social file).
+
 Issue:
 
 ```bash
@@ -106,15 +111,18 @@ git switch -c "$BRANCH"
 git add "_issues/<file>" _data/tracker.yml "social/issue-<NN>.md"
 git commit -m "Issue <NN> — <series label>: <theme>"
 git push -u origin "$BRANCH"
+BODY=$(mktemp)
+# write $BODY from routine/pr-body-template.md, filling every bracket, BEFORE running gh
 gh pr create --base main --head "$BRANCH" --label issue \
-  --title "Issue <NN> — <series label>: <theme>" --body-file /tmp/pr-body.md
+  --title "Issue <NN> — <series label>: <theme>" --body-file "$BODY"
 ```
 
-Write `/tmp/pr-body.md` from `routine/pr-body-template.md` first, filling every bracket. Series labels come from
+Write the body file from `routine/pr-body-template.md` first, filling every bracket. Series labels come from
 `_data/taxonomy.yml`.
 
 Radar-only: branch `radar/<today>`, commit only `_data/tracker.yml`, label `radar`, title
 `Radar update — <today>`, and a body with just the "Tracker changes" table and research notes.
+If branch `radar/<today>` already exists, append `-2`.
 
 ## Step 7: Report
 

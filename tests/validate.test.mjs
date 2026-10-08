@@ -77,6 +77,13 @@ test('valid tracker rows pass; duplicates and bad fields fail', () => {
   assert.deepEqual(validateTrackerRows(null, tax), ['tracker.yml must be a list']);
 });
 
+test('tracker source URLs containing quotes or angle brackets are rejected', () => {
+  for (const bad of ['https://x.org/a"onclick="y', 'https://x.org/<b>', 'https://x.org/a>b']) {
+    const errs = validateTrackerRows([{ ...row, source: bad }], tax);
+    assert.ok(errs.some(e => e.includes('source must be an http(s) URL')), bad);
+  }
+});
+
 const editorial = {
   cadence: 'monthly',
   calendar: { '2026-10-18': { series: 'catch-up', theme: 'Canada' } },

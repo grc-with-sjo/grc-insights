@@ -29,6 +29,13 @@ Edit `_data/editorial.yml`:
 4. **LinkedIn newsletter (optional).** Create it, then set `linkedin_newsletter: "<URL>"` in `_config.yml`.
 5. **GitHub Pages.** Keep Settings → Pages → "Deploy from a branch", `main` / root.
 6. **LinkedIn profile.** Add the Regulation Radar (`/radar/`) to Featured.
+7. **Labels.** Create the `issue` and `radar` labels (the routine's `gh pr create --label` needs them):
+   `gh label create issue` and `gh label create radar`.
+8. **Protect `main`.** Settings → Branches → require the "Check site" status check before merging, so a
+   broken build can't publish.
+9. **Branch push restrictions.** If the routine runs in Claude Code cloud and pushes are restricted to
+   `claude/`-prefixed branches, enable unrestricted branch pushes for this repo's environment (the routine
+   pushes `issue/*` and `radar/*`).
 
 ## Local checks
 
