@@ -15,12 +15,13 @@ test('routine prompt enforces deep-research and validation', () => {
   assert.match(prompt, /anthropic-skills:deep-research/);
   assert.match(prompt, /npm run validate/);
   assert.match(prompt, /scripts\/plan-run\.mjs/);
+  assert.match(prompt, /drafting-grc-insights-issues/);
   assert.match(prompt, /Never push to `main`/);
 });
 
 test('PR body template carries the review checklist', () => {
   const body = read('routine/pr-body-template.md');
-  for (const item of ['TL;DR works as a LinkedIn opener', '"My take" sounds like me', '⚠️ verify', 'Tracker changes look right', 'Social drafts reviewed']) {
+  for (const item of ['In brief works as a LinkedIn opener', '"Where I land" sounds like me', 'Reads as an editorial: context before each point, every story ends with a takeaway and an open question', '⚠️ verify', 'Tracker changes look right', 'Social drafts reviewed']) {
     assert.ok(body.includes(item), item);
   }
 });

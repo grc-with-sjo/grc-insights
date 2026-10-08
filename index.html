@@ -3,7 +3,7 @@ layout: default
 title: GRC Insights
 description: A GRC practitioner's living notebook on how AI is evolving and how governance should adapt, covering privacy law, AI regulation and sector impact.
 ---
-{% assign issues = site.issues | sort: 'date' | reverse %}
+{% assign issues = site.issues | sort: 'issue' | reverse %}
 {% assign latest = issues | first %}
 {% assign founding = site.issues | where: 'issue', 0 | first %}
 <section class="hero">

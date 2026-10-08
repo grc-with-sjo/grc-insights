@@ -371,3 +371,6 @@ changes are Surabhi's decision; the routine never changes strategy on its own.
 - No local Jekyll toolchain (no Homebrew or Docker; system Ruby 2.6). Site-build verification
   runs in GitHub Actions; validators and logic tests run locally with Node 20.
 - 2026-10-08: catch-up calendar moved one week earlier at Surabhi's request (2026-10-11 → 2026-11-15); monthly issues still start 2026-12-06.
+- 2026-10-08: scope widened to information/data security and cybersecurity (category `cybersecurity`, security sources in editorial.yml, research brief domains); 7th catch-up issue 2026-11-22 "Security & cyber"; tagline "Digital trust, decoded · AI, privacy & cyber governance".
+- 2026-10-08: issues follow the editorial structure enforced by the `drafting-grc-insights-issues` skill and validator (In brief → The story so far → What happened (2–4 stories, each with Takeaway + Open question) → Where I land → The questions still open → What to do this quarter → On the radar → Sources); this supersedes the section 4 body structure.
+- 2026-10-08: standalone feature issue 2026-11-29 on AIUC-1 (series `feature`), filling the week between the last catch-up and the first monthly issue.

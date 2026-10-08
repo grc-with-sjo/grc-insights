@@ -32,6 +32,10 @@ If `gh` is unavailable, use
 Keep `mode`, `today`, `nextIssue`, `windowStart`, `series`, `theme`, `feature`, `pendingCount` from the JSON.
 (For a dry run only, a human may add `--today YYYY-MM-DD`.)
 
+**Early runs.** A human may pass `--today <calendar Sunday>` to draft an issue ahead of schedule. Then
+`calendar_date` = that Sunday and `date` = the actual date. The branch name still uses the plan's `<today>`
+(the calendar date). The scheduled run on that Sunday will see the issue and do a radar-check.
+
 ## Step 2: Research (deep-research)
 
 ### If `mode` is `issue`
@@ -45,7 +49,10 @@ Invoke `anthropic-skills:deep-research` with this brief, filling in the brackets
 > US federal and states, EU, UK. Tier 3 (headline unless major): APAC (Singapore, Australia, Japan), India,
 > global standards (ISO/IEC 42001 and 27001, NIST AI RMF, OECD).
 > Sectors: tech, product/SaaS, cloud, hardware, banking/FinServ, retail (healthcare/public sector only if material).
-> Start from: <sources.regulators>, <sources.standards>, <sources.trackers>.
+> Domains: AI governance, privacy and data protection, AND information/data security and cybersecurity: security frameworks and
+> certifications (ISO/IEC 27001 and 42001, SOC 2, FedRAMP, CMMC, PCI DSS, CSA STAR), cyber incident-reporting and
+> resilience laws, and what they mean for cloud and SaaS providers.
+> Start from: <sources.regulators>, <sources.standards>, <sources.trackers>, <sources.security>.
 > Re-check current status and key dates of these tracker rows: <id, name, status for rows whose region or
 > sectors overlap the theme, plus every row with a key date within 90 days of <today>>.
 > For each finding return: what happened; jurisdiction; key dates (YYYY-MM-DD); affected sectors; primary-source
@@ -55,7 +62,7 @@ Invoke `anthropic-skills:deep-research` with this brief, filling in the brackets
 ### If `mode` is `radar-check`
 
 Invoke `anthropic-skills:deep-research` with a short brief: re-check every tracker row with a key date within
-30 days of <today>, and look for any major new privacy/AI law, regulator rule or enforcement action since
+30 days of <today>, and look for any major new privacy, AI or cybersecurity law, regulator rule, security framework/certification change (e.g. FedRAMP, ISO/IEC 27001 or 42001) or enforcement action since
 <windowStart> in Tier 1–2 jurisdictions. If nothing material changed, STOP and report
 "radar check: no changes, no PR". Otherwise skip to Step 4b.
 
@@ -67,19 +74,13 @@ status update ("Update: …"), not as new news. Drop low-confidence findings unl
 ## Step 4a: Draft the issue
 
 1. Create `_issues/<today>-<slug>.md` from `routine/issue-template.md`. The slug is 3–6 kebab-case words from the headline.
-   Front matter: `issue: <nextIssue>`, `series: <series>`, `date: <today>`; regions/sectors/categories use ids from
+   Front matter: `issue: <nextIssue>`, `series: <series>`, `date: <actual date, America/Vancouver>`, `calendar_date: <today from plan>` (normally the same); regions/sectors/categories use ids from
    `_data/taxonomy.yml`; `description` is ≤ 200 chars.
-2. Voice: read `_issues/2026-05-field-notes.html` and the `## My take` sections of the three most recent issues
-   (they include Surabhi's edits). Write direct, practitioner-first prose with short declarative sentences and
-   concrete actions. Use "programme" spelling as in Issue 0. Address the reader as a peer.
-3. Content rules:
-   - TL;DR: 3 bullets, 60 words or fewer in total.
-   - What changed: 3–6 items; catch-up issues end with the "This week" blockquote.
-   - Sector lens: only affected sectors.
-   - My take: 150–250 words with a clear position.
-   - What to do now: 4–5 actions.
-   - On the radar: dates within 90 days of <today> from the tracker.
-   - Sources: numbered list of every URL cited.
+2. REQUIRED: load and follow the `drafting-grc-insights-issues` skill
+   (`.claude/skills/drafting-grc-insights-issues/SKILL.md`) for structure, flow and voice. It governs shape only;
+   facts still come only from the deep-research report. On the radar: dates within 90 days of <today> from the tracker.
+   Catch-up issues end `## What happened` with the "This week" blockquote.
+3. Sources: numbered list of every URL cited.
 4. Tracker: update changed rows (status, key_dates, summary, source) and add new rows. Quote all dates, and set
    `last_reviewed: "<today>"` on every row you re-checked.
 5. Social: create `social/issue-<NN>.md` from `routine/social-template.md` (NN = nextIssue, zero-padded to 2).

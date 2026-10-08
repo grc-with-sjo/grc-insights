@@ -15,7 +15,15 @@ const goodData = {
   title: 'Canada privacy reset', issue: 1, series: 'catch-up', date: '2026-10-18',
   regions: ['CA'], sectors: ['saas'], categories: ['privacy-law'], description: 'A hook.',
 };
-const goodBody = REQUIRED_SECTIONS.map(h => `${h}\n\ntext\n`).join('\n') + '\n- [OPC](https://www.priv.gc.ca/)\n';
+const story = (n, { takeaway = true, question = true } = {}) =>
+  `### Story ${n}\n\nBridge, context and facts.\n\n${takeaway ? '**Takeaway:** Do the thing.\n\n' : ''}${question ? '**Open question:** Who decides?\n\n' : ''}`;
+const makeBody = ({ stories = [story(1), story(2)], open = '- First risk\n- Second risk\n' } = {}) =>
+  REQUIRED_SECTIONS.map(h => {
+    if (h === '## What happened') return `${h}\n\n${stories.join('')}`;
+    if (h === '## The questions still open') return `${h}\n\n${open}\n`;
+    return `${h}\n\ntext\n`;
+  }).join('\n') + '\n- [OPC](https://www.priv.gc.ca/)\n';
+const goodBody = makeBody();
 const issue = (over = {}, body = goodBody, file = '2026-10-18-canada.md') => ({ file, data: { ...goodData, ...over }, body });
 
 test('isIsoDate accepts real dates only', () => {
@@ -36,16 +44,47 @@ test('unknown enum values are reported', () => {
 });
 
 test('missing and out-of-order sections are reported', () => {
-  const body = goodBody.replace('## My take', '## Opinion');
-  assert.ok(validateIssue(issue({}, body), tax).some(e => e.includes('missing section "## My take"')));
-  const swapped = ['## TL;DR', '## Sector lens', '## What changed', '## My take', '## What to do now', '## On the radar', '## Sources']
+  const body = goodBody.replace('## Where I land', '## Opinion');
+  assert.ok(validateIssue(issue({}, body), tax).some(e => e.includes('missing section "## Where I land"')));
+  const swapped = ['## In brief', '## What happened', '## The story so far', '## Where I land', '## The questions still open', '## What to do this quarter', '## On the radar', '## Sources']
     .map(h => `${h}\n\nx\n`).join('\n') + '[a](https://a.b)\n';
   assert.ok(validateIssue(issue({}, swapped), tax).some(e => e.includes('out of order')));
+});
+
+test('each story needs a Takeaway and an Open question', () => {
+  const noTake = makeBody({ stories: [story(1, { takeaway: false }), story(2)] });
+  assert.ok(validateIssue(issue({}, noTake), tax).some(e => e.includes('story "### Story 1" is missing **Takeaway:**')));
+  const noQ = makeBody({ stories: [story(1), story(2, { question: false })] });
+  assert.ok(validateIssue(issue({}, noQ), tax).some(e => e.includes('story "### Story 2" is missing **Open question:**')));
+});
+
+test('"What happened" needs 2-4 stories', () => {
+  const one = validateIssue(issue({}, makeBody({ stories: [story(1)] })), tax);
+  assert.ok(one.some(e => e.includes('"## What happened" needs 2–4 ### stories (found 1)')));
+  const five = validateIssue(issue({}, makeBody({ stories: [1, 2, 3, 4, 5].map(n => story(n)) })), tax);
+  assert.ok(five.some(e => e.includes('"## What happened" needs 2–4 ### stories (found 5)')));
+});
+
+test('"The questions still open" needs at least 2 bullets', () => {
+  const errs = validateIssue(issue({}, makeBody({ open: '- Only one\n' })), tax);
+  assert.ok(errs.some(e => e.includes('"## The questions still open" needs at least 2 bullet lines')));
 });
 
 test('Sources section must contain a link', () => {
   const body = goodBody.replace('- [OPC](https://www.priv.gc.ca/)', '- OPC website');
   assert.ok(validateIssue(issue({}, body), tax).some(e => e.includes('at least one http(s) link')));
+});
+
+test('calendar_date is optional but must be an ISO Sunday', () => {
+  assert.deepEqual(validateIssue(issue({ date: '2026-10-09', calendar_date: '2026-10-18' }, goodBody, '2026-10-18-x.md'), tax), []);
+  assert.ok(validateIssue(issue({ calendar_date: '18/10/2026' }), tax).some(e => e.includes('calendar_date must be YYYY-MM-DD')));
+  assert.ok(validateIssue(issue({ calendar_date: '2026-10-19' }), tax).some(e => e.includes('calendar_date must be a Sunday')));
+});
+
+test('filename follows calendar_date when present', () => {
+  const over = { date: '2026-10-08', calendar_date: '2026-11-22' };
+  assert.deepEqual(validateIssue(issue(over, goodBody, '2026-11-22-x.md'), tax), []);
+  assert.ok(validateIssue(issue(over, goodBody, '2026-10-08-x.md'), tax).some(e => e.includes('filename must start with the issue date')));
 });
 
 test('description over 200 chars and filename/date mismatch are reported', () => {

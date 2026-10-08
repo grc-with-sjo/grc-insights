@@ -8,11 +8,12 @@
   status: in-force
   key_dates:
     - { date: "2026-06-15", what: "Bill C-36 introduced to replace PIPEDA; no repeal date set" }
+    - { date: "2026-08-28", what: "OPC files Federal Court application against Google, as the Commissioner cannot issue binding orders" }
   sectors: [tech, saas, cloud, hardware, banking, retail]
   applies_to_me: high
-  summary: "⚠️ verify: Federal baseline private-sector privacy law (consent, accountability, breach reporting); stays in force until C-36 is enacted."
+  summary: "Federal private-sector privacy law; stays in force while C-36 sits at first reading. The Commissioner cannot issue binding orders, so enforcement runs through findings and Federal Court applications."
   source: "https://laws-lois.justice.gc.ca/eng/acts/P-8.6/"
-  last_reviewed: "2026-10-07"
+  last_reviewed: "2026-10-11"
 - id: ca-bill-c36
   name: "Bill C-36, Protecting Privacy and Consumer Data Act"
   region: CA
@@ -23,9 +24,9 @@
     - { date: "2026-06-15", what: "First reading in the House of Commons; no later stage scheduled" }
   sectors: [tech, saas, cloud, hardware, banking, retail]
   applies_to_me: high
-  summary: "Federal bill to replace PIPEDA, introduced June 2026 and stalled at first reading."
+  summary: "Federal bill to replace PIPEDA Part 1, stalled at first reading: new Commission, penalties up to the greater of $10M or 3% of global revenue, a private right of action and automated-decision transparency; no AI Part; commencement by order in council."
   source: "https://www.parl.ca/legisinfo/en/bill/45-1/c-36"
-  last_reviewed: "2026-10-07"
+  last_reviewed: "2026-10-11"
 - id: ca-federal-ai-strategy
   name: "Canada federal AI law (AIDA lapsed) and national AI strategy"
   region: CA
@@ -33,24 +34,25 @@
   type: ai-law
   status: lapsed
   key_dates:
-    - { date: "2026-06-04", what: "National AI strategy announced; no replacement AI statute" }
+    - { date: "2026-06-04", what: "\"AI for All\" national AI strategy launched; no replacement AI statute" }
   sectors: [tech, saas, cloud, banking]
   applies_to_me: medium
-  summary: "⚠️ verify: Canada has no binding AI law after AIDA lapsed; policy direction is to cover AI through privacy, online-safety and sector measures."
-  source: "https://www.canada.ca/en/innovation-science-economic-development/news/2026/06/minister-solomon-highlights-canadas-national-artificial-intelligence.html"
-  last_reviewed: "2026-10-07"
+  summary: "Canada has no binding AI law after AIDA lapsed; the \"AI for All\" strategy promises privacy and online-safety modernisation rather than a standalone AI statute."
+  source: "https://www.pm.gc.ca/en/news/news-releases/2026/06/04/prime-minister-carney-launches-ai-all-canadas-new-national-artificial"
+  last_reviewed: "2026-10-11"
 - id: ca-bc-pipa
   name: "British Columbia Personal Information Protection Act (PIPA)"
   region: CA
   jurisdiction: "British Columbia"
   type: privacy-law
   status: in-force
-  key_dates: []
+  key_dates:
+    - { date: "2026-06-25", what: "OIPC BC 2025/26 annual report tabled; calls for modernised laws" }
   sectors: [tech, saas, cloud, hardware, banking, retail]
   applies_to_me: high
-  summary: "⚠️ verify: BC's private-sector privacy statute; unchanged, with reform advocated by the Commissioner but no bill found."
+  summary: "⚠️ verify: BC's private-sector privacy statute; unchanged, with no bill or special committee found, while the Commissioner calls for modernised laws."
   source: "https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/03063_01"
-  last_reviewed: "2026-10-07"
+  last_reviewed: "2026-10-11"
 - id: ca-bc-fippa
   name: "British Columbia Freedom of Information and Protection of Privacy Act (FIPPA), incl. 2026 amendments"
   region: CA
@@ -59,11 +61,12 @@
   status: amended
   key_dates:
     - { date: "2023-02-01", what: "Mandatory breach notification and privacy management programs in force" }
+    - { date: "2026-05-28", what: "Bill 9 FIPPA amendments receive Royal Assent; commencement unconfirmed" }
   sectors: [public-sector, saas, cloud, tech]
   applies_to_me: high
-  summary: "⚠️ verify: BC public-sector privacy law with breach-reporting and privacy-program duties since 2023; 2026 amendments mostly touch access requests."
+  summary: "⚠️ verify: BC public-sector privacy law with breach-reporting and privacy-program duties since 2023; Bill 9 (2026) mostly touches access and adds a connected-services-provider model for sharing among public bodies."
   source: "https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/96165_00"
-  last_reviewed: "2026-10-07"
+  last_reviewed: "2026-10-11"
 - id: ca-qc-law25
   name: "Québec Law 25 (Act to modernize legislative provisions as regards the protection of personal information)"
   region: CA
@@ -74,25 +77,28 @@
     - { date: "2022-09-22", what: "Privacy officer and incident register/reporting" }
     - { date: "2023-09-22", what: "Consent, privacy policy, PIAs, de-indexation, children's data rules" }
     - { date: "2024-09-22", what: "Data portability right" }
+    - { date: "2026-06-11", what: "CAI five-year report tabled with 74 proposed changes" }
   sectors: [tech, saas, cloud, hardware, banking, retail]
   applies_to_me: high
-  summary: "⚠️ verify: Canada's strictest private-sector privacy regime; every phase is already in effect."
+  summary: "⚠️ verify: Canada's strictest private-sector privacy regime; every phase is in effect, no CAI administrative monetary penalty has been confirmed, and the CAI proposes limits on mass collection to train AI."
   source: "https://www.legisquebec.gouv.qc.ca/en/document/cs/P-39.1"
-  last_reviewed: "2026-10-07"
+  last_reviewed: "2026-10-11"
 - id: ca-on-bill194
   name: "Ontario Bill 194 (Strengthening Cyber Security and Building Trust in the Public Sector Act, 2024)"
   region: CA
   jurisdiction: "Ontario (public sector)"
   type: privacy-law
-  status: passed
+  status: phasing-in
   key_dates:
     - { date: "2025-01-29", what: "FIPPA housekeeping amendments in force" }
     - { date: "2025-07-01", what: "FIPPA PIAs, breach reporting to IPC and IPC order powers in force" }
+    - { date: "2026-07-01", what: "EDSTA regulations O. Reg. 51/26 (cyber security) and 52/26 (under-18 digital technology) in force" }
+    - { date: "2027-07-01", what: "First cyber maturity assessment due under O. Reg. 51/26" }
   sectors: [public-sector, saas, cloud, tech]
   applies_to_me: medium
-  summary: "⚠️ verify: Ontario public-sector cyber and AI law; the FIPPA privacy parts are live, while the AI/cyber statute (EDSTA) is not confirmed in force."
+  summary: "⚠️ verify: Ontario public-sector cyber and AI law; EDSTA cyber and under-18 regulations apply to schools, hospitals and children's aid societies from 2026-07-01, with no binding AI regulation found."
   source: "https://www.ontario.ca/laws/statute/s24024"
-  last_reviewed: "2026-10-07"
+  last_reviewed: "2026-10-11"
 - id: ca-ab-pipa-reform
   name: "Alberta Personal Information Protection Act (PIPA) reform"
   region: CA
@@ -104,9 +110,9 @@
     - { date: "2026-02-17", what: "Public survey closes" }
   sectors: [tech, saas, retail, banking]
   applies_to_me: medium
-  summary: "Alberta's private-sector privacy law is unamended; a 2026 consultation ran but no bill was confirmed as of March 2026."
+  summary: "Alberta's private-sector privacy law is unamended; a 2026 consultation ran but no bill has been confirmed (the Assembly bill list was not checked)."
   source: "https://www.alberta.ca/personal-information-protection-act-engagement"
-  last_reviewed: "2026-10-07"
+  last_reviewed: "2026-10-11"
 - id: ca-osfi-e23
   name: "OSFI Guideline E-23, Model Risk Management (2027)"
   region: CA
@@ -120,7 +126,7 @@
   applies_to_me: high
   summary: "Enterprise-wide model risk management expectations, explicitly covering AI/ML models, for federally regulated banks and insurers from May 2027."
   source: "https://www.osfi-bsif.gc.ca/en/guidance/guidance-library/guideline-e-23-model-risk-management-2027"
-  last_reviewed: "2026-10-07"
+  last_reviewed: "2026-10-11"
 - id: ca-osfi-b13
   name: "OSFI Guideline B-13, Technology and Cyber Risk Management"
   region: CA
@@ -144,21 +150,24 @@
   key_dates: []
   sectors: [tech, saas, cloud, banking]
   applies_to_me: medium
-  summary: "A voluntary federal code for developers and operators of generative AI; not legally binding, with dozens of signatories."
+  summary: "A voluntary federal code for developers and operators of generative AI; not legally binding, with 46 signatories listed on the ISED page (modified 2026-06-04)."
   source: "https://ised-isde.canada.ca/site/ised/en/voluntary-code-conduct-responsible-development-and-management-advanced-generative-ai-systems"
-  last_reviewed: "2026-10-07"
+  last_reviewed: "2026-10-11"
 - id: ca-c8-cyber
   name: "Bill C-8, An Act Respecting Cyber Security (Critical Cyber Systems Protection Act)"
   region: CA
   jurisdiction: "Canada (federal)"
   type: sector-rule
   status: passed
-  key_dates: []
+  key_dates:
+    - { date: "2026-03-26", what: "House of Commons passed the bill" }
+    - { date: "2026-06-04", what: "Senate adopted the bill" }
+    - { date: "2026-06-15", what: "Royal Assent; Telecommunications Act amendments in force" }
   sectors: [banking, cloud, tech]
   applies_to_me: high
-  summary: "Federal cyber-security duties for designated critical-infrastructure operators; passed June 2026."
+  summary: "⚠️ verify: Designated critical-infrastructure operators will need cyber programs and incident reporting; the CCSPA is not in force and has no designations yet."
   source: "https://www.canada.ca/en/public-safety-canada/news/2026/06/government-of-canada-strengthens-cyber-security-and-critical-infrastructure-with-royal-assent-of-bill-c8.html"
-  last_reviewed: "2026-10-07"
+  last_reviewed: "2026-10-08"
 - id: us-ca-ccpa-regs
   name: "California CCPA/CPRA and CPPA regulations (ADMT, risk assessments, cybersecurity audits)"
   region: US
@@ -335,12 +344,14 @@
   status: in-force
   key_dates:
     - { date: "2024-10-17", what: "Member-state transposition deadline" }
+    - { date: "2024-11-28", what: "Commission infringement notices to 23 member states" }
+    - { date: "2025-05-07", what: "Reasoned opinions to 19 member states" }
     - { date: "2026-01-20", what: "Commission proposed targeted NIS2 amendments with the CSA2 revision" }
   sectors: [tech, saas, cloud, hardware, banking, retail]
-  applies_to_me: medium
-  summary: "⚠️ verify: EU cyber-security directive; national transposition is still incomplete and amendments are proposed."
+  applies_to_me: high
+  summary: "⚠️ verify: EU baseline cyber directive is law, but national rules differ and many states are late with transposition; targeted amendments are proposed."
   source: "https://eur-lex.europa.eu/eli/dir/2022/2555/oj"
-  last_reviewed: "2026-10-07"
+  last_reviewed: "2026-10-08"
 - id: eu-data-act
   name: "EU Data Act (Regulation (EU) 2023/2854)"
   region: EU
@@ -363,13 +374,14 @@
   type: sector-rule
   status: phasing-in
   key_dates:
-    - { date: "2026-09-11", what: "Manufacturer reporting of exploited vulnerabilities and severe incidents begins" }
-    - { date: "2027-12-11", what: "Full application" }
+    - { date: "2026-07-27", what: "Commission non-binding guidance" }
+    - { date: "2026-09-11", what: "Reporting of exploited vulnerabilities and severe incidents applies (24-hour early warning, 72-hour notification)" }
+    - { date: "2027-12-11", what: "Main obligations apply" }
   sectors: [tech, saas, hardware, retail, banking]
   applies_to_me: high
-  summary: "⚠️ verify: Security-by-design and vulnerability-reporting duties for products with digital elements; incident reporting started September 2026."
+  summary: "⚠️ verify: Manufacturers of products with digital elements must report exploited vulnerabilities and severe incidents on a 24h/72h clock now; full duties from 2027-12-11."
   source: "https://digital-strategy.ec.europa.eu/en/policies/cra-reporting"
-  last_reviewed: "2026-10-07"
+  last_reviewed: "2026-10-08"
 - id: uk-duaa
   name: "Data (Use and Access) Act 2025"
   region: UK
@@ -392,12 +404,17 @@
   jurisdiction: "UK"
   type: sector-rule
   status: proposed
-  key_dates: []
+  key_dates:
+    - { date: "2025-11-12", what: "Introduced in the Commons" }
+    - { date: "2026-01-06", what: "Commons second reading" }
+    - { date: "2026-06-17", what: "Lords first reading" }
+    - { date: "2026-07-14", what: "Lords second reading" }
+    - { date: "2026-09-07", what: "Lords Grand Committee ended" }
   sectors: [tech, saas, cloud, hardware]
   applies_to_me: watch
-  summary: "⚠️ verify: Bill to update the UK's NIS Regulations with wider scope, 24h/72h incident reporting and turnover-based fines; was before the Lords as of July 2026."
+  summary: "⚠️ verify: Updates the NIS Regulations to cover data centres, managed service providers and critical suppliers; before the Lords, Royal Assent unconfirmed."
   source: "https://bills.parliament.uk/bills/4035"
-  last_reviewed: "2026-10-07"
+  last_reviewed: "2026-10-08"
 - id: apac-sg-pdpa
   name: "Singapore Personal Data Protection Act 2012 (as amended 2020)"
   region: APAC
@@ -498,25 +515,28 @@
   jurisdiction: "Global (ISO/IEC)"
   type: standard
   status: in-force
-  key_dates: []
+  key_dates:
+    - { date: "2025-11-20", what: "CSA STAR for AI Level 2 pairs 42001 certification with a validated AI-CAIQ" }
+    - { date: "2026-03-10", what: "BSI announced ANAB accreditation to certify to 42001" }
   sectors: [tech, saas, cloud, hardware, banking, retail]
   applies_to_me: medium
-  summary: "⚠️ verify: A certifiable AI management-system standard, structured like ISO 27001."
-  source: "https://www.iso.org/standard/42001"
-  last_reviewed: "2026-10-07"
+  summary: "⚠️ verify: Landing as a voluntary, vendor-differentiating certificate asked for in diligence, not a legal requirement; no EU AI Act presumption of conformity."
+  source: "https://www.iso.org/standard/81230.html"
+  last_reviewed: "2026-10-08"
 - id: global-iso-27001
   name: "ISO/IEC 27001:2022 with Amd 1:2024"
   region: GLOBAL
   jurisdiction: "Global (ISO/IEC)"
   type: standard
-  status: amended
+  status: in-force
   key_dates:
-    - { date: "2025-10-31", what: "Deadline for certificates to the 2013 edition to transition" }
+    - { date: "2022-10-25", what: "ISO/IEC 27001:2022 published" }
+    - { date: "2025-10-31", what: "End of the three-year transition; unconverted 2013 certificates are invalid" }
   sectors: [tech, saas, cloud, hardware, banking, retail]
   applies_to_me: high
-  summary: "⚠️ verify: The core information security management certification standard; the 2024 amendment adds a climate-relevance check."
-  source: "https://www.iso.org/standard/88435.html"
-  last_reviewed: "2026-10-07"
+  summary: "⚠️ verify: The current ISMS certification standard; 2013-edition certificates have been invalid since 2025-10-31."
+  source: "https://www.iso.org/standard/27001"
+  last_reviewed: "2026-10-08"
 - id: global-nist-ai-rmf
   name: "NIST AI Risk Management Framework 1.0 (AI 100-1)"
   region: GLOBAL
@@ -588,24 +608,26 @@
   type: standard
   status: in-force
   key_dates:
-    - { date: "2025-03-31", what: "Future-dated v4.x requirements became mandatory" }
+    - { date: "2024-12-31", what: "PCI DSS v4.0 retired" }
+    - { date: "2026-06-03", what: "Request for comments opened on a future revision (AI and mobile impacts); closed 2026-07-20" }
   sectors: [banking, retail, saas, cloud, tech]
   applies_to_me: medium
-  summary: "Card-data security standard; v4.0.1 added no new requirements versus 4.0."
-  source: "https://blog.pcisecuritystandards.org/now-is-the-time-for-organizations-to-adopt-the-future-dated-requirements-of-pci-dss-v4-x"
-  last_reviewed: "2026-10-07"
+  summary: "v4.0.1 is still the card-data security standard; a revision is under consultation with no successor or date announced."
+  source: "https://www.pcisecuritystandards.org/standards/pci-dss/"
+  last_reviewed: "2026-10-08"
 - id: ca-c27-lapsed
   name: "Bill C-27 (Consumer Privacy Protection Act, Tribunal and AIDA), lapsed"
   region: CA
   jurisdiction: "Canada (federal)"
   type: privacy-law
   status: lapsed
-  key_dates: []
+  key_dates:
+    - { date: "2025-01-06", what: "Parliamentary session ended; bill lapsed" }
   sectors: [tech, saas, cloud, banking, retail]
   applies_to_me: medium
-  summary: "⚠️ verify: The previous federal privacy-and-AI package died on the order paper in January 2025 and has not been replaced by an AI statute."
-  source: "https://www.parl.ca/legisinfo/en/bill/45-1/c-36"
-  last_reviewed: "2026-10-07"
+  summary: "The previous federal privacy-and-AI package lapsed when the session ended in January 2025; C-36 replaces only the privacy part and no AI statute has followed."
+  source: "https://www.parl.ca/legisinfo/en/bill/44-1/c-27"
+  last_reviewed: "2026-10-11"
 - id: ca-on-esa-ai-job-postings
   name: "Ontario Employment Standards Act, 2000, Part III.1 (AI disclosure in job postings)"
   region: CA
@@ -616,9 +638,9 @@
     - { date: "2026-01-01", what: "Employers must disclose in public job postings whether AI screens applicants" }
   sectors: [tech, saas, cloud, hardware, banking, retail]
   applies_to_me: medium
-  summary: "⚠️ verify: Ontario employers must say in public job ads whether AI is used to screen, assess or select applicants."
+  summary: "⚠️ verify: Ontario employers with 25 or more employees must say in public job ads whether AI is used to screen, assess or select applicants."
   source: "https://www.ontario.ca/laws/statute/00e41"
-  last_reviewed: "2026-10-07"
+  last_reviewed: "2026-10-11"
 - id: ca-ab-popa-atia
   name: "Alberta Protection of Privacy Act (POPA) and Access to Information Act (ATIA)"
   region: CA
@@ -627,11 +649,42 @@
   status: in-force
   key_dates:
     - { date: "2025-06-11", what: "Both Acts in force; FOIP Act repealed" }
+    - { date: "2026-06-11", what: "Privacy management programme requirement applies" }
   sectors: [public-sector, saas, cloud, tech]
   applies_to_me: medium
-  summary: "⚠️ verify: Alberta's public-sector privacy and access regime replacing the FOIP Act, with breach notification where there is real risk of significant harm."
+  summary: "⚠️ verify: Alberta's public-sector privacy and access regime replacing the FOIP Act; privacy management programmes required from 2026-06-11, with OIPC guidance expecting AI policies, vendor inventories and PIAs."
   source: "https://oipc.ab.ca/legislation/popa/"
-  last_reviewed: "2026-10-07"
+  last_reviewed: "2026-10-11"
+- id: ca-opc-tpsp-guidance
+  name: "OPC guidance on third-party service providers"
+  region: CA
+  jurisdiction: "Canada (federal)"
+  type: guidance
+  status: proposed
+  key_dates:
+    - { date: "2026-09-10", what: "Guidance published for comment" }
+    - { date: "2026-12-04", what: "Comment period closes" }
+  sectors: [tech, saas, cloud, hardware, banking, retail]
+  applies_to_me: high
+  summary: "OPC guidance that accountability for personal information stays with the business when a service provider processes it; covers due diligence, contract terms and demonstrating accountability."
+  source: "https://www.priv.gc.ca/en/opc-news/news-and-announcements/2026/nr-c_260910/"
+  last_reviewed: "2026-10-11"
+- id: ca-on-bill97
+  name: "Ontario Bill 97 (FIPPA and MFIPPA amendments)"
+  region: CA
+  jurisdiction: "Ontario (public sector)"
+  type: privacy-law
+  status: phasing-in
+  key_dates:
+    - { date: "2026-04-24", what: "Royal Assent (one firm says 2026-04-23)" }
+    - { date: "2026-07-01", what: "Access reforms in force" }
+    - { date: "2026-09-15", what: "Data integration provisions in force" }
+    - { date: "2027-01-01", what: "MFIPPA PIAs, breach reporting and whistleblower provision in force" }
+  sectors: [public-sector, saas, cloud]
+  applies_to_me: medium
+  summary: "⚠️ verify: Staged changes to Ontario's public-sector access and privacy laws, bringing PIAs and breach reporting to municipal institutions from 2027-01-01."
+  source: "https://www.weirfoulds.com/bill-97-explained-key-access-and-privacy-changes-for-ontarios-fippa-and-mfippa-institutions"
+  last_reviewed: "2026-10-11"
 - id: us-ut-ai-policy-act
   name: "Utah Artificial Intelligence Policy Act (SB 149, as amended by SB 226 and SB 332)"
   region: US
@@ -751,7 +804,7 @@
   applies_to_me: watch
   summary: "⚠️ verify: Adds AI-specific competence and audit rules for bodies that certify ISO/IEC 42001."
   source: "https://www.iso.org/standard/42006"
-  last_reviewed: "2026-10-07"
+  last_reviewed: "2026-10-08"
 - id: global-iso-27701
   name: "ISO/IEC 27701:2025 privacy information management systems"
   region: GLOBAL
@@ -761,6 +814,278 @@
   key_dates: []
   sectors: [tech, saas, cloud, hardware, banking, retail]
   applies_to_me: medium
-  summary: "⚠️ verify: Now a standalone privacy management system standard with no ISO 27001 prerequisite."
-  source: "https://www.kiwa.com/en/nl/about-kiwa/news/isoiec-277012025-published-updated-privacy-standard-offers-organizations-more-guidance"
-  last_reviewed: "2026-10-07"
+  summary: "⚠️ verify: Now a standalone privacy management system standard certifiable without ISO 27001; the length of the transition window is still unsettled."
+  source: "https://www.iso.org/standard/85819.html"
+  last_reviewed: "2026-10-08"
+- id: us-fedramp-20x
+  name: "FedRAMP 20x (Key Security Indicator authorization) and Rev5 phase-out"
+  region: US
+  jurisdiction: "US (federal, FedRAMP/GSA)"
+  type: standard
+  status: phasing-in
+  key_dates:
+    - { date: "2026-03-06", what: "First Moderate pilot authorizations" }
+    - { date: "2026-04-27", what: "Six more Moderate authorizations" }
+    - { date: "2027-06-11", what: "FedRAMP plans to stop accepting new Rev5 certifications and publish transition paths" }
+  sectors: [cloud, saas, tech]
+  applies_to_me: high
+  summary: "FedRAMP is replacing paper Rev5 packages with automated Key Security Indicators; cloud providers selling to US agencies should plan for continuous evidence."
+  source: "https://www.fedramp.gov/20x/"
+  last_reviewed: "2026-10-08"
+- id: us-cmmc
+  name: "Cybersecurity Maturity Model Certification (CMMC, 32 CFR part 170)"
+  region: US
+  jurisdiction: "US (federal, Department of War)"
+  type: sector-rule
+  status: in-force
+  key_dates:
+    - { date: "2025-11-10", what: "Phase 1 took effect (self-assessment clauses)" }
+    - { date: "2026-07-13", what: "Phase 2 (planned 2026-11-10) suspended pending a 60-day reform review; outcome unpublished" }
+  sectors: [tech, saas, cloud, hardware]
+  applies_to_me: medium
+  summary: "⚠️ verify: Defense contractors still self-assess against NIST SP 800-171; third-party certification (Phase 2) is paused pending a reform review with no published outcome."
+  source: "https://www.crowell.com/en/insights/client-alerts/department-of-war-immediately-suspends-cmmc-phase-ii-requirements-launches-60-day-reform-review"
+  last_reviewed: "2026-10-08"
+- id: us-nydfs-part500
+  name: "NYDFS 23 NYCRR Part 500 (Second Amendment)"
+  region: US
+  jurisdiction: "US (New York State, DFS)"
+  type: sector-rule
+  status: in-force
+  key_dates:
+    - { date: "2025-11-01", what: "Final phase: MFA for all system access and asset-inventory procedures required" }
+    - { date: "2026-04-15", what: "Annual certification filing covering the final phase due" }
+  sectors: [banking, saas, cloud, tech]
+  applies_to_me: medium
+  summary: "⚠️ verify: New York-licensed financial firms need documented cyber programs; the last phase required MFA for all system access and a maintained asset inventory."
+  source: "https://www.hoganlovells.com/en/publications/nydfs-final-set-of-cybersecurity-requirements-under-amended-part-500-take-effect-november-1-2025"
+  last_reviewed: "2026-10-08"
+- id: us-sec-cyber-disclosure
+  name: "SEC cybersecurity disclosure rules (Form 8-K Item 1.05, Regulation S-K Item 106)"
+  region: US
+  jurisdiction: "US (federal, SEC)"
+  type: sector-rule
+  status: in-force
+  key_dates:
+    - { date: "2023-07-26", what: "Rules adopted" }
+    - { date: "2026-04-10", what: "Five trade associations asked the SEC to rescind or narrow Items 106 and 1.05" }
+  sectors: [tech, saas, cloud, hardware, banking, retail]
+  applies_to_me: medium
+  summary: "⚠️ verify: Public companies file an 8-K within four business days of deciding a cyber incident is material; industry wants the rules scrapped or narrowed."
+  source: "https://www.sec.gov/rules-regulations/2023/07/s7-09-22"
+  last_reviewed: "2026-10-08"
+- id: us-hipaa-security-nprm
+  name: "HHS HIPAA Security Rule overhaul (proposed rule)"
+  region: US
+  jurisdiction: "US (federal, HHS OCR)"
+  type: sector-rule
+  status: proposed
+  key_dates:
+    - { date: "2025-01-06", what: "NPRM published" }
+  sectors: [saas, cloud, tech]
+  applies_to_me: watch
+  summary: "⚠️ verify: Would make MFA, encryption and asset inventory mandatory for covered entities and business associates; final action now no earlier than July 2027."
+  source: "https://www.fiercehealthcare.com/health-tech/feds-push-back-hipaa-security-rule-overhaul-july-2027"
+  last_reviewed: "2026-10-08"
+- id: us-omb-m-22-18
+  name: "OMB M-22-18 secure-software attestation (repealed by M-26-05)"
+  region: US
+  jurisdiction: "US (federal, OMB)"
+  type: guidance
+  status: repealed
+  key_dates:
+    - { date: "2026-01-23", what: "OMB M-26-05 rescinded M-22-18 and M-23-16" }
+  sectors: [saas, cloud, tech, hardware]
+  applies_to_me: high
+  summary: "⚠️ verify: Agencies no longer must collect the secure-software attestation form from vendors, though they may still ask for it or their own assurances."
+  source: "https://www.mayerbrown.com/en/insights/publications/2026/02/omb-rescinds-biden-era-software-security-memoranda"
+  last_reviewed: "2026-10-08"
+- id: us-fcc-cyber-trust-mark
+  name: "FCC U.S. Cyber Trust Mark (voluntary IoT security label)"
+  region: US
+  jurisdiction: "US (federal, FCC)"
+  type: standard
+  status: phasing-in
+  key_dates:
+    - { date: "2025-12-19", what: "UL Solutions' withdrawal as Lead Administrator took effect" }
+    - { date: "2026-01-07", what: "FCC reopened Lead Administrator applications (window to 2026-01-28)" }
+    - { date: "2026-04-13", what: "FCC selected ioXt Alliance as Lead Administrator" }
+  sectors: [hardware, retail]
+  applies_to_me: watch
+  summary: "⚠️ verify: A voluntary IoT security label whose governance was reset after the first lead administrator quit; program rules and first labeled products are undated."
+  source: "https://broadbandbreakfast.com/fcc-picks-ioxt-alliance-to-head-cyber-trust-mark-program/"
+  last_reviewed: "2026-10-08"
+- id: ca-cpcsc
+  name: "Canadian Program for Cyber Security Certification (CPCSC)"
+  region: CA
+  jurisdiction: "Canada (federal, PSPC)"
+  type: standard
+  status: phasing-in
+  key_dates:
+    - { date: "2026-04-14", what: "Level 1 (self-attestation) introduced" }
+  sectors: [tech, saas, cloud, hardware]
+  applies_to_me: medium
+  summary: "Three-level cyber certification for defence suppliers; only self-attested Level 1 has an official start, Levels 2 and 3 have no official dates."
+  source: "https://www.canada.ca/en/public-services-procurement/news/2026/04/government-of-canada-introduces-level-1-of-canadian-program-for-cyber-security-certification.html"
+  last_reviewed: "2026-10-08"
+- id: eu-csa2
+  name: "EU Cybersecurity Act revision (CSA2, COM(2026)11)"
+  region: EU
+  jurisdiction: "EU"
+  type: sector-rule
+  status: proposed
+  key_dates:
+    - { date: "2026-01-20", what: "Commission proposal published" }
+    - { date: "2026-04-29", what: "EESC opinion" }
+    - { date: "2026-09-18", what: "ITRE draft report" }
+  sectors: [tech, saas, cloud, hardware, banking, retail]
+  applies_to_me: high
+  summary: "Proposal to repeal and replace Regulation (EU) 2019/881 (the Cybersecurity Act); no committee vote yet."
+  source: "https://oeil.europarl.europa.eu/oeil/en/procedure-file?reference=2026/0011(COD)"
+  last_reviewed: "2026-10-08"
+- id: eu-nis2-amendments
+  name: "NIS2 targeted amendments (COM(2026)13)"
+  region: EU
+  jurisdiction: "EU"
+  type: sector-rule
+  status: proposed
+  key_dates:
+    - { date: "2026-01-20", what: "Commission proposal published" }
+  sectors: [tech, saas, cloud, hardware, banking, retail]
+  applies_to_me: high
+  summary: "Proposal to simplify NIS2 jurisdiction rules, streamline ransomware data collection and add a small mid-cap category; no adoption yet."
+  source: "https://digital-strategy.ec.europa.eu/en/library/proposal-directive-regards-simplification-measures-and-alignment-cybersecurity-act"
+  last_reviewed: "2026-10-08"
+- id: eu-eucc
+  name: "EUCC Common Criteria-based cybersecurity certification scheme (Reg. (EU) 2024/482)"
+  region: EU
+  jurisdiction: "EU"
+  type: standard
+  status: in-force
+  key_dates:
+    - { date: "2025-04-02", what: "First two EUCC certificates reported issued (ANSSI, France)" }
+    - { date: "2027-12-31", what: "Older Common Criteria/ISO-based certificates allowed until this date" }
+  sectors: [hardware, tech]
+  applies_to_me: medium
+  summary: "⚠️ verify: The first live EU-wide cybersecurity certification scheme, for ICT products assessed against Common Criteria."
+  source: "https://eur-lex.europa.eu/eli/reg_impl/2024/482/2025-01-08/eng"
+  last_reviewed: "2026-10-08"
+- id: eu-eucs
+  name: "EUCS cloud certification scheme (candidate, not adopted)"
+  region: EU
+  jurisdiction: "EU"
+  type: standard
+  status: proposed
+  key_dates: []
+  sectors: [cloud, saas]
+  applies_to_me: high
+  summary: "⚠️ verify: The EU cloud security label is still not adopted; sovereignty arguments over cloud certification now feature in CSA2 and the CADA proposal."
+  source: "https://www.eurosmart.com/wp-content/uploads/2025/07/2025_06_19_Enhancing-the-Cybersecurity-Act-to-Finalise-a-Robust-EUCS-Scheme_Final.pdf"
+  last_reviewed: "2026-10-08"
+- id: eu-cada
+  name: "EU Cloud and AI Development Act (CADA, COM(2026)502)"
+  region: EU
+  jurisdiction: "EU"
+  type: sector-rule
+  status: proposed
+  key_dates:
+    - { date: "2026-06-03", what: "Adopted by the Commission; now in Parliament and Council" }
+  sectors: [cloud, saas, tech]
+  applies_to_me: high
+  summary: "⚠️ verify: Proposal to reduce EU reliance on foreign cloud and AI providers, including cloud sovereignty aspects; in negotiation."
+  source: "https://enterprise.gov.ie/en/consultations/consultations-files/public-consultation-cada-explanatory-note.pdf"
+  last_reviewed: "2026-10-08"
+- id: apac-au-ransomware-reporting
+  name: "Australia Cyber Security Act 2024: ransomware payment reporting"
+  region: APAC
+  jurisdiction: "Australia (federal)"
+  type: sector-rule
+  status: in-force
+  key_dates:
+    - { date: "2024-11-29", what: "Royal Assent" }
+    - { date: "2026-01-01", what: "Compliance and enforcement phase began" }
+  sectors: [tech, saas, cloud, banking, retail]
+  applies_to_me: medium
+  summary: "⚠️ verify: Eligible businesses (turnover above AUD 3m) and critical-infrastructure entities must report ransomware payments within 72 hours; enforced since 2026-01-01."
+  source: "https://www.legislation.gov.au/C2024A00098"
+  last_reviewed: "2026-10-08"
+- id: apac-au-soci
+  name: "Australia Security of Critical Infrastructure Act 2018 (SOCI) reforms"
+  region: APAC
+  jurisdiction: "Australia (federal)"
+  type: sector-rule
+  status: amended
+  key_dates:
+    - { date: "2026-03-24", what: "Independent review of the SOCI Act tabled" }
+    - { date: "2026-06-10", what: "Enhanced all-hazards risk-management rules commenced" }
+    - { date: "2026-07-31", what: "Tranche 2 consultation closed; outcome unknown" }
+  sectors: [cloud, tech, banking]
+  applies_to_me: watch
+  summary: "⚠️ verify: Critical-infrastructure operators face stronger risk-management duties now; Tranche 2 may widen scope to cloud and supplier categories."
+  source: "https://www.whitecase.com/insight-alert/review-soci-act"
+  last_reviewed: "2026-10-08"
+- id: global-soc2
+  name: "SOC 2 (AICPA Trust Services Criteria)"
+  region: GLOBAL
+  jurisdiction: "AICPA (US)"
+  type: guidance
+  status: in-force
+  key_dates: []
+  sectors: [saas, cloud, tech]
+  applies_to_me: high
+  summary: "⚠️ verify: The assurance report customers ask for first; criteria remain 2017 with 2022 points of focus; a CSA note (2026-08-30) says AICPA has published no AI-specific criteria."
+  source: "https://www.aicpa-cima.com"
+  last_reviewed: "2026-10-08"
+- id: global-csa-star
+  name: "CSA STAR, AI Controls Matrix (AICM) and STAR for AI"
+  region: GLOBAL
+  jurisdiction: "Cloud Security Alliance"
+  type: guidance
+  status: in-force
+  key_dates:
+    - { date: "2025-11-20", what: "STAR for AI Level 2 designation (pairs ISO 42001 certification with a validated AI-CAIQ)" }
+  sectors: [cloud, saas]
+  applies_to_me: high
+  summary: "A public registry of cloud and AI assurance; its AI tier requires ISO 42001, and the AI Controls Matrix is mapped to ISO 42001."
+  source: "https://cloudsecurityalliance.org/star"
+  last_reviewed: "2026-10-08"
+- id: global-nist-sp-800-53
+  name: "NIST SP 800-53 Rev 5, Release 5.2.0"
+  region: GLOBAL
+  jurisdiction: "US (NIST), used globally"
+  type: guidance
+  status: amended
+  key_dates:
+    - { date: "2025-08-27", what: "Release 5.2.0 published" }
+  sectors: [cloud, tech, banking]
+  applies_to_me: medium
+  summary: "The federal control catalogue underlying FedRAMP and many frameworks, currently at release 5.2.0; no Rev 6 noted."
+  source: "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final"
+  last_reviewed: "2026-10-08"
+- id: global-nist-cosais
+  name: "NIST Control Overlays for Securing AI Systems (COSAIS)"
+  region: GLOBAL
+  jurisdiction: "US (NIST)"
+  type: guidance
+  status: proposed
+  key_dates:
+    - { date: "2025-08-14", what: "Concept paper" }
+    - { date: "2026-01-08", what: "Annotated outline for the Predictive AI overlay (feedback due 2026-02-13)" }
+  sectors: [cloud, tech]
+  applies_to_me: watch
+  summary: "AI-specific overlays on SP 800-53 controls, still at outline stage with no final overlays; last checked page dates from January 2026."
+  source: "https://csrc.nist.gov/projects/cosais"
+  last_reviewed: "2026-10-08"
+- id: global-nist-cyber-ai-profile
+  name: "NIST IR 8596 Cybersecurity Framework Profile for AI (Cyber AI Profile)"
+  region: GLOBAL
+  jurisdiction: "US (NIST)"
+  type: guidance
+  status: proposed
+  key_dates:
+    - { date: "2025-12-16", what: "Preliminary draft released (comments to 2026-01-30)" }
+  sectors: [tech, saas, cloud, hardware, banking, retail]
+  applies_to_me: watch
+  summary: "⚠️ verify: A CSF 2.0 profile for securing and using AI; initial public draft expected in 2026 with no confirmed release."
+  source: "https://www.nist.gov/node/1901136"
+  last_reviewed: "2026-10-08"

@@ -22,6 +22,7 @@ categories:
   - { id: enforcement, label: "Enforcement" }
   - { id: frameworks, label: "Frameworks" }
   - { id: third-party-risk, label: "Third-party risk" }
+  - { id: cybersecurity, label: "Security & cyber" }
   - { id: practitioner, label: "Practitioner" }
 series:
   - { id: field-notes, label: "Field Notes" }
@@ -29,6 +30,7 @@ series:
   - { id: weekly, label: "Weekly" }
   - { id: monthly, label: "Monthly" }
   - { id: flash, label: "Flash" }
+  - { id: feature, label: "Feature" }
 tracker_types: [privacy-law, ai-law, sector-rule, standard, guidance]
 tracker_statuses: [proposed, passed, in-force, phasing-in, amended, lapsed, repealed]
 relevance: [high, medium, watch]

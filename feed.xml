@@ -11,7 +11,7 @@ permalink: /feed.xml
   <updated>{{ site.time | date_to_xmlschema }}</updated>
   <id>{{ '/' | absolute_url }}</id>
   <author><name>{{ site.author.name | xml_escape }}</name></author>
-  {% assign issues = site.issues | sort: 'date' | reverse %}
+  {% assign issues = site.issues | sort: 'issue' | reverse %}
   {% for issue in issues limit: 20 %}
   <entry>
     <title>{{ issue.title | xml_escape }}</title>
