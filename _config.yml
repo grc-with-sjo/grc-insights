@@ -1,0 +1,50 @@
+title: GRC Insights
+description: >-
+  A GRC practitioner's living notebook on how AI is evolving and how governance should adapt:
+  privacy law, AI regulation and what they mean for tech, SaaS, cloud, hardware, banking and retail.
+url: https://grc-with-sjo.github.io
+baseurl: /grc-insights
+lang: en
+timezone: America/Vancouver
+author:
+  name: Surabhi Joshi
+  role: GRC Manager
+  location: New Westminster, BC
+  url: https://www.linkedin.com/in/surabhijo/
+social:
+  name: Surabhi Joshi
+  links:
+    - https://www.linkedin.com/in/surabhijo/
+# Fill in during setup (README.md). Empty means the feature is hidden.
+goatcounter: ""
+linkedin_newsletter: ""
+
+markdown: kramdown
+future: true
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+collections:
+  issues:
+    output: true
+    permalink: /issues/:name/
+
+defaults:
+  - scope: { path: "", type: issues }
+    values: { layout: issue }
+
+exclude:
+  - package.json
+  - package-lock.json
+  - node_modules
+  - scripts
+  - tests
+  - routine
+  - social
+  - docs
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .github
