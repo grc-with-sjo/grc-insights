@@ -41,6 +41,10 @@ test('about page renders with layout, SEO tags and author block', { skip }, () =
   assert.match(html, /class="site-nav"/);
   assert.match(html, /Connect on LinkedIn/);
   assert.match(html, /Not legal or regulatory advice/);
+  assert.match(html, /do not represent the views, positions or policies of any current or former employer/);
+  assert.match(html, /Built with AI\./);
+  assert.match(html, /Vancouver, BC/);
+  assert.doesNotMatch(html, /Cadence\.|New Westminster/);
 });
 
 test('Atom feed is served and declared', { skip }, () => {

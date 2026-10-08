@@ -29,7 +29,7 @@ def main(out: Path):
     draw.text((80, 170), "GRC Insights", font=title, fill=(255, 255, 255))
     draw.text((80, 300), "How the AI world is evolving,", font=body, fill=(226, 232, 240))
     draw.text((80, 350), "and how governance should adapt.", font=body, fill=(226, 232, 240))
-    draw.text((80, 520), "Surabhi Joshi · GRC · New Westminster, BC", font=tag, fill=(203, 213, 225))
+    draw.text((80, 520), "Surabhi Joshi · GRC · Vancouver, BC", font=tag, fill=(203, 213, 225))
     out.parent.mkdir(parents=True, exist_ok=True)
     img.save(out, optimize=True)
 
