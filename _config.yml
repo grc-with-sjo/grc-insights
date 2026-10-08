@@ -20,7 +20,7 @@ goatcounter: ""
 linkedin_newsletter: ""
 
 markdown: kramdown
-future: true
+future: false  # issues dated in the future stay hidden until a rebuild on/after their date (see .github/workflows/scheduled-publish.yml)
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap

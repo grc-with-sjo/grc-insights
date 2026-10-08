@@ -2,7 +2,7 @@
 title: "Cyber deadlines keep slipping. Build assurance that travels."
 issue: 2
 series: catch-up
-date: 2026-10-08
+date: 2026-10-11
 calendar_date: 2026-11-22
 regions: [US, CA, EU, GLOBAL]
 sectors: [cloud, saas, tech, hardware, banking]

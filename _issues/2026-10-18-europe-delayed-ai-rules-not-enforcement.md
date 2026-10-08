@@ -2,7 +2,7 @@
 title: "Europe delayed the AI rules, not the enforcement"
 issue: 3
 series: catch-up
-date: 2026-10-08
+date: 2026-10-14
 calendar_date: 2026-10-18
 regions: [EU, UK]
 sectors: [tech, saas, banking, retail]
