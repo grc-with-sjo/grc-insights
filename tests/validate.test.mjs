@@ -81,6 +81,12 @@ test('calendar_date is optional but must be an ISO Sunday', () => {
   assert.ok(validateIssue(issue({ calendar_date: '2026-10-19' }), tax).some(e => e.includes('calendar_date must be a Sunday')));
 });
 
+test('filename follows calendar_date when present', () => {
+  const over = { date: '2026-10-08', calendar_date: '2026-11-22' };
+  assert.deepEqual(validateIssue(issue(over, goodBody, '2026-11-22-x.md'), tax), []);
+  assert.ok(validateIssue(issue(over, goodBody, '2026-10-08-x.md'), tax).some(e => e.includes('filename must start with the issue date')));
+});
+
 test('description over 200 chars and filename/date mismatch are reported', () => {
   const errs = validateIssue(issue({ description: 'x'.repeat(201) }, goodBody, '2026-11-01-x.md'), tax);
   assert.ok(errs.some(e => e.includes('200 characters')));

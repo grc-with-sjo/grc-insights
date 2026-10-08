@@ -47,7 +47,7 @@ export function validateIssue({ file, data, body }, tax) {
   if (!Number.isInteger(data.issue) || data.issue < 0) fail('issue must be a non-negative integer');
   if (!tax.series.has(data.series)) fail(`series: unknown value "${data.series}"`);
   if (!isIsoDate(data.date)) fail('date must be YYYY-MM-DD');
-  else if (!file.startsWith(data.date.slice(0, 7))) fail('filename must start with the issue date (YYYY-MM)');
+  else if (!file.startsWith((isIsoDate(data.calendar_date) ? data.calendar_date : data.date).slice(0, 7))) fail('filename must start with the issue date (YYYY-MM)');
   if (data.calendar_date !== undefined) {
     if (!isIsoDate(data.calendar_date)) fail('calendar_date must be YYYY-MM-DD');
     else if (weekdayOf(data.calendar_date) !== 0) fail('calendar_date must be a Sunday');
