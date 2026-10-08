@@ -43,26 +43,34 @@ should take about 15–20 minutes.
 
 ## 3. Site architecture (Jekyll on GitHub Pages)
 
-GitHub Pages builds Jekyll natively, so no custom Action or build tooling is needed.
+GitHub Pages builds Jekyll natively (legacy build from `main` /), so deployment needs no custom Action. A separate check workflow builds the site with `actions/jekyll-build-pages` and runs tests on every push.
 
 ```
 grc-insights/
-├── _config.yml          # site meta; plugins: jekyll-feed, jekyll-sitemap, jekyll-seo-tag;
+├── _config.yml          # site meta; plugins: jekyll-sitemap, jekyll-seo-tag; future: true;
 │                        # collection `issues` (output: true, permalink /issues/:name/)
 ├── _layouts/
 │   ├── default.html     # current hero/footer/fonts extracted from index.html; SEO tags; analytics
 │   └── issue.html       # issue page: hero, TL;DR, body sections, sources, share row
-├── _includes/           # share-row.html, subscribe.html, radar-table.html
+├── _includes/           # about.html, share.html, subscribe.html, filter-chips.html, radar-data.html
 ├── _issues/             # one Markdown file per issue: the only content the weekly PR adds
 ├── _data/
-│   ├── editorial.yml    # cadence, calendar, issue counter, source list, research brief inputs
-│   ├── tracker.yml      # Regulation Radar rows
-│   └── social/          # issue-NN.md social drafts (not rendered on the site)
+│   ├── editorial.yml    # cadence, calendar, source list, research brief inputs
+│   ├── taxonomy.yml     # single source of truth for regions, sectors, categories, series, tracker enums
+│   └── tracker.yml      # Regulation Radar rows
+├── social/              # issue-NN.md social drafts (excluded from the site; _data/ only accepts data files)
 ├── index.html           # latest issue hero + archive list (filter by category/sector/region) + subscribe
 ├── radar.html           # Regulation Radar, permalink /radar/
 ├── about.html
-├── sources.html         # UNCHANGED URL; passed through as-is (no front matter)
-└── css/style.css        # existing styles, extended for archive/radar/share
+├── sources.html         # UNCHANGED URL; passed through as-is (no front matter); back link → Issue 0
+├── feed.xml             # hand-written Atom feed of the issues collection (jekyll-feed only feeds posts)
+├── js/                  # filters.js (archive + radar filters), radar.js (upcoming-dates strip)
+├── assets/og-card.png   # default social preview image
+├── css/style.css        # existing styles, extended for archive/radar/share
+├── scripts/             # validate.mjs, plan-run.mjs, lib/ (excluded from site)
+├── tests/               # node:test suites (excluded from site)
+├── routine/             # weekly routine prompt + issue/social/PR templates (excluded from site)
+└── .github/workflows/check.yml
 ```
 
 ### Legacy content migration
@@ -88,13 +96,13 @@ Each row has these fields:
   region: CA            # CA | US | EU | UK | APAC | IN | GLOBAL
   jurisdiction: Québec
   type: privacy-law     # privacy-law | ai-law | sector-rule | standard | guidance
-  status: in-force      # proposed | passed | in-force | phasing-in | amended | repealed
-  key_dates: [{date: 2024-09-22, what: "Data portability right in force"}]
+  status: in-force      # proposed | passed | in-force | phasing-in | amended | lapsed | repealed
+  key_dates: [{date: "2024-09-22", what: "Data portability right in force"}]  # dates quoted
   sectors: [tech, saas, cloud, banking, retail]
   applies_to_me: high   # high | medium | watch
   summary: "One line."
   source: https://...
-  last_reviewed: 2026-10-18
+  last_reviewed: "2026-10-18"
 ```
 
 `radar.html` renders this table with region, sector, and status filters (small vanilla JS,
@@ -114,7 +122,7 @@ date: 2026-10-18        # date the routine drafts it; Surabhi may change before 
 regions: [CA, US]
 sectors: [saas, cloud, banking]
 categories: [privacy-law, ai-governance]
-tldr: "One-sentence hook; doubles as LinkedIn opener."
+description: "One-sentence hook (≤200 chars); meta/OG description and LinkedIn opener."
 ---
 ```
 
@@ -175,16 +183,23 @@ subagent fan-out, is available inside a cloud routine.
 
 - Catch-up phase: every **Sunday 18:00 America/Vancouver**.
 - Monthly phase: the **first Sunday of the month, 18:00 America/Vancouver**.
-- The routine always runs weekly and reads `editorial.yml` to decide whether this week is a
-  publishing week. If it isn't, it exits without opening a PR, unless a tracker-only update
-  is warranted (see below). So switching cadence means editing one file, not reconfiguring
-  the routine.
+- The routine always runs weekly. `scripts/plan-run.mjs` (deterministic, unit-tested) decides
+  what this run does, in this order:
+  1. An issue (merged or open PR) already exists for today's date → `radar-check`.
+  2. `calendar` has an entry for today → publish that themed issue.
+  3. `cadence: weekly` → publish a weekly issue.
+  4. Today ≥ `monthly_start` and is the first Sunday of the month → publish a monthly issue,
+     feature sector = `monthly_feature_rotation[months since monthly_start % length]`.
+  5. Otherwise → `radar-check` (tracker-only PR if something material changed, else no PR).
+- With `cadence: monthly`, the calendar drives the six catch-up weeks, 2026-11-29 is a
+  radar-check, and monthly issues start 2026-12-06 automatically. Setting `cadence: weekly`
+  switches to weekly issues; that one line is the only cadence control.
+- "Today" is computed in America/Vancouver, so the routine's cron can be expressed in UTC.
 
 ### `_data/editorial.yml`
 
 ```yaml
-cadence: weekly          # weekly | monthly
-next_issue: 1
+cadence: monthly         # weekly | monthly (calendar entries always publish)
 calendar:                # catch-up themes keyed by run date
   2026-10-18: {series: catch-up, theme: "Canada privacy & AI: federal reform, Law 25, BC PIPA"}
   2026-10-25: {series: catch-up, theme: "EU AI Act phase-ins, GDPR enforcement, UK"}
@@ -202,9 +217,9 @@ sources:                 # seeds for the deep-research brief
 
 ### Steps per run
 
-1. **Plan.** Read `editorial.yml`, find the last merged issue's date, and decide the series,
-   theme, and research window. The window runs from the last merged issue to now, so a skipped
-   week leaves no gap.
+1. **Plan.** Run `node scripts/plan-run.mjs --pending <open issue/* branch names>`. It returns
+   mode, series, theme, `nextIssue` (max of merged and pending issue numbers + 1) and the research
+   window, which starts at the last *merged* issue's date, so a skipped week leaves no gap.
 2. **Research.** Invoke `anthropic-skills:deep-research` with a brief containing the theme,
    window, tiered jurisdictions, standing sectors, seed sources, and current `tracker.yml`
    rows for status re-checks. Its cited report is the only factual input to drafting.
@@ -213,7 +228,7 @@ sources:                 # seeds for the deep-research brief
 4. **Draft.**
    - Write `_issues/YYYY-MM-DD-<slug>.md` using the section 4 template.
    - Update the changed `tracker.yml` rows and their `last_reviewed` dates.
-   - Write `_data/social/issue-NN.md`.
+   - Write `social/issue-NN.md`.
    - Take the voice from Issue 0 and from the "My take" sections of merged issues, which
      already include Surabhi's edits.
 5. **Self-check.**
@@ -221,21 +236,20 @@ sources:                 # seeds for the deep-research brief
    - Unsourced claims are re-checked through deep-research, and any still unresolved get
      `⚠️ verify`.
    - Dates are ISO and the front matter is valid.
-   - `bundle exec jekyll build` passes, if Ruby is available in the runner. Otherwise the
-     Pages build on the PR branch serves as the check.
-6. **Open the PR** on branch `issue/NN-<slug>`, titled `Issue NN — <series>: <theme>`, with
+   - `npm run validate` and `npm test` pass. The check workflow builds the site with
+     `actions/jekyll-build-pages` on the pushed branch and runs the site tests.
+6. **Open the PR** on branch `issue/NN-YYYY-MM-DD-<slug>` (label `issue`), titled `Issue NN — <series>: <theme>`, with
    this checklist:
    - [ ] TL;DR works as a LinkedIn opener
    - [ ] "My take" sounds like me and I agree with it
    - [ ] `⚠️ verify` items resolved (N flagged)
    - [ ] Tracker changes look right (row-level summary in the PR body)
-   - [ ] Social drafts reviewed (`_data/social/issue-NN.md`)
-7. **Bump** `next_issue` in `editorial.yml` on the same branch.
+   - [ ] Social drafts reviewed (`social/issue-NN.md`)
 
 ### Edge cases
 
-- **Quiet week:** open a short "quiet week" PR with tracker updates only. Surabhi merges or
-  closes it.
+- **Quiet week:** open a short tracker-only PR (branch `radar/YYYY-MM-DD`, label `radar`).
+  Surabhi merges or closes it.
 - **Off-cycle big event** during the monthly phase: open a **tracker-only PR**. A full
   "flash" issue is created only when Surabhi asks in a session.
 - **Unmerged previous PR:** the new run still opens its own PR. Its body notes the backlog,
@@ -247,7 +261,7 @@ sources:                 # seeds for the deep-research brief
 
 1. Open the PR and read the Markdown preview.
 2. Edit in the GitHub web editor, or leave PR comments and ask a session to revise.
-3. Merge. Pages rebuilds in about a minute.
+3. Merge. Pages rebuilds in about a minute (`future: true`, so merging is publishing, whatever the front-matter date).
 4. Post the social drafts.
 
 ## 6. Editorial calendar
@@ -274,7 +288,7 @@ roughly two features a year.
 The site is canonical. Every platform links back to it, and the PR provides drafts that
 **Surabhi posts manually**.
 
-### Social drafts (`_data/social/issue-NN.md`)
+### Social drafts (`social/issue-NN.md`)
 
 - **LinkedIn post:**
   - A hook taken from the TL;DR, 3 takeaways, and one line of the take.
@@ -338,3 +352,22 @@ changes are Surabhi's decision; the routine never changes strategy on its own.
    if needed.
 7. Dry run: generate Issue 1 as a PR, then Surabhi reviews it.
 8. Schedule the routine.
+
+## 10. Revisions made during planning (2026-10-07)
+
+- Social drafts moved from `_data/social/` to top-level `social/`: Jekyll parses every file in
+  `_data/` as data, so Markdown there breaks the build.
+- `jekyll-feed` replaced by a hand-written `feed.xml`: jekyll-feed only feeds `_posts`, and a
+  collection feed at `/feed.xml` would collide with its default posts feed.
+- Issue front-matter `tldr` renamed to `description`, which `jekyll-seo-tag` uses for the meta
+  and OpenGraph description.
+- `next_issue` removed from `editorial.yml`; issue numbers are derived from merged issues plus
+  open `issue/*` PR branches, so unmerged PRs can't cause collisions.
+- `cadence` defaults to `monthly`; calendar entries drive the catch-up (see section 5).
+- Tracker status `lapsed` added (bills that died on the order paper, such as Bill C-27).
+- `_data/taxonomy.yml` added as the single source of truth for enums, read by both the Liquid
+  templates and the validator.
+- `future: true` in `_config.yml`, so merging always publishes.
+- No local Jekyll toolchain (no Homebrew or Docker; system Ruby 2.6). Site-build verification
+  runs in GitHub Actions; validators and logic tests run locally with Node 20.
+
