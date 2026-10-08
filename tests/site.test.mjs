@@ -155,3 +155,10 @@ test('unconfirmed markers render as a dagger with one note per issue', { skip },
     }
   }
 });
+
+test('feed content uses absolute links and renders unconfirmed markers as a dagger', { skip }, () => {
+  const feed = page('feed.xml');
+  assert.ok(!/⚠️? verify/.test(feed), 'literal marker left in feed');
+  assert.ok(!/href=&quot;\//.test(feed), 'root-relative href in feed content breaks in feed readers');
+  assert.ok(!/src=&quot;\//.test(feed), 'root-relative src in feed content breaks in feed readers');
+});

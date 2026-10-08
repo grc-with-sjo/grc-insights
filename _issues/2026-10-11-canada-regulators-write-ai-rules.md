@@ -58,11 +58,11 @@ That guidance carries weight, but it has limits. The OPC cannot issue binding or
 
 ### The provinces add their own layer
 
-Provincial law adds a second layer. According to law-firm summaries, Québec's Law 25, the province's modernised private-sector privacy law, has applied in full since 2024-09-22, with penalties of up to C$10M or 2% of worldwide turnover ⚠️ verify. [Osler](https://www.osler.com/fr/articles/mises-%C3%A0-jour/loi-25-nouveau-regime-d-application-de-la-loi-quebecoise-sur-la-protection-des-renseignements-pers/) Québec's regulator, the Commission d'accès à l'information (CAI), reportedly proposed 74 changes in a 2026-06-11 report, including limits on mass collection of data to train AI ⚠️ verify. [Bulletin Aylmer](https://bulletinaylmer.com/quebec-s-access-and-privacy-watchdog-seeks-a-sweeping-overhaul-though-its-report-may-go-nowhere-fast)
+Provincial law adds a second layer. Québec's Law 25, the province's modernised private-sector privacy law, has applied in full since 2024-09-22. Its regulator, the Commission d'accès à l'information (CAI), can impose administrative penalties of up to C$10M or 2% of worldwide turnover, whichever is greater. [Statute, s. 90.12](https://www.legisquebec.gouv.qc.ca/en/document/cs/P-39.1) The CAI wants to go further: its five-year report, tabled on 2026-06-11, makes 74 recommendations, including that the law define and regulate web scraping of personal information, a practice the report notes feeds the most advanced AI models. [CAI](https://www.cai.gouv.qc.ca/actualites/publication-du-rapport-quinquennal-2026-de-la-commission)
 
-In BC, the private-sector privacy law, the Personal Information Protection Act (PIPA), appears unchanged according to a single weak secondary source, while its regulator, the Office of the Information and Privacy Commissioner (OIPC), reportedly calls for modernised laws in its latest annual report ⚠️ verify. [OIPC BC](https://oipc.bc.ca/documents/news-releases/3187)
+In BC, the private-sector privacy law, the Personal Information Protection Act (PIPA), has not been modernised. In May the Commissioner wrote to the government urging it to "act without delay" to do so. [OIPC BC](https://oipc.bc.ca/documents/news-releases/3154) The regulator, the Office of the Information and Privacy Commissioner (OIPC), repeated the call in its 2025/26 annual report, which shows privacy complaints nearly doubling, from 456 to 904. [OIPC BC](https://oipc.bc.ca/documents/news-releases/3187)
 
-**Takeaway:** For organisations operating in Québec, Law 25 is a natural reference point for design choices, once its details are confirmed.
+**Takeaway:** For organisations operating in Québec, Law 25 is a natural reference point for design choices.
 
 **Open question:** Where do our Québec, BC and federal privacy processes differ, and does anyone own that comparison?
 
@@ -76,7 +76,7 @@ What we do know is how regulators apply today's law. Between them, the OpenAI an
 
 So I would build around evidence that answers those questions under any outcome. The centre would be one inventory of vendors and AI systems. For each entry, I would record what personal data is involved, the consent basis, where any training data came from, and the contract terms. That record answers the OPC's vendor guidance today. It maps to C-36's rules on automated decisions if the bill passes. It also gives you something to show a provincial regulator.
 
-For design choices, one way to hedge is to treat Québec's Law 25 as the reference point, once its details are confirmed against official sources. The OPC findings then show what evidence a regulator is likely to ask for.
+For design choices, one way to hedge is to treat Québec's Law 25 as the reference point. The OPC findings then show what evidence a regulator is likely to ask for.
 
 The trade-off is real. Some of this work may not match C-36's final text, and a register built now may need rework. The cost of rework tends to be known and bounded. The cost of being unable to explain where training data came from, while complaints rise, is harder to predict. I would weigh those two rather than wait for certainty.
 
@@ -106,7 +106,7 @@ The trade-off is real. Some of this work may not match C-36's final text, and a 
 ## On the radar
 
 - **2026-12-04**: OPC third-party service-provider guidance: comment period closes ([Radar](/grc-insights/radar/#ca-opc-tpsp-guidance))
-- **2027-01-01**: Ontario Bill 97, changes to Ontario's public-sector privacy laws: municipal PIAs and breach reporting take effect, according to law-firm summaries ⚠️ verify ([Radar](/grc-insights/radar/#ca-on-bill97))
+- **2027-01-01**: Ontario Bill 97, changes to Ontario's public-sector privacy laws: mandatory PIAs and breach reporting take effect for municipal institutions ([IPC Ontario](https://www.ipc.on.ca/en/resources/fippa-mfippa-updates); [Radar](/grc-insights/radar/#ca-on-bill97))
 - **2027-05-01**: OSFI Guideline E-23 on model risk, including AI, takes effect for federally regulated financial institutions ([Radar](/grc-insights/radar/#ca-osfi-e23))
 
 ## Sources
@@ -119,9 +119,11 @@ The trade-off is real. Some of this work may not match C-36's final text, and a 
 6. OPC: [Third-party service providers guidance](https://www.priv.gc.ca/en/opc-news/news-and-announcements/2026/nr-c_260910/)
 7. OPC: [Federal Court application, Google](https://www.priv.gc.ca/en/opc-news/news-and-announcements/2026/nr-c_260828/)
 8. OPC: [2025-26 annual report](https://www.priv.gc.ca/en/opc-news/news-and-announcements/2026/nr-c_260604/)
-9. Osler (secondary): [Loi 25 enforcement](https://www.osler.com/fr/articles/mises-%C3%A0-jour/loi-25-nouveau-regime-d-application-de-la-loi-quebecoise-sur-la-protection-des-renseignements-pers/)
-10. Bulletin Aylmer (secondary): [CAI five-year report](https://bulletinaylmer.com/quebec-s-access-and-privacy-watchdog-seeks-a-sweeping-overhaul-though-its-report-may-go-nowhere-fast)
+9. LégisQuébec: [Act respecting the protection of personal information in the private sector, s. 90.12](https://www.legisquebec.gouv.qc.ca/en/document/cs/P-39.1)
+10. CAI: [2026 five-year report](https://www.cai.gouv.qc.ca/actualites/publication-du-rapport-quinquennal-2026-de-la-commission)
 11. OIPC BC: [2025/26 annual report](https://oipc.bc.ca/documents/news-releases/3187)
 12. OSFI: [Guideline E-23](https://www.osfi-bsif.gc.ca/en/guidance/guidance-library/guideline-e-23-model-risk-management-2027)
 13. OPC: [IDScan.net investigation](https://www.priv.gc.ca/en/opc-news/news-and-announcements/2026/nr-c_260921/)
 14. OPC: [Security screening appearance](https://www.priv.gc.ca/en/opc-news/news-and-announcements/2026/nr-c_261007/)
+15. OIPC BC: [OpenAI report and call to modernise PIPA](https://oipc.bc.ca/documents/news-releases/3154)
+16. IPC Ontario: [FIPPA and MFIPPA updates](https://www.ipc.on.ca/en/resources/fippa-mfippa-updates)
