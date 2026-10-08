@@ -6,7 +6,7 @@ Preview the Markdown: `_issues/<file>` in the **Files changed** tab.
 ### Review checklist
 - [ ] In brief works as a LinkedIn opener
 - [ ] Reads as an editorial: context before each point, every story ends with a takeaway and an open question
-- [ ] "My take" sounds like me and I agree with it
+- [ ] "Where I land" sounds like me and I agree with it
 - [ ] `⚠️ verify` items resolved (<verify_count> flagged)
 - [ ] Tracker changes look right (see below)
 - [ ] Social drafts reviewed (`social/issue-<NN>.md`)

@@ -21,7 +21,7 @@ test('routine prompt enforces deep-research and validation', () => {
 
 test('PR body template carries the review checklist', () => {
   const body = read('routine/pr-body-template.md');
-  for (const item of ['In brief works as a LinkedIn opener', '"My take" sounds like me', 'Reads as an editorial: context before each point, every story ends with a takeaway and an open question', '⚠️ verify', 'Tracker changes look right', 'Social drafts reviewed']) {
+  for (const item of ['In brief works as a LinkedIn opener', '"Where I land" sounds like me', 'Reads as an editorial: context before each point, every story ends with a takeaway and an open question', '⚠️ verify', 'Tracker changes look right', 'Social drafts reviewed']) {
     assert.ok(body.includes(item), item);
   }
 });
