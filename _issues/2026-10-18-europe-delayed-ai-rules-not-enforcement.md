@@ -20,7 +20,7 @@ description: "Europe gave high-risk AI more time, but its privacy regulators kep
 
 For a North American company with European customers, two EU laws matter most. The General Data Protection Regulation (GDPR) is the EU's privacy law. National regulators enforce it and coordinate through the European Data Protection Board (EDPB), their joint body. The AI Act is the EU's newer AI law. It sorts AI uses by risk, with the heaviest duties on "high-risk" uses such as hiring and credit scoring.
 
-In July the EU amended the AI Act through a package known as the AI Omnibus and pushed those duties back. A second package, the Digital Omnibus, would change parts of the GDPR, but EU governments have not yet agreed their position on it. The UK kept its own version of the GDPR after leaving the EU and is updating it through the Data (Use and Access) Act 2025, which amends its privacy and e-marketing rules.
+In July the EU amended the AI Act through a package known as the AI Omnibus and pushed those duties back. A second package, the Digital Omnibus, would change parts of the GDPR, but EU governments have not yet agreed their position on it. The UK has its own privacy law and is updating it through the Data (Use and Access) Act 2025, which amends its privacy and e-marketing rules.
 
 So the question for this issue: if Europe delayed its new AI rules but not its privacy enforcement, where should a team put its next quarter of effort?
 
@@ -32,7 +32,7 @@ The delay is narrower than it first sounds. The AI Omnibus is Regulation (EU) 20
 
 Two things did not move. From 2026-12-02, generative AI systems placed on the market before 2026-08-02 must meet the Act's rule on marking AI-generated output, and new prohibited practices apply.
 
-General-purpose AI models, the large models other products build on, are a third front. A law-firm update from Wilson Sonsini (WSGR) reports that the European Commission's powers over their providers, including fines, became usable on 2026-08-02 ⚠️ verify. [WSGR](https://www.wsgrdataadvisor.com/2026/08/eu-ai-act-enforcement-phase-begins/) No enforcement action has surfaced, but research here was incomplete, so the silence is hard to read.
+General-purpose AI models, the large models other products build on, are a third front. An update from the law firm WSGR reports that the European Commission's powers over their providers, including fines, became usable on 2026-08-02 ⚠️ verify. [WSGR](https://www.wsgrdataadvisor.com/2026/08/eu-ai-act-enforcement-phase-begins/) No enforcement action has surfaced, but research here was incomplete, so the silence is hard to read.
 
 **Takeaway:** The delay covers high-risk uses; the 2026-12-02 date for generative AI marking and the new prohibitions still stands.
 
@@ -46,7 +46,7 @@ A second case points at automated decisions. The GDPR limits decisions about peo
 
 Neither case needed a new law, and GDPR changes are not close. Agence Europe, a Brussels news service, reported that EU governments' vote on their Digital Omnibus position, planned for 2026-10-07, was postponed under pressure from Germany and France. [Agence Europe](https://agenceurope.eu/en/bulletin/article/13954/5/vote-on-digital-omnibus-postponed-until-11-october-under-pressure-from-paris-and-berlin) I do not expect any GDPR change to apply in 2026.
 
-**Takeaway:** Enforcement is visible today on location data and on decisions that cut people off, such as deactivations, fraud flags and credit refusals.
+**Takeaway:** Enforcement is visible today on location data and on automated decisions that cut people off; fraud flags and credit refusals work the same way.
 
 **Open question:** For each automated decision that can lock someone out, could you show a regulator what the human reviewer looked at?
 
@@ -54,7 +54,7 @@ Neither case needed a new law, and GDPR changes are not close. Agence Europe, a 
 
 The UK shows the same pattern, without a delay. Most of the Data (Use and Access) Act's privacy changes, including new rules on automated decisions, came into force on 2026-02-05. From 2026-06-19, organisations must acknowledge a privacy complaint within 30 days and investigate it. [Source](https://legislation.gov.uk/uksi/2026/82)
 
-Law-firm and trade reports say that on 2026-09-30 the Information Commissioner's Office (ICO), the UK privacy regulator, became the Information Commission, run by a board, with existing investigations continuing ⚠️ verify. [Recordinglaw](https://www.recordinglaw.com/news/uk-information-commission-transfer-september-2026/) A summary of its 2025-26 annual report by the news service Freevacy says complaints rose 81% to 76,743, with only 27.4% answered within 90 days ⚠️ verify. [Freevacy](https://www.freevacy.com/news/ico/ico-publishes-2025-26-annual-report/7587)
+Law-firm and trade reports say that on 2026-09-30 the Information Commissioner's Office (ICO), the UK privacy regulator, became the Information Commission, run by a board, with existing investigations continuing ⚠️ verify. [Recordinglaw](https://www.recordinglaw.com/news/uk-information-commission-transfer-september-2026/) A summary of the ICO's 2025-26 annual report by the news service Freevacy says complaints rose 81% to 76,743, with only 27.4% answered within 90 days ⚠️ verify. [Freevacy](https://www.freevacy.com/news/ico/ico-publishes-2025-26-annual-report/7587)
 
 **Takeaway:** With the regulator under that load, the 30-day duty puts the first response on organisations; one tracked complaint queue makes it easier to meet.
 
