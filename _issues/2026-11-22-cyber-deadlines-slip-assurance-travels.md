@@ -18,7 +18,7 @@ description: "When US and Canadian cyber dates keep moving and Europe's reportin
 
 ## The story so far
 
-Security obligations for technology providers come from governments and customers. In the US, the Cybersecurity Maturity Model Certification (CMMC) checks that defence contractors protect sensitive government information, and the Cyber Incident Reporting for Critical Infrastructure Act (CIRCIA), a 2022 law, requires critical-infrastructure operators to report serious incidents. In Canada, Bill C-8 will require designated critical-infrastructure operators to run cyber programmes. In Europe, the Cyber Resilience Act (CRA) sets security duties for makers of connected products and software. Customers ask for certificates: ISO/IEC 27001 for information security, SOC 2 (a US audit report on a provider's controls), and now ISO/IEC 42001 for AI. A year ago, the government dates looked fixed; through 2026, some moved and others had not started.
+Security obligations for technology providers come from governments and customers. In the US, the Cybersecurity Maturity Model Certification (CMMC) checks that defence contractors protect sensitive government information, and the Cyber Incident Reporting for Critical Infrastructure Act (CIRCIA), a 2022 law, will require critical-infrastructure operators to report serious incidents once its rules are final. In Canada, Bill C-8 is a new federal cyber law whose core regime applies only to critical-infrastructure operators the government designates, and has not yet started. In Europe, the Cyber Resilience Act (CRA) sets security duties for makers of connected products and software. Customers ask for certificates: ISO/IEC 27001 for information security, SOC 2 (a US audit report on a provider's controls), and now ISO/IEC 42001 for AI. A year ago, the government dates looked fixed; through 2026, some moved and others had not started.
 
 That leaves a planning question: when official deadlines keep moving, what should a security team build now so the work holds its value whichever date arrives first?
 
@@ -30,7 +30,7 @@ Dates are moving most visibly in US defence contracting. CMMC, run by the defenc
 
 Incident reporting has stalled too. CISA, the US federal cyber agency, proposed CIRCIA rules in April 2024: 72 hours to report a covered incident and 24 hours for a ransom payment. The law firm Hunton reports that the final rule missed its October 2025 statutory deadline and a May 2026 target ⚠️ verify. [Hunton](https://www.hunton.com/privacy-and-cybersecurity-law-blog/cisa-plans-to-finalize-cyber-incident-reporting-regulations-in-september-2026)
 
-Canada's version is law but not yet working. Bill C-8 enacts the Critical Cyber Systems Protection Act (CCSPA), under which designated operators in sectors such as finance and telecom must run cyber programmes and report incidents. Parliamentary trackers record Royal Assent on 2026-06-15 but no designations as of about 2026-10-01 ⚠️ verify. [openparliament.ca](https://openparliament.ca/bills/45-1/C-8/) ([Radar](/grc-insights/radar/#ca-c8-cyber))
+Canada's version is law but not yet working. According to parliamentary trackers, Bill C-8 enacts the Critical Cyber Systems Protection Act (CCSPA), under which designated operators in sectors such as finance and telecom will have to run cyber programmes and report incidents ⚠️ verify. The same trackers record Royal Assent on 2026-06-15 but no designations as of about 2026-10-01 ⚠️ verify. [openparliament.ca](https://openparliament.ca/bills/45-1/C-8/) ([Radar](/grc-insights/radar/#ca-c8-cyber))
 
 What has started is narrower: the Canadian Program for Cyber Security Certification (CPCSC), a three-level certification for defence suppliers run by Public Services and Procurement Canada (PSPC), the federal buying department. Self-attested Level 1 arrived on 2026-04-14; higher levels have no dates. [PSPC](https://www.canada.ca/en/public-services-procurement/news/2026/04/government-of-canada-introduces-level-1-of-canadian-program-for-cyber-security-certification.html) ([Radar](/grc-insights/radar/#ca-cpcsc))
 
@@ -50,7 +50,7 @@ This is the fastest clock here, and it is running. Someone must spot active expl
 
 ### Customer assurance is changing format faster than the law
 
-While legal dates move, the format of assurance is changing. FedRAMP authorizes cloud services for US federal agencies. FedRAMP 20x replaces its document-heavy Rev5 packages with Key Security Indicators (KSIs), security properties that systems report and machines validate. The first Moderate pilot authorizations came in March 2026, and FedRAMP plans to stop accepting new Rev5 certifications on 2027-06-11. [FedRAMP](https://www.fedramp.gov/20x/) ([Radar](/grc-insights/radar/#us-fedramp-20x))
+While legal dates move, the format of assurance is changing. FedRAMP authorizes cloud services for US federal agencies. FedRAMP 20x replaces its current document-heavy process, known as Rev5, with Key Security Indicators (KSIs), security properties that systems report and machines validate. The first Moderate pilot authorizations came in March 2026, and FedRAMP plans to stop accepting new Rev5 certifications on 2027-06-11. [FedRAMP](https://www.fedramp.gov/20x/) ([Radar](/grc-insights/radar/#us-fedramp-20x))
 
 AI assurance is arriving through procurement too. ISO/IEC 42001:2023 is the international standard for an AI management system: the policies, roles and controls an organisation uses to govern AI, certified by external audit. ServiceNow, Salesforce and Google publish 42001 certifications with product-specific scopes. [ServiceNow](https://www.servicenow.com/blogs/2025/iso-certification-ai-management-system), [Salesforce](https://compliance.salesforce.com/categories/iso-42001), [Google Cloud](https://cloud.google.com/security/compliance/iso-42001) The Cloud Security Alliance (CSA), an industry body, built it into STAR for AI, the AI tier of its public assurance registry, on 2025-11-20. [CSA STAR](https://cloudsecurityalliance.org/star) ([Radar](/grc-insights/radar/#global-iso-42001)) Harmonised standards let a company presume it meets the EU AI Act, the EU's law on AI; a CSA research note says 42001 is not one, so its certificate carries no such presumption ⚠️ verify. [CSA note](https://labs.cloudsecurityalliance.org/research/csa-research-note-eu-ai-act-pren-18286-iso-42001-20260428/)
 
@@ -60,11 +60,13 @@ I expect customers, not regulators, to drive both shifts for now.
 
 **Open question:** How much of your audit evidence comes straight from systems, and who could show a customer which AI features your 42001 scope covers?
 
+> **This week:** The research found nothing material in its final week. As of early October 2026 it found no published outcome from the CMMC review, no CIRCIA final rule and no CCSPA designations.
+
 ## How I'd approach it
 
 The uncertainty is less whether these rules arrive than when, and in what form. CMMC's review could simplify the programme or reopen finished work. CIRCIA's final rule could keep or narrow the proposal. Canada's CCSPA could start next year or later. I would plan on what the regimes share, not their dates.
 
-Most ask for the same things: a recognised control baseline, an incident process that reports quickly, and evidence an outsider can check. One way to hedge is to build one base layer and map it outward. That could mean ISO/IEC 27001:2022 and SOC 2 for customers; NIST SP 800-171 and SP 800-53, the federal control catalogue behind FedRAMP, underneath for government work; and an incident process tested against the CRA's 24-hour early warning. ISO/IEC 42001 and CSA STAR for AI could sit on top where customers ask about AI. Where it is cheap, I would also generate evidence from systems once and let several reviewers draw on it, since FedRAMP 20x suggests reviewers may increasingly want that.
+Most ask for the same things: a recognised control baseline, an incident process that reports quickly, and evidence an outsider can check. One way to hedge is to build one base layer of controls and map it to each regime's requirements. That could mean ISO/IEC 27001:2022 and SOC 2 for customers; NIST SP 800-171 and SP 800-53, NIST's broader catalogue of security controls, underneath for government work; and an incident process tested against the CRA's 24-hour early warning. ISO/IEC 42001 and CSA STAR for AI could sit on top where customers ask about AI. Where it is cheap, I would also generate evidence from systems once and let several reviewers draw on it, since FedRAMP 20x suggests reviewers may increasingly want that.
 
 The trade-off is real. This spends on controls before some regulators require them, and CMMC or later CPCSC levels may still need their own submissions once the reviews land. What it buys is that a sudden date costs paperwork, not a rebuild of controls under pressure. A team with one market and no government customers may reasonably wait.
 
@@ -88,7 +90,7 @@ The trade-off is real. This spends on controls before some regulators require th
 | Cloud | New Rev5 certifications are planned to stop on 2027-06-11. | Consider the 20x route for new federal work. |
 | Product / SaaS | Buyers ask for ISO 27001, SOC 2 and now 42001. | Consider scoping 42001 to the AI products buyers ask about. |
 | Hardware | Law-firm briefings describe CRA reporting as live ⚠️ verify. | Test the 24-hour early warning end to end. |
-| Banking / FinServ | Parliamentary trackers list finance among sectors the CCSPA can designate ⚠️ verify. | Keep a 72-hour incident playbook ready. |
+| Banking / FinServ | Parliamentary trackers list finance among sectors the CCSPA can designate ⚠️ verify. | Keep an incident playbook that could meet a 72-hour clock, as CIRCIA's proposal sets. |
 
 ## On the radar
 
