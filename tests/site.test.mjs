@@ -60,6 +60,9 @@ test('Issue 0 renders at its permanent URL with original content', { skip }, () 
   assert.match(html, /linkedin\.com\/sharing\/share-offsite/);
 });
 
-test('sources.html links back to Issue 0', { skip }, () => {
-  assert.match(page('sources.html'), /href="issues\/2026-05-field-notes\/"/);
+test('every sources.html back link points to Issue 0', { skip }, () => {
+  const hrefs = [...page('sources.html').matchAll(/class="back-link" href="([^"]*)"/g)].map(m => m[1]);
+  assert.ok(hrefs.length >= 1, 'expected at least one back-link anchor');
+  assert.deepEqual(hrefs.filter(h => h !== 'issues/2026-05-field-notes/'), []);
+  assert.ok(!hrefs.includes('index.html'));
 });
