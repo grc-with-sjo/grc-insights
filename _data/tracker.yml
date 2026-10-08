@@ -23,7 +23,7 @@
     - { date: "2026-06-15", what: "First reading in the House of Commons; no later stage scheduled" }
   sectors: [tech, saas, cloud, hardware, banking, retail]
   applies_to_me: high
-  summary: "Federal bill to replace PIPEDA, introduced June 2026 and stalled at first reading; it is privacy-only and carries no AI act."
+  summary: "Federal bill to replace PIPEDA, introduced June 2026 and stalled at first reading."
   source: "https://www.parl.ca/legisinfo/en/bill/45-1/c-36"
   last_reviewed: "2026-10-07"
 - id: ca-federal-ai-strategy
@@ -90,7 +90,7 @@
     - { date: "2025-07-01", what: "FIPPA PIAs, breach reporting to IPC and IPC order powers in force" }
   sectors: [public-sector, saas, cloud, tech]
   applies_to_me: medium
-  summary: "⚠️ verify: Ontario public-sector cyber and AI law; the FIPPA privacy parts are live, while the AI/cyber statute (EDSTA) still awaits proclamation."
+  summary: "⚠️ verify: Ontario public-sector cyber and AI law; the FIPPA privacy parts are live, while the AI/cyber statute (EDSTA) is not confirmed in force."
   source: "https://www.ontario.ca/laws/statute/s24024"
   last_reviewed: "2026-10-07"
 - id: ca-ab-pipa-reform
@@ -156,7 +156,7 @@
   key_dates: []
   sectors: [banking, cloud, tech]
   applies_to_me: high
-  summary: "Federal cyber-security duties for designated critical-infrastructure operators; passed June 2026, with the main regime still awaiting commencement."
+  summary: "Federal cyber-security duties for designated critical-infrastructure operators; passed June 2026."
   source: "https://www.canada.ca/en/public-safety-canada/news/2026/06/government-of-canada-strengthens-cyber-security-and-critical-infrastructure-with-royal-assent-of-bill-c8.html"
   last_reviewed: "2026-10-07"
 - id: us-ca-ccpa-regs
@@ -270,8 +270,8 @@
     - { date: "2028-08-02", what: "Annex I product-embedded high-risk obligations apply" }
   sectors: [tech, saas, cloud, hardware, banking, retail]
   applies_to_me: high
-  summary: "The EU's risk-based AI law is live for prohibitions and GPAI; high-risk duties are postponed to December 2027 and August 2028."
-  source: "https://eur-lex.europa.eu/eli/reg/2024/1689/oj"
+  summary: "The EU's risk-based AI law, amended in 2026: high-risk duties are postponed to December 2027 and August 2028."
+  source: "https://www.consilium.europa.eu/en/policies/simplification/timeline-simplification-omnibus-packages/"
   last_reviewed: "2026-10-07"
 - id: eu-gdpr
   name: "General Data Protection Regulation (GDPR, Regulation (EU) 2016/679)"
@@ -324,7 +324,7 @@
     - { date: "2025-11-18", what: "ESAs published the first critical ICT third-party provider list" }
   sectors: [banking, tech, saas, cloud, hardware]
   applies_to_me: high
-  summary: "EU operational-resilience rules for financial entities and their critical ICT providers; contract terms flow down to vendors."
+  summary: "EU operational-resilience rules for financial entities and their critical ICT providers."
   source: "https://eur-lex.europa.eu/eli/reg/2022/2554/oj"
   last_reviewed: "2026-10-07"
 - id: eu-nis2
@@ -368,7 +368,7 @@
   sectors: [tech, saas, hardware, retail, banking]
   applies_to_me: high
   summary: "⚠️ verify: Security-by-design and vulnerability-reporting duties for products with digital elements; incident reporting started September 2026."
-  source: "https://eur-lex.europa.eu/eli/reg/2024/2847/oj"
+  source: "https://digital-strategy.ec.europa.eu/en/policies/cra-reporting"
   last_reviewed: "2026-10-07"
 - id: uk-duaa
   name: "Data (Use and Access) Act 2025"
@@ -395,7 +395,7 @@
   key_dates: []
   sectors: [tech, saas, cloud, hardware]
   applies_to_me: watch
-  summary: "⚠️ verify: Bill to update the UK's NIS Regulations with wider scope, 24h/72h incident reporting and turnover-based fines; before the House of Lords."
+  summary: "⚠️ verify: Bill to update the UK's NIS Regulations with wider scope, 24h/72h incident reporting and turnover-based fines; was before the Lords as of July 2026."
   source: "https://bills.parliament.uk/bills/4035"
   last_reviewed: "2026-10-07"
 - id: apac-sg-pdpa
@@ -593,4 +593,174 @@
   applies_to_me: medium
   summary: "Card-data security standard; v4.0.1 added no new requirements versus 4.0."
   source: "https://blog.pcisecuritystandards.org/now-is-the-time-for-organizations-to-adopt-the-future-dated-requirements-of-pci-dss-v4-x"
+  last_reviewed: "2026-10-07"
+- id: ca-c27-lapsed
+  name: "Bill C-27 (Consumer Privacy Protection Act, Tribunal and AIDA), lapsed"
+  region: CA
+  jurisdiction: "Canada (federal)"
+  type: privacy-law
+  status: lapsed
+  key_dates: []
+  sectors: [tech, saas, cloud, banking, retail]
+  applies_to_me: medium
+  summary: "⚠️ verify: The previous federal privacy-and-AI package died on the order paper in January 2025 and has not been replaced by an AI statute."
+  source: "https://www.parl.ca/legisinfo/en/bill/45-1/c-36"
+  last_reviewed: "2026-10-07"
+- id: ca-on-esa-ai-job-postings
+  name: "Ontario Employment Standards Act, 2000, Part III.1 (AI disclosure in job postings)"
+  region: CA
+  jurisdiction: "Ontario"
+  type: ai-law
+  status: in-force
+  key_dates:
+    - { date: "2026-01-01", what: "Employers must disclose in public job postings whether AI screens applicants" }
+  sectors: [tech, saas, cloud, hardware, banking, retail]
+  applies_to_me: medium
+  summary: "⚠️ verify: Ontario employers must say in public job ads whether AI is used to screen, assess or select applicants."
+  source: "https://www.ontario.ca/laws/statute/00e41"
+  last_reviewed: "2026-10-07"
+- id: ca-ab-popa-atia
+  name: "Alberta Protection of Privacy Act (POPA) and Access to Information Act (ATIA)"
+  region: CA
+  jurisdiction: "Alberta (public bodies)"
+  type: privacy-law
+  status: in-force
+  key_dates:
+    - { date: "2025-06-11", what: "Both Acts in force; FOIP Act repealed" }
+  sectors: [public-sector, saas, cloud, tech]
+  applies_to_me: medium
+  summary: "⚠️ verify: Alberta's public-sector privacy and access regime replacing the FOIP Act, with breach notification where there is real risk of significant harm."
+  source: "https://oipc.ab.ca/legislation/popa/"
+  last_reviewed: "2026-10-07"
+- id: us-ut-ai-policy-act
+  name: "Utah Artificial Intelligence Policy Act (SB 149, as amended by SB 226 and SB 332)"
+  region: US
+  jurisdiction: "Utah"
+  type: ai-law
+  status: amended
+  key_dates:
+    - { date: "2024-05-01", what: "Act takes effect" }
+    - { date: "2027-07-01", what: "Act sunsets under SB 332 unless extended" }
+  sectors: [tech, saas, banking, retail]
+  applies_to_me: medium
+  summary: "⚠️ verify: Requires generative-AI disclosure in consumer interactions on request or in high-risk contexts, and lapses 2027-07-01 unless extended."
+  source: "https://le.utah.gov/"
+  last_reviewed: "2026-10-07"
+- id: us-nyc-ll144
+  name: "NYC Local Law 144 (automated employment decision tools)"
+  region: US
+  jurisdiction: "New York City"
+  type: ai-law
+  status: in-force
+  key_dates:
+    - { date: "2025-12-02", what: "NY State Comptroller audit found DCWP enforcement ineffective" }
+  sectors: [tech, saas, banking, retail]
+  applies_to_me: medium
+  summary: "⚠️ verify: Employers using automated hiring tools in NYC need an annual independent bias audit, public posting and candidate notice."
+  source: "https://www.osc.ny.gov/state-agencies/audits/2025/12/02/enforcement-local-law-144-automated-employment-decision-tools"
+  last_reviewed: "2026-10-07"
+- id: eu-pld
+  name: "EU Product Liability Directive (Directive (EU) 2024/2853)"
+  region: EU
+  jurisdiction: "EU"
+  type: sector-rule
+  status: passed
+  key_dates:
+    - { date: "2024-12-08", what: "Directive in force" }
+    - { date: "2026-12-09", what: "Transposition deadline; applies to products placed on the market afterwards" }
+  sectors: [tech, saas, hardware, retail]
+  applies_to_me: medium
+  summary: "⚠️ verify: Treats software as a product for strict-liability purposes."
+  source: "https://eur-lex.europa.eu/eli/dir/2024/2853/oj"
+  last_reviewed: "2026-10-07"
+- id: apac-au-childrens-privacy-code
+  name: "Australia Privacy (Children's Online Privacy) Code 2026"
+  region: APAC
+  jurisdiction: "Australia"
+  type: sector-rule
+  status: proposed
+  key_dates:
+    - { date: "2026-06-05", what: "Exposure-draft consultation ended" }
+    - { date: "2026-12-10", what: "Code must be registered" }
+  sectors: [tech, saas, retail]
+  applies_to_me: watch
+  summary: "⚠️ verify: Mandated code of practice for children's online privacy; commencement not yet confirmed."
+  source: "https://www.oaic.gov.au/privacy/privacy-registers/privacy-codes/childrens-online-privacy-code"
+  last_reviewed: "2026-10-07"
+- id: apac-cn-cybersecurity-law
+  name: "China Cybersecurity Law (as amended 2025)"
+  region: APAC
+  jurisdiction: "China"
+  type: sector-rule
+  status: amended
+  key_dates:
+    - { date: "2025-10-28", what: "Amendment passed by the NPC Standing Committee" }
+    - { date: "2026-01-01", what: "Amendment takes effect" }
+  sectors: [tech, saas, cloud, hardware, banking, retail]
+  applies_to_me: medium
+  summary: "⚠️ verify: Adds China's first statutory AI clause and higher penalties."
+  source: "https://subsites.chinadaily.com.cn/npc/2025-10/29/c_1136116.htm"
+  last_reviewed: "2026-10-07"
+- id: apac-cn-other-measures
+  name: "China CAC measures: anthropomorphic AI, network data risk assessment, PI compliance audits"
+  region: APAC
+  jurisdiction: "China"
+  type: sector-rule
+  status: in-force
+  key_dates:
+    - { date: "2025-05-01", what: "Personal information compliance audit measures effective" }
+    - { date: "2026-07-15", what: "Anthropomorphic AI interaction services measures effective" }
+    - { date: "2026-08-20", what: "Network data security risk assessment measures effective" }
+  sectors: [tech, saas, cloud, retail, banking]
+  applies_to_me: watch
+  summary: "⚠️ verify: A growing set of CAC-led measures on AI companions, data risk assessments and compliance audits; no comprehensive AI law yet."
+  source: "https://www.hunton.com/privacy-and-cybersecurity-law-blog/chinas-first-regulatory-framework-for-virtual-companions-soon-to-take-effect"
+  last_reviewed: "2026-10-07"
+- id: apac-hk-pdpo
+  name: "Hong Kong Personal Data (Privacy) Ordinance (Cap. 486) and PCPD AI compliance checks"
+  region: APAC
+  jurisdiction: "Hong Kong"
+  type: privacy-law
+  status: in-force
+  key_dates: []
+  sectors: [tech, saas, cloud, banking, retail]
+  applies_to_me: watch
+  summary: "⚠️ verify: Hong Kong's privacy ordinance is unchanged, with the privacy regulator stepping up AI compliance checks in 2026."
+  source: "https://www.mayerbrown.com/es/insights/publications/2026/07/hong-kong-privacy-commissioner-for-personal-data-completes-its-2026-ai-compliance-checks-findings-trends-and-the-rise-of-agentic-ai"
+  last_reviewed: "2026-10-07"
+- id: global-iso-42005
+  name: "ISO/IEC 42005:2025 AI system impact assessment"
+  region: GLOBAL
+  jurisdiction: "Global (ISO/IEC)"
+  type: standard
+  status: in-force
+  key_dates: []
+  sectors: [tech, saas, cloud, banking, retail]
+  applies_to_me: watch
+  summary: "⚠️ verify: Guidance on when and how to assess AI system impacts on individuals and society."
+  source: "https://webstore.iec.ch/en/publication/107659"
+  last_reviewed: "2026-10-07"
+- id: global-iso-42006
+  name: "ISO/IEC 42006:2025 requirements for AI management system certification bodies"
+  region: GLOBAL
+  jurisdiction: "Global (ISO/IEC)"
+  type: standard
+  status: in-force
+  key_dates: []
+  sectors: [tech, saas, cloud]
+  applies_to_me: watch
+  summary: "⚠️ verify: Adds AI-specific competence and audit rules for bodies that certify ISO/IEC 42001."
+  source: "https://www.iso.org/standard/42006"
+  last_reviewed: "2026-10-07"
+- id: global-iso-27701
+  name: "ISO/IEC 27701:2025 privacy information management systems"
+  region: GLOBAL
+  jurisdiction: "Global (ISO/IEC)"
+  type: standard
+  status: in-force
+  key_dates: []
+  sectors: [tech, saas, cloud, hardware, banking, retail]
+  applies_to_me: medium
+  summary: "⚠️ verify: Now a standalone privacy management system standard with no ISO 27001 prerequisite."
+  source: "https://www.kiwa.com/en/nl/about-kiwa/news/isoiec-277012025-published-updated-privacy-standard-offers-organizations-more-guidance"
   last_reviewed: "2026-10-07"
