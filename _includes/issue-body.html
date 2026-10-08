@@ -1,0 +1,5 @@
+{%- comment -%}Renders an issue body with "⚠️ verify" markers as † plus one note. include.content: the body; include.note_href: where † links (defaults to the in-page note).{%- endcomment -%}
+{%- assign note_href = include.note_href | default: '#unconfirmed-note' -%}
+{%- capture dagger %}<sup class="unconfirmed"><a href="{{ note_href }}" title="Not yet confirmed against an official source">†</a></sup>{% endcapture -%}
+{{ include.content | replace: ' ⚠️ verify', '⚠️ verify' | replace: ' ⚠ verify', '⚠ verify' | replace: '⚠️ verify', dagger | replace: '⚠ verify', dagger }}
+{% if include.content contains '⚠️ verify' or include.content contains '⚠ verify' %}<p class="unconfirmed-note" id="unconfirmed-note">† Reported by secondary sources and not yet confirmed against an official source. Links are in Sources.</p>{% endif %}

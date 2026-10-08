@@ -18,10 +18,8 @@ layout: default
   </div>
 </section>
 
-{% assign body = content | replace: ' ⚠️ verify', '⚠️ verify' | replace: ' ⚠ verify', '⚠ verify' | replace: '⚠️ verify', '<sup class="unconfirmed"><a href="#unconfirmed-note" title="Not yet confirmed against an official source">†</a></sup>' | replace: '⚠ verify', '<sup class="unconfirmed"><a href="#unconfirmed-note" title="Not yet confirmed against an official source">†</a></sup>' %}
 <main class="content{% if page.series != 'field-notes' %} issue-body{% endif %}">
-  {{ body }}
-  {% if content contains '⚠️ verify' or content contains '⚠ verify' %}<p class="unconfirmed-note" id="unconfirmed-note">† Reported by secondary sources and not yet confirmed against an official source. Links are in Sources.</p>{% endif %}
+  {% include issue-body.html content=content %}
   {% include share.html %}
   {% include subscribe.html %}
   <p class="back-to-archive"><a href="{{ '/' | relative_url }}#archive">← All issues</a></p>

@@ -19,7 +19,12 @@ permalink: /feed.xml
     <id>{{ issue.url | absolute_url }}</id>
     <updated>{{ issue.date | date_to_xmlschema }}</updated>
     <summary>{{ issue.description | xml_escape }}</summary>
-    <content type="html">{{ issue.content | xml_escape }}</content>
+    {%- capture note_href %}{{ issue.url | absolute_url }}#unconfirmed-note{% endcapture -%}
+    {%- capture body %}{% include issue-body.html content=issue.content note_href=note_href %}{% endcapture -%}
+    {%- comment %}Root-relative links break in feed readers, so make them absolute.{% endcomment -%}
+    {%- assign abs_href = 'href="' | append: site.url | append: '/' -%}
+    {%- assign abs_src = 'src="' | append: site.url | append: '/' %}
+    <content type="html">{{ body | replace: 'href="/', abs_href | replace: 'src="/', abs_src | xml_escape }}</content>
   </entry>
   {% endfor %}
 </feed>
