@@ -9,9 +9,11 @@ calendar:
   2026-11-01: { series: catch-up, theme: "Banking/FinServ: OSFI E-23, DORA, model risk, AI in credit" }
   2026-11-08: { series: catch-up, theme: "Tech, SaaS, cloud, hardware: AI supply chain, chips, vendor AI clauses" }
   2026-11-15: { series: catch-up, theme: "APAC, India DPDP, global standards + 2027 outlook" }
+  2026-11-22: { series: catch-up, theme: "Security & cyber: FedRAMP 20x, ISO 27001/42001 certification, CMMC, cyber incident-reporting rules" }
 monthly_start: "2026-12-06"
 monthly_feature_rotation: [banking, saas, cloud, tech, retail, hardware]
 sources:
   regulators: [OPC, BC OIPC, CAI Québec, IPC Ontario, Alberta OIPC, OSFI, FTC, CPPA, State AGs, EDPB, EU AI Office, ICO, PDPC Singapore, OAIC, MeitY / Data Protection Board of India]
   standards: [NIST, ISO/IEC JTC 1/SC 42, OECD.AI]
   trackers: [IAPP]
+  security: [Canadian Centre for Cyber Security, CISA, FedRAMP PMO, NIST CSRC, ENISA, NCSC UK, ISO/IEC JTC 1/SC 27, PCI SSC, Cloud Security Alliance, AICPA (SOC 2)]

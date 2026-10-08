@@ -22,6 +22,7 @@ categories:
   - { id: enforcement, label: "Enforcement" }
   - { id: frameworks, label: "Frameworks" }
   - { id: third-party-risk, label: "Third-party risk" }
+  - { id: cybersecurity, label: "Security & cyber" }
   - { id: practitioner, label: "Practitioner" }
 series:
   - { id: field-notes, label: "Field Notes" }

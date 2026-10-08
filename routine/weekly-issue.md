@@ -45,7 +45,10 @@ Invoke `anthropic-skills:deep-research` with this brief, filling in the brackets
 > US federal and states, EU, UK. Tier 3 (headline unless major): APAC (Singapore, Australia, Japan), India,
 > global standards (ISO/IEC 42001 and 27001, NIST AI RMF, OECD).
 > Sectors: tech, product/SaaS, cloud, hardware, banking/FinServ, retail (healthcare/public sector only if material).
-> Start from: <sources.regulators>, <sources.standards>, <sources.trackers>.
+> Domains: AI governance, privacy and data protection, AND information/data security and cybersecurity: security frameworks and
+> certifications (ISO/IEC 27001 and 42001, SOC 2, FedRAMP, CMMC, PCI DSS, CSA STAR), cyber incident-reporting and
+> resilience laws, and what they mean for cloud and SaaS providers.
+> Start from: <sources.regulators>, <sources.standards>, <sources.trackers>, <sources.security>.
 > Re-check current status and key dates of these tracker rows: <id, name, status for rows whose region or
 > sectors overlap the theme, plus every row with a key date within 90 days of <today>>.
 > For each finding return: what happened; jurisdiction; key dates (YYYY-MM-DD); affected sectors; primary-source
@@ -55,7 +58,7 @@ Invoke `anthropic-skills:deep-research` with this brief, filling in the brackets
 ### If `mode` is `radar-check`
 
 Invoke `anthropic-skills:deep-research` with a short brief: re-check every tracker row with a key date within
-30 days of <today>, and look for any major new privacy/AI law, regulator rule or enforcement action since
+30 days of <today>, and look for any major new privacy, AI or cybersecurity law, regulator rule, security framework/certification change (e.g. FedRAMP, ISO/IEC 27001 or 42001) or enforcement action since
 <windowStart> in Tier 1–2 jurisdictions. If nothing material changed, STOP and report
 "radar check: no changes, no PR". Otherwise skip to Step 4b.
 
