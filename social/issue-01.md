@@ -1,19 +1,19 @@
-# Social drafts: Issue 01: Canada's regulators are writing the AI rules while Parliament stalls
+# Social drafts: Issue 01: Canada's privacy rulebook is being written in findings, not statutes
 
 Issue URL: https://grc-with-sjo.github.io/grc-insights/issues/2026-10-11-canada-regulators-write-ai-rules/
 Suggested posting time: Tuesday or Wednesday, 08:00–09:00 PT. Surabhi posts manually.
 
 ## LinkedIn post (≤ 1,300 characters; no link in the body)
 
-Bill C-36 sits at first reading. Meanwhile Canada's privacy regulators ruled on OpenAI and Grok, and told you vendor accountability stays with you.
+Ottawa's privacy bill is stalled and there is no federal AI law. Canada's regulators now set the standard through their findings. Plan to those findings, not to the bills.
 
-→ PIPEDA is still the law. C-36 has not moved since 2026-06-15, and there is no federal AI statute.
-→ The OPC and three provincial commissioners found OpenAI's initial ChatGPT training non-compliant. The Grok finding was well-founded and not resolved.
-→ New OPC guidance: accountability stays with you when a service provider handles your data. Comments close 2026-12-04.
+→ Canada's federal privacy reform bill, C-36, has not moved since June, and there is no federal AI law.
+→ Regulators filled the gap: OpenAI's early ChatGPT training and deepfakes made with Grok, the AI tool on X, were found not to comply with existing privacy law.
+→ Québec's Law 25 has no confirmed penalty yet, and BC's private-sector law looks unchanged (both still to verify against official sources).
 
-My take: stop waiting for C-36. The rules for AI in Canada are being written in findings, not statutes.
+My take: stop waiting for C-36. The closest thing Canada has to a national AI privacy standard is four regulators investigating OpenAI together.
 
-Is your programme still parking privacy work "until the federal bill lands"?
+If a company can decline a recommended suspension, as X did, how much weight will boards give a finding?
 
 #AIGovernance #Privacy #GRC #PIPEDA #CanadaPrivacy
 
@@ -23,17 +23,17 @@ Full issue + sources: https://grc-with-sjo.github.io/grc-insights/issues/2026-10
 
 ## LinkedIn carousel outline (catch-up and feature issues; export as PDF)
 
-1. Cover: Canada's regulators are writing the AI rules while Parliament stalls
-2. C-36 is stuck at first reading. PIPEDA is still the law.
-3. OpenAI and Grok: the OPC's findings set the AI test (consent, appropriateness, minimisation).
-4. Sector lens: Product / SaaS. Your customers stay accountable for you, so expect sharper due diligence.
-5. My take: make the vendor and AI inventory the centre of your programme.
+1. Cover: Canada's privacy rulebook is being written in findings, not statutes
+2. C-36 has not moved since first reading on 2026-06-15. PIPEDA is still the law.
+3. The OPC and three provincial commissioners found OpenAI's initial ChatGPT training did not comply; the OPC's Grok finding was justified and not resolved.
+4. Sector lens: Tech. The OpenAI and Grok findings test AI consent under today's PIPEDA.
+5. My take: build the programme around one inventory of vendors and AI systems.
 6. What to do now: add AI training-data questions to your PIA; build one vendor and AI inventory; start an automated-decision register.
 7. Follow for the next issue + Radar link
 
 ## LinkedIn newsletter edition
 
-Canada's privacy bill has not moved since June, but its regulators have. This catch-up covers what changed from May to October 2026 and what it means for your programme.
+Canada's federal privacy bill has not moved since June, but its regulators have. This catch-up argues that, for the next year at least, your Canadian privacy programme should be built to the regulators' findings, not to the bills.
 
 <Paste the issue body here.>
 
@@ -41,12 +41,12 @@ Originally published at https://grc-with-sjo.github.io/grc-insights/issues/2026-
 
 ## X / Bluesky thread (5 posts, ≤ 280 chars each)
 
-1/ Canada's federal privacy bill, C-36, has sat at first reading since 2026-06-15. PIPEDA is still the law and there is no AI statute. The regulators are filling the gap.
-2/ The OPC and the Québec, BC and Alberta commissioners found OpenAI's initial ChatGPT training non-compliant: overcollection, no valid consent, accountability gaps.
-3/ The OPC's Grok finding was well-founded and not resolved. New OPC guidance says accountability stays with you when a service provider processes your data.
-4/ My take: stop waiting for C-36. Make the vendor and AI inventory the centre of your programme.
+1/ Canada's privacy rulebook is being written in findings, not statutes. Bill C-36 has sat at first reading since 2026-06-15, and there is no federal AI law.
+2/ The OPC and the Québec, BC and Alberta commissioners found OpenAI's initial ChatGPT training did not comply: overcollection, no valid consent or transparency.
+3/ The OPC found X Corp. and X.AI LLC had no valid consent for Grok's sexualized deepfakes. They declined the recommended suspension of Grok Imagine but committed to four other recommendations.
+4/ My take: stop waiting for C-36. Build your programme around one inventory of vendors and AI systems.
 5/ Full issue + sources: https://grc-with-sjo.github.io/grc-insights/issues/2026-10-11-canada-regulators-write-ai-rules/
 
 ## Community summary (optional: only if it adds value; no link-dumping)
 
-Canada's replacement for PIPEDA (Bill C-36) has not moved past first reading, and there is still no federal AI statute. The practical signal for privacy and GRC teams comes from regulators: the joint OpenAI finding, the OPC's Grok finding and new OPC guidance that keeps accountability for service providers with the business. Provincial changes in Québec, BC, Alberta and Ontario are mostly sourced from law-firm summaries, so treat those dates as "to verify" until you check the statute sites.
+Canada's replacement for PIPEDA, Bill C-36, has not moved past first reading, and there is still no federal AI law. The working standard comes from regulators instead: the joint OpenAI finding, the OPC's Grok finding and new OPC guidance that keeps accountability for service providers with the business. Québec and BC items rest mostly on secondary sources, so treat them as "to verify" until checked against official sites.
