@@ -141,3 +141,17 @@ test('each issue is published only once its date has arrived', { skip }, () => {
   }
 });
 
+
+test('unconfirmed markers render as a dagger with one note per issue', { skip }, () => {
+  for (const file of readdirSync('_issues')) {
+    const slug = file.replace(/\.(md|html)$/, '');
+    const out = join(SITE, 'issues', slug, 'index.html');
+    if (!existsSync(out)) continue;
+    const html = readFileSync(out, 'utf8');
+    assert.ok(!/⚠️? verify/.test(html), `${slug}: literal marker left in page`);
+    if (/⚠️? verify/.test(readFileSync(join('_issues', file), 'utf8'))) {
+      assert.ok(html.includes('id="unconfirmed-note"'), `${slug}: missing note`);
+      assert.ok(html.includes('class="unconfirmed"'), `${slug}: missing dagger`);
+    }
+  }
+});

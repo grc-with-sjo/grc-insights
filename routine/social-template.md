@@ -3,13 +3,15 @@
 Issue URL: https://grc-with-sjo.github.io/grc-insights/issues/<file-name-without-extension>/
 Suggested posting time: Tuesday or Wednesday, 08:00–09:00 PT. Surabhi posts manually.
 
+Unconfirmed claims: phrase them with attribution words ("reportedly", "according to…"), never the ⚠️ marker.
+
 ## LinkedIn post (≤ 1,300 characters; no link in the body)
 
 <Open with the dek (`description`).>
 
 <3 short takeaways from "In brief", one line each.>
 
-<One line from "My take".>
+<One line from "How I'd approach it", framed as a consideration, not a verdict.>
 
 <End with one of the issue's open questions, to invite comments.>
 

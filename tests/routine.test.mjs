@@ -21,7 +21,18 @@ test('routine prompt enforces deep-research and validation', () => {
 
 test('PR body template carries the review checklist', () => {
   const body = read('routine/pr-body-template.md');
-  for (const item of ['In brief works as a LinkedIn opener', '"Where I land" sounds like me', 'Reads as an editorial: context before each point, every story ends with a takeaway and an open question', '⚠️ verify', 'Tracker changes look right', 'Social drafts reviewed']) {
+  for (const item of ['In brief works as a LinkedIn opener', '"How I\'d approach it" sounds like me (risk-practitioner voice, no verdicts)', 'Unconfirmed claims are attributed in the sentence (rendered as †)', 'Reads as an editorial: context before each point, every story ends with a takeaway and an open question', '⚠️ verify', 'Tracker changes look right', 'Social drafts reviewed']) {
     assert.ok(body.includes(item), item);
   }
+});
+
+test('issue template shows three bold-question placeholders', () => {
+  const t = read('routine/issue-template.md');
+  assert.equal((t.match(/^- \*\*<[^>]*\?>\*\* /gm) || []).length, 3);
+});
+
+test('social template forbids the marker in posts', () => {
+  const t = read('routine/social-template.md');
+  assert.match(t, /reportedly/);
+  assert.match(t, /never the ⚠️ marker/);
 });
