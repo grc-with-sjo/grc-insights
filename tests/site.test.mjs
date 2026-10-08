@@ -66,3 +66,11 @@ test('every sources.html back link points to Issue 0', { skip }, () => {
   assert.deepEqual(hrefs.filter(h => h !== 'issues/2026-05-field-notes/'), []);
   assert.ok(!hrefs.includes('index.html'));
 });
+
+test('homepage shows the latest issue and an archive linking every issue', { skip }, () => {
+  const html = page('index.html');
+  assert.match(html, /data-filter-root/);
+  assert.match(html, /href="\/grc-insights\/issues\/2026-05-field-notes\/"/);
+  assert.match(html, /data-filters="[^"]*category:ai-governance/);
+  assert.match(html, /class="latest-card"/);
+});

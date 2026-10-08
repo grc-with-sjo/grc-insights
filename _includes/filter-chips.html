@@ -1,0 +1,7 @@
+<div class="filter-row" role="group" aria-label="Filter by {{ include.label }}">
+  <span class="filter-label">{{ include.label }}</span>
+  <button type="button" class="chip" data-filter-group="{{ include.group }}" data-filter-value="" aria-pressed="true">All</button>
+  {% for item in include.items %}{% assign id = item.id | default: item %}{% assign label = item.label | default: item %}
+  <button type="button" class="chip" data-filter-group="{{ include.group }}" data-filter-value="{{ id }}" aria-pressed="false">{{ label }}</button>
+  {% endfor %}
+</div>
