@@ -191,8 +191,8 @@ subagent fan-out, is available inside a cloud routine.
   4. Today ≥ `monthly_start` and is the first Sunday of the month → publish a monthly issue,
      feature sector = `monthly_feature_rotation[months since monthly_start % length]`.
   5. Otherwise → `radar-check` (tracker-only PR if something material changed, else no PR).
-- With `cadence: monthly`, the calendar drives the six catch-up weeks, 2026-11-29 is a
-  radar-check, and monthly issues start 2026-12-06 automatically. Setting `cadence: weekly`
+- With `cadence: monthly`, the calendar drives the six catch-up weeks, 2026-11-22 and 2026-11-29 are
+  radar-checks, and monthly issues start 2026-12-06 automatically. Setting `cadence: weekly`
   switches to weekly issues; that one line is the only cadence control.
 - "Today" is computed in America/Vancouver, so the routine's cron can be expressed in UTC.
 
@@ -201,12 +201,12 @@ subagent fan-out, is available inside a cloud routine.
 ```yaml
 cadence: monthly         # weekly | monthly (calendar entries always publish)
 calendar:                # catch-up themes keyed by run date
-  2026-10-18: {series: catch-up, theme: "Canada privacy & AI: federal reform, Law 25, BC PIPA"}
-  2026-10-25: {series: catch-up, theme: "EU AI Act phase-ins, GDPR enforcement, UK"}
-  2026-11-01: {series: catch-up, theme: "US state privacy & AI laws + FTC"}
-  2026-11-08: {series: catch-up, theme: "Banking/FinServ: OSFI E-23, DORA, model risk, AI in credit"}
-  2026-11-15: {series: catch-up, theme: "Tech, SaaS, cloud, hardware: AI supply chain, chips, vendor AI clauses"}
-  2026-11-22: {series: catch-up, theme: "APAC, India DPDP, global standards + 2027 outlook"}
+  2026-10-11: {series: catch-up, theme: "Canada privacy & AI: federal reform, Law 25, BC PIPA"}
+  2026-10-18: {series: catch-up, theme: "EU AI Act phase-ins, GDPR enforcement, UK"}
+  2026-10-25: {series: catch-up, theme: "US state privacy & AI laws + FTC"}
+  2026-11-01: {series: catch-up, theme: "Banking/FinServ: OSFI E-23, DORA, model risk, AI in credit"}
+  2026-11-08: {series: catch-up, theme: "Tech, SaaS, cloud, hardware: AI supply chain, chips, vendor AI clauses"}
+  2026-11-15: {series: catch-up, theme: "APAC, India DPDP, global standards + 2027 outlook"}
 monthly_start: 2026-12-06
 monthly_feature_rotation: [banking, saas, cloud, tech, retail, hardware]
 sources:                 # seeds for the deep-research brief
@@ -270,12 +270,12 @@ sources:                 # seeds for the deep-research brief
 
 | # | PR opens (Sun) | Theme |
 |---|---|---|
-| 1 | 2026-10-18 | Canada privacy & AI: federal reform, Law 25, BC PIPA |
-| 2 | 2026-10-25 | EU AI Act phase-ins, GDPR enforcement, UK |
-| 3 | 2026-11-01 | US state privacy & AI laws + FTC (includes retail and consumer data) |
-| 4 | 2026-11-08 | Banking/FinServ: OSFI E-23, DORA, model risk, AI in credit |
-| 5 | 2026-11-15 | Tech, SaaS, cloud, hardware: AI supply chain, chips, vendor AI clauses (includes retail tech) |
-| 6 | 2026-11-22 | APAC, India DPDP, global standards + 2027 outlook |
+| 1 | 2026-10-11 | Canada privacy & AI: federal reform, Law 25, BC PIPA |
+| 2 | 2026-10-18 | EU AI Act phase-ins, GDPR enforcement, UK |
+| 3 | 2026-10-25 | US state privacy & AI laws + FTC (includes retail and consumer data) |
+| 4 | 2026-11-01 | Banking/FinServ: OSFI E-23, DORA, model risk, AI in credit |
+| 5 | 2026-11-08 | Tech, SaaS, cloud, hardware: AI supply chain, chips, vendor AI clauses (includes retail tech) |
+| 6 | 2026-11-15 | APAC, India DPDP, global standards + 2027 outlook |
 
 **Phase 2, monthly (from 2026-12-06, first Sunday of each month):** a roundup of the month plus
 one deep-dive feature rotating through `monthly_feature_rotation`, so each sector gets
@@ -370,4 +370,4 @@ changes are Surabhi's decision; the routine never changes strategy on its own.
 - `future: true` in `_config.yml`, so merging always publishes.
 - No local Jekyll toolchain (no Homebrew or Docker; system Ruby 2.6). Site-build verification
   runs in GitHub Actions; validators and logic tests run locally with Node 20.
-
+- 2026-10-08: catch-up calendar moved one week earlier at Surabhi's request (2026-10-11 → 2026-11-15); monthly issues still start 2026-12-06.

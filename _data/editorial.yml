@@ -3,12 +3,12 @@
 # cadence: weekly  → an issue every Sunday (calendar themes still apply on their dates).
 cadence: monthly
 calendar:
-  2026-10-18: { series: catch-up, theme: "Canada privacy & AI: federal reform, Law 25, BC PIPA" }
-  2026-10-25: { series: catch-up, theme: "EU AI Act phase-ins, GDPR enforcement, UK" }
-  2026-11-01: { series: catch-up, theme: "US state privacy & AI laws + FTC (incl. retail & consumer data)" }
-  2026-11-08: { series: catch-up, theme: "Banking/FinServ: OSFI E-23, DORA, model risk, AI in credit" }
-  2026-11-15: { series: catch-up, theme: "Tech, SaaS, cloud, hardware: AI supply chain, chips, vendor AI clauses" }
-  2026-11-22: { series: catch-up, theme: "APAC, India DPDP, global standards + 2027 outlook" }
+  2026-10-11: { series: catch-up, theme: "Canada privacy & AI: federal reform, Law 25, BC PIPA" }
+  2026-10-18: { series: catch-up, theme: "EU AI Act phase-ins, GDPR enforcement, UK" }
+  2026-10-25: { series: catch-up, theme: "US state privacy & AI laws + FTC (incl. retail & consumer data)" }
+  2026-11-01: { series: catch-up, theme: "Banking/FinServ: OSFI E-23, DORA, model risk, AI in credit" }
+  2026-11-08: { series: catch-up, theme: "Tech, SaaS, cloud, hardware: AI supply chain, chips, vendor AI clauses" }
+  2026-11-15: { series: catch-up, theme: "APAC, India DPDP, global standards + 2027 outlook" }
 monthly_start: "2026-12-06"
 monthly_feature_rotation: [banking, saas, cloud, tech, retail, hardware]
 sources:
