@@ -8,14 +8,35 @@ import { loadTaxonomy } from './lib/taxonomy.mjs';
 import { readIssues } from './lib/issues.mjs';
 
 export const REQUIRED_SECTIONS = [
-  '## TL;DR', '## What changed', '## Sector lens', '## My take',
-  '## What to do now', '## On the radar', '## Sources',
+  '## In brief', '## The story so far', '## What happened', '## Where I land',
+  '## The questions still open', '## What to do this quarter', '## On the radar', '## Sources',
 ];
 const URL_RE = /^https?:\/\/[^\s"<>]+$/;
 
 function subsetErrors(label, values, allowed) {
   if (!Array.isArray(values) || values.length === 0) return [`${label} must be a non-empty list`];
   return values.filter(v => !allowed.has(v)).map(v => `${label}: unknown value "${v}"`);
+}
+
+function sectionBody(body, heading) {
+  const lines = body.split('\n');
+  const start = lines.findIndex(l => l.trim() === heading);
+  if (start === -1) return null;
+  const rest = lines.slice(start + 1);
+  const end = rest.findIndex(l => /^## /.test(l));
+  return (end === -1 ? rest : rest.slice(0, end)).join('\n');
+}
+
+// Returns [{ heading, text }] for each "### " story inside "## What happened".
+export function parseStories(body) {
+  const section = sectionBody(body, '## What happened');
+  if (section === null) return [];
+  const stories = [];
+  for (const line of section.split('\n')) {
+    if (/^### /.test(line)) stories.push({ heading: line.trim(), text: '' });
+    else if (stories.length) stories.at(-1).text += `${line}\n`;
+  }
+  return stories;
 }
 
 export function validateIssue({ file, data, body }, tax) {
@@ -41,6 +62,19 @@ export function validateIssue({ file, data, body }, tax) {
       if (i === -1) fail(`missing section "${heading}"`);
       else if (i < last) fail(`section "${heading}" is out of order`);
       else last = i;
+    }
+    if (lines.includes('## What happened')) {
+      const stories = parseStories(body);
+      if (stories.length < 2 || stories.length > 4) fail(`"## What happened" needs 2–4 ### stories (found ${stories.length})`);
+      for (const { heading, text } of stories) {
+        for (const marker of ['**Takeaway:**', '**Open question:**']) {
+          if (!text.split('\n').some(l => l.trimStart().startsWith(marker))) fail(`story "${heading}" is missing ${marker}`);
+        }
+      }
+    }
+    const open = sectionBody(body, '## The questions still open');
+    if (open !== null && open.split('\n').filter(l => /^\s*- /.test(l)).length < 2) {
+      fail('"## The questions still open" needs at least 2 bullet lines');
     }
     const sources = body.split(/^## Sources\s*$/m)[1] ?? '';
     if (!/\]\(https?:\/\//.test(sources)) fail('Sources section must contain at least one http(s) link');

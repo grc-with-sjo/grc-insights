@@ -4,7 +4,8 @@ Publishes when you merge (GitHub Pages rebuilds in about a minute).
 Preview the Markdown: `_issues/<file>` in the **Files changed** tab.
 
 ### Review checklist
-- [ ] TL;DR works as a LinkedIn opener
+- [ ] In brief works as a LinkedIn opener
+- [ ] Reads as an editorial: context before each point, every story ends with a takeaway and an open question
 - [ ] "My take" sounds like me and I agree with it
 - [ ] `⚠️ verify` items resolved (<verify_count> flagged)
 - [ ] Tracker changes look right (see below)

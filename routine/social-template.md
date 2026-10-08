@@ -5,13 +5,13 @@ Suggested posting time: Tuesday or Wednesday, 08:00–09:00 PT. Surabhi posts ma
 
 ## LinkedIn post (≤ 1,300 characters; no link in the body)
 
-<Hook line from `description`.>
+<Open with the dek (`description`).>
 
-<3 short takeaways, one line each.>
+<3 short takeaways from "In brief", one line each.>
 
 <One line from "My take".>
 
-<Question to invite comments.>
+<End with one of the issue's open questions, to invite comments.>
 
 #AIGovernance #Privacy #GRC <1–2 topical tags>
 

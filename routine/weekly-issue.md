@@ -69,17 +69,11 @@ status update ("Update: …"), not as new news. Drop low-confidence findings unl
 1. Create `_issues/<today>-<slug>.md` from `routine/issue-template.md`. The slug is 3–6 kebab-case words from the headline.
    Front matter: `issue: <nextIssue>`, `series: <series>`, `date: <today>`; regions/sectors/categories use ids from
    `_data/taxonomy.yml`; `description` is ≤ 200 chars.
-2. Voice: read `_issues/2026-05-field-notes.html` and the `## My take` sections of the three most recent issues
-   (they include Surabhi's edits). Write direct, practitioner-first prose with short declarative sentences and
-   concrete actions. Use "programme" spelling as in Issue 0. Address the reader as a peer.
-3. Content rules:
-   - TL;DR: 3 bullets, 60 words or fewer in total.
-   - What changed: 3–6 items; catch-up issues end with the "This week" blockquote.
-   - Sector lens: only affected sectors.
-   - My take: 150–250 words with a clear position.
-   - What to do now: 4–5 actions.
-   - On the radar: dates within 90 days of <today> from the tracker.
-   - Sources: numbered list of every URL cited.
+2. REQUIRED: load and follow the `drafting-grc-insights-issues` skill
+   (`.claude/skills/drafting-grc-insights-issues/SKILL.md`) for structure, flow and voice. It governs shape only;
+   facts still come only from the deep-research report. On the radar: dates within 90 days of <today> from the tracker.
+   Catch-up issues end `## What happened` with the "This week" blockquote.
+3. Sources: numbered list of every URL cited.
 4. Tracker: update changed rows (status, key_dates, summary, source) and add new rows. Quote all dates, and set
    `last_reviewed: "<today>"` on every row you re-checked.
 5. Social: create `social/issue-<NN>.md` from `routine/social-template.md` (NN = nextIssue, zero-padded to 2).
