@@ -37,7 +37,26 @@ Full issue + sources: <Issue URL>
 
 ## LinkedIn newsletter edition
 
-<Two-sentence intro, then paste the issue body. End with: "Originally published at <Issue URL>">
+Publishing the edition shares it to the feed, so it replaces the standalone LinkedIn post: use that post as the share text, ending with "This is Issue <NN> of the GRC Insights newsletter…" instead of "Link in the comments".
+
+Title: <title>
+
+Body (condensed, not the full issue; no tables, which LinkedIn articles cannot render):
+
+<Two-sentence intro.>
+
+**In brief** <the 3 bullets>
+
+**What happened** <one short paragraph per development, each opening with a bold lead-in>
+
+**How I'd approach it** <condensed to 3–4 short paragraphs>
+
+**Questions to take to your team** <the 3 questions>
+
+**What to do this quarter** <the actions>
+
+The full issue covers <what the edition left out: sector guide, upcoming dates, N sources>:
+<Issue URL>
 
 ## Bluesky thread (5–6 posts, ≤ 300 chars each; link in post 1 so it gets a card)
 

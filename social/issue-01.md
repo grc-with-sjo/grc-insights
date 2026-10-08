@@ -45,11 +45,63 @@ And the May field notes it builds on: https://grc-with-sjo.github.io/grc-insight
 
 ## LinkedIn newsletter edition
 
-Canada's federal privacy bill has not moved since June, but its regulators have. This catch-up asks what a Canadian privacy programme should be built on while the law is unsettled, and sets out one approach that holds up under more than one outcome.
+First edition of the GRC Insights newsletter. It replaces the standalone LinkedIn post above: publishing the edition shares it to the feed, so paste the LinkedIn post as the share text, swapping its last two lines for the share-text ending below. Cover image: `assets/og-card.png`.
 
-<Paste the issue body here.>
+Share-text ending:
 
-Originally published at https://grc-with-sjo.github.io/grc-insights/issues/2026-10-11-canada-regulators-write-ai-rules/
+This is the first edition of GRC Insights, my newsletter on AI governance, privacy and cyber.
+
+If a regulator asked tomorrow where your AI training data came from, who would answer?
+
+Title: Canada's AI privacy rules are arriving through regulators' findings, not new laws
+
+Body:
+
+In May I shared seven compliance shifts I think every GRC team should be tracking in 2026. This newsletter keeps that going: what's changing in AI governance, privacy and cyber, and how I'd approach it as a practitioner. Views are my own.
+
+This first edition is about Canada, where privacy enforcement has arrived without a new law.
+
+**In brief**
+
+- Canada's bill to replace its federal business privacy law has not moved past first reading since June, and there is no federal AI law.
+- Regulators used today's law instead: OpenAI's early ChatGPT training and deepfakes made with X's Grok tool did not meet consent rules.
+- New federal guidance says a business stays accountable for personal information it hands to vendors.
+
+**What happened**
+
+**The bill hasn't moved.** Bill C-36 would replace PIPEDA, create a new regulator, set penalties of up to $10M or 3% of global revenue, and require businesses to describe automated decision systems that significantly affect people. It had first reading on 2026-06-15, with no second-reading activity since. Until it passes, PIPEDA applies.
+
+**Regulators are setting AI expectations through findings.** In May, the federal, Québec, BC and Alberta privacy regulators found OpenAI's initial ChatGPT training collected more personal data than needed, without valid consent or transparency. In June, the OPC found X Corp. and X.AI LLC had no valid consent for Grok's sexualized deepfakes. It recommended suspending the image tool, annual third-party audits and monitoring for workarounds; the companies declined the suspension but committed to four other recommendations. Those recommendations read like a control set for any generative AI feature.
+
+**Vendor accountability stays with you.** OPC guidance published in September says a business stays accountable for personal information a service provider handles, and covers due diligence, contract terms and how to demonstrate accountability. Comments close 2026-12-04.
+
+**How I'd approach it**
+
+The uncertainty is about timing and shape. I expect federal reform to come, but nobody can say when, or what will survive committee. A plan that depends on a date nobody can name is hard to defend in a budget.
+
+What we do know is how regulators apply today's law: was there valid consent, was the use appropriate, how much data was collected, how fast did the company respond, and can you show you kept control of data you handed to someone else.
+
+So I'd build around evidence that answers those questions under any outcome: one inventory of vendors and AI systems, recording the personal data involved, the consent basis, where any training data came from, and the contract terms. It answers the OPC's vendor guidance today, maps to C-36's automated-decision rules if the bill passes, and gives you something to show a provincial regulator.
+
+Some of this may need rework once C-36's final text is known. That cost is known and bounded. Being unable to explain where your training data came from, while complaints rise, is not.
+
+**Questions to take to your team**
+
+- If a regulator asked tomorrow where the personal data used to train or tune our AI features came from, who would answer, and with what record?
+- Which of our vendors handle Canadian personal information or run AI on it, and could we produce the due diligence and contract terms for each?
+- Which of our systems make decisions about people with legal or similarly significant effects, and could we describe each in plain language today?
+
+**What to do this quarter**
+
+- Add questions on AI training-data sources and consent to your PIA template.
+- Map vendors and AI systems into one inventory, with data categories, consent basis and contract terms.
+- Consider starting a register of automated decision systems; it costs little and maps to C-36.
+- Decide whether to comment on the OPC's service-provider guidance before 2026-12-04.
+
+The full issue covers the provincial picture (Québec's Law 25 and BC's PIPA), a sector-by-sector guide, upcoming dates and all 16 sources:
+https://grc-with-sjo.github.io/grc-insights/issues/2026-10-11-canada-regulators-write-ai-rules/
+
+If this was useful, subscribe so the next edition reaches you, and tell me in the comments what you'd add.
 
 ## Bluesky thread (≤ 300 chars each; link in post 1 so it gets a card)
 
