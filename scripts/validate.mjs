@@ -8,8 +8,8 @@ import { loadTaxonomy } from './lib/taxonomy.mjs';
 import { readIssues } from './lib/issues.mjs';
 
 export const REQUIRED_SECTIONS = [
-  '## In brief', '## The story so far', '## What happened', '## Where I land',
-  '## The questions still open', '## What to do this quarter', '## On the radar', '## Sources',
+  '## In brief', '## The story so far', '## What happened', "## How I'd approach it",
+  '## Questions to take to your team', '## What to do this quarter', '## On the radar', '## Sources',
 ];
 const URL_RE = /^https?:\/\/[^\s"<>]+$/;
 
@@ -76,9 +76,10 @@ export function validateIssue({ file, data, body }, tax) {
         }
       }
     }
-    const open = sectionBody(body, '## The questions still open');
-    if (open !== null && open.split('\n').filter(l => /^\s*- /.test(l)).length < 2) {
-      fail('"## The questions still open" needs at least 2 bullet lines');
+    const open = sectionBody(body, '## Questions to take to your team');
+    if (open !== null) {
+      const n = open.split('\n').filter(l => /^\s*- \*\*/.test(l)).length;
+      if (n < 3) fail(`"## Questions to take to your team" needs 3 bold-question bullets (found ${n})`);
     }
     const sources = body.split(/^## Sources\s*$/m)[1] ?? '';
     if (!/\]\(https?:\/\//.test(sources)) fail('Sources section must contain at least one http(s) link');

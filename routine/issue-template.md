@@ -40,21 +40,22 @@ description: "<Dek: the argument in one sentence, ≤ 200 chars. Doubles as Link
 
 > **This week:** <Catch-up issues only: anything new in the last 7 days, with links. Delete this block otherwise.>
 
-## Where I land
+## How I'd approach it
 
-<200–300 words. First person. A clear position that resolves the thesis. Name the trade-off you are accepting.>
+<200–300 words. First person, risk-practitioner voice. Name the uncertainty, set out the considerations and options that hold up under more than one outcome, and state the trade-off plainly. No verdicts, no judging others' choices.>
 
-## The questions still open
+## Questions to take to your team
 
-- <Industry-wide risk or unresolved debate, with one clause on why it is hard>
-- <Second open question>
+- **<A concrete question about the reader's own organisation?>** <Why it is hard or easy to miss.>
+- **<Second question?>** <Why it is hard or easy to miss.>
+- **<Third question?>** <Why it is hard or easy to miss.>
 
 ## What to do this quarter
 
-- <Action 1>
-- <Action 2>
-- <Action 3>
-- <Action 4>
+- Consider <action 1, phrased as an option>
+- Map <action 2>
+- Confirm <action 3>
+- <Action 4: Consider… / Map… / Confirm…>
 
 ### If you work in…
 
