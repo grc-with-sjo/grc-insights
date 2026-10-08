@@ -1,0 +1,52 @@
+---
+layout: default
+title: Regulation Radar
+permalink: /radar/
+description: A living tracker of privacy and AI laws, regulations and standards across Canada, the US, EU/UK, APAC and India, with status, key dates and sector impact.
+---
+{% assign reviewed = site.data.tracker | map: 'last_reviewed' | sort | last %}
+<section class="hero hero-compact">
+  <div class="hero-inner">
+    <div class="hero-tag">Living tracker{% if reviewed %} · Last reviewed {{ reviewed }}{% endif %}</div>
+    <h1>Regulation <span>Radar</span></h1>
+    <p class="hero-intro">Every privacy and AI law, rule and standard I'm watching, with status, key dates and who it hits. Each entry links to its primary source.</p>
+  </div>
+</section>
+
+<main class="content content-wide">
+  <p class="section-label">Coming up in the next 90 days</p>
+  <ul class="upcoming" data-upcoming data-days="90"></ul>
+
+  <section data-filter-root>
+    <p class="section-label">Everything on the radar</p>
+    {% include filter-chips.html label="Region" group="region" items=site.data.taxonomy.regions %}
+    {% assign standing = site.data.taxonomy.sectors | where: 'standing', true %}
+    {% include filter-chips.html label="Sector" group="sector" items=standing %}
+    {% include filter-chips.html label="Status" group="status" items=site.data.taxonomy.tracker_statuses %}
+    {% include filter-chips.html label="Relevance" group="relevance" items=site.data.taxonomy.relevance %}
+    <div class="table-wrap">
+      <table class="radar-table">
+        <thead>
+          <tr><th>Law / framework</th><th>Jurisdiction</th><th>Status</th><th>Key dates</th><th>Sectors</th><th>Relevance</th><th>What it is</th></tr>
+        </thead>
+        <tbody>
+          {% assign rows = site.data.tracker | sort: 'region' %}
+          {% for r in rows %}
+          <tr id="{{ r.id }}" data-filters="region:{{ r.region }} status:{{ r.status }} relevance:{{ r.applies_to_me }}{% for s in r.sectors %} sector:{{ s }}{% endfor %}">
+            <td><a href="{{ r.source | escape }}" target="_blank" rel="noopener">{{ r.name | escape }}</a><span class="radar-type">{{ r.type | escape }}</span></td>
+            <td>{{ r.jurisdiction | escape }} <span class="muted">({{ r.region }})</span></td>
+            <td><span class="status status-{{ r.status }}">{{ r.status }}</span></td>
+            <td>{% for k in r.key_dates %}<div><time datetime="{{ k.date }}">{{ k.date }}</time> {{ k.what | escape }}</div>{% endfor %}</td>
+            <td>{{ r.sectors | join: ', ' }}</td>
+            <td><span class="relevance relevance-{{ r.applies_to_me }}">{{ r.applies_to_me }}</span></td>
+            <td>{{ r.summary | escape }}<div class="muted">Reviewed {{ r.last_reviewed }}</div></td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    <p class="muted" data-filter-empty hidden>No entries match these filters.</p>
+  </section>
+</main>
+{% include radar-data.html %}
+<script type="module" src="{{ '/js/filters.js' | relative_url }}"></script>

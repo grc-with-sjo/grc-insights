@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en' }}">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  {% seo %}
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="{{ '/css/style.css' | relative_url }}" />
+  <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ '/feed.xml' | relative_url }}" />
+  {% if site.goatcounter and site.goatcounter != "" %}<script data-goatcounter="https://{{ site.goatcounter }}.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>{% endif %}
+</head>
+<body>
+  <nav class="site-nav" aria-label="Site">
+    <a class="brand" href="{{ '/' | relative_url }}">GRC Insights</a>
+    <a href="{{ '/' | relative_url }}#archive">Issues</a>
+    <a href="{{ '/radar/' | relative_url }}">Regulation Radar</a>
+    <a href="{{ '/about/' | relative_url }}">About</a>
+    <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
+  </nav>
+
+  {{ content }}
+
+  <footer class="page-footer">
+    <p>© {{ site.time | date: '%Y' }} <strong>{{ site.author.name }}</strong> · GRC Practitioner, New Westminster, BC</p>
+    <p style="margin-top:6px;">Views are my own · Not legal or regulatory advice</p>
+  </footer>
+</body>
+</html>
