@@ -76,8 +76,8 @@ test('no unrendered Liquid in built output', { skip }, () => {
 
 test('radar page emits only the expected script tags', { skip }, () => {
   const html = page('radar/index.html');
-  // json data + radar.js + filters.js; the optional GoatCounter tag is excluded
-  const scripts = (html.match(/<script\b[^>]*>/g) || []).filter(t => !t.includes('data-goatcounter'));
+  // json data + radar.js + filters.js; the optional GoatCounter tag and seo-tag JSON-LD are excluded
+  const scripts = (html.match(/<script\b[^>]*>/g) || []).filter(t => !t.includes('data-goatcounter') && !t.includes('application/ld+json'));
   assert.equal(scripts.length, 3);
   assert.ok(!html.includes('</script></script>'));
 });
