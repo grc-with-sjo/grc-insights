@@ -35,4 +35,5 @@ Hashtags: `#GRC #AIGovernance #Privacy` on every post, plus 1–2 for the issue'
 ## Profile (one-time)
 
 - Featured: the Regulation Radar, the May Field Notes post (and the newsletter, once launched)
-- Headline: consider adding "Writes GRC Insights"
+- Headline: consider adding "| Writes GRC Insights: Digital Trust, Decoded"
+- About: end with a line on GRC Insights, its tagline and the site link

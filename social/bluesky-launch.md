@@ -12,7 +12,8 @@ Display name: Surabhi Joshi
 
 Bio (≤ 256 chars):
 
-GRC & AI governance practitioner in Vancouver. CISA, CDPSE. Field notes on AI governance, privacy and cyber: what's changing and how governance should adapt. Views my own.
+GRC & AI governance practitioner in Vancouver · CISA, CDPSE
+Writing GRC Insights: digital trust, decoded. Field notes on AI governance, privacy and cyber, and how governance should adapt. Views my own.
 📓 grc-with-sjo.github.io/grc-insights
 
 ## Pinned post (intro + Field Notes)
