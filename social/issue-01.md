@@ -1,7 +1,7 @@
 # Social drafts: Issue 01: Canada's AI privacy rules are arriving through regulators' findings, not new laws
 
 Issue URL: https://grc-with-sjo.github.io/grc-insights/issues/2026-10-11-canada-regulators-write-ai-rules/
-Suggested posting time: LinkedIn newsletter edition Tue 2026-10-13, 08:00–09:00 PT (see `social/linkedin-schedule.md`). Bluesky thread Wed 2026-10-14 (after the launch in `social/bluesky-launch.md`). Surabhi posts manually.
+Suggested posting time: LinkedIn newsletter edition Tue 2026-10-13, 08:00–09:00 PT (see `social/linkedin-schedule.md`). Bluesky post Wed 2026-10-14 (after the launch in `social/bluesky-launch.md`). Surabhi posts manually.
 
 Unconfirmed claims: phrase them with attribution words ("reportedly", "according to…"), never the ⚠️ marker.
 
@@ -98,21 +98,16 @@ https://grc-with-sjo.github.io/grc-insights/issues/2026-10-11-canada-regulators-
 
 If this was useful, subscribe so the next edition reaches you, and tell me in the comments what you'd add.
 
-## Bluesky thread (≤ 300 chars each; link in post 1 so it gets a card)
+## Bluesky post (single post; 1–3 hashtags)
 
-1/ Canada has no federal AI law, and its new privacy bill (C-36) hasn't moved since June. Regulators are setting AI rules through findings instead. 🧵
+Card link: https://grc-with-sjo.github.io/grc-insights/issues/2026-10-11-canada-regulators-write-ai-rules/
+Paste the link first, wait for the preview card, then delete the URL text (the card stays). The post text below is ≤ 300 chars without the URL.
 
-New issue of my GRC notebook: https://grc-with-sjo.github.io/grc-insights/issues/2026-10-11-canada-regulators-write-ai-rules/
+Canada has no federal AI law, and its privacy bill hasn't moved since June. Regulators are setting AI rules anyway, through findings on ChatGPT and Grok.
 
-2/ OpenAI: the federal, Québec, BC and Alberta privacy regulators found ChatGPT's initial training collected more personal data than needed, without valid consent or transparency.
+Read together, they're an audit request list: where did the data come from, who consented, show me.
 
-3/ Grok: the OPC found no valid consent for sexualized deepfakes. It recommended suspending the image tool, annual third-party audits and monitoring for workarounds. The companies declined the suspension.
-
-4/ Honestly, those Grok recommendations read like a ready-made control set for any genAI feature: independent audits, misuse monitoring, regular progress reports.
-
-5/ Vendors: new OPC guidance says you stay accountable for personal info you hand to a service provider. Comments close Dec 4.
-
-6/ My take: don't plan around a bill nobody can date. Keep one inventory of vendors + AI systems (data, consent basis, training-data sources, contracts). It's useful whatever C-36 becomes.
+#privacy #AIgovernance
 
 ## Community summary (optional: only if it adds value; no link-dumping)
 

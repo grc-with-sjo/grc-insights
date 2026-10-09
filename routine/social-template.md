@@ -9,7 +9,7 @@ Unconfirmed claims: phrase them with attribution words ("reportedly", "according
 
 - Newsletter edition: <next free Tuesday in `social/linkedin-schedule.md`>, 08:00–09:00 PT. Add this issue's row there.
 - Carousel (optional, bigger issues): the Thursday after the edition.
-- Bluesky thread: the day after the edition.
+- Bluesky post: the day after the edition.
 
 ## LinkedIn post (≤ 1,300 characters; no link in the body)
 
@@ -64,15 +64,18 @@ Body (condensed, not the full issue; no tables, which LinkedIn articles cannot r
 The full issue covers <what the edition left out: sector guide, upcoming dates, N sources>:
 <Issue URL>
 
-## Bluesky thread (5–6 posts, ≤ 300 chars each; link in post 1 so it gets a card)
+## Bluesky post (single post, ≤ 300 chars without the URL; 1–3 hashtags)
 
-Voice: more casual than LinkedIn, for a community of strangers in privacy, infosec and AI policy. Rewrite rather than trim the LinkedIn post. Post a day after LinkedIn.
+Voice: more casual than LinkedIn, for a community of strangers in privacy, infosec and AI policy. Rewrite rather than trim the LinkedIn post. Post a day after the LinkedIn edition.
 
-1/ <hook> 🧵 + "New issue of my GRC notebook: <Issue URL>"
-2/ <development 1>
-3/ <development 2>
-4/ <development 3 or a practitioner aside>
-5/ <my take in one or two lines>
+Card link: <Issue URL>
+Paste the link first, wait for the preview card, then delete the URL text (the card stays).
+
+<1–2 line hook>
+
+<the one idea worth stopping for>
+
+#privacy #AIgovernance <or the issue's closest 1–3 tags>
 
 ## Community summary (optional: only if it adds value; no link-dumping)
 
