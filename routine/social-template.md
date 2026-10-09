@@ -7,9 +7,9 @@ Unconfirmed claims: phrase them with attribution words ("reportedly", "according
 
 ## LinkedIn schedule
 
-- Newsletter edition: <next free Tuesday in `social/linkedin-schedule.md`>, 08:00–09:00 PT. Add this issue's row there.
-- Carousel (optional, bigger issues): the Thursday after the edition.
-- Bluesky post: the day after the edition.
+- LinkedIn post: <next free Tuesday in `social/linkedin-schedule.md`>, 08:00–09:00 PT, issue link as the first comment. Add this issue's row there.
+- Carousel (optional, bigger issues): the Thursday after the LinkedIn post.
+- Bluesky post: the day after the LinkedIn post.
 
 ## LinkedIn post (≤ 1,300 characters; no link in the body)
 
@@ -21,11 +21,11 @@ Voice: Surabhi's own, for a network that knows her. First person, short punchy l
 
 <My take from "How I'd approach it", in 1–2 short paragraphs, framed as a consideration, not a verdict.>
 
-<One line: "This is Issue <NN> of GRC Insights… Link in the comments.">
+<One line: "I break this down further in Issue <NN> of GRC Insights. Link in the comments.">
 
 <End with one of the issue's open questions, to invite comments.>
 
-#GRC #Privacy #AIGovernance <2–4 topical tags; 6–8 tags in total>
+#GRC #AIGovernance #Privacy <1–2 tags for the issue's topic; 5 in total>
 
 ## LinkedIn first comment
 
@@ -41,9 +41,9 @@ Full issue + sources: <Issue URL>
 6. What to do now: <top 3 actions>
 7. Follow for the next issue + Radar link
 
-## LinkedIn newsletter edition
+## LinkedIn newsletter edition (not in use yet; draft for if the newsletter launches)
 
-Publishing the edition shares it to the feed, so it replaces the standalone LinkedIn post: use that post as the share text, ending with "This is Issue <NN> of the GRC Insights newsletter…" instead of "Link in the comments".
+If the newsletter is live, the edition replaces the LinkedIn post: use that post as the share text, ending with "This is Issue <NN> of the GRC Insights newsletter…" instead of "Link in the comments".
 
 Title: <title>
 
@@ -66,7 +66,7 @@ The full issue covers <what the edition left out: sector guide, upcoming dates, 
 
 ## Bluesky post (single post, ≤ 300 chars without the URL; 1–3 hashtags)
 
-Voice: more casual than LinkedIn, for a community of strangers in privacy, infosec and AI policy. Rewrite rather than trim the LinkedIn post. Post a day after the LinkedIn edition.
+Voice: more casual than LinkedIn, for a community of strangers in privacy, infosec and AI policy. Rewrite rather than trim the LinkedIn post. Post a day after the LinkedIn post.
 
 Card link: <Issue URL>
 Paste the link first, wait for the preview card, then delete the URL text (the card stays).

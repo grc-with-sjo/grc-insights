@@ -1,19 +1,17 @@
 # Social drafts: Issue 01: Canada's AI privacy rules are arriving through regulators' findings, not new laws
 
 Issue URL: https://grc-with-sjo.github.io/grc-insights/issues/2026-10-11-canada-regulators-write-ai-rules/
-Suggested posting time: LinkedIn newsletter edition Tue 2026-10-13, 08:00–09:00 PT (see `social/linkedin-schedule.md`). Bluesky post Wed 2026-10-14 (after the launch in `social/bluesky-launch.md`). Surabhi posts manually.
+Suggested posting time: LinkedIn post Tue 2026-10-13, 08:00–09:00 PT (see `social/linkedin-schedule.md`). Bluesky post Wed 2026-10-14 (after the launch in `social/bluesky-launch.md`). Surabhi posts manually.
 
 Unconfirmed claims: phrase them with attribution words ("reportedly", "according to…"), never the ⚠️ marker.
 
 ## LinkedIn post (≤ 1,300 characters; no link in the body)
 
-This is the share text for the newsletter edition below, not a separate post: paste it when LinkedIn asks for share text on Publish.
-
 The first thing I learned in audit: don't ask what the policy says. Ask for the evidence.
 
-Canada's privacy regulators are doing the same with AI. No new law required.
+Canada's privacy regulators are doing the same with AI.
 
-Ottawa's privacy bill (C-36) hasn't moved since June. There's no federal AI law. And still, since May:
+Ottawa's privacy bill (C-36) hasn't moved since June. There's no federal AI law. And still:
 
 → OpenAI: four regulators found ChatGPT's early training used more personal data than it needed, without valid consent.
 → Grok: the OPC found no valid consent for sexualized deepfakes, and recommended independent audits and misuse monitoring.
@@ -22,17 +20,21 @@ Ottawa's privacy bill (C-36) hasn't moved since June. There's no federal AI law.
 Strip out the legal language and it reads like an audit request list:
 Where did the data come from? Who consented? Who else has it? Show me.
 
-So my starting point isn't the bill. It's one inventory of vendors and AI systems that can answer those four questions, whatever C-36 becomes.
+I've been on both sides of that list. The teams that answer fast aren't the ones with the best policies; they're the ones who can pull the record.
 
-First edition of GRC Insights, my newsletter on AI governance, privacy and cyber.
+For AI, that record starts with one inventory of vendors, AI systems, data flows and consent basis. It holds up whether C-36 passes or not.
 
-Where did your AI training data come from, and how long would it take to prove it?
+And it isn't just a Canadian question. If you use AI vendors anywhere, the same evidence gap exists.
 
-#GRC #Privacy #AIGovernance #PIPEDA #CanadaPrivacy #RiskManagement #Compliance
+I break this down further in Issue 01 of GRC Insights. Link in the comments.
 
-## LinkedIn first comment (optional)
+Could your team pull that record today?
 
-The May field notes this builds on: https://grc-with-sjo.github.io/grc-insights/issues/2026-05-field-notes/
+#GRC #AIGovernance #Privacy #PIPEDA #RiskManagement
+
+## LinkedIn first comment
+
+Issue 01, with the provincial picture, a sector guide and all 16 sources: https://grc-with-sjo.github.io/grc-insights/issues/2026-10-11-canada-regulators-write-ai-rules/
 
 ## LinkedIn carousel outline (catch-up and feature issues; export as PDF)
 
@@ -44,9 +46,9 @@ The May field notes this builds on: https://grc-with-sjo.github.io/grc-insights/
 6. What to do now: add AI training-data questions to your PIA; map vendors and AI systems; start an automated-decision register.
 7. Follow for the next issue + Radar link
 
-## LinkedIn newsletter edition
+## LinkedIn newsletter edition (not in use yet)
 
-First edition of the GRC Insights newsletter. Publishing it shares it to the feed, so there is no separate LinkedIn post: use the LinkedIn post above as the share text. Cover image: `assets/og-card.png`.
+Draft for if/when the GRC Insights newsletter launches (decision in December; see `social/linkedin-schedule.md`). Cover image: `assets/og-card.png`.
 
 Title: Canada's AI privacy rules are arriving through regulators' findings, not new laws
 
