@@ -1,37 +1,38 @@
 # Social drafts: Issue 01: Canada's AI privacy rules are arriving through regulators' findings, not new laws
 
 Issue URL: https://grc-with-sjo.github.io/grc-insights/issues/2026-10-11-canada-regulators-write-ai-rules/
-Suggested posting time: LinkedIn Tue 2026-10-13, 08:00–09:00 PT. Bluesky thread Wed 2026-10-14 (after the launch in `social/bluesky-launch.md`). Surabhi posts manually.
+Suggested posting time: LinkedIn newsletter edition Tue 2026-10-13, 08:00–09:00 PT (see `social/linkedin-schedule.md`). Bluesky thread Wed 2026-10-14 (after the launch in `social/bluesky-launch.md`). Surabhi posts manually.
 
 Unconfirmed claims: phrase them with attribution words ("reportedly", "according to…"), never the ⚠️ marker.
 
 ## LinkedIn post (≤ 1,300 characters; no link in the body)
 
-In May I wrote that privacy enforcement had arrived in 2026.
+This is the share text for the newsletter edition below, not a separate post: paste it when LinkedIn asks for share text on Publish.
 
-In Canada, it arrived without a new law.
+The first thing I learned in audit: don't ask what the policy says. Ask for the evidence.
 
-Bill C-36, Ottawa's attempt to replace PIPEDA, hasn't moved past first reading since June. There's still no federal AI law. So regulators used the law they already have:
+Canada's privacy regulators are doing the same with AI. No new law required.
 
-→ OpenAI: four privacy regulators found ChatGPT's initial training collected more data than needed, without valid consent.
-→ Grok: the OPC found no valid consent for sexualized deepfakes, and recommended audits, misuse monitoring and progress reports.
-→ Vendors: new OPC guidance says you stay accountable for personal information you hand to a service provider.
+Ottawa's privacy bill (C-36) hasn't moved since June. There's no federal AI law. And still, since May:
 
-My audit instinct: don't build for a bill nobody can date. Build the evidence regulators are already asking for.
+→ OpenAI: four regulators found ChatGPT's early training used more personal data than it needed, without valid consent.
+→ Grok: the OPC found no valid consent for sexualized deepfakes, and recommended independent audits and misuse monitoring.
+→ Vendors: new OPC guidance says data you hand a service provider is still yours to answer for.
 
-For me, that's one inventory of vendors and AI systems. The data involved, the consent basis, where training data came from, the contract terms. It answers the OPC today and maps to C-36 if it passes.
+Strip out the legal language and it reads like an audit request list:
+Where did the data come from? Who consented? Who else has it? Show me.
 
-This is Issue 01 of GRC Insights, the notebook I'm keeping on AI governance, privacy and cyber. Link in the comments.
+So my starting point isn't the bill. It's one inventory of vendors and AI systems that can answer those four questions, whatever C-36 becomes.
 
-If a regulator asked tomorrow where your AI training data came from, who would answer?
+First edition of GRC Insights, my newsletter on AI governance, privacy and cyber.
+
+Where did your AI training data come from, and how long would it take to prove it?
 
 #GRC #Privacy #AIGovernance #PIPEDA #CanadaPrivacy #RiskManagement #Compliance
 
-## LinkedIn first comment
+## LinkedIn first comment (optional)
 
-Full issue + 16 sources: https://grc-with-sjo.github.io/grc-insights/issues/2026-10-11-canada-regulators-write-ai-rules/
-
-And the May field notes it builds on: https://grc-with-sjo.github.io/grc-insights/issues/2026-05-field-notes/
+The May field notes this builds on: https://grc-with-sjo.github.io/grc-insights/issues/2026-05-field-notes/
 
 ## LinkedIn carousel outline (catch-up and feature issues; export as PDF)
 
@@ -45,13 +46,7 @@ And the May field notes it builds on: https://grc-with-sjo.github.io/grc-insight
 
 ## LinkedIn newsletter edition
 
-First edition of the GRC Insights newsletter. It replaces the standalone LinkedIn post above: publishing the edition shares it to the feed, so paste the LinkedIn post as the share text, swapping its last two lines for the share-text ending below. Cover image: `assets/og-card.png`.
-
-Share-text ending:
-
-This is the first edition of GRC Insights, my newsletter on AI governance, privacy and cyber.
-
-If a regulator asked tomorrow where your AI training data came from, who would answer?
+First edition of the GRC Insights newsletter. Publishing it shares it to the feed, so there is no separate LinkedIn post: use the LinkedIn post above as the share text. Cover image: `assets/og-card.png`.
 
 Title: Canada's AI privacy rules are arriving through regulators' findings, not new laws
 

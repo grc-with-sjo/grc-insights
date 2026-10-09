@@ -1,9 +1,15 @@
 # Social drafts: Issue <NN>: <title>
 
 Issue URL: https://grc-with-sjo.github.io/grc-insights/issues/<file-name-without-extension>/
-Suggested posting time: Tuesday or Wednesday, 08:00–09:00 PT. Surabhi posts manually.
+Surabhi posts manually; dates are in the LinkedIn schedule below.
 
 Unconfirmed claims: phrase them with attribution words ("reportedly", "according to…"), never the ⚠️ marker.
+
+## LinkedIn schedule
+
+- Newsletter edition: <next free Tuesday in `social/linkedin-schedule.md`>, 08:00–09:00 PT. Add this issue's row there.
+- Carousel (optional, bigger issues): the Thursday after the edition.
+- Bluesky thread: the day after the edition.
 
 ## LinkedIn post (≤ 1,300 characters; no link in the body)
 
