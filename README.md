@@ -11,6 +11,13 @@ Living notebook by Surabhi Joshi: https://grc-with-sjo.github.io/grc-insights/
 3. Merge = publish, on the issue's `date`. Issues dated in the future stay hidden; a nightly workflow (`.github/workflows/scheduled-publish.yml`, 00:05 PT) rebuilds the site so each issue appears on its date.
 4. Post the drafts from `social/issue-NN.md` yourself.
 
+## Pre-release guardrail
+
+Every day at 12:00 PT a scheduled task follows `routine/prerelease-check.md`. It re-checks, with deep-research,
+any issue going live the next day, and any issue PR waiting more than 3 days. If a law, date or status in the issue
+has changed, it **holds** the release by moving the issue's date back 2 days and opens an update PR. For minor
+additions it publishes as planned and offers an optional update PR. You get a notification either way.
+
 ## Changing the cadence or calendar
 
 Edit `_data/editorial.yml`:
