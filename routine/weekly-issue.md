@@ -14,7 +14,7 @@ You prepare the next GRC Insights update for Surabhi Joshi to review in the repo
 3. Anything you cannot tie to a primary source after a second deep-research check gets the literal marker
    `⚠️ verify` right after the claim.
 4. No legal-advice framing.
-5. Only touch `_issues/<new file>`, `_data/tracker.yml`, and `social/issue-<NN>.md`. Never edit layouts, CSS,
+5. Only touch `_issues/<new file>`, `_data/tracker.yml`, `social/issue-<NN>.md` and `social/linkedin-schedule.md`. Never edit layouts, CSS,
    JS, `sources.html`, or `_issues/2026-05-field-notes.html`.
 6. Never push to `main`. Never merge. Never post to social media.
 
@@ -83,7 +83,8 @@ status update ("Update: …"), not as new news. Drop low-confidence findings unl
 3. Sources: numbered list of every URL cited.
 4. Tracker: update changed rows (status, key_dates, summary, source) and add new rows. Quote all dates, and set
    `last_reviewed: "<today>"` on every row you re-checked.
-5. Social: create `social/issue-<NN>.md` from `routine/social-template.md` (NN = nextIssue, zero-padded to 2).
+5. Social: create `social/issue-<NN>.md` from `routine/social-template.md` (NN = nextIssue, zero-padded to 2), and add or
+   update the issue's row in `social/linkedin-schedule.md` (next free Tuesday).
 
 ## Step 4b: Radar-only update (radar-check with changes)
 
@@ -109,7 +110,7 @@ Issue:
 ```bash
 BRANCH="issue/<NN>-<today>-<slug>"
 git switch -c "$BRANCH"
-git add "_issues/<file>" _data/tracker.yml "social/issue-<NN>.md"
+git add "_issues/<file>" _data/tracker.yml "social/issue-<NN>.md" social/linkedin-schedule.md
 git commit -m "Issue <NN> — <series label>: <theme>"
 git push -u origin "$BRANCH"
 BODY=$(mktemp)

@@ -1,21 +1,31 @@
 # Social drafts: Issue <NN>: <title>
 
 Issue URL: https://grc-with-sjo.github.io/grc-insights/issues/<file-name-without-extension>/
-Suggested posting time: Tuesday or Wednesday, 08:00–09:00 PT. Surabhi posts manually.
+Surabhi posts manually; dates are in the LinkedIn schedule below.
 
 Unconfirmed claims: phrase them with attribution words ("reportedly", "according to…"), never the ⚠️ marker.
 
+## LinkedIn schedule
+
+- LinkedIn post: <next free Tuesday in `social/linkedin-schedule.md`>, 08:00–09:00 PT, issue link as the first comment. Add this issue's row there.
+- Carousel (optional, bigger issues): the Thursday after the LinkedIn post.
+- Bluesky post: the day after the LinkedIn post.
+
 ## LinkedIn post (≤ 1,300 characters; no link in the body)
 
-<Open with the dek (`description`).>
+Voice: Surabhi's own, for a network that knows her. First person, short punchy lines, practitioner framing (e.g. "My audit instinct…"). Where it fits, connect to an earlier issue ("In May I wrote…").
 
-<3 short takeaways from "In brief", one line each.>
+<A 1–2 line personal or practitioner hook built on the dek (`description`).>
 
-<One line from "How I'd approach it", framed as a consideration, not a verdict.>
+<3 takeaways from "In brief", each starting with "→ ", one line each.>
+
+<My take from "How I'd approach it", in 1–2 short paragraphs, framed as a consideration, not a verdict.>
+
+<One line: "I break this down further in Issue <NN> of GRC Insights. Link in the comments.">
 
 <End with one of the issue's open questions, to invite comments.>
 
-#AIGovernance #Privacy #GRC <1–2 topical tags>
+#GRC #AIGovernance #Privacy <1–2 tags for the issue's topic; 5 in total>
 
 ## LinkedIn first comment
 
@@ -31,17 +41,41 @@ Full issue + sources: <Issue URL>
 6. What to do now: <top 3 actions>
 7. Follow for the next issue + Radar link
 
-## LinkedIn newsletter edition
+## LinkedIn newsletter edition (not in use yet; draft for if the newsletter launches)
 
-<Two-sentence intro, then paste the issue body. End with: "Originally published at <Issue URL>">
+If the newsletter is live, the edition replaces the LinkedIn post: use that post as the share text, ending with "This is Issue <NN> of the GRC Insights newsletter…" instead of "Link in the comments".
 
-## X / Bluesky thread (5 posts, ≤ 280 chars each)
+Title: <title>
 
-1/ <hook>
-2/ <development 1>
-3/ <development 2>
-4/ <my take in one line>
-5/ Full issue + sources: <Issue URL>
+Body (condensed, not the full issue; no tables, which LinkedIn articles cannot render):
+
+<Two-sentence intro.>
+
+**In brief** <the 3 bullets>
+
+**What happened** <one short paragraph per development, each opening with a bold lead-in>
+
+**How I'd approach it** <condensed to 3–4 short paragraphs>
+
+**Questions to take to your team** <the 3 questions>
+
+**What to do this quarter** <the actions>
+
+The full issue covers <what the edition left out: sector guide, upcoming dates, N sources>:
+<Issue URL>
+
+## Bluesky post (single post, ≤ 300 chars without the URL; 1–3 hashtags)
+
+Voice: more casual than LinkedIn, for a community of strangers in privacy, infosec and AI policy. Rewrite rather than trim the LinkedIn post. Post a day after the LinkedIn post.
+
+Card link: <Issue URL>
+Paste the link first, wait for the preview card, then delete the URL text (the card stays).
+
+<1–2 line hook>
+
+<the one idea worth stopping for>
+
+#privacy #AIgovernance <or the issue's closest 1–3 tags>
 
 ## Community summary (optional: only if it adds value; no link-dumping)
 
