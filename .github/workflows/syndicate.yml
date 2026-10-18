@@ -1,0 +1,61 @@
+name: Syndicate
+# Posts the reviewed drafts in social/issue-NN.md on the dates in social/linkedin-schedule.md
+# (scripts/syndicate.mjs). What has been posted is recorded on the `syndication-log` branch, so a
+# rerun never posts twice. Channels without secrets run as a dry run (see README).
+on:
+  schedule:
+    - cron: "40 15 * * *"   # 08:40 PDT
+    - cron: "40 16 * * *"   # 08:40 PST (the script skips runs before 08:00 Vancouver)
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Only print what would be posted"
+        type: boolean
+        default: true
+permissions:
+  contents: write   # push the log to the syndication-log branch
+  issues: write     # Medium/Substack reminder issues
+concurrency:
+  group: syndicate
+  cancel-in-progress: false
+jobs:
+  syndicate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Check out the posting log
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git ls-remote --exit-code --heads origin syndication-log >/dev/null; then
+            git fetch -q origin syndication-log
+            git worktree add -q log FETCH_HEAD
+          else
+            git worktree add -q --detach log
+            git -C log checkout -q --orphan syndication-log
+            git -C log rm -rfq .
+            echo '{ "posted": {} }' > log/posted.json
+          fi
+      - name: Post
+        run: node scripts/syndicate.mjs --state log/posted.json ${{ (github.event_name == 'workflow_dispatch' && inputs.dry_run) && '--dry-run' || '' }} ${{ github.event_name == 'workflow_dispatch' && '--ignore-hour' || '' }}
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          LINKEDIN_TOKEN: ${{ secrets.LINKEDIN_TOKEN }}
+          LINKEDIN_PERSON_URN: ${{ secrets.LINKEDIN_PERSON_URN }}
+          LINKEDIN_TOKEN_ISSUED: ${{ vars.LINKEDIN_TOKEN_ISSUED }}
+          BLUESKY_HANDLE: ${{ secrets.BLUESKY_HANDLE }}
+          BLUESKY_APP_PASSWORD: ${{ secrets.BLUESKY_APP_PASSWORD }}
+          MASTODON_INSTANCE: ${{ vars.MASTODON_INSTANCE }}
+          MASTODON_TOKEN: ${{ secrets.MASTODON_TOKEN }}
+      - name: Save the posting log
+        if: always()
+        run: |
+          cd log
+          git add posted.json
+          if ! git diff --cached --quiet; then
+            git commit -qm "Log syndication run ${{ github.run_id }}"
+            git push -q origin HEAD:syndication-log
+          fi

@@ -9,7 +9,9 @@ Living notebook by Surabhi Joshi: https://grc-with-sjo.github.io/grc-insights/
    (or `radar` for tracker-only updates).
 2. You review the PR using its checklist and edit in GitHub's web editor if needed.
 3. Merge = publish, on the issue's `date`. Issues dated in the future stay hidden; a nightly workflow (`.github/workflows/scheduled-publish.yml`, 00:05 PT) rebuilds the site so each issue appears on its date.
-4. Post the drafts from `social/issue-NN.md` yourself.
+4. The Syndicate workflow posts the reviewed drafts from `social/issue-NN.md` to LinkedIn, Bluesky and Mastodon on the
+   dates in `social/linkedin-schedule.md`, and opens a GitHub issue reminding you to import into Medium and post a
+   shortened Substack edition. See `social/syndication.md`.
 
 ## Pre-release guardrail
 
@@ -43,6 +45,33 @@ Edit `_data/editorial.yml`:
 9. **Branch push restrictions.** If the routine runs in Claude Code cloud and pushes are restricted to
    `claude/`-prefixed branches, enable unrestricted branch pushes for this repo's environment (the routine
    pushes `issue/*` and `radar/*`).
+
+## Automatic syndication
+
+`.github/workflows/syndicate.yml` runs daily at ~08:40 PT and runs `scripts/syndicate.mjs`. It posts only issues that are
+live in the feed, only on their scheduled day (or up to 2 days late after a missed run), and records each post on the
+`syndication-log` branch so it never posts twice. Any channel without its secrets runs as a dry run, so set up only the
+ones you want. Test with Actions → Syndicate → Run workflow (dry run is on by default).
+
+Settings → Secrets and variables → Actions:
+
+| Channel | Secrets | Variables | How to get them |
+|---|---|---|---|
+| Bluesky | `BLUESKY_HANDLE` (e.g. `you.bsky.social`), `BLUESKY_APP_PASSWORD` | | Bluesky → Settings → Privacy and security → App passwords. Never your main password. |
+| Mastodon | `MASTODON_TOKEN` | `MASTODON_INSTANCE` (e.g. `https://infosec.exchange`) | Mastodon → Preferences → Development → New application, scope `write:statuses` only → copy the access token. |
+| LinkedIn | `LINKEDIN_TOKEN`; optional `LINKEDIN_PERSON_URN` | `LINKEDIN_TOKEN_ISSUED` (`YYYY-MM-DD`) | See below. |
+
+LinkedIn (personal profile):
+1. https://www.linkedin.com/developers/apps → Create app. LinkedIn requires linking a Company Page; create a free
+   "GRC Insights" page if you have none.
+2. Products tab → add **Share on LinkedIn** and **Sign In with LinkedIn using OpenID Connect** (both self-serve).
+3. Auth tab → OAuth 2.0 tools → create a token with scopes `openid profile w_member_social` → save it as `LINKEDIN_TOKEN`.
+4. Set `LINKEDIN_TOKEN_ISSUED` to today. Tokens last 60 days: the workflow warns 10 days before, and fails with a
+   clear message once it has expired (GitHub emails you). Repeat step 3 to renew.
+5. Optional: if the API version stops being accepted, set the `LINKEDIN_VERSION` env in the workflow to a newer
+   `YYYYMM` month.
+
+To keep one issue or channel from posting, see "Auto-post" in `social/syndication.md`.
 
 ## Local checks
 
