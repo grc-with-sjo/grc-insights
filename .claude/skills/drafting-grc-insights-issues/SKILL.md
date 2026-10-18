@@ -13,17 +13,19 @@ Facts come only from the deep-research report for this issue (see `routine/weekl
 
 ## Voice: a risk practitioner, not a columnist
 
-- Frame uncertainty, options and trade-offs. Do not hand down verdicts.
-- Use the language of considerations: "one way to hedge is…", "teams may want to…", "it is worth asking whether…", "the risk is that…".
+- **`routine/voice.md` is Surabhi's own voice brief and overrides anything below that conflicts with it.** Read it first.
+- Lead with a point of view, then the evidence. Use first person for judgements and recommendations ("I would build one control layer and map it outward"), not "organisations should consider" or "one way to hedge is…".
+- Frame uncertainty and trade-offs honestly. Do not hand down verdicts on other people's choices.
+- No research-status language in reader-facing text ("the research found", "research was incomplete"); write what you could or could not find in first person ("I could not find…").
 - Never judge other people's choices or past decisions. No "mistake", "wrong", "stop doing X", "naive", "you must".
 - Be prescriptive about **what to consider and prepare**, not about one specific answer. Recommend approaches that hold up under several outcomes.
 - Surface what others have not thought about: second-order effects, ownership gaps, evidence that will be asked for later.
 
 ## The shape (fill `routine/issue-template.md` in this order)
 
-1. **Dek** (front-matter `description`, ≤200 chars): the central question or tension in one sentence.
+1. **Dek** (front-matter `description`, ≤200 chars): the tension plus my point of view, in first person ("…I would build X"). Not a bare question.
 2. **`## In brief`**: 3 bullets, plain language, no undefined acronyms, no unconfirmed claims.
-3. **`## The story so far`** (120–180 words): the backdrop a newcomer needs. Every law, bill and regulator named gets its plain-language explanation here: what it is, what it was meant to do, where it stands. End by naming the issue's central question.
+3. **`## The story so far`** (120–180 words): the backdrop a newcomer needs. Every law, bill and regulator named gets its plain-language explanation here: what it is, what it was meant to do, where it stands. End by naming the planning problem the issue works through, as a statement (no rhetorical question).
 4. **`## What happened`**: 2–4 stories, each a `### ` headline written as a statement. Every story has, in order:
    - **Bridge**: the opening sentence links to the previous story or the central question.
    - **Context**: who the actor is and why the thing exists, before any detail.
@@ -33,7 +35,7 @@ Facts come only from the deep-research report for this issue (see `routine/weekl
    - `**Open question:**` a genuinely unsettled question, phrased so the reader can carry it into a meeting.
 5. **`## How I'd approach it`** (200–300 words): first person, in the voice above. Name the uncertainty, set out the approach that holds its value under more than one outcome, and state the trade-off plainly. No verdicts.
 6. **`## Questions to take to your team`**: 3 bullets. Each is a **bold, concrete question** a reader could ask in their next risk or governance meeting, followed by one sentence on why it is hard or easy to miss. Questions about the reader's own organisation ("who owns…", "what evidence would we show…"), not abstract policy debates.
-7. **`## What to do this quarter`**: 4–5 actions phrased as options ("Consider…", "Map…", "Confirm…"), then `### If you work in…` with the sector table (only affected sectors).
+7. **`## What to do this quarter`**: 4–5 actions as direct verbs ("Map…", "Confirm…", "Run…"); at most one "Consider" in the whole issue, then `### If you work in…` with the sector table (only affected sectors).
 8. **`## On the radar`** and **`## Sources`** as before.
 
 Total 900–1,400 words.

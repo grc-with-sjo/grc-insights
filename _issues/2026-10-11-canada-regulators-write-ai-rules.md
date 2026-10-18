@@ -7,7 +7,7 @@ calendar_date: 2026-10-11
 regions: [CA]
 sectors: [tech, saas, cloud, banking, retail]
 categories: [privacy-law, ai-governance, enforcement, third-party-risk]
-description: "Canada's new privacy bill has stalled and there is no federal AI law. So what should a Canadian privacy programme be built on while the law is unsettled?"
+description: "Canada's privacy bill has stalled and there is no federal AI law, but regulators are already setting expectations. I would build on the evidence they ask for, not on the bill's timing."
 ---
 
 ## In brief
@@ -22,7 +22,7 @@ Canada's federal privacy law for businesses is the Personal Information Protecti
 
 Ottawa has tried to replace PIPEDA before. Bill C-27 was the federal government's previous attempt, and it also carried Canada's first proposed AI law. C-27 lapsed when Parliament's session ended on 2025-01-06, so neither part became law. Its successor, Bill C-36, was introduced on 2026-06-15. It would replace PIPEDA's privacy rules but contains no AI law.
 
-Meanwhile regulators keep enforcing the laws they already have. That leaves one central question: with the federal law unsettled, what should a Canadian privacy programme be built on in the meantime?
+Regulators have not waited. They keep enforcing the laws they already have. That leaves the planning problem this issue works through: what to build a Canadian privacy programme on while the federal law is unsettled.
 
 ## What happened
 
@@ -38,7 +38,7 @@ The bill had its first reading, the formal step of introducing it, on 2026-06-15
 
 ### Regulators are setting AI expectations through their findings
 
-Meanwhile, regulators are applying existing law to AI. A finding is a regulator's published conclusion after investigating a complaint. On 2026-05-06, the OPC and the Québec, BC and Alberta commissioners reported that OpenAI's initial training of ChatGPT, its AI chatbot, did not comply: it collected more data than needed, without valid consent or transparency. The OPC found the federal complaint justified, and resolved on conditions after OpenAI limited personal and sensitive data in training. [Source](https://www.priv.gc.ca/en/opc-news/news-and-announcements/2026/nr-c_260506/)
+Regulators are applying existing law to AI instead. A finding is a regulator's published conclusion after investigating a complaint. On 2026-05-06, the OPC and the Québec, BC and Alberta commissioners reported that OpenAI's initial training of ChatGPT, its AI chatbot, did not comply: it collected more data than needed, without valid consent or transparency. The OPC found the federal complaint justified, and resolved on conditions after OpenAI limited personal and sensitive data in training. [Source](https://www.priv.gc.ca/en/opc-news/news-and-announcements/2026/nr-c_260506/)
 
 On 2026-06-11 the OPC went further with Grok, X's AI chatbot and image generator. It found X Corp. and X.AI LLC had no valid express (explicit) consent for generating sexualized deepfakes, and that the complaint was justified and not resolved. It recommended suspending Grok Imagine, the image tool, plus annual third-party audits and six months of monitoring for workarounds. The companies declined the suspension but committed to four other recommendations and quarterly reports. [Source](https://www.priv.gc.ca/en/opc-actions-and-decisions/investigations/investigations-into-businesses/2026/pipeda-2026-004/)
 
@@ -76,7 +76,7 @@ What we do know is how regulators apply today's law. Between them, the OpenAI an
 
 So I would build around evidence that answers those questions under any outcome. The centre would be one inventory of vendors and AI systems. For each entry, I would record what personal data is involved, the consent basis, where any training data came from, and the contract terms. That record answers the OPC's vendor guidance today. It maps to C-36's rules on automated decisions if the bill passes. It also gives you something to show a provincial regulator.
 
-For design choices, one way to hedge is to treat Québec's Law 25 as the reference point. The OPC findings then show what evidence a regulator is likely to ask for.
+For design choices, I would treat Québec's Law 25 as the reference point. The OPC findings then show what evidence a regulator is likely to ask for.
 
 The trade-off is real. Some of this work may not match C-36's final text, and a register built now may need rework. The cost of rework tends to be known and bounded. The cost of being unable to explain where training data came from, while complaints rise, is harder to predict. I would weigh those two rather than wait for certainty.
 
@@ -88,9 +88,9 @@ The trade-off is real. Some of this work may not match C-36's final text, and a 
 
 ## What to do this quarter
 
-- Consider adding questions on AI training-data sources and consent to your privacy impact assessment (PIA) template.
+- Add questions on AI training-data sources and consent to your privacy impact assessment (PIA) template.
 - Map vendors and AI systems into one inventory, with data categories, consent basis and contract terms.
-- Consider starting a register of automated decision systems; it costs little and maps to C-36.
+- Start a register of automated decision systems. It costs little and maps to C-36.
 - Confirm whether to comment on the OPC's service-provider guidance before 2026-12-04.
 
 ### If you work in…
@@ -100,7 +100,7 @@ The trade-off is real. Some of this work may not match C-36's final text, and a 
 | Tech | The OpenAI and Grok findings test AI consent under today's PIPEDA. | Compare generative AI features against the Grok recommendations. |
 | Product / SaaS | Customers stay accountable for data you handle, so expect their questions. | Keep an answer pack: data map, sub-processors, AI use, PIA. |
 | Cloud | I expect customers' vendor due diligence to reach hosting providers. | Document where Canadian personal data is stored. |
-| Banking / FinServ | The Office of the Superintendent of Financial Institutions (OSFI), the federal financial regulator, treats AI as models under Guideline E-23 from 2027-05-01 ([OSFI](https://www.osfi-bsif.gc.ca/en/guidance/guidance-library/guideline-e-23-model-risk-management-2027)). | Consider folding third-party AI into the model inventory. |
+| Banking / FinServ | The Office of the Superintendent of Financial Institutions (OSFI), the federal financial regulator, treats AI as models under Guideline E-23 from 2027-05-01 ([OSFI](https://www.osfi-bsif.gc.ca/en/guidance/guidance-library/guideline-e-23-model-risk-management-2027)). | Fold third-party AI into the model inventory. |
 | Retail | The OPC is investigating the IDScan.net breach, in which driver's licence and ID scans were stolen ([OPC](https://www.priv.gc.ca/en/opc-news/news-and-announcements/2026/nr-c_260921/)). | Review which ID data you keep and which vendor holds it. |
 
 ## On the radar
