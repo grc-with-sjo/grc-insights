@@ -1,6 +1,6 @@
 # LinkedIn schedule
 
-One LinkedIn post per Tuesday, 08:00–09:00 PT, in the order issues go live on the site: the "LinkedIn post" from `social/issue-NN.md`, with the issue link as the first comment. LinkedIn runs a week or two behind the site; that is fine. Surabhi posts manually. Add the first comment as soon as the post is live (including scheduled posts), and reply to comments in the first hour.
+One LinkedIn post per Tuesday, 08:00–09:00 PT, in the order issues go live on the site: the "LinkedIn post" from `social/issue-NN.md`, with the issue link as the first comment. LinkedIn runs a week or two behind the site; that is fine. Surabhi posts manually; two days later a GitHub issue reminds her to do Medium and Substack (`social/syndication.md`). Add the first comment as soon as the post is live (including scheduled posts), and reply to comments in the first hour.
 
 Newsletter: not launched yet. Decide in December (or after 3–4 issues, if the weekly rhythm feels sustainable). Drafts sit in each issue's "LinkedIn newsletter edition" section; the logo is `assets/newsletter-logo.png`.
 

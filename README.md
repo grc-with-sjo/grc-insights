@@ -9,7 +9,9 @@ Living notebook by Surabhi Joshi: https://grc-with-sjo.github.io/grc-insights/
    (or `radar` for tracker-only updates).
 2. You review the PR using its checklist and edit in GitHub's web editor if needed.
 3. Merge = publish, on the issue's `date`. Issues dated in the future stay hidden; a nightly workflow (`.github/workflows/scheduled-publish.yml`, 00:05 PT) rebuilds the site so each issue appears on its date.
-4. Post the drafts from `social/issue-NN.md` yourself.
+4. Post the drafts from `social/issue-NN.md` yourself (LinkedIn, Bluesky). Two days after each LinkedIn date, the
+   Syndicate reminders workflow opens a GitHub issue to copy the issue to Medium and Substack; see `social/syndication.md`.
+   Nothing is ever posted automatically.
 
 ## Pre-release guardrail
 

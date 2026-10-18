@@ -1,0 +1,55 @@
+name: Syndicate reminders
+# Opens a GitHub issue two days after each LinkedIn date in social/linkedin-schedule.md, reminding
+# Surabhi to syndicate the issue to Medium and Substack (scripts/syndicate.mjs). Nothing is posted to
+# any social network. Opened reminders are recorded on the `syndication-log` branch, so reruns never
+# open duplicates.
+on:
+  schedule:
+    - cron: "40 15 * * *"   # 08:40 PDT
+    - cron: "40 16 * * *"   # 08:40 PST (the script skips runs before 08:00 Vancouver)
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Only print the reminders that would open"
+        type: boolean
+        default: true
+permissions:
+  contents: write   # push the log to the syndication-log branch
+  issues: write     # Medium/Substack reminder issues
+concurrency:
+  group: syndicate
+  cancel-in-progress: false
+jobs:
+  syndicate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Check out the posting log
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git ls-remote --exit-code --heads origin syndication-log >/dev/null; then
+            git fetch -q origin syndication-log
+            git worktree add -q log FETCH_HEAD
+          else
+            git worktree add -q --detach log
+            git -C log checkout -q --orphan syndication-log
+            git -C log rm -rfq .
+            echo '{ "posted": {} }' > log/posted.json
+          fi
+      - name: Post
+        run: node scripts/syndicate.mjs --state log/posted.json ${{ (github.event_name == 'workflow_dispatch' && inputs.dry_run) && '--dry-run' || '' }} ${{ github.event_name == 'workflow_dispatch' && '--ignore-hour' || '' }}
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+      - name: Save the posting log
+        if: always()
+        run: |
+          cd log
+          git add posted.json
+          if ! git diff --cached --quiet; then
+            git commit -qm "Log syndication run ${{ github.run_id }}"
+            git push -q origin HEAD:syndication-log
+          fi
