@@ -29,7 +29,7 @@ How much of your audit evidence comes straight from your systems today?
 
 ## LinkedIn post: incident-reporting angle (held for later)
 
-Kept back on purpose: incident reporting is a sensitive topic to post about while employed at a product company. Before using it, update the series line, and consider softening "one of your products" to "a product". Check that CIRCIA, Bill C-8 and CRA reporting status are still current.
+Kept back on purpose: incident reporting is a sensitive topic to post about while employed at a product company. Before using it, update the series line. Check that CIRCIA, Bill C-8 and CRA reporting status are still current.
 
 In IT audit, you built the test once and ran it a hundred times.
 
@@ -44,7 +44,7 @@ My takeaway: 24 hours isn't enough time to figure out who owns the decision, wha
 
 <Series line for the week it runs.> Link in the comments.
 
-If one of your products were actively exploited on a Friday night, who decides within 24 hours whether to report it?
+Who owns the decision to report within 24 hours, and has anyone tested that hand-off?
 
 #GRC #Cybersecurity #IncidentResponse #CyberResilienceAct #RiskManagement
 
