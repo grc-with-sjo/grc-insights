@@ -829,7 +829,7 @@
     - { date: "2027-06-11", what: "FedRAMP plans to stop accepting new Rev5 certifications and publish transition paths" }
   sectors: [cloud, saas, tech]
   applies_to_me: high
-  summary: "FedRAMP is replacing paper Rev5 packages with automated Key Security Indicators; cloud providers selling to US agencies should plan for continuous evidence."
+  summary: "FedRAMP is replacing paper Rev5 packages with automated Key Security Indicators, so evidence for US agencies moves from documents to continuous, system-generated data."
   source: "https://www.fedramp.gov/20x/"
   last_reviewed: "2026-10-08"
 - id: us-cmmc

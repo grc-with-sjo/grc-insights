@@ -14,7 +14,7 @@ description: "US and Canadian cyber dates keep moving, and Europe's reporting cl
 ## In brief
 
 - Several US and Canadian government cyber programmes have no firm schedule, while customers keep asking for security evidence.
-- FedRAMP, which approves cloud services for US federal agencies, is moving to machine-checked evidence and closing its old route to newcomers on 2027-06-11.
+- FedRAMP, which approves cloud services for US federal agencies, is moving to machine-checked evidence and closing its old route to newcomers on 11 June 2027.
 - ISO/IEC 42001, the international standard for managing AI, is spreading through customer due diligence rather than law.
 
 ## The story so far
@@ -31,13 +31,13 @@ That leaves the planning problem this issue works through: what a security team 
 
 ### Washington's cyber dates have moved, and Ottawa's new regime has not started
 
-Dates are moving most visibly in US defence contracting. CMMC, run by the defence department (now styled the Department of War), asks contractors to assess themselves against NIST SP 800-171, the US federal baseline for protecting controlled unclassified information; a second phase would add independent audits from 2026-11-10. A client alert from the law firm Crowell & Moring reports that the department suspended that phase on 2026-07-13 pending a 60-day review, with self-assessments still enforced ⚠️ verify. [Crowell](https://www.crowell.com/en/insights/client-alerts/department-of-war-immediately-suspends-cmmc-phase-ii-requirements-launches-60-day-reform-review) ([Radar](/grc-insights/radar/#us-cmmc))
+Dates are moving most visibly in US defence contracting. CMMC, run by the defence department (now styled the Department of War), asks contractors to assess themselves against NIST SP 800-171, the US federal baseline for protecting controlled unclassified information; a second phase would add independent audits from 10 November 2026. A client alert from the law firm Crowell & Moring reports that the department suspended that phase on 13 July 2026 pending a 60-day review, with self-assessments still enforced ⚠️ verify. [Crowell](https://www.crowell.com/en/insights/client-alerts/department-of-war-immediately-suspends-cmmc-phase-ii-requirements-launches-60-day-reform-review) ([Radar](/grc-insights/radar/#us-cmmc))
 
 Incident reporting has stalled too. CISA, the US federal cyber agency, proposed CIRCIA rules in April 2024: 72 hours to report a covered incident and 24 hours for a ransom payment. The law firm Hunton reports that the final rule missed its October 2025 statutory deadline and a May 2026 target ⚠️ verify. [Hunton](https://www.hunton.com/privacy-and-cybersecurity-law-blog/cisa-plans-to-finalize-cyber-incident-reporting-regulations-in-september-2026)
 
-Canada's version is law but not yet working. According to parliamentary trackers, Bill C-8 enacts the Critical Cyber Systems Protection Act (CCSPA), under which designated operators in sectors such as finance and telecom will have to run cyber programmes and report incidents ⚠️ verify. The same trackers record Royal Assent on 2026-06-15 but no designations as of about 2026-10-01 ⚠️ verify. [openparliament.ca](https://openparliament.ca/bills/45-1/C-8/) ([Radar](/grc-insights/radar/#ca-c8-cyber))
+Canada's version is law but not yet working. According to parliamentary trackers, Bill C-8 enacts the Critical Cyber Systems Protection Act (CCSPA), under which designated operators in sectors such as finance and telecom will have to run cyber programmes and report incidents ⚠️ verify. The same trackers record Royal Assent on 15 June 2026 but no designations as of about 1 October 2026 ⚠️ verify. [openparliament.ca](https://openparliament.ca/bills/45-1/C-8/) ([Radar](/grc-insights/radar/#ca-c8-cyber))
 
-What has started is narrower: the Canadian Program for Cyber Security Certification (CPCSC), a three-level certification for defence suppliers run by Public Services and Procurement Canada (PSPC), the federal buying department. Self-attested Level 1 arrived on 2026-04-14; higher levels have no dates. [PSPC](https://www.canada.ca/en/public-services-procurement/news/2026/04/government-of-canada-introduces-level-1-of-canadian-program-for-cyber-security-certification.html) ([Radar](/grc-insights/radar/#ca-cpcsc))
+What has started is narrower: the Canadian Program for Cyber Security Certification (CPCSC), a three-level certification for defence suppliers run by Public Services and Procurement Canada (PSPC), the federal buying department. Self-attested Level 1 arrived on 14 April 2026; higher levels have no dates. [PSPC](https://www.canada.ca/en/public-services-procurement/news/2026/04/government-of-canada-introduces-level-1-of-canadian-program-for-cyber-security-certification.html) ([Radar](/grc-insights/radar/#ca-cpcsc))
 
 **Takeaway:** A paused deadline changes when someone checks your controls, not which controls they check.
 
@@ -45,7 +45,7 @@ What has started is narrower: the Canadian Program for Cyber Security Certificat
 
 ### Europe's product-security reporting clock is already running
 
-Europe's first product-security clock, by contrast, started on schedule. The CRA is an EU regulation setting security-by-design duties for makers of hardware and software sold in the EU; its main obligations apply from 2027-12-11, but reporting came first. Law-firm briefings and the European Commission's reporting page describe a duty, applying since 2026-09-11, to report actively exploited vulnerabilities and severe incidents to ENISA, the EU cybersecurity agency: an early warning within 24 hours, a notification within 72 hours, then a final report ⚠️ verify. [European Commission](https://digital-strategy.ec.europa.eu/en/policies/cra-reporting) ([Radar](/grc-insights/radar/#eu-cra))
+Europe's first product-security clock, by contrast, started on schedule. The CRA is an EU regulation setting security-by-design duties for makers of hardware and software sold in the EU; its main obligations apply from 11 December 2027, but reporting came first. Law-firm briefings and the European Commission's reporting page describe a duty, applying since 11 September 2026, to report actively exploited vulnerabilities and severe incidents to ENISA, the EU cybersecurity agency: an early warning within 24 hours, a notification within 72 hours, then a final report ⚠️ verify. [European Commission](https://digital-strategy.ec.europa.eu/en/policies/cra-reporting) ([Radar](/grc-insights/radar/#eu-cra))
 
 This is the fastest clock here, and it is running. Someone must spot active exploitation, decide whether the product is in scope, and file within the day.
 
@@ -55,9 +55,9 @@ This is the fastest clock here, and it is running. Someone must spot active expl
 
 ### Customer assurance is changing format faster than the law
 
-While legal dates move, the format of assurance is changing. FedRAMP authorizes cloud services for US federal agencies. FedRAMP 20x replaces its current document-heavy process, known as Rev5, with Key Security Indicators (KSIs), security properties that systems report and machines validate. The first Moderate pilot authorizations came in March 2026, and FedRAMP plans to stop accepting new Rev5 certifications on 2027-06-11. [FedRAMP](https://www.fedramp.gov/20x/) ([Radar](/grc-insights/radar/#us-fedramp-20x))
+While legal dates move, the format of assurance is changing. FedRAMP authorizes cloud services for US federal agencies. FedRAMP 20x replaces its current document-heavy process, known as Rev5, with Key Security Indicators (KSIs), security properties that systems report and machines validate. The first Moderate pilot authorizations came in March 2026, and FedRAMP plans to stop accepting new Rev5 certifications on 11 June 2027. [FedRAMP](https://www.fedramp.gov/20x/) ([Radar](/grc-insights/radar/#us-fedramp-20x))
 
-AI assurance is arriving through procurement too. ISO/IEC 42001:2023 is the international standard for an AI management system: the policies, roles and controls an organisation uses to govern AI, certified by external audit. ServiceNow, Salesforce and Google publish 42001 certifications with product-specific scopes. [ServiceNow](https://www.servicenow.com/blogs/2025/iso-certification-ai-management-system), [Salesforce](https://compliance.salesforce.com/categories/iso-42001), [Google Cloud](https://cloud.google.com/security/compliance/iso-42001) The Cloud Security Alliance (CSA), an industry body, built it into STAR for AI, the AI tier of its public assurance registry, on 2025-11-20. [CSA STAR](https://cloudsecurityalliance.org/star) ([Radar](/grc-insights/radar/#global-iso-42001)) That market recognition does not make 42001 a legal safe harbour. Harmonised standards let a company presume it meets the EU AI Act, the EU's law on AI; a CSA research note says 42001 is not one, so its certificate carries no such presumption ⚠️ verify. [CSA note](https://labs.cloudsecurityalliance.org/research/csa-research-note-eu-ai-act-pren-18286-iso-42001-20260428/)
+AI assurance is arriving through procurement too. ISO/IEC 42001:2023 is the international standard for an AI management system: the policies, roles and controls an organisation uses to govern AI, certified by external audit. ServiceNow, Salesforce and Google publish 42001 certifications with product-specific scopes. [ServiceNow](https://www.servicenow.com/blogs/2025/iso-certification-ai-management-system), [Salesforce](https://compliance.salesforce.com/categories/iso-42001), [Google Cloud](https://cloud.google.com/security/compliance/iso-42001) The Cloud Security Alliance (CSA), an industry body, built it into STAR for AI, the AI tier of its public assurance registry, on 20 November 2025. [CSA STAR](https://cloudsecurityalliance.org/star) ([Radar](/grc-insights/radar/#global-iso-42001)) That market recognition does not make 42001 a legal safe harbour. Harmonised standards let a company presume it meets the EU AI Act, the EU's law on AI; a CSA research note says 42001 is not one, so its certificate carries no such presumption ⚠️ verify. [CSA note](https://labs.cloudsecurityalliance.org/research/csa-research-note-eu-ai-act-pren-18286-iso-42001-20260428/)
 
 I expect customers, not regulators, to drive both shifts for now.
 
@@ -85,23 +85,23 @@ The trade-off is real. This spends on controls before some regulators require th
 
 - Run a tabletop exercise on an actively exploited vulnerability and measure whether the team can issue an early warning within 24 hours.
 - Map controls once: NIST SP 800-171 and SP 800-53 to ISO/IEC 27001:2022 and SOC 2, with evidence held in one place.
-- Confirm key vendors hold a current ISO/IEC 27001:2022 certificate; certification bodies report that 2013-edition certificates lapsed on 2025-10-31 ⚠️ verify.
+- Confirm key vendors hold a current ISO/IEC 27001:2022 certificate; certification bodies report that 2013-edition certificates lapsed on 31 October 2025 ⚠️ verify.
 - If you supply Canadian defence, complete CPCSC Level 1 self-attestation before a contract asks for it.
 
 ### If you work in…
 
 | Sector | What it means | What to do |
 |---|---|---|
-| Cloud | New Rev5 certifications are planned to stop on 2027-06-11. | Look at the 20x route for new federal work. |
+| Cloud | New Rev5 certifications are planned to stop on 11 June 2027. | Look at the 20x route for new federal work. |
 | Product / SaaS | Buyers ask for ISO 27001, SOC 2 and now 42001. | Scope 42001 to the AI products buyers ask about. |
 | Hardware | Law-firm briefings describe CRA reporting as live ⚠️ verify. | Test the 24-hour early warning end to end. |
 | Banking / FinServ | Parliamentary trackers list finance among sectors the CCSPA can designate ⚠️ verify. | Keep an incident playbook that could meet a 72-hour clock, as CIRCIA's proposal sets. |
 
 ## On the radar
 
-No firm security dates fall within 90 days of 2026-11-22. The next is further out:
+No firm security dates fall within 90 days of 22 November 2026. The next is further out:
 
-- **2027-06-11** (beyond 90 days): FedRAMP plans to stop accepting new Rev5 certifications ([Radar](/grc-insights/radar/#us-fedramp-20x))
+- **11 June 2027** (beyond 90 days): FedRAMP plans to stop accepting new Rev5 certifications ([Radar](/grc-insights/radar/#us-fedramp-20x))
 - Everything else, dated or not: [the full Radar](/grc-insights/radar/)
 
 ## Sources

@@ -21,7 +21,7 @@ description: "Canada's privacy bill has stalled and there is no federal AI law, 
 
 Canada's federal privacy law for businesses is the Personal Information Protection and Electronic Documents Act (PIPEDA). It governs how companies collect, use and share personal information, and its regulator is the Office of the Privacy Commissioner of Canada (OPC). Québec, British Columbia (BC) and Alberta have their own private-sector privacy laws and commissioners.
 
-Ottawa has tried to replace PIPEDA before. Bill C-27 was the federal government's previous attempt, and it also carried Canada's first proposed AI law. C-27 lapsed when Parliament's session ended on 2025-01-06, so neither part became law. Its successor, Bill C-36, was introduced on 2026-06-15. It would replace PIPEDA's privacy rules but contains no AI law.
+Ottawa has tried to replace PIPEDA before. Bill C-27 was the federal government's previous attempt, and it also carried Canada's first proposed AI law. C-27 lapsed when Parliament's session ended on 6 January 2025, so neither part became law. Its successor, Bill C-36, was introduced on 15 June 2026. It would replace PIPEDA's privacy rules but contains no AI law.
 
 Regulators have not waited. They keep enforcing the laws they already have. That leaves the planning problem this issue works through: what to build a Canadian privacy programme on while the federal law is unsettled.
 
@@ -31,7 +31,7 @@ Regulators have not waited. They keep enforcing the laws they already have. That
 
 The obvious place to look first is the bill itself. C-36, the Protecting Privacy and Consumer Data Act, would create a new regulator, the Digital Safety and Data Protection Commission of Canada. It sets penalties at the greater of $10M or 3% of prior-year global revenue, lets individuals sue a business directly, and requires businesses to publicly describe automated decision systems with legal or similarly significant effects on people. [Bill text](https://www.parl.ca/DocumentViewer/en/45-1/bill/C-36/first-reading)
 
-The bill had its first reading, the formal step of introducing it, on 2026-06-15. LEGISinfo, Parliament's bill tracker, shows no second-reading activity since. [Source](https://www.parl.ca/legisinfo/en/bill/45-1/c-36) It still needs second reading, committee study, the Senate, Royal Assent and an order bringing it into force; until then, PIPEDA applies.
+The bill had its first reading, the formal step of introducing it, on 15 June 2026. LEGISinfo, Parliament's bill tracker, shows no second-reading activity since. [Source](https://www.parl.ca/legisinfo/en/bill/45-1/c-36) It still needs second reading, committee study, the Senate, Royal Assent and an order bringing it into force; until then, PIPEDA applies.
 
 **Takeaway:** Some C-36 requirements are cheap to prepare for now, but its timing is too uncertain to budget around.
 
@@ -39,9 +39,9 @@ The bill had its first reading, the formal step of introducing it, on 2026-06-15
 
 ### Regulators are setting AI expectations through their findings
 
-Regulators are applying existing law to AI instead. A finding is a regulator's published conclusion after investigating a complaint. On 2026-05-06, the OPC and the Québec, BC and Alberta commissioners reported that OpenAI's initial training of ChatGPT, its AI chatbot, did not comply: it collected more data than needed, without valid consent or transparency. The OPC found the federal complaint justified, and resolved on conditions after OpenAI limited personal and sensitive data in training. [Source](https://www.priv.gc.ca/en/opc-news/news-and-announcements/2026/nr-c_260506/)
+Regulators are applying existing law to AI instead. A finding is a regulator's published conclusion after investigating a complaint. On 6 May 2026, the OPC and the Québec, BC and Alberta commissioners reported that OpenAI's initial training of ChatGPT, its AI chatbot, did not comply: it collected more data than needed, without valid consent or transparency. The OPC found the federal complaint justified, and resolved on conditions after OpenAI limited personal and sensitive data in training. [Source](https://www.priv.gc.ca/en/opc-news/news-and-announcements/2026/nr-c_260506/)
 
-On 2026-06-11 the OPC went further with Grok, X's AI chatbot and image generator. It found X Corp. and X.AI LLC had no valid express (explicit) consent for generating sexualized deepfakes, and that the complaint was justified and not resolved. It recommended suspending Grok Imagine, the image tool, plus annual third-party audits and six months of monitoring for workarounds. The companies declined the suspension but committed to four other recommendations and quarterly reports. [Source](https://www.priv.gc.ca/en/opc-actions-and-decisions/investigations/investigations-into-businesses/2026/pipeda-2026-004/)
+On 11 June 2026 the OPC went further with Grok, X's AI chatbot and image generator. It found X Corp. and X.AI LLC had no valid express (explicit) consent for generating sexualized deepfakes, and that the complaint was justified and not resolved. It recommended suspending Grok Imagine, the image tool, plus annual third-party audits and six months of monitoring for workarounds. The companies declined the suspension but committed to four other recommendations and quarterly reports. [Source](https://www.priv.gc.ca/en/opc-actions-and-decisions/investigations/investigations-into-businesses/2026/pipeda-2026-004/)
 
 **Takeaway:** The Grok recommendations (audits, misuse monitoring, progress reports) read like a control set for any generative AI feature.
 
@@ -49,9 +49,9 @@ On 2026-06-11 the OPC went further with Grok, X's AI chatbot and image generator
 
 ### Accountability for vendors stays with the business
 
-The same logic reaches the vendors a business relies on. OPC guidance published on 2026-09-10 says accountability for personal information stays with the business when a service provider handles it, and covers due diligence, contract terms and how to demonstrate accountability. Comments close 2026-12-04. [Source](https://www.priv.gc.ca/en/opc-news/news-and-announcements/2026/nr-c_260910/)
+The same logic reaches the vendors a business relies on. OPC guidance published on 10 September 2026 says accountability for personal information stays with the business when a service provider handles it, and covers due diligence, contract terms and how to demonstrate accountability. Comments close 4 December 2026. [Source](https://www.priv.gc.ca/en/opc-news/news-and-announcements/2026/nr-c_260910/)
 
-That guidance carries weight, but it has limits. The OPC cannot issue binding orders under PIPEDA, which is why it went to Federal Court against Google on 2026-08-28 to implement its recommendations that certain search results be de-listed (removed). [Source](https://www.priv.gc.ca/en/opc-news/news-and-announcements/2026/nr-c_260828/) Complaints are also rising: 3,044 under PIPEDA in 2025-26, up 109%. [Source](https://www.priv.gc.ca/en/opc-news/news-and-announcements/2026/nr-c_260604/)
+That guidance carries weight, but it has limits. The OPC cannot issue binding orders under PIPEDA, which is why it went to Federal Court against Google on 28 August 2026 to implement its recommendations that certain search results be de-listed (removed). [Source](https://www.priv.gc.ca/en/opc-news/news-and-announcements/2026/nr-c_260828/) Complaints are also rising: 3,044 under PIPEDA in 2025-26, up 109%. [Source](https://www.priv.gc.ca/en/opc-news/news-and-announcements/2026/nr-c_260604/)
 
 **Takeaway:** A complete vendor and AI inventory answers the new guidance today and is likely to stay useful whatever C-36 becomes.
 
@@ -59,7 +59,7 @@ That guidance carries weight, but it has limits. The OPC cannot issue binding or
 
 ### The provinces add their own layer
 
-Provincial law adds a second layer. Québec's Law 25, the province's modernised private-sector privacy law, has applied in full since 2024-09-22. Its regulator, the Commission d'accès à l'information (CAI), can impose administrative penalties of up to C$10M or 2% of worldwide turnover, whichever is greater. [Statute, s. 90.12](https://www.legisquebec.gouv.qc.ca/en/document/cs/P-39.1) The CAI wants to go further: its five-year report, tabled on 2026-06-11, makes 74 recommendations, including that the law define and regulate web scraping of personal information, a practice the report notes feeds the most advanced AI models. [CAI](https://www.cai.gouv.qc.ca/actualites/publication-du-rapport-quinquennal-2026-de-la-commission)
+Provincial law adds a second layer. Québec's Law 25, the province's modernised private-sector privacy law, has applied in full since 22 September 2024. Its regulator, the Commission d'accès à l'information (CAI), can impose administrative penalties of up to C$10M or 2% of worldwide turnover, whichever is greater. [Statute, s. 90.12](https://www.legisquebec.gouv.qc.ca/en/document/cs/P-39.1) The CAI wants to go further: its five-year report, tabled on 11 June 2026, makes 74 recommendations, including that the law define and regulate web scraping of personal information, a practice the report notes feeds the most advanced AI models. [CAI](https://www.cai.gouv.qc.ca/actualites/publication-du-rapport-quinquennal-2026-de-la-commission)
 
 In BC, the private-sector privacy law, the Personal Information Protection Act (PIPA), has not been modernised. In May the Commissioner wrote to the government urging it to "act without delay" to do so. [OIPC BC](https://oipc.bc.ca/documents/news-releases/3154) The regulator, the Office of the Information and Privacy Commissioner (OIPC), repeated the call in its 2025/26 annual report, which shows privacy complaints nearly doubling, from 456 to 904. [OIPC BC](https://oipc.bc.ca/documents/news-releases/3187)
 
@@ -67,7 +67,7 @@ In BC, the private-sector privacy law, the Personal Information Protection Act (
 
 **Open question:** Where do your Québec, BC and federal privacy processes differ, and does anyone own that comparison?
 
-> **This week:** On 2026-10-07 the Privacy Commissioner spoke to a House of Commons committee on security screening, a public-sector matter outside PIPEDA ([OPC](https://www.priv.gc.ca/en/opc-news/news-and-announcements/2026/nr-c_261007/)).
+> **This week:** On 7 October 2026 the Privacy Commissioner spoke to a House of Commons committee on security screening, a public-sector matter outside PIPEDA ([OPC](https://www.priv.gc.ca/en/opc-news/news-and-announcements/2026/nr-c_261007/)).
 
 ## How I'd approach it
 
@@ -92,7 +92,7 @@ The trade-off is real. Some of this work may not match C-36's final text, and a 
 - Add questions on AI training-data sources and consent to your privacy impact assessment (PIA) template.
 - Map vendors and AI systems into one inventory, with data categories, consent basis and contract terms.
 - Start a register of automated decision systems. It costs little and maps to C-36.
-- Confirm whether to comment on the OPC's service-provider guidance before 2026-12-04.
+- Confirm whether to comment on the OPC's service-provider guidance before 4 December 2026.
 
 ### If you work in…
 
@@ -101,14 +101,14 @@ The trade-off is real. Some of this work may not match C-36's final text, and a 
 | Tech | The OpenAI and Grok findings test AI consent under today's PIPEDA. | Compare generative AI features against the Grok recommendations. |
 | Product / SaaS | Customers stay accountable for data you handle, so expect their questions. | Keep an answer pack: data map, sub-processors, AI use, PIA. |
 | Cloud | I expect customers' vendor due diligence to reach hosting providers. | Document where Canadian personal data is stored. |
-| Banking / FinServ | The Office of the Superintendent of Financial Institutions (OSFI), the federal financial regulator, treats AI as models under Guideline E-23 from 2027-05-01 ([OSFI](https://www.osfi-bsif.gc.ca/en/guidance/guidance-library/guideline-e-23-model-risk-management-2027)). | Fold third-party AI into the model inventory. |
+| Banking / FinServ | The Office of the Superintendent of Financial Institutions (OSFI), the federal financial regulator, treats AI as models under Guideline E-23 from 1 May 2027 ([OSFI](https://www.osfi-bsif.gc.ca/en/guidance/guidance-library/guideline-e-23-model-risk-management-2027)). | Fold third-party AI into the model inventory. |
 | Retail | The OPC is investigating the IDScan.net breach, in which driver's licence and ID scans were stolen ([OPC](https://www.priv.gc.ca/en/opc-news/news-and-announcements/2026/nr-c_260921/)). | Review which ID data you keep and which vendor holds it. |
 
 ## On the radar
 
-- **2026-12-04**: OPC third-party service-provider guidance: comment period closes ([Radar](/grc-insights/radar/#ca-opc-tpsp-guidance))
-- **2027-01-01**: Ontario Bill 97, changes to Ontario's public-sector privacy laws: mandatory PIAs and breach reporting take effect for municipal institutions ([IPC Ontario](https://www.ipc.on.ca/en/resources/fippa-mfippa-updates); [Radar](/grc-insights/radar/#ca-on-bill97))
-- **2027-05-01**: OSFI Guideline E-23 on model risk, including AI, takes effect for federally regulated financial institutions ([Radar](/grc-insights/radar/#ca-osfi-e23))
+- **4 December 2026**: OPC third-party service-provider guidance: comment period closes ([Radar](/grc-insights/radar/#ca-opc-tpsp-guidance))
+- **1 January 2027**: Ontario Bill 97, changes to Ontario's public-sector privacy laws: mandatory PIAs and breach reporting take effect for municipal institutions ([IPC Ontario](https://www.ipc.on.ca/en/resources/fippa-mfippa-updates); [Radar](/grc-insights/radar/#ca-on-bill97))
+- **1 May 2027**: OSFI Guideline E-23 on model risk, including AI, takes effect for federally regulated financial institutions ([Radar](/grc-insights/radar/#ca-osfi-e23))
 
 ## Sources
 

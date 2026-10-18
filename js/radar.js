@@ -12,6 +12,13 @@ export function upcomingDates(rows, todayIso, days = 90) {
     .sort((a, b) => a.date.localeCompare(b.date));
 }
 
+const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+export function humanDate(iso) {
+  const [y, m, d] = String(iso).split('-').map(Number);
+  return y && m && d ? `${d} ${MONTHS[m - 1]} ${y}` : String(iso);
+}
+
 const escapeHtml = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 
 function localToday() {
@@ -30,7 +37,7 @@ if (typeof document !== 'undefined') {
       const limit = Number(list.dataset.limit || 0) || Infinity;
       const items = upcomingDates(rows, localToday(), days).slice(0, limit);
       list.innerHTML = items.length
-        ? items.map(x => `<li><time datetime="${x.date}">${x.date}</time><a href="${radarUrl}#${escapeHtml(x.id)}">${escapeHtml(x.name)}</a>: ${escapeHtml(x.what)}</li>`).join('')
+        ? items.map(x => `<li><time datetime="${x.date}">${humanDate(x.date)}</time><a href="${radarUrl}#${escapeHtml(x.id)}">${escapeHtml(x.name)}</a>: ${escapeHtml(x.what)}</li>`).join('')
         : `<li class="muted">Nothing scheduled in the next ${days} days.</li>`;
     }
   }

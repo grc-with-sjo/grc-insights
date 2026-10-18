@@ -7,9 +7,10 @@ description: A living tracker of AI, privacy and cybersecurity laws, regulations
 {% assign reviewed = site.data.tracker | map: 'last_reviewed' | sort | last %}
 <section class="hero hero-compact">
   <div class="hero-inner">
-    <div class="hero-tag">Living tracker{% if reviewed %} · Last reviewed {{ reviewed }}{% endif %}</div>
+    <div class="hero-tag">Living tracker{% if reviewed %} · Last reviewed {{ reviewed | date: '%-d %B %Y' }}{% endif %}</div>
     <h1>Regulation <span>Radar</span></h1>
     <p class="hero-intro">Every AI, privacy and cybersecurity law, rule and standard I'm watching, with status, key dates and who it hits. Each entry links to its primary source.</p>
+    <p class="hero-intro radar-key">Relevance is my call on how likely each item is to change a GRC programme's work: <strong>high</strong> means this year, <strong>medium</strong> means worth planning for, and <strong>watch</strong> means it could matter but hasn't moved yet.</p>
   </div>
 </section>
 
@@ -36,16 +37,18 @@ description: A living tracker of AI, privacy and cybersecurity laws, regulations
             <td><a href="{{ r.source | escape }}" target="_blank" rel="noopener">{{ r.name | escape }}</a><span class="radar-type">{{ r.type | escape }}</span></td>
             <td>{{ r.jurisdiction | escape }} <span class="muted">({{ r.region }})</span></td>
             <td><span class="status status-{{ r.status }}">{{ r.status }}</span></td>
-            <td>{% for k in r.key_dates %}<div><time datetime="{{ k.date }}">{{ k.date }}</time> {{ k.what | escape }}</div>{% endfor %}</td>
+            <td>{% for k in r.key_dates %}<div><time datetime="{{ k.date }}">{{ k.date | date: '%-d %b %Y' }}</time> {{ k.what | escape }}</div>{% endfor %}</td>
             <td>{{ r.sectors | join: ', ' }}</td>
             <td><span class="relevance relevance-{{ r.applies_to_me }}">{{ r.applies_to_me }}</span></td>
-            <td>{{ r.summary | escape }}<div class="muted">Reviewed {{ r.last_reviewed }}</div></td>
+            {% assign summary = r.summary | escape %}{% if summary contains '⚠️ verify' %}{% assign summary = summary | remove: '⚠️ verify: ' | remove: '⚠️ verify:' | remove: ' ⚠️ verify' | remove: '⚠️ verify' | strip %}{% assign any_unconfirmed = true %}{% capture summary %}{{ summary }}<sup class="unconfirmed"><a href="#unconfirmed-note" title="Not yet confirmed against an official source">†</a></sup>{% endcapture %}{% endif %}
+            <td>{{ summary }}<div class="muted">Reviewed {{ r.last_reviewed | date: '%-d %b %Y' }}</div></td>
           </tr>
           {% endfor %}
         </tbody>
       </table>
     </div>
     <p class="muted" data-filter-empty hidden>No entries match these filters.</p>
+    {% if any_unconfirmed %}<p class="unconfirmed-note" id="unconfirmed-note">† Based on secondary sources and not yet confirmed against an official source. Each entry links to the source used.</p>{% endif %}
   </section>
 </main>
 {% include radar-data.html %}

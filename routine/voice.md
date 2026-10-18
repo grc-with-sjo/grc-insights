@@ -11,4 +11,6 @@ Applies to every issue and every social post. Surabhi's own brief, verbatim:
 - No "the research found", "research was incomplete", "it is important", generic transitions ("Meanwhile,", "That said,"), or more than one "consider".
 - Rhetorical questions only as the closing question of a post or in "Questions to take to your team", never in explanatory paragraphs.
 - Hedges stay where the evidence is incomplete ("reportedly", "according to…"), stated once, not stacked.
+- Dates as readers say them ("2 December 2026"), never ISO in reader-facing text.
+- Address readers as "you/your" in questions, never "our/we" (which can read as the author's employer).
 - Social posts: one argument per post. If a point doesn't serve the hook and the takeaway, it stays in the issue.

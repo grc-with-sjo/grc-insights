@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { upcomingDates } from '../js/radar.js';
+import { upcomingDates, humanDate } from '../js/radar.js';
 
 const rows = [
   { id: 'a', name: 'Law A', region: 'CA', key_dates: [{ date: '2026-10-01', what: 'past' }, { date: '2026-12-01', what: 'soon' }] },
@@ -14,4 +14,10 @@ test('returns key dates within the window, soonest first', () => {
 
 test('window boundary is inclusive and rows without key_dates are ignored', () => {
   assert.deepEqual(upcomingDates(rows, '2026-10-20', 0).map(x => x.what), ['sooner']);
+});
+
+test('humanDate writes ISO dates the way readers say them', () => {
+  assert.equal(humanDate('2026-12-02'), '2 Dec 2026');
+  assert.equal(humanDate('2027-06-11'), '11 Jun 2027');
+  assert.equal(humanDate('not a date'), 'not a date');
 });
