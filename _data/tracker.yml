@@ -50,7 +50,7 @@
     - { date: "2026-06-25", what: "OIPC BC 2025/26 annual report tabled; calls for modernised laws" }
   sectors: [tech, saas, cloud, hardware, banking, retail]
   applies_to_me: high
-  summary: "⚠️ verify: BC's private-sector privacy statute; unchanged, with no bill or special committee found, while the Commissioner calls for modernised laws."
+  summary: "BC's private-sector privacy statute has not been modernised; in May 2026 the Commissioner urged government to act without delay, and the 2025/26 annual report shows privacy complaints nearly doubling (456 to 904)."
   source: "https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/03063_01"
   last_reviewed: "2026-10-11"
 - id: ca-bc-fippa
@@ -80,7 +80,7 @@
     - { date: "2026-06-11", what: "CAI five-year report tabled with 74 proposed changes" }
   sectors: [tech, saas, cloud, hardware, banking, retail]
   applies_to_me: high
-  summary: "⚠️ verify: Canada's strictest private-sector privacy regime; every phase is in effect, no CAI administrative monetary penalty has been confirmed, and the CAI proposes limits on mass collection to train AI."
+  summary: "Canada's strictest private-sector privacy regime; every phase is in effect, administrative penalties reach C$10M or 2% of worldwide turnover (s. 90.12), and the CAI's 2026 report recommends defining and regulating web scraping of personal information."
   source: "https://www.legisquebec.gouv.qc.ca/en/document/cs/P-39.1"
   last_reviewed: "2026-10-11"
 - id: ca-on-bill194
@@ -682,8 +682,8 @@
     - { date: "2027-01-01", what: "MFIPPA PIAs, breach reporting and whistleblower provision in force" }
   sectors: [public-sector, saas, cloud]
   applies_to_me: medium
-  summary: "⚠️ verify: Staged changes to Ontario's public-sector access and privacy laws, bringing PIAs and breach reporting to municipal institutions from 2027-01-01."
-  source: "https://www.weirfoulds.com/bill-97-explained-key-access-and-privacy-changes-for-ontarios-fippa-and-mfippa-institutions"
+  summary: "Staged changes to Ontario's public-sector access and privacy laws, bringing PIAs and breach reporting to municipal institutions from 2027-01-01."
+  source: "https://www.ipc.on.ca/en/resources/fippa-mfippa-updates"
   last_reviewed: "2026-10-11"
 - id: us-ut-ai-policy-act
   name: "Utah Artificial Intelligence Policy Act (SB 149, as amended by SB 226 and SB 332)"
