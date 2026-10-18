@@ -1,23 +1,32 @@
 # Social drafts: Issue 02: Cyber deadlines keep moving. What should a security team build in the meantime?
 
 Issue URL: https://grc-with-sjo.github.io/grc-insights/issues/2026-11-22-cyber-deadlines-slip-assurance-travels/
-Suggested posting time: Tuesday or Wednesday, 08:00–09:00 PT. Surabhi posts manually.
+Suggested posting time: LinkedIn Tue 2026-10-27, 08:00–09:00 PT (see `social/linkedin-schedule.md`). Surabhi posts manually.
 
 Unconfirmed claims: phrase them with attribution words ("reportedly", "according to…"), never the ⚠️ marker.
 
 ## LinkedIn post (≤ 1,300 characters; no link in the body)
 
-When US and Canadian cyber dates keep moving and Europe's reporting clock is already running, what can a security team build now that holds its value whichever date lands first?
+In IT audit, you built the test once and ran it a hundred times.
 
-→ Several US and Canadian government cyber programmes have no firm schedule. US defence-contractor audits (CMMC) were reportedly paused in July pending a review.
-→ FedRAMP, which approves cloud services for US federal agencies, is moving to machine-checked evidence and closing its old route to newcomers on 2027-06-11.
-→ ISO/IEC 42001, the international standard for managing AI, is spreading through customer due diligence rather than law.
+Cyber compliance is starting to reward that again, just not because anyone planned it.
 
-One way to hedge: build one base layer (ISO 27001 and SOC 2 for customers, NIST controls for government work, an incident process tested against the EU's 24-hour early warning) and map it outward. The trade-off is spending on controls before some regulators require them.
+The dates keep moving:
+→ US defence-contractor audits (CMMC) were reportedly paused in July pending a review.
+→ US critical-infrastructure incident reporting (CIRCIA) has reportedly missed its target for final rules.
+→ Canada's new cyber law (Bill C-8) has Royal Assent but, according to parliamentary trackers, no designated operators yet.
 
-A question to take to your team: if one of our products were actively exploited on a Friday night, who would decide within 24 hours whether to report it under the EU Cyber Resilience Act?
+One clock is already running. The European Commission says the EU Cyber Resilience Act's reporting duty has applied since September: an actively exploited vulnerability means a 24-hour early warning.
 
-#GRC #Cybersecurity #FedRAMP #ISO42001
+And customers aren't waiting for any of it. They ask for ISO 27001, SOC 2, and now ISO 42001 for AI.
+
+So I'd build the base layer once: one set of controls, mapped to each framework, with evidence pulled straight from systems. A moving date then costs paperwork, not a rebuild.
+
+I break this down in Issue 02 of GRC Insights. Link in the comments.
+
+If one of your products were actively exploited on a Friday night, who decides within 24 hours whether to report it?
+
+#GRC #Cybersecurity #ISO42001 #CyberResilienceAct #RiskManagement
 
 ## LinkedIn first comment
 
