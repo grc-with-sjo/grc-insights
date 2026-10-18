@@ -3,6 +3,7 @@ title: "Canada's AI privacy rules are arriving through regulators' findings, not
 issue: 1
 series: catch-up
 date: 2026-10-08
+last_modified_at: 2026-10-18
 calendar_date: 2026-10-11
 regions: [CA]
 sectors: [tech, saas, cloud, banking, retail]

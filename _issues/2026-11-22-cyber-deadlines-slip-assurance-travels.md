@@ -3,6 +3,7 @@ title: "Cyber deadlines keep moving. What should a security team build in the me
 issue: 2
 series: catch-up
 date: 2026-10-11
+last_modified_at: 2026-10-18
 calendar_date: 2026-11-22
 regions: [US, CA, EU, GLOBAL]
 sectors: [cloud, saas, tech, hardware, banking]

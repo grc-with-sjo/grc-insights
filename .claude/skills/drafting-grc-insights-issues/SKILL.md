@@ -82,3 +82,7 @@ The site renders `⚠️ verify` as a small † linked to one note at the end of
 - **Verbs stronger than the finding.** A regulator "found the company did not comply", not "the company broke the law", unless a court or binding order says so. Never say a company "accepted" a remedy the research does not confirm.
 - **Inference dressed as fact.** Put expectations in first person ("I expect…") and keep factual sentences to what the research states.
 - **A product or case named without a reason.** "Grok, X's AI chatbot and image generator", not a bare "Grok".
+
+## Editing a published issue
+
+When you change a live issue's text, set `last_modified_at: YYYY-MM-DD` (the merge date) in its front matter. The page shows "· Updated <date>" after the publish date, and jekyll-seo-tag reports it to search engines as the modified date.

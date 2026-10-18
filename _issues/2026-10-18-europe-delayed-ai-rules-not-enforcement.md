@@ -3,6 +3,7 @@ title: "Europe moved its AI deadlines, but its privacy regulators did not wait"
 issue: 3
 series: catch-up
 date: 2026-10-14
+last_modified_at: 2026-10-18
 calendar_date: 2026-10-18
 regions: [EU, UK]
 sectors: [tech, saas, banking, retail]

@@ -52,6 +52,12 @@ export function validateIssue({ file, data, body }, tax) {
     if (!isIsoDate(data.calendar_date)) fail('calendar_date must be YYYY-MM-DD');
     else if (weekdayOf(data.calendar_date) !== 0) fail('calendar_date must be a Sunday');
   }
+  if (data.last_modified_at !== undefined) {
+    const lm = data.last_modified_at instanceof Date ? data.last_modified_at.toISOString().slice(0, 10) : String(data.last_modified_at);
+    const d = data.date instanceof Date ? data.date.toISOString().slice(0, 10) : String(data.date);
+    if (!isIsoDate(lm)) fail('last_modified_at must be YYYY-MM-DD');
+    else if (lm < d) fail('last_modified_at must not be before date');
+  }
   if (typeof data.description !== 'string' || !data.description.trim()) fail('description is required');
   else if (data.description.length > 200) fail('description must be 200 characters or fewer');
   for (const m of subsetErrors('regions', data.regions, tax.regions)) fail(m);
