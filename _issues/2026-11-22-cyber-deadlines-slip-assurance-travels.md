@@ -77,7 +77,7 @@ The trade-off is real. This spends on controls before some regulators require th
 
 ## Questions to take to your team
 
-- **Does your incident response plan name who decides whether something is reportable under the CRA?** Plans often cover detecting and fixing a vulnerability, but not the reporting decision.
+- **If one of your products were actively exploited on a Friday night, who would decide within 24 hours whether to file under the CRA?** Ownership often splits between product security and legal, and the hand-off is rarely tested.
 - **Which of your controls are mapped once to several frameworks, and which are maintained separately for each audit?** Duplication hides because each audit passes on its own.
 - **If CMMC audits or CPCSC Level 1 appeared in one of your contracts, who would see the clause first?** Contract terms often reach sales long before security.
 
