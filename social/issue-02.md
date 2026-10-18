@@ -3,9 +3,6 @@
 Issue URL: https://grc-with-sjo.github.io/grc-insights/issues/2026-11-22-cyber-deadlines-slip-assurance-travels/
 Suggested posting time: LinkedIn Tue 2026-10-20, 08:00–09:00 PT (see `social/linkedin-schedule.md`). Surabhi posts manually.
 
-Auto-post: linkedin, reminder
-(The Bluesky/X thread below covers the held incident-reporting angle, so it is not auto-posted. Add bluesky, mastodon once reviewed.)
-
 Unconfirmed claims: phrase them with attribution words ("reportedly", "according to…"), never the ⚠️ marker.
 
 ## LinkedIn post (≤ 1,300 characters; no link in the body)

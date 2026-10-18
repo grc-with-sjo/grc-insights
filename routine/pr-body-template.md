@@ -10,7 +10,7 @@ Preview the Markdown: `_issues/<file>` in the **Files changed** tab.
 - [ ] Unconfirmed claims are attributed in the sentence (rendered as †)
 - [ ] `⚠️ verify` items resolved (<verify_count> flagged)
 - [ ] Tracker changes look right (see below)
-- [ ] Social drafts reviewed (`social/issue-<NN>.md`): merging approves them for automatic posting on the scheduled dates
+- [ ] Social drafts reviewed (`social/issue-<NN>.md`)
 
 ### Tracker changes
 | Row | Change |

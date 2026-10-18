@@ -48,13 +48,16 @@ The EU gave high-risk AI systems more time this summer, but its privacy regulato
 
 Originally published at https://grc-with-sjo.github.io/grc-insights/issues/2026-10-18-europe-delayed-ai-rules-not-enforcement/
 
-## X / Bluesky thread (5 posts, ≤ 280 chars each)
+## Bluesky post (single post; 1–3 hashtags)
 
-1/ Europe moved its AI deadlines. The AI Act's high-risk duties now start in December 2027, but generative AI marking and new prohibitions still start on 2026-12-02.
-2/ Privacy enforcement did not pause. Ireland's regulator fined Google EUR 403M on 2026-09-21 over location data, citing legal basis, transparency, retention and accountability.
-3/ Dutch press reports the Netherlands' privacy regulator fined Uber EUR 824.99M over driver accounts deactivated by a system alone, and that Uber plans to appeal. Not checked against the regulator's own decision.
-4/ How I'd approach it: sort dates into fixed, moved and unknown. An automated-decision register holds its value under all three.
-5/ Full issue + sources: https://grc-with-sjo.github.io/grc-insights/issues/2026-10-18-europe-delayed-ai-rules-not-enforcement/
+Card link: https://grc-with-sjo.github.io/grc-insights/issues/2026-10-18-europe-delayed-ai-rules-not-enforcement/
+Paste the link first, wait for the preview card, then delete the URL text (the card stays). The post text below is ≤ 300 chars without the URL.
+
+Europe moved its AI deadlines. Its privacy regulators didn't wait: Google was fined €403M over location data, and Uber €824.99M over drivers deactivated by a system alone.
+
+My take: put next quarter into rules that already apply, starting with an automated-decision register.
+
+#privacy #AIgovernance
 
 ## Community summary (optional: only if it adds value; no link-dumping)
 

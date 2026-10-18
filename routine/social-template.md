@@ -1,7 +1,7 @@
 # Social drafts: Issue <NN>: <title>
 
 Issue URL: https://grc-with-sjo.github.io/grc-insights/issues/<file-name-without-extension>/
-The Syndicate workflow posts the LinkedIn post, first comment, Bluesky and Mastodon automatically on the dates below once the PR is merged; Medium and Substack follow `social/syndication.md`. To hold a channel, add a line here such as `Auto-post: linkedin, reminder` (channels: linkedin, bluesky, mastodon, reminder).
+Surabhi posts manually; dates are in the LinkedIn schedule below.
 
 Unconfirmed claims: phrase them with attribution words ("reportedly", "according to…"), never the ⚠️ marker.
 

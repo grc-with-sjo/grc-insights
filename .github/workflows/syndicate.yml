@@ -1,7 +1,8 @@
-name: Syndicate
-# Posts the reviewed drafts in social/issue-NN.md on the dates in social/linkedin-schedule.md
-# (scripts/syndicate.mjs). What has been posted is recorded on the `syndication-log` branch, so a
-# rerun never posts twice. Channels without secrets run as a dry run (see README).
+name: Syndicate reminders
+# Opens a GitHub issue two days after each LinkedIn date in social/linkedin-schedule.md, reminding
+# Surabhi to syndicate the issue to Medium and Substack (scripts/syndicate.mjs). Nothing is posted to
+# any social network. Opened reminders are recorded on the `syndication-log` branch, so reruns never
+# open duplicates.
 on:
   schedule:
     - cron: "40 15 * * *"   # 08:40 PDT
@@ -9,7 +10,7 @@ on:
   workflow_dispatch:
     inputs:
       dry_run:
-        description: "Only print what would be posted"
+        description: "Only print the reminders that would open"
         type: boolean
         default: true
 permissions:
@@ -43,13 +44,6 @@ jobs:
         run: node scripts/syndicate.mjs --state log/posted.json ${{ (github.event_name == 'workflow_dispatch' && inputs.dry_run) && '--dry-run' || '' }} ${{ github.event_name == 'workflow_dispatch' && '--ignore-hour' || '' }}
         env:
           GITHUB_TOKEN: ${{ github.token }}
-          LINKEDIN_TOKEN: ${{ secrets.LINKEDIN_TOKEN }}
-          LINKEDIN_PERSON_URN: ${{ secrets.LINKEDIN_PERSON_URN }}
-          LINKEDIN_TOKEN_ISSUED: ${{ vars.LINKEDIN_TOKEN_ISSUED }}
-          BLUESKY_HANDLE: ${{ secrets.BLUESKY_HANDLE }}
-          BLUESKY_APP_PASSWORD: ${{ secrets.BLUESKY_APP_PASSWORD }}
-          MASTODON_INSTANCE: ${{ vars.MASTODON_INSTANCE }}
-          MASTODON_TOKEN: ${{ secrets.MASTODON_TOKEN }}
       - name: Save the posting log
         if: always()
         run: |
