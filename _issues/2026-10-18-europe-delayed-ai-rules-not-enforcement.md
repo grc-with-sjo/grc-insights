@@ -13,7 +13,7 @@ description: "Europe gave high-risk AI more time, but its privacy regulators kep
 
 ## In brief
 
-- The EU pushed its AI law's heaviest duties, for uses such as hiring and credit scoring, to December 2027. Two narrower AI rules still start on 2026-12-02.
+- The EU pushed its AI law's heaviest duties, for uses such as hiring and credit scoring, to December 2027. Two narrower AI rules still start on 2 December 2026.
 - Privacy enforcement did not pause: Ireland's privacy regulator fined Google EUR 403M in September over location data.
 - In the UK, new automated-decision rules have applied since February, and a 30-day duty to acknowledge privacy complaints since June.
 
@@ -29,23 +29,23 @@ That leaves the planning problem this issue works through: where to put the next
 
 ### The AI Act's big deadline moved to 2027, but December 2026 still applies
 
-The delay is narrower than it first sounds. The AI Omnibus is Regulation (EU) 2026/1744, an amending law published in the EU's Official Journal on 2026-07-24. It moves the high-risk duties for uses listed in the Act's Annex III, such as hiring, education and credit scoring, to 2027-12-02. For AI built into already-regulated products, listed in Annex I, the new date is 2028-08-02. [Source](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:L_202601744)
+The delay is narrower than it first sounds. The AI Omnibus is Regulation (EU) 2026/1744, an amending law published in the EU's Official Journal on 24 July 2026. It moves the high-risk duties for uses listed in the Act's Annex III, such as hiring, education and credit scoring, to 2 December 2027. For AI built into already-regulated products, listed in Annex I, the new date is 2 August 2028. [Source](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:L_202601744)
 
-Two things did not move. From 2026-12-02, generative AI systems placed on the market before 2026-08-02 must meet the Act's rule on marking AI-generated output, and new prohibited practices apply.
+Two things did not move. From 2 December 2026, generative AI systems placed on the market before 2 August 2026 must meet the Act's rule on marking AI-generated output, and new prohibited practices apply.
 
-General-purpose AI models, the large models other products build on, are a third front. An update from the law firm WSGR reports that the European Commission's powers over their providers, including fines, became usable on 2026-08-02 ⚠️ verify. [WSGR](https://www.wsgrdataadvisor.com/2026/08/eu-ai-act-enforcement-phase-begins/) I have not seen an enforcement action yet, and I would not read much into the silence this early.
+General-purpose AI models, the large models other products build on, are a third front. An update from the law firm WSGR reports that the European Commission's powers over their providers, including fines, became usable on 2 August 2026 ⚠️ verify. [WSGR](https://www.wsgrdataadvisor.com/2026/08/eu-ai-act-enforcement-phase-begins/) I have not seen an enforcement action yet, and I would not read much into the silence this early.
 
-**Takeaway:** The delay covers high-risk uses; the 2026-12-02 date for generative AI marking and the new prohibitions still stands.
+**Takeaway:** The delay covers high-risk uses; the 2 December 2026 date for generative AI marking and the new prohibitions still stands.
 
 **Open question:** Who has confirmed that AI-output marking works in your product, and where is that recorded?
 
 ### Privacy regulators kept fining under the law they already have
 
-Privacy regulators did not wait. They used the GDPR as it stands. Ireland's Data Protection Commission (DPC) is that country's GDPR regulator. On 2026-09-21 it fined Google EUR 403M over three location and activity settings, citing the legal basis, transparency, retention and accountability, and gave Google six months to comply. [Source](https://www.dataprotection.ie/en/news-media/latest-news/data-protection-commission-fines-google-eu403-million-following-inquiry-googles-processing-location)
+Privacy regulators did not wait. They used the GDPR as it stands. Ireland's Data Protection Commission (DPC) is that country's GDPR regulator. On 21 September 2026 it fined Google EUR 403M over three location and activity settings, citing the legal basis, transparency, retention and accountability, and gave Google six months to comply. [Source](https://www.dataprotection.ie/en/news-media/latest-news/data-protection-commission-fines-google-eu403-million-following-inquiry-googles-processing-location)
 
 A second case points at automated decisions. The GDPR limits decisions about people made by automated means alone. Dutch technology press reports that the Netherlands' privacy regulator, the Autoriteit Persoonsgegevens (AP), fined Uber EUR 824.99M under that rule and the transparency rules, over driver accounts deactivated by a system alone, and that Uber plans to appeal ⚠️ verify. [ioplus](https://www.ioplus.nl/nl/posts/uber-beboet-met-825-miljoen--wat-het-echt-betekent)
 
-Neither case needed a new law, and GDPR changes are not close. Agence Europe, a Brussels news service, reported that EU governments' vote on their Digital Omnibus position, planned for 2026-10-07, was postponed under pressure from Germany and France. [Agence Europe](https://agenceurope.eu/en/bulletin/article/13954/5/vote-on-digital-omnibus-postponed-until-11-october-under-pressure-from-paris-and-berlin) I do not expect any GDPR change to apply in 2026.
+Neither case needed a new law, and GDPR changes are not close. Agence Europe, a Brussels news service, reported that EU governments' vote on their Digital Omnibus position, planned for 7 October 2026, was postponed under pressure from Germany and France. [Agence Europe](https://agenceurope.eu/en/bulletin/article/13954/5/vote-on-digital-omnibus-postponed-until-11-october-under-pressure-from-paris-and-berlin) I do not expect any GDPR change to apply in 2026.
 
 **Takeaway:** Enforcement is visible today on location data and on automated decisions that cut people off; fraud flags and credit refusals work the same way.
 
@@ -53,9 +53,9 @@ Neither case needed a new law, and GDPR changes are not close. Agence Europe, a 
 
 ### The UK's automated-decision rules are already live
 
-The UK shows the same pattern, without a delay. Most of the Data (Use and Access) Act's privacy changes, including new rules on automated decisions, came into force on 2026-02-05. From 2026-06-19, organisations must acknowledge a privacy complaint within 30 days and investigate it. [Source](https://legislation.gov.uk/uksi/2026/82)
+The UK shows the same pattern, without a delay. Most of the Data (Use and Access) Act's privacy changes, including new rules on automated decisions, came into force on 5 February 2026. From 19 June 2026, organisations must acknowledge a privacy complaint within 30 days and investigate it. [Source](https://legislation.gov.uk/uksi/2026/82)
 
-Law-firm and trade reports say that on 2026-09-30 the Information Commissioner's Office (ICO), the UK privacy regulator, became the Information Commission, run by a board, with existing investigations continuing ⚠️ verify. [Recordinglaw](https://www.recordinglaw.com/news/uk-information-commission-transfer-september-2026/) A summary of the ICO's 2025-26 annual report by the news service Freevacy says complaints rose 81% to 76,743, with only 27.4% answered within 90 days ⚠️ verify. [Freevacy](https://www.freevacy.com/news/ico/ico-publishes-2025-26-annual-report/7587)
+Law-firm and trade reports say that on 30 September 2026 the Information Commissioner's Office (ICO), the UK privacy regulator, became the Information Commission, run by a board, with existing investigations continuing ⚠️ verify. [Recordinglaw](https://www.recordinglaw.com/news/uk-information-commission-transfer-september-2026/) A summary of the ICO's 2025-26 annual report by the news service Freevacy says complaints rose 81% to 76,743, with only 27.4% answered within 90 days ⚠️ verify. [Freevacy](https://www.freevacy.com/news/ico/ico-publishes-2025-26-annual-report/7587)
 
 **Takeaway:** With the regulator under that load, the 30-day duty puts the first response on organisations; one tracked complaint queue makes it easier to meet.
 
@@ -67,7 +67,7 @@ Law-firm and trade reports say that on 2026-09-30 the Information Commissioner's
 
 The uncertainty I would name first is not when the AI rules apply; those dates are written down. It is how much of a plan quietly assumed the AI deadlines were the main event.
 
-I would sort dates into three kinds. Fixed: 2026-12-02 for generative AI marking and the new prohibitions, and the UK rules live since February and June. Moved: 2027-12-02 for high-risk uses and 2028-08-02 for AI inside regulated products. Unknown: any GDPR change from the Digital Omnibus, and the first visible use of the Commission's powers over general-purpose models.
+I would sort dates into three kinds. Fixed: 2 December 2026 for generative AI marking and the new prohibitions, and the UK rules live since February and June. Moved: 2 December 2027 for high-risk uses and 2 August 2028 for AI inside regulated products. Unknown: any GDPR change from the Digital Omnibus, and the first visible use of the Commission's powers over general-purpose models.
 
 Then I would look for work that holds its value whichever way the unknowns go. An automated-decision register is the clearest example: each decision, its effect on a person, who reviews it and what evidence the review leaves. It serves the GDPR, the UK's new rules and, later, the high-risk AI duties. An inventory of generative AI features works the same way: it answers the December marking duty whatever happens to the other dates.
 
@@ -83,26 +83,26 @@ The trade-off: a quarter spent on automated decisions, location data and complai
 
 ## What to do this quarter
 
-- List generative AI features offered in the EU before 2026-08-02 and confirm each marks its output by 2026-12-02.
+- List generative AI features offered in the EU before 2 August 2026 and confirm each marks its output by 2 December 2026.
 - Map automated decisions affecting EU and UK users into one register: decision, effect, human reviewer, evidence.
 - Confirm the legal basis, notices and retention for location data, using the DPC's Google findings as a checklist.
 - Confirm that UK privacy complaints reach one tracked queue with a 30-day acknowledgement target.
-- If generative AI training is in scope for you, comment on the EDPB's draft guidelines on anonymisation and web scraping for generative AI before 2026-10-30. [EDPB](https://www.edpb.europa.eu/news/edpb-sheds-light-on-anonymisation-and-web-scraping-for-generative-ai-and-adopts-final-version_en)
+- If generative AI training is in scope for you, comment on the EDPB's draft guidelines on anonymisation and web scraping for generative AI before 30 October 2026. [EDPB](https://www.edpb.europa.eu/news/edpb-sheds-light-on-anonymisation-and-web-scraping-for-generative-ai-and-adopts-final-version_en)
 
 ### If you work in…
 
 | Sector | What it means | What to do |
 |---|---|---|
-| Tech | Generative AI marking and new prohibitions apply from 2026-12-02. | Inventory EU generative AI features. |
+| Tech | Generative AI marking and new prohibitions apply from 2 December 2026. | Inventory EU generative AI features. |
 | Product / SaaS | Automated deactivations fall under EU and UK automated-decision rules. | Check those flows for evidenced human review. |
-| Banking / FinServ | AI Act credit-scoring duties wait until 2027-12-02; UK automated-decision rules apply now. | Document human review of credit and fraud decisions. |
+| Banking / FinServ | AI Act credit-scoring duties wait until 2 December 2027; UK automated-decision rules apply now. | Document human review of credit and fraud decisions. |
 | Retail | Location data drew the period's best-confirmed fine. | Review the location data you keep. |
 
 ## On the radar
 
-- **2026-10-30**: EDPB draft guidelines on anonymisation and web scraping for generative AI: consultation closes ([Radar](/grc-insights/radar/#eu-gdpr))
-- **2026-12-02**: EU AI Act: marking duty for older generative AI systems and new prohibitions apply ([Radar](/grc-insights/radar/#eu-ai-act))
-- **2027-12-02**: EU AI Act: high-risk duties for Annex III uses apply ([Radar](/grc-insights/radar/#eu-ai-act))
+- **30 October 2026**: EDPB draft guidelines on anonymisation and web scraping for generative AI: consultation closes ([Radar](/grc-insights/radar/#eu-gdpr))
+- **2 December 2026**: EU AI Act: marking duty for older generative AI systems and new prohibitions apply ([Radar](/grc-insights/radar/#eu-ai-act))
+- **2 December 2027**: EU AI Act: high-risk duties for Annex III uses apply ([Radar](/grc-insights/radar/#eu-ai-act))
 
 ## Sources
 

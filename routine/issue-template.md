@@ -65,7 +65,7 @@ description: "<Dek: the argument in one sentence, ≤ 200 chars. Doubles as Link
 
 ## On the radar
 
-- **<YYYY-MM-DD>**: <Law>: <what happens> ([Radar](/grc-insights/radar/#<tracker-id>))
+- **<D Month YYYY, e.g. 2 December 2026>**: <Law>: <what happens> ([Radar](/grc-insights/radar/#<tracker-id>))
 
 ## Sources
 

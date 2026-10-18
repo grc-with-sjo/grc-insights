@@ -86,3 +86,7 @@ The site renders `⚠️ verify` as a small † linked to one note at the end of
 ## Editing a published issue
 
 When you change a live issue's text, set `last_modified_at: YYYY-MM-DD` (the merge date) in its front matter. The page shows "· Updated <date>" after the publish date, and jekyll-seo-tag reports it to search engines as the modified date.
+
+## Dates
+
+Write dates the way readers say them: "2 December 2026" in prose, takeaways, tables and "On the radar". ISO dates (`2026-12-02`) belong only in front matter and `_data/tracker.yml`; the site formats those for display.
