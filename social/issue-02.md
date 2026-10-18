@@ -1,23 +1,52 @@
 # Social drafts: Issue 02: Cyber deadlines keep moving. What should a security team build in the meantime?
 
 Issue URL: https://grc-with-sjo.github.io/grc-insights/issues/2026-11-22-cyber-deadlines-slip-assurance-travels/
-Suggested posting time: Tuesday or Wednesday, 08:00–09:00 PT. Surabhi posts manually.
+Suggested posting time: LinkedIn Tue 2026-10-20, 08:00–09:00 PT (see `social/linkedin-schedule.md`). Surabhi posts manually.
 
 Unconfirmed claims: phrase them with attribution words ("reportedly", "according to…"), never the ⚠️ marker.
 
 ## LinkedIn post (≤ 1,300 characters; no link in the body)
 
-When US and Canadian cyber dates keep moving and Europe's reporting clock is already running, what can a security team build now that holds its value whichever date lands first?
+In IT audit, you built the test once and ran it a hundred times.
 
-→ Several US and Canadian government cyber programmes have no firm schedule. US defence-contractor audits (CMMC) were reportedly paused in July pending a review.
-→ FedRAMP, which approves cloud services for US federal agencies, is moving to machine-checked evidence and closing its old route to newcomers on 2027-06-11.
-→ ISO/IEC 42001, the international standard for managing AI, is spreading through customer due diligence rather than law.
+Security assurance is heading the same way. Except now, systems can produce and check a lot of the evidence themselves.
 
-One way to hedge: build one base layer (ISO 27001 and SOC 2 for customers, NIST controls for government work, an incident process tested against the EU's 24-hour early warning) and map it outward. The trade-off is spending on controls before some regulators require them.
+Regulators keep moving their dates. But customers aren't waiting, and procurement teams want evidence they can verify. The good news: frameworks are moving faster than the laws, and they give you something to show customers now:
 
-A question to take to your team: if one of our products were actively exploited on a Friday night, who would decide within 24 hours whether to report it under the EU Cyber Resilience Act?
+→ FedRAMP, which approves cloud services for US federal agencies, is swapping document-heavy reviews for security indicators that systems report and machines check. The old route is set to close to new certifications in June 2027.
 
-#GRC #Cybersecurity #FedRAMP #ISO42001
+→ ISO 42001, the AI management standard, is spreading through procurement, not law. ServiceNow, Salesforce and Google already publish certificates.
+
+→ The Cloud Security Alliance has added it to its public assurance registry, right next to cloud security.
+
+My takeaway: evidence that comes straight from systems can be reused for every customer and every audit. Evidence put together by hand gets rebuilt every time.
+
+Part 2 of my weekly catch-up on AI, privacy and cyber rules. Next week: Europe. Link in the comments.
+
+How much of your audit evidence comes straight from your systems today?
+
+#GRC #Cybersecurity #ISO42001 #FedRAMP #RiskManagement
+
+## LinkedIn post: incident-reporting angle (held for later)
+
+Kept back on purpose: incident reporting is a sensitive topic to post about while employed at a product company. Before using it, update the series line. Check that CIRCIA, Bill C-8 and CRA reporting status are still current.
+
+In IT audit, you built the test once and ran it a hundred times.
+
+Incident reporting rewards the same habit: doing the work before you need it.
+
+Where the reporting clocks stand:
+→ US: critical-infrastructure incident reporting (CIRCIA) has reportedly missed its target for final rules. The proposed clock is 72 hours.
+→ Canada: according to parliamentary trackers, the new cyber law (Bill C-8) will require designated operators to report incidents, but none are designated yet.
+→ EU: according to the European Commission, the Cyber Resilience Act's reporting duty has applied since September. An actively exploited vulnerability means a 24-hour early warning.
+
+My takeaway: 24 hours isn't enough time to figure out who owns the decision, what needs to be reported, or where the evidence sits. That work has to be done before the incident happens.
+
+<Series line for the week it runs.> Link in the comments.
+
+Who owns the decision to report within 24 hours, and has anyone tested that hand-off?
+
+#GRC #Cybersecurity #IncidentResponse #CyberResilienceAct #RiskManagement
 
 ## LinkedIn first comment
 

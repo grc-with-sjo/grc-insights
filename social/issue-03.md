@@ -1,23 +1,30 @@
 # Social drafts: Issue 03: Europe moved its AI deadlines, but its privacy regulators did not wait
 
 Issue URL: https://grc-with-sjo.github.io/grc-insights/issues/2026-10-18-europe-delayed-ai-rules-not-enforcement/
-Suggested posting time: Tuesday or Wednesday, 08:00–09:00 PT. Surabhi posts manually.
+Suggested posting time: LinkedIn Tue 2026-10-27, 08:00–09:00 PT (see `social/linkedin-schedule.md`). Surabhi posts manually.
 
 Unconfirmed claims: phrase them with attribution words ("reportedly", "according to…"), never the ⚠️ marker.
 
 ## LinkedIn post (≤ 1,300 characters; no link in the body)
 
-Europe gave high-risk AI more time, but its privacy regulators kept fining under existing law. If your plan was built around the AI deadlines, what does it leave uncovered?
+Europe gave AI more time. Its privacy regulators didn't take any.
 
-→ The EU pushed its AI law's heaviest duties, for uses such as hiring and credit scoring, to December 2027. Two narrower AI rules still start on 2026-12-02.
-→ Privacy enforcement did not pause: Ireland's privacy regulator fined Google EUR 403M in September over location data.
+In July, the EU pushed its AI Act's heaviest duties, for high-risk uses like hiring and credit scoring, to December 2027.
+
+Easy to read that as breathing room. But:
+→ Two AI rules still start on December 2: marking AI-generated output from older generative AI systems, and new prohibited practices.
+→ Ireland's privacy regulator fined Google €403M in September over location data, under the GDPR as it stands.
 → In the UK, new automated-decision rules have applied since February, and a 30-day duty to acknowledge privacy complaints since June.
 
-One way to hedge: an automated-decision register (each decision, who reviews it, what evidence the review leaves) holds its value whichever way the open dates go.
+The new AI law moves. The existing privacy law doesn't wait.
 
-For each automated decision that can lock someone out, could you show a regulator what the human reviewer looked at?
+One piece of work holds up either way: an automated-decision register. Each decision that can refuse, flag or lock someone out, who reviews it, and what evidence that review leaves. It serves the GDPR and the UK rules today, and the AI Act's high-risk duties later.
 
-#AIGovernance #Privacy #GRC #GDPR #EUAIAct
+Part 3 of my weekly catch-up series. Next week: the tracker behind it. Link in the comments.
+
+If a regulator asked what your human reviewer actually looked at, could you show them?
+
+#GRC #AIGovernance #Privacy #EUAIAct #GDPR
 
 ## LinkedIn first comment
 
