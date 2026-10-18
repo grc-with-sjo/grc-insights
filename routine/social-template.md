@@ -13,7 +13,7 @@ Unconfirmed claims: phrase them with attribution words ("reportedly", "according
 
 ## LinkedIn post (≤ 1,300 characters; no link in the body)
 
-Voice: Surabhi's own, for a network that knows her. First person, short punchy lines, practitioner framing (e.g. "My audit instinct…"). Where it fits, connect to an earlier issue ("In May I wrote…").
+Voice: follow `routine/voice.md`. For LinkedIn: a network that knows her, short lines, a personal practitioner hook (e.g. "In IT audit, you built the test once…"), one argument per post, and "My takeaway:" before the closing question. Series line: "Part <N> of my weekly catch-up on AI, privacy and cyber rules. Next week: <topic>. Link in the comments."
 
 <A 1–2 line personal or practitioner hook built on the dek (`description`).>
 

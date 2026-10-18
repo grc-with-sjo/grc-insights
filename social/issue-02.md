@@ -9,16 +9,19 @@ Unconfirmed claims: phrase them with attribution words ("reportedly", "according
 
 In IT audit, you built the test once and ran it a hundred times.
 
-Security assurance is heading the same way, except now the systems run the test.
+Security assurance is heading the same way. Except now, systems can produce and check a lot of the evidence themselves.
 
-While regulators keep moving their cyber dates, customers are changing what they ask for:
-→ FedRAMP, which approves cloud services for US federal agencies, is moving from document-heavy reviews to security indicators that systems report and machines check. New certifications under the old route are planned to stop in June 2027.
-→ ISO 42001, the standard for managing AI, is spreading through procurement rather than law. ServiceNow, Salesforce and Google already publish certificates.
-→ The Cloud Security Alliance has built it into its public assurance registry.
+Regulators keep moving their dates. But customers aren't waiting, and procurement teams want evidence they can verify. The good news: frameworks are moving faster than the laws, and they give you something to show customers now:
 
-My takeaway: evidence that comes straight from systems can be generated once and shown to many reviewers. Evidence assembled by hand has to be rebuilt for every audit.
+→ FedRAMP, which approves cloud services for US federal agencies, is swapping document-heavy reviews for security indicators that systems report and machines check. The old route is set to close to new certifications in June 2027.
 
-Part 2 of my weekly catch-up series on AI, privacy and cyber rules. Next week: Europe. Link in the comments.
+→ ISO 42001, the AI management standard, is spreading through procurement, not law. ServiceNow, Salesforce and Google already publish certificates.
+
+→ The Cloud Security Alliance has added it to its public assurance registry, right next to cloud security.
+
+My takeaway: evidence that comes straight from systems can be reused for every customer and every audit. Evidence put together by hand gets rebuilt every time.
+
+Part 2 of my weekly catch-up on AI, privacy and cyber rules. Next week: Europe. Link in the comments.
 
 How much of your audit evidence comes straight from your systems today?
 
