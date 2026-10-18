@@ -1,7 +1,7 @@
 # Social drafts: Issue 02: Cyber deadlines keep moving. What should a security team build in the meantime?
 
 Issue URL: https://grc-with-sjo.github.io/grc-insights/issues/2026-11-22-cyber-deadlines-slip-assurance-travels/
-Suggested posting time: LinkedIn Tue 2026-10-27, 08:00–09:00 PT (see `social/linkedin-schedule.md`). Surabhi posts manually.
+Suggested posting time: LinkedIn Tue 2026-10-20, 08:00–09:00 PT (see `social/linkedin-schedule.md`). Surabhi posts manually.
 
 Unconfirmed claims: phrase them with attribution words ("reportedly", "according to…"), never the ⚠️ marker.
 
@@ -9,24 +9,41 @@ Unconfirmed claims: phrase them with attribution words ("reportedly", "according
 
 In IT audit, you built the test once and ran it a hundred times.
 
-Cyber compliance is starting to reward that again, just not because anyone planned it.
+Security assurance is heading the same way, except now the systems run the test.
 
-The dates keep moving:
-→ US defence-contractor audits (CMMC) were reportedly paused in July pending a review.
-→ US critical-infrastructure incident reporting (CIRCIA) has reportedly missed its target for final rules.
-→ Canada's new cyber law (Bill C-8) has Royal Assent but, according to parliamentary trackers, no designated operators yet.
+While regulators keep moving their cyber dates, customers are changing what they ask for:
+→ FedRAMP, which approves cloud services for US federal agencies, is moving from document-heavy reviews to security indicators that systems report and machines check. New certifications under the old route are planned to stop in June 2027.
+→ ISO 42001, the standard for managing AI, is spreading through procurement rather than law. ServiceNow, Salesforce and Google already publish certificates.
+→ The Cloud Security Alliance has built it into its public assurance registry.
 
-One clock is already running. The European Commission says the EU Cyber Resilience Act's reporting duty has applied since September: an actively exploited vulnerability means a 24-hour early warning.
+My takeaway: evidence that comes straight from systems can be generated once and shown to many reviewers. Evidence assembled by hand has to be rebuilt for every audit.
 
-And customers aren't waiting for any of it. They ask for ISO 27001, SOC 2, and now ISO 42001 for AI.
+Part 2 of my weekly catch-up series on AI, privacy and cyber rules. Next week: Europe. Link in the comments.
 
-So I'd build the base layer once: one set of controls, mapped to each framework, with evidence pulled straight from systems. A moving date then costs paperwork, not a rebuild.
+How much of your audit evidence comes straight from your systems today?
 
-I break this down in Issue 02 of GRC Insights. Link in the comments.
+#GRC #Cybersecurity #ISO42001 #FedRAMP #RiskManagement
+
+## LinkedIn post: incident-reporting angle (held for later)
+
+Kept back on purpose: incident reporting is a sensitive topic to post about while employed at a product company. Before using it, update the series line, and consider softening "one of your products" to "a product". Check that CIRCIA, Bill C-8 and CRA reporting status are still current.
+
+In IT audit, you built the test once and ran it a hundred times.
+
+Incident reporting rewards the same habit: doing the work before you need it.
+
+Where the reporting clocks stand:
+→ US: critical-infrastructure incident reporting (CIRCIA) has reportedly missed its target for final rules. The proposed clock is 72 hours.
+→ Canada: according to parliamentary trackers, the new cyber law (Bill C-8) will require designated operators to report incidents, but none are designated yet.
+→ EU: according to the European Commission, the Cyber Resilience Act's reporting duty has applied since September. An actively exploited vulnerability means a 24-hour early warning.
+
+My takeaway: 24 hours isn't enough time to figure out who owns the decision, what needs to be reported, or where the evidence sits. That work has to be done before the incident happens.
+
+<Series line for the week it runs.> Link in the comments.
 
 If one of your products were actively exploited on a Friday night, who decides within 24 hours whether to report it?
 
-#GRC #Cybersecurity #ISO42001 #CyberResilienceAct #RiskManagement
+#GRC #Cybersecurity #IncidentResponse #CyberResilienceAct #RiskManagement
 
 ## LinkedIn first comment
 

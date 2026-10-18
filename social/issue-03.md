@@ -1,7 +1,7 @@
 # Social drafts: Issue 03: Europe moved its AI deadlines, but its privacy regulators did not wait
 
 Issue URL: https://grc-with-sjo.github.io/grc-insights/issues/2026-10-18-europe-delayed-ai-rules-not-enforcement/
-Suggested posting time: LinkedIn Tue 2026-11-03, 08:00–09:00 PT (see `social/linkedin-schedule.md`). Surabhi posts manually.
+Suggested posting time: LinkedIn Tue 2026-10-27, 08:00–09:00 PT (see `social/linkedin-schedule.md`). Surabhi posts manually.
 
 Unconfirmed claims: phrase them with attribution words ("reportedly", "according to…"), never the ⚠️ marker.
 
@@ -20,7 +20,7 @@ The new AI law moves. The existing privacy law doesn't wait.
 
 One piece of work holds up either way: an automated-decision register. Each decision that can refuse, flag or lock someone out, who reviews it, and what evidence that review leaves. It serves the GDPR and the UK rules today, and the AI Act's high-risk duties later.
 
-I break this down in Issue 03 of GRC Insights. Link in the comments.
+Part 3 of my weekly catch-up series. Next week: the tracker behind it. Link in the comments.
 
 If a regulator asked what your human reviewer actually looked at, could you show them?
 

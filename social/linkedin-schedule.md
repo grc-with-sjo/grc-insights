@@ -9,9 +9,9 @@ Newsletter: not launched yet. Decide in December (or after 3–4 issues, if the 
 | # | LinkedIn date | Post | Site date | Status |
 |---|---|---|---|---|
 | 1 | Tue 2026-10-13 | Issue 01: Canada's AI privacy rules arrive through regulators' findings | 2026-10-08 | Posted |
-| 2 | Tue 2026-10-20 | Regulation Radar (no issue; Radar link in the first comment) | — | Next |
-| 3 | Tue 2026-10-27 | Issue 02: Cyber deadlines keep moving | 2026-10-11 | |
-| 4 | Tue 2026-11-03 | Issue 03: Europe moved its AI deadlines; its privacy regulators did not wait | 2026-10-14 | |
+| 2 | Tue 2026-10-20 | Issue 02: security assurance angle (incident-reporting angle held for later) | 2026-10-11 | Next |
+| 3 | Tue 2026-10-27 | Issue 03: Europe moved its AI deadlines; its privacy regulators did not wait | 2026-10-14 | |
+| 4 | Tue 2026-11-03 | Regulation Radar: "the tracker behind the series" (Radar link in the first comment) | — | |
 | 5 | Tue 2026-11-10 | Issue 04: US state privacy & AI laws + FTC | 2026-10-25 (planned) | |
 | 6 | Tue 2026-11-17 | Issue 05: Banking/FinServ: OSFI E-23, DORA, model risk | 2026-11-01 (planned) | |
 | 7 | Tue 2026-11-24 | Issue 06: Tech, SaaS, cloud, hardware: AI supply chain | 2026-11-08 (planned) | |
@@ -22,7 +22,9 @@ Planned issues follow `_data/editorial.yml`; adjust rows if the routine's number
 
 Optional, same weeks: a carousel (PDF document post) on Thursday for bigger issues, from the issue's carousel outline.
 
-Hashtags: `#GRC #AIGovernance #Privacy` on every post, plus 1–2 for the issue's topic (5 in total).
+Each post ends with "Part N of my weekly catch-up series… Next week: <topic>."
+
+Hashtags: `#GRC #AIGovernance #Privacy` on every post (swap for topic tags on cyber-only posts), plus 1–2 for the issue's topic (5 in total).
 
 ## From December (monthly issues)
 
