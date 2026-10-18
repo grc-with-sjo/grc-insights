@@ -3,6 +3,7 @@ title: "Cyber deadlines keep moving. What should a security team build in the me
 issue: 2
 series: catch-up
 date: 2026-10-11
+last_modified_at: 2026-10-18
 calendar_date: 2026-11-22
 regions: [US, CA, EU, GLOBAL]
 sectors: [cloud, saas, tech, hardware, banking]
@@ -76,9 +77,9 @@ The trade-off is real. This spends on controls before some regulators require th
 
 ## Questions to take to your team
 
-- **Who owns the decision to file a CRA early warning, and has that hand-off been tested against a 24-hour clock?** Ownership often splits between product security and legal, and the hand-off is rarely rehearsed.
-- **Which of our controls are mapped once to several frameworks, and which are maintained separately for each audit?** Duplication hides because each audit passes on its own.
-- **If CMMC audits or CPCSC Level 1 appeared in one of our contracts, who would see the clause first?** Contract terms often reach sales long before security.
+- **If one of your products were actively exploited on a Friday night, who would decide within 24 hours whether to file under the CRA?** Ownership often splits between product security and legal, and the hand-off is rarely tested.
+- **Which of your controls are mapped once to several frameworks, and which are maintained separately for each audit?** Duplication hides because each audit passes on its own.
+- **If CMMC audits or CPCSC Level 1 appeared in one of your contracts, who would see the clause first?** Contract terms often reach sales long before security.
 
 ## What to do this quarter
 

@@ -34,7 +34,7 @@ Facts come only from the deep-research report for this issue (see `routine/weekl
    - `**Takeaway:**` one line a practitioner can act on or repeat.
    - `**Open question:**` a genuinely unsettled question, phrased so the reader can carry it into a meeting.
 5. **`## How I'd approach it`** (200–300 words): first person, in the voice above. Name the uncertainty, set out the approach that holds its value under more than one outcome, and state the trade-off plainly. No verdicts.
-6. **`## Questions to take to your team`**: 3 bullets. Each is a **bold, concrete question** a reader could ask in their next risk or governance meeting, followed by one sentence on why it is hard or easy to miss. Questions about the reader's own organisation ("who owns…", "what evidence would we show…"), not abstract policy debates.
+6. **`## Questions to take to your team`**: 3 bullets. Each is a **bold, concrete question** a reader could ask in their next risk or governance meeting, followed by one sentence on why it is hard or easy to miss. Questions about the reader's own organisation, addressed to the reader as "you/your" ("who owns…", "what evidence would you show…"), never "our/we", which can read as the author's employer. Not abstract policy debates. The same applies to every `**Open question:**` line.
 7. **`## What to do this quarter`**: 4–5 actions as direct verbs ("Map…", "Confirm…", "Run…"); at most one "Consider" in the whole issue, then `### If you work in…` with the sector table (only affected sectors).
 8. **`## On the radar`** and **`## Sources`** as before.
 
@@ -82,3 +82,7 @@ The site renders `⚠️ verify` as a small † linked to one note at the end of
 - **Verbs stronger than the finding.** A regulator "found the company did not comply", not "the company broke the law", unless a court or binding order says so. Never say a company "accepted" a remedy the research does not confirm.
 - **Inference dressed as fact.** Put expectations in first person ("I expect…") and keep factual sentences to what the research states.
 - **A product or case named without a reason.** "Grok, X's AI chatbot and image generator", not a bare "Grok".
+
+## Editing a published issue
+
+When you change a live issue's text, set `last_modified_at: YYYY-MM-DD` (the merge date) in its front matter. The page shows "· Updated <date>" after the publish date, and jekyll-seo-tag reports it to search engines as the modified date.

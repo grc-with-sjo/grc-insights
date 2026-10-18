@@ -5,7 +5,7 @@ layout: default
 {% if page.series == 'field-notes' %}{% assign fmt = '%B %Y' %}{% else %}{% assign fmt = '%-d %B %Y' %}{% endif %}
 <section class="hero">
   <div class="hero-inner">
-    <div class="hero-tag">{{ series.label }}{% if page.issue > 0 %} · Issue {{ page.issue }}{% endif %} · {{ page.date | date: fmt }}</div>
+    <div class="hero-tag">{{ series.label }}{% if page.issue > 0 %} · Issue {{ page.issue }}{% endif %} · {{ page.date | date: fmt }}{% if page.last_modified_at %} · Updated {{ page.last_modified_at | date: fmt }}{% endif %}</div>
     <h1>{% if page.hero_title_html %}{{ page.hero_title_html }}{% else %}{{ page.title }}{% endif %}</h1>
     <p class="hero-intro">{{ page.hero_intro | default: page.description }}</p>
     <div class="author-row">

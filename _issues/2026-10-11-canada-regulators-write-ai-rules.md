@@ -3,6 +3,7 @@ title: "Canada's AI privacy rules are arriving through regulators' findings, not
 issue: 1
 series: catch-up
 date: 2026-10-08
+last_modified_at: 2026-10-18
 calendar_date: 2026-10-11
 regions: [CA]
 sectors: [tech, saas, cloud, banking, retail]
@@ -34,7 +35,7 @@ The bill had its first reading, the formal step of introducing it, on 2026-06-15
 
 **Takeaway:** Some C-36 requirements are cheap to prepare for now, but its timing is too uncertain to budget around.
 
-**Open question:** Which C-36 requirements would we prepare for even if the bill changed in committee?
+**Open question:** Which C-36 requirements would you prepare for even if the bill changed in committee?
 
 ### Regulators are setting AI expectations through their findings
 
@@ -44,7 +45,7 @@ On 2026-06-11 the OPC went further with Grok, X's AI chatbot and image generator
 
 **Takeaway:** The Grok recommendations (audits, misuse monitoring, progress reports) read like a control set for any generative AI feature.
 
-**Open question:** If our own AI feature were misused tomorrow, how quickly could we detect it and show what we did?
+**Open question:** If your own AI feature were misused tomorrow, how quickly could you detect it and show what you did?
 
 ### Accountability for vendors stays with the business
 
@@ -54,7 +55,7 @@ That guidance carries weight, but it has limits. The OPC cannot issue binding or
 
 **Takeaway:** A complete vendor and AI inventory answers the new guidance today and is likely to stay useful whatever C-36 becomes.
 
-**Open question:** For our most important vendors, could we produce the due diligence and contract terms the guidance describes?
+**Open question:** For your most important vendors, could you produce the due diligence and contract terms the guidance describes?
 
 ### The provinces add their own layer
 
@@ -64,7 +65,7 @@ In BC, the private-sector privacy law, the Personal Information Protection Act (
 
 **Takeaway:** For organisations operating in Québec, Law 25 is a natural reference point for design choices.
 
-**Open question:** Where do our Québec, BC and federal privacy processes differ, and does anyone own that comparison?
+**Open question:** Where do your Québec, BC and federal privacy processes differ, and does anyone own that comparison?
 
 > **This week:** On 2026-10-07 the Privacy Commissioner spoke to a House of Commons committee on security screening, a public-sector matter outside PIPEDA ([OPC](https://www.priv.gc.ca/en/opc-news/news-and-announcements/2026/nr-c_261007/)).
 
@@ -82,9 +83,9 @@ The trade-off is real. Some of this work may not match C-36's final text, and a 
 
 ## Questions to take to your team
 
-- **If a regulator asked tomorrow where the personal data used to train or tune our AI features came from, who would answer, and with what record?** Training data often sits with teams outside the usual privacy review.
-- **Which of our vendors handle Canadian personal information or run AI on it, and could we produce the due diligence and contract terms for each?** The vendor list usually lives in procurement, not with the privacy team.
-- **Which of our systems make decisions about people with legal or similarly significant effects, and could we describe each in plain language today?** Credit, hiring or fraud decisions often run inside vendor products and get missed.
+- **If a regulator asked tomorrow where the personal data used to train or tune your AI features came from, who would answer, and with what record?** Training data often sits with teams outside the usual privacy review.
+- **Which of your vendors handle Canadian personal information or run AI on it, and could you produce the due diligence and contract terms for each?** The vendor list usually lives in procurement, not with the privacy team.
+- **Which of your systems make decisions about people with legal or similarly significant effects, and could you describe each in plain language today?** Credit, hiring or fraud decisions often run inside vendor products and get missed.
 
 ## What to do this quarter
 
