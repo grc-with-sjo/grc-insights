@@ -7,7 +7,7 @@ calendar_date: 2026-10-18
 regions: [EU, UK]
 sectors: [tech, saas, banking, retail]
 categories: [ai-governance, privacy-law, enforcement]
-description: "Europe gave high-risk AI more time, but its privacy regulators kept fining under existing law. If your plan was built around the AI deadlines, what does it leave uncovered?"
+description: "Europe gave high-risk AI more time, but its privacy regulators kept fining under existing law. I would spend the next quarter on rules that already apply, starting with automated decisions."
 ---
 
 ## In brief
@@ -22,7 +22,7 @@ For a North American company with European customers, two EU laws matter most. T
 
 In July the EU amended the AI Act through a package known as the AI Omnibus and pushed those duties back. A second package, the Digital Omnibus, would change parts of the GDPR, but EU governments have not yet agreed their position on it. The UK has its own privacy law and is updating it through the Data (Use and Access) Act 2025, which amends its privacy and e-marketing rules.
 
-So the question for this issue: if Europe delayed its new AI rules but not its privacy enforcement, where should a team put its next quarter of effort?
+That leaves the planning problem this issue works through: where to put the next quarter of effort when Europe delayed its new AI rules but not its privacy enforcement.
 
 ## What happened
 
@@ -32,7 +32,7 @@ The delay is narrower than it first sounds. The AI Omnibus is Regulation (EU) 20
 
 Two things did not move. From 2026-12-02, generative AI systems placed on the market before 2026-08-02 must meet the Act's rule on marking AI-generated output, and new prohibited practices apply.
 
-General-purpose AI models, the large models other products build on, are a third front. An update from the law firm WSGR reports that the European Commission's powers over their providers, including fines, became usable on 2026-08-02 ⚠️ verify. [WSGR](https://www.wsgrdataadvisor.com/2026/08/eu-ai-act-enforcement-phase-begins/) No enforcement action has surfaced, but research here was incomplete, so the silence is hard to read.
+General-purpose AI models, the large models other products build on, are a third front. An update from the law firm WSGR reports that the European Commission's powers over their providers, including fines, became usable on 2026-08-02 ⚠️ verify. [WSGR](https://www.wsgrdataadvisor.com/2026/08/eu-ai-act-enforcement-phase-begins/) I have not seen an enforcement action yet, and I would not read much into the silence this early.
 
 **Takeaway:** The delay covers high-risk uses; the 2026-12-02 date for generative AI marking and the new prohibitions still stands.
 
@@ -40,7 +40,7 @@ General-purpose AI models, the large models other products build on, are a third
 
 ### Privacy regulators kept fining under the law they already have
 
-Meanwhile, privacy regulators used the GDPR as it stands. Ireland's Data Protection Commission (DPC) is that country's GDPR regulator. On 2026-09-21 it fined Google EUR 403M over three location and activity settings, citing the legal basis, transparency, retention and accountability, and gave Google six months to comply. [Source](https://www.dataprotection.ie/en/news-media/latest-news/data-protection-commission-fines-google-eu403-million-following-inquiry-googles-processing-location)
+Privacy regulators did not wait. They used the GDPR as it stands. Ireland's Data Protection Commission (DPC) is that country's GDPR regulator. On 2026-09-21 it fined Google EUR 403M over three location and activity settings, citing the legal basis, transparency, retention and accountability, and gave Google six months to comply. [Source](https://www.dataprotection.ie/en/news-media/latest-news/data-protection-commission-fines-google-eu403-million-following-inquiry-googles-processing-location)
 
 A second case points at automated decisions. The GDPR limits decisions about people made by automated means alone. Dutch technology press reports that the Netherlands' privacy regulator, the Autoriteit Persoonsgegevens (AP), fined Uber EUR 824.99M under that rule and the transparency rules, over driver accounts deactivated by a system alone, and that Uber plans to appeal ⚠️ verify. [ioplus](https://www.ioplus.nl/nl/posts/uber-beboet-met-825-miljoen--wat-het-echt-betekent)
 
@@ -60,7 +60,7 @@ Law-firm and trade reports say that on 2026-09-30 the Information Commissioner's
 
 **Open question:** If a UK customer complained through support chat tomorrow, would anyone recognise it as a privacy complaint?
 
-> **This week:** Research for 2026-10-04 to 2026-10-11 was incomplete, so treat the week as unknown. The outcome of the postponed Digital Omnibus vote is not yet known ([Agence Europe](https://agenceurope.eu/en/bulletin/article/13954/5/vote-on-digital-omnibus-postponed-until-11-october-under-pressure-from-paris-and-berlin)).
+> **This week:** EU governments postponed their Digital Omnibus vote; I will cover the outcome once it is public ([Agence Europe](https://agenceurope.eu/en/bulletin/article/13954/5/vote-on-digital-omnibus-postponed-until-11-october-under-pressure-from-paris-and-berlin)).
 
 ## How I'd approach it
 
@@ -82,11 +82,11 @@ The trade-off: a quarter spent on automated decisions, location data and complai
 
 ## What to do this quarter
 
-- Consider listing generative AI features offered in the EU before 2026-08-02 and confirming each marks its output by 2026-12-02.
+- List generative AI features offered in the EU before 2026-08-02 and confirm each marks its output by 2026-12-02.
 - Map automated decisions affecting EU and UK users into one register: decision, effect, human reviewer, evidence.
 - Confirm the legal basis, notices and retention for location data, using the DPC's Google findings as a checklist.
 - Confirm that UK privacy complaints reach one tracked queue with a 30-day acknowledgement target.
-- Consider commenting on the EDPB's draft guidelines on anonymisation and web scraping for generative AI before 2026-10-30, if relevant. [EDPB](https://www.edpb.europa.eu/news/edpb-sheds-light-on-anonymisation-and-web-scraping-for-generative-ai-and-adopts-final-version_en)
+- If generative AI training is in scope for you, comment on the EDPB's draft guidelines on anonymisation and web scraping for generative AI before 2026-10-30. [EDPB](https://www.edpb.europa.eu/news/edpb-sheds-light-on-anonymisation-and-web-scraping-for-generative-ai-and-adopts-final-version_en)
 
 ### If you work in…
 
