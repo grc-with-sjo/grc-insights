@@ -19,7 +19,7 @@ description: "Europe gave high-risk AI more time, but its privacy regulators kep
 
 ## The story so far
 
-For a North American company with European customers, two EU laws matter most. The General Data Protection Regulation (GDPR) is the EU's privacy law. National regulators enforce it and coordinate through the European Data Protection Board (EDPB), their joint body. The AI Act is the EU's newer AI law. It sorts AI uses by risk, with the heaviest duties on "high-risk" uses such as hiring and credit scoring.
+For a North American company with European customers, two EU laws matter most: the GDPR and the AI Act. National regulators enforce the GDPR and coordinate through the European Data Protection Board (EDPB). The AI Act sorts AI uses by risk, with the heaviest duties on "high-risk" uses such as hiring and credit scoring.
 
 In July the EU amended the AI Act through a package known as the AI Omnibus and pushed those duties back. A second package, the Digital Omnibus, would change parts of the GDPR, but EU governments have not yet agreed their position on it. The UK has its own privacy law and is updating it through the Data (Use and Access) Act 2025, which amends its privacy and e-marketing rules.
 
@@ -33,7 +33,7 @@ The delay is narrower than it first sounds. The AI Omnibus is Regulation (EU) 20
 
 Two things did not move. From 2 December 2026, generative AI systems placed on the market before 2 August 2026 must meet the Act's rule on marking AI-generated output, and new prohibited practices apply.
 
-General-purpose AI models, the large models other products build on, are a third front. An update from the law firm WSGR reports that the European Commission's powers over their providers, including fines, became usable on 2 August 2026 ⚠️ verify. [WSGR](https://www.wsgrdataadvisor.com/2026/08/eu-ai-act-enforcement-phase-begins/) I have not seen an enforcement action yet, and I would not read much into the silence this early.
+General-purpose AI models, the large models other products build on, are a third front. The European Commission's power to fine their providers, up to 3% of worldwide turnover or EUR 15M, has applied since 2 August 2026. [AI Act, Articles 101 and 113](https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-113) No fine has been announced. The Commission's AI Office has sent requests for information to frontier model providers, and Commissioner Henna Virkkunen reportedly described them on 14 October as the first enforcement actions under the Act ⚠️ verify. [Commission speech](https://ec.europa.eu/commission/presscorner/api/files/document/print/en/speech_26_2150/SPEECH_26_2150_EN.pdf) I would read that as the Commission testing its process, not yet as a signal of where fines will land.
 
 **Takeaway:** The delay covers high-risk uses; the 2 December 2026 date for generative AI marking and the new prohibitions still stands.
 
@@ -41,11 +41,11 @@ General-purpose AI models, the large models other products build on, are a third
 
 ### Privacy regulators kept fining under the law they already have
 
-Privacy regulators did not wait. They used the GDPR as it stands. Ireland's Data Protection Commission (DPC) is that country's GDPR regulator. On 21 September 2026 it fined Google EUR 403M over three location and activity settings, citing the legal basis, transparency, retention and accountability, and gave Google six months to comply. [Source](https://www.dataprotection.ie/en/news-media/latest-news/data-protection-commission-fines-google-eu403-million-following-inquiry-googles-processing-location)
+The fines kept coming under the GDPR as it stands. Ireland's Data Protection Commission (DPC), Google's lead regulator in the EU, fined Google EUR 403M on 21 September 2026 over three location and activity settings. It cited lawfulness and fairness, transparency, retention and accountability, and gave Google six months to comply. The fine is not final until an Irish court confirms it, and RTÉ reports that Google is expected to appeal ⚠️ verify. [RTÉ](https://www.rte.ie/news/business/2026/0921/1592330-google-fined-403m-by-dpc/) [Source](https://www.dataprotection.ie/en/news-media/latest-news/data-protection-commission-fines-google-eu403-million-following-inquiry-googles-processing-location)
 
-A second case points at automated decisions. The GDPR limits decisions about people made by automated means alone. Dutch technology press reports that the Netherlands' privacy regulator, the Autoriteit Persoonsgegevens (AP), fined Uber EUR 824.99M under that rule and the transparency rules, over driver accounts deactivated by a system alone, and that Uber plans to appeal ⚠️ verify. [ioplus](https://www.ioplus.nl/nl/posts/uber-beboet-met-825-miljoen--wat-het-echt-betekent)
+A second case points at automated decisions. The GDPR limits decisions about people made by automated means alone. On 21 August 2026 the Netherlands' privacy regulator, the Autoriteit Persoonsgegevens (AP), fined Uber EUR 824.99M under that rule. Driver accounts had been deactivated by a system alone, without meaningful human involvement, and drivers were not properly told how. Uber says it will challenge the fine. [AP](https://www.autoriteitpersoonsgegevens.nl/en/current/uber-fined-nearly-825-million-euros-for-automated-driver-blocking)
 
-Neither case needed a new law, and GDPR changes are not close. Agence Europe, a Brussels news service, reported that EU governments' vote on their Digital Omnibus position, planned for 7 October 2026, was postponed under pressure from Germany and France. [Agence Europe](https://agenceurope.eu/en/bulletin/article/13954/5/vote-on-digital-omnibus-postponed-until-11-october-under-pressure-from-paris-and-berlin) I do not expect any GDPR change to apply in 2026.
+Neither case needed a new law, and GDPR changes are not close. Agence Europe, a Brussels news service, reported that EU governments' vote on their Digital Omnibus position, planned for 7 October 2026, was postponed under pressure from Germany and France. [Agence Europe](https://agenceurope.eu/en/bulletin/article/13954/5/vote-on-digital-omnibus-postponed-until-11-october-under-pressure-from-paris-and-berlin) According to the same service, the rescheduled meeting on 11 October passed without a vote either, and no new date has been set ⚠️ verify. [Agence Europe](https://agenceurope.eu/en/bulletin/article/13958/17/future-of-digital-omnibus-still-in-limbo-as-member-states-fail-to-agree) I do not expect any GDPR change to apply in 2026.
 
 **Takeaway:** Enforcement is visible today on location data and on automated decisions that cut people off; fraud flags and credit refusals work the same way.
 
@@ -53,15 +53,15 @@ Neither case needed a new law, and GDPR changes are not close. Agence Europe, a 
 
 ### The UK's automated-decision rules are already live
 
-The UK shows the same pattern, without a delay. Most of the Data (Use and Access) Act's privacy changes, including new rules on automated decisions, came into force on 5 February 2026. From 19 June 2026, organisations must acknowledge a privacy complaint within 30 days and investigate it. [Source](https://legislation.gov.uk/uksi/2026/82)
+The UK had no AI deadline to move. Its privacy changes are simply in force. Most of the Data (Use and Access) Act's privacy changes, including new rules on automated decisions, came into force on 5 February 2026. From 19 June 2026, organisations must acknowledge a privacy complaint within 30 days, then take appropriate steps to respond and tell the complainant the outcome. [Source](https://legislation.gov.uk/uksi/2026/82)
 
-Law-firm and trade reports say that on 30 September 2026 the Information Commissioner's Office (ICO), the UK privacy regulator, became the Information Commission, run by a board, with existing investigations continuing ⚠️ verify. [Recordinglaw](https://www.recordinglaw.com/news/uk-information-commission-transfer-september-2026/) A summary of the ICO's 2025-26 annual report by the news service Freevacy says complaints rose 81% to 76,743, with only 27.4% answered within 90 days ⚠️ verify. [Freevacy](https://www.freevacy.com/news/ico/ico-publishes-2025-26-annual-report/7587)
+On 30 September 2026 the Information Commissioner's Office (ICO), the UK privacy regulator, became the Information Commission, led by a board of executive and non-executive members, with work in progress carrying over. [SI 2026/1015](https://www.legislation.gov.uk/uksi/2026/1015/made) The regulator is stretched: its 2025/26 annual report shows data protection complaints rising from 42,315 to 76,743, and only 27.4% assessed and responded to within 90 days, against an 80% target. [ICO annual report](https://ico.org.uk/about-the-ico/our-information/annual-reports/information-commissioners-annual-report-202526/performance-overview/)
 
 **Takeaway:** With the regulator under that load, the 30-day duty puts the first response on organisations; one tracked complaint queue makes it easier to meet.
 
 **Open question:** If a UK customer complained through support chat tomorrow, would anyone recognise it as a privacy complaint?
 
-> **This week:** EU governments postponed their Digital Omnibus vote; I will cover the outcome once it is public ([Agence Europe](https://agenceurope.eu/en/bulletin/article/13954/5/vote-on-digital-omnibus-postponed-until-11-october-under-pressure-from-paris-and-berlin)).
+> **Update, 18 October:** EU ambassadors did not vote on the Digital Omnibus on 11 October either, and no new date is set ([Agence Europe](https://agenceurope.eu/en/bulletin/article/13958/17/future-of-digital-omnibus-still-in-limbo-as-member-states-fail-to-agree)). The Commission's AI Office has started sending information requests to general-purpose AI providers; no fines yet.
 
 ## How I'd approach it
 
@@ -107,11 +107,14 @@ The trade-off: a quarter spent on automated decisions, location data and complai
 ## Sources
 
 1. EUR-Lex: [Regulation (EU) 2026/1744 (AI Omnibus)](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:L_202601744)
-2. WSGR (secondary): [EU AI Act enforcement phase begins](https://www.wsgrdataadvisor.com/2026/08/eu-ai-act-enforcement-phase-begins/)
+2. European Commission: [AI Act, Article 113 (application dates, including Article 101 fines)](https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-113)
 3. Data Protection Commission: [DPC fines Google EUR 403 million](https://www.dataprotection.ie/en/news-media/latest-news/data-protection-commission-fines-google-eu403-million-following-inquiry-googles-processing-location)
-4. ioplus (secondary): [Uber fined EUR 825 million](https://www.ioplus.nl/nl/posts/uber-beboet-met-825-miljoen--wat-het-echt-betekent)
+4. Autoriteit Persoonsgegevens: [Uber fined nearly 825 million euros for automated driver blocking](https://www.autoriteitpersoonsgegevens.nl/en/current/uber-fined-nearly-825-million-euros-for-automated-driver-blocking)
 5. Agence Europe: [Vote on Digital Omnibus postponed](https://agenceurope.eu/en/bulletin/article/13954/5/vote-on-digital-omnibus-postponed-until-11-october-under-pressure-from-paris-and-berlin)
 6. legislation.gov.uk: [SI 2026/82](https://legislation.gov.uk/uksi/2026/82)
-7. Recordinglaw (secondary): [UK Information Commission transfer](https://www.recordinglaw.com/news/uk-information-commission-transfer-september-2026/)
-8. Freevacy (secondary): [ICO 2025-26 annual report](https://www.freevacy.com/news/ico/ico-publishes-2025-26-annual-report/7587)
-9. EDPB: [Anonymisation and web scraping for generative AI](https://www.edpb.europa.eu/news/edpb-sheds-light-on-anonymisation-and-web-scraping-for-generative-ai-and-adopts-final-version_en)
+7. legislation.gov.uk: [SI 2026/1015 (Information Commission)](https://www.legislation.gov.uk/uksi/2026/1015/made)
+8. ICO: [Annual report 2025/26, performance overview](https://ico.org.uk/about-the-ico/our-information/annual-reports/information-commissioners-annual-report-202526/performance-overview/)
+9. EDPB: [Anonymisation and web scraping for generative AI (draft guidelines in consultation)](https://www.edpb.europa.eu/news/edpb-sheds-light-on-anonymisation-and-web-scraping-for-generative-ai-and-adopts-final-version_en)
+10. Agence Europe: [Future of Digital Omnibus still in limbo](https://agenceurope.eu/en/bulletin/article/13958/17/future-of-digital-omnibus-still-in-limbo-as-member-states-fail-to-agree)
+11. European Commission: [Speech by EVP Virkkunen, 14 October 2026](https://ec.europa.eu/commission/presscorner/api/files/document/print/en/speech_26_2150/SPEECH_26_2150_EN.pdf)
+12. RTÉ (secondary): [Google fined €403m by DPC](https://www.rte.ie/news/business/2026/0921/1592330-google-fined-403m-by-dpc/)
