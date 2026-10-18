@@ -46,7 +46,7 @@ description: "<Dek: the argument in one sentence, ≤ 200 chars. Doubles as Link
 
 ## Questions to take to your team
 
-- **<A concrete question about the reader's own organisation?>** <Why it is hard or easy to miss.>
+- **<A concrete question about the reader's own organisation, using "you/your", never "our/we"?>** <Why it is hard or easy to miss.>
 - **<Second question?>** <Why it is hard or easy to miss.>
 - **<Third question?>** <Why it is hard or easy to miss.>
 

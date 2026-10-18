@@ -76,8 +76,8 @@ The trade-off: a quarter spent on automated decisions, location data and complai
 
 ## Questions to take to your team
 
-- **Which of our automated decisions can deactivate, refuse or flag a person, and who reviews them before they take effect?** They often sit in fraud or support tooling, outside anything labelled "AI".
-- **Which generative AI features do we offer in the EU, and when was each first made available there?** The December duty turns on that date, and launch records usually sit with product teams.
+- **Which of your automated decisions can deactivate, refuse or flag a person, and who reviews them before they take effect?** They often sit in fraud or support tooling, outside anything labelled "AI".
+- **Which generative AI features do you offer in the EU, and when was each first made available there?** The December duty turns on that date, and launch records usually sit with product teams.
 - **Who owns a UK privacy complaint from the moment it arrives, wherever it arrives?** The 30-day clock is easy to miss when complaints arrive through general support.
 
 ## What to do this quarter

@@ -76,9 +76,9 @@ The trade-off is real. This spends on controls before some regulators require th
 
 ## Questions to take to your team
 
-- **Who owns the decision to file a CRA early warning, and has that hand-off been tested against a 24-hour clock?** Ownership often splits between product security and legal, and the hand-off is rarely rehearsed.
-- **Which of our controls are mapped once to several frameworks, and which are maintained separately for each audit?** Duplication hides because each audit passes on its own.
-- **If CMMC audits or CPCSC Level 1 appeared in one of our contracts, who would see the clause first?** Contract terms often reach sales long before security.
+- **Does your incident response plan name who decides whether something is reportable under the CRA?** Plans often cover detecting and fixing a vulnerability, but not the reporting decision.
+- **Which of your controls are mapped once to several frameworks, and which are maintained separately for each audit?** Duplication hides because each audit passes on its own.
+- **If CMMC audits or CPCSC Level 1 appeared in one of your contracts, who would see the clause first?** Contract terms often reach sales long before security.
 
 ## What to do this quarter
 
