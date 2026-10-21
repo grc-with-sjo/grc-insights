@@ -5,24 +5,17 @@ Suggested posting time: LinkedIn Tue 2026-10-27, 08:00–09:00 PT (see `social/l
 
 Unconfirmed claims: phrase them with attribution words ("reportedly", "according to…"), never the ⚠️ marker.
 
-## LinkedIn post (≤ 1,300 characters; no link in the body)
+## LinkedIn post (short format)
 
 Europe gave AI more time. Its privacy regulators didn't take any.
 
-In July, the EU pushed its AI Act's heaviest duties, for high-risk uses like hiring and credit scoring, to December 2027.
+The EU pushed its high-risk AI duties to December 2027. But privacy regulators kept fining under the GDPR: Google €403M over location data, Uber €824.99M over drivers deactivated by a system alone.
 
-Easy to read that as breathing room. But:
-→ Two AI rules still start on December 2: marking AI-generated output from older generative AI systems, and new prohibited practices.
-→ Ireland's privacy regulator fined Google €403M in September over location data, under the GDPR as it stands.
-→ In the UK, new automated-decision rules have applied since February, and a 30-day duty to acknowledge privacy complaints since June.
+My takeaway: I wouldn't plan around the AI deadline. I'd start an automated-decision register: each decision that can lock someone out, who reviews it, and what evidence that leaves.
 
-The new AI law moves. The existing privacy law doesn't wait.
+Part 3 of my weekly catch-up on AI, privacy and cyber rules. Next week: the tracker behind it. Link in the comments.
 
-One piece of work holds up either way: an automated-decision register. Each decision that can refuse, flag or lock someone out, who reviews it, and what evidence that review leaves. It serves the GDPR and the UK rules today, and the AI Act's high-risk duties later.
-
-Part 3 of my weekly catch-up series. Next week: the tracker behind it. Link in the comments.
-
-If a regulator asked what your human reviewer actually looked at, could you show them?
+Could you show a regulator what your human reviewer actually looked at?
 
 #GRC #AIGovernance #Privacy #EUAIAct #GDPR
 
