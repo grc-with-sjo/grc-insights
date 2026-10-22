@@ -1,1 +1,10 @@
-{ "posted": {} }
+{
+  "posted": {
+    "issue-02:reminder": {
+      "at": "2026-10-22T19:27:38.595Z",
+      "ids": [
+        "https://github.com/grc-with-sjo/grc-insights/issues/20"
+      ]
+    }
+  }
+}
