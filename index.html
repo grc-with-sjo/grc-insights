@@ -37,7 +37,7 @@ description: "Digital trust, decoded: a GRC practitioner's field notes on AI gov
   <div class="latest-band-inner">
     <span class="section-label">Latest</span>
     <div class="card-grid">
-      {% for p in issues limit: 3 %}{% include post-card.html post=p %}{% endfor %}
+      {% for p in issues offset: 1 limit: 3 %}{% include post-card.html post=p %}{% endfor %}
     </div>
   </div>
 </section>

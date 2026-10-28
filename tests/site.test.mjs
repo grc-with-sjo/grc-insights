@@ -231,3 +231,10 @@ test('legacy pages use the new palette and fonts', { skip }, () => {
   assert.match(s, /css\/style\.css/);
   assert.doesNotMatch(s, /Caveat|Nunito/);
 });
+
+test('the featured issue is not repeated in the Latest band', { skip }, () => {
+  const html = page('index.html');
+  const band = html.match(/<section class="latest-band"[\s\S]*?<\/section>/)[0];
+  const featured = html.match(/<a class="latest-card" href="([^"]+)"/)[1];
+  assert.ok(!band.includes(`href="${featured}"`), `featured ${featured} also in Latest band`);
+});
