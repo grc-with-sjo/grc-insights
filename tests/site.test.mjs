@@ -162,3 +162,22 @@ test('feed content uses absolute links and renders unconfirmed markers as a dagg
   assert.ok(!/href=&quot;\//.test(feed), 'root-relative href in feed content breaks in feed readers');
   assert.ok(!/src=&quot;\//.test(feed), 'root-relative src in feed content breaks in feed readers');
 });
+
+test('pages load Fraunces and Inter, not the old fonts', { skip }, () => {
+  const html = page('index.html');
+  assert.match(html, /fonts\.googleapis\.com\/css2\?family=Fraunces[^"]*family=Inter/);
+  assert.doesNotMatch(html, /Caveat|Nunito/);
+});
+
+test('nav offers Issues, Regulation Radar and About, with the wordmark', { skip }, () => {
+  const nav = page('about/index.html').match(/<nav class="site-nav"[\s\S]*?<\/nav>/)[0];
+  for (const label of ['Issues', 'Regulation Radar', 'About']) assert.ok(nav.includes(`>${label}<`), label);
+  assert.match(nav, /class="brand"/);
+});
+
+test('Substack button only when substack_url is set', { skip }, () => {
+  const config = parseYaml(readFileSync('_config.yml', 'utf8'));
+  const html = page('index.html');
+  if (config.substack_url) assert.ok(html.includes(config.substack_url));
+  else assert.doesNotMatch(html, /Subscribe on Substack/);
+});
