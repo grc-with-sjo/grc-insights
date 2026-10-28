@@ -11,19 +11,19 @@ Unconfirmed claims: phrase them with attribution words ("reportedly", "according
 - Carousel (optional, bigger issues): the Thursday after the LinkedIn post.
 - Bluesky post: the day after the LinkedIn post.
 
-## LinkedIn post (≤ 1,300 characters; no link in the body)
+## LinkedIn post (about 600–800 characters; no link in the body)
 
-Voice: follow `routine/voice.md`. For LinkedIn: a network that knows her, short lines, a personal practitioner hook (e.g. "In IT audit, you built the test once…"), one argument per post, and "My takeaway:" before the closing question. Series line: "Part <N> of my weekly catch-up on AI, privacy and cyber rules. Next week: <topic>. Link in the comments."
+Voice: follow `routine/voice.md`. Short: hit the one point and stop. A personal practitioner hook, one argument, no bullet lists unless essential.
 
-<A 1–2 line personal or practitioner hook built on the dek (`description`).>
+<Hook: one line, personal or practitioner.>
 
-<3 takeaways from "In brief", each starting with "→ ", one line each.>
+<The news: two or three facts in at most two sentences.>
 
-<My take from "How I'd approach it", in 1–2 short paragraphs, framed as a consideration, not a verdict.>
+My takeaway: <one or two sentences, first person.>
 
-<One line: "I break this down further in Issue <NN> of GRC Insights. Link in the comments.">
+Part <N> of my weekly catch-up on AI, privacy and cyber rules. Next week: <topic>. Link in the comments.
 
-<End with one of the issue's open questions, to invite comments.>
+<One closing question about the reader's own team, using "you/your".>
 
 #GRC #AIGovernance #Privacy <1–2 tags for the issue's topic; 5 in total>
 
