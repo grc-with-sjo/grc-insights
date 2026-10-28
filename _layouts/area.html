@@ -1,0 +1,25 @@
+---
+layout: default
+---
+{% assign area = site.data.areas | where: 'id', page.area | first %}
+{% assign published = site.issues | where_exp: "i", "i.date <= site.time" | sort: 'issue' | reverse %}
+<section class="hero hero-compact">
+  <div class="hero-inner">
+    <span class="kicker">Area</span>
+    <h1>{{ area.label }}</h1>
+    <p class="lede">{{ area.intro }}</p>
+  </div>
+</section>
+<main class="content">
+  <span class="section-label">Latest in {{ area.label }}</span>
+  {% assign count = 0 %}
+  <div class="card-grid">
+    {% for p in published %}{% assign hit = false %}{% for c in p.categories %}{% if area.categories contains c %}{% assign hit = true %}{% endif %}{% endfor %}{% if hit %}{% include post-card.html post=p %}{% assign count = count | plus: 1 %}{% endif %}{% endfor %}
+  </div>
+  {% if count == 0 %}<p class="muted">No posts in this area yet.</p>{% endif %}
+  <div class="radar-strip" style="margin-top:36px">
+    <span>Laws, rules and standards with dates you can plan around.</span>
+    <a class="go" href="{{ '/radar/' | relative_url }}">Regulation Radar →</a>
+  </div>
+  {% include subscribe.html %}
+</main>
