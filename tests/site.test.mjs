@@ -214,3 +214,19 @@ test('each area page exists and lists only published issues in that area', { ski
     }
   }
 });
+
+test('issue pages show kicker, title, author line, cover and reading time', { skip }, () => {
+  const html = page('issues/2026-10-11-canada-regulators-write-ai-rules/index.html');
+  assert.match(html, /class="kicker"[^>]*>[^<]*Issue 1/);
+  assert.match(html, /GRC &amp; AI Governance Practitioner · Vancouver, BC/);
+  assert.match(html, /<figure class="cover"/);
+  assert.match(html, /\d+ min read/);
+  assert.match(html, /class="unconfirmed"/);
+});
+
+test('legacy pages use the new palette and fonts', { skip }, () => {
+  assert.doesNotMatch(readFileSync('css/style.css', 'utf8'), /Caveat|Nunito|--rose\b/);
+  const s = page('sources.html');
+  assert.match(s, /css\/style\.css/);
+  assert.doesNotMatch(s, /Caveat|Nunito/);
+});
