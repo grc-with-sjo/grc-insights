@@ -162,7 +162,8 @@ sources:
   - id: eu-digital
     name: European Commission digital strategy (AI Act, NIS2, CRA, Data Act)
     kind: rss
-    url: "https://digital-strategy.ec.europa.eu/en/rss.xml"
+    # The Commission's own RSS refuses GitHub's servers (HTTP 403), so search it instead.
+    url: "https://news.google.com/rss/search?q=site:digital-strategy.ec.europa.eu+when:14d&hl=en&gl=BE&ceid=BE:en"
     verify_at: "https://digital-strategy.ec.europa.eu"
   - id: eu-official-journal
     name: EU Official Journal (L series)
