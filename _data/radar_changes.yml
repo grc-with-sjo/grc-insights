@@ -1,6 +1,18 @@
 # Public "What changed" log for the Regulation Radar (newest first). Shown on /radar/ and in /radar/changes.xml.
 # Add an entry only after reading the primary source; `source` is that primary page.
 - date: "2026-10-28"
+  id: global-csa-star
+  change: "CSA launched STAR for AI Level 2 on 27 Oct 2026, with paths through ISO/IEC 27001 or 42001 plus the AI Controls Matrix. Corrected an earlier date and the claim that the AI tier requires ISO/IEC 42001."
+  source: "https://cloudsecurityalliance.org/press-releases/2026/10/27/cloud-security-alliance-launches-star-for-ai-level-2-to-strengthen-ai-governance-and-trust"
+- date: "2026-10-28"
+  id: global-aiuc-1
+  change: "Added AIUC-1; AICPA and AIUC launched a joint SOC 2 + AIUC-1 assurance offering on 19 Oct 2026."
+  source: "https://www.aicpa-cima.com/news/article/auditors-meet-urgent-demand-for-ai-assurance-with-new-offering-from-aicpa-and-aiuc"
+- date: "2026-10-28"
+  id: global-iso-27017
+  change: "Added ISO/IEC 27017:2026, edition 2 of the cloud security controls standard (published July 2026)."
+  source: "https://www.iso.org/standard/27017"
+- date: "2026-10-28"
   id: global-soc2
   change: "AICPA exposure draft of updated SOC 2 Trust Services Criteria adds AI points of focus; comments close 15 Jan 2027, proposed effective for engagements beginning on or after 31 Dec 2027."
   source: "https://www.aicpa-cima.com/news/article/aicpa-proposes-update-of-soc-2-r-trust-services-criteria-to-enhance-the-relevance-usability-and-value-of-cpas-reports"

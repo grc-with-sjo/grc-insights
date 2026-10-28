@@ -549,8 +549,8 @@
   type: standard
   status: in-force
   key_dates:
-    - { date: "2025-11-20", what: "CSA STAR for AI Level 2 pairs 42001 certification with a validated AI-CAIQ" }
     - { date: "2026-03-10", what: "BSI announced ANAB accreditation to certify to 42001" }
+    - { date: "2026-10-27", what: "CSA STAR for AI Level 2 launched; ISO/IEC 42001 certification is one of its paths" }
   sectors: [tech, saas, cloud, hardware, banking, retail]
   applies_to_me: medium
   summary: "⚠️ verify: Landing as a voluntary, vendor-differentiating certificate asked for in diligence, not a legal requirement; no EU AI Act presumption of conformity."
@@ -582,6 +582,18 @@
   summary: "The current ISMS certification standard; 2013-edition certificates expired or were withdrawn at the end of the transition on 2025-10-31, per certification bodies."
   source: "https://www.iso.org/standard/27001"
   last_reviewed: "2026-10-08"
+- id: global-iso-27017
+  name: "ISO/IEC 27017:2026 information security controls for cloud services"
+  region: GLOBAL
+  jurisdiction: "Global (ISO/IEC JTC 1/SC 27)"
+  type: standard
+  status: in-force
+  key_dates: []
+  sectors: [cloud, saas, tech]
+  applies_to_me: medium
+  summary: "Edition 2, published July 2026: cloud-specific guidance and additional controls, built on ISO/IEC 27002, for both cloud customers and providers, including how responsibilities split between them."
+  source: "https://www.iso.org/standard/27017"
+  last_reviewed: "2026-10-28"
 - id: global-nist-ai-rmf
   name: "NIST AI Risk Management Framework 1.0 (AI 100-1)"
   region: GLOBAL
@@ -1081,6 +1093,7 @@
   type: guidance
   status: in-force
   key_dates:
+    - { date: "2026-10-19", what: "AICPA and AIUC launch a joint offering: one CPA-led engagement delivering a SOC 2 report and AIUC-1 certification" }
     - { date: "2026-10-28", what: "AICPA exposure draft of updated Trust Services Criteria, with new AI points of focus" }
     - { date: "2027-01-15", what: "Comment period on the exposure draft closes" }
     - { date: "2027-12-31", what: "Proposed effective date: engagements beginning on or after this date, early adoption permitted" }
@@ -1088,6 +1101,19 @@
   applies_to_me: high
   summary: "The assurance report customers ask for first. The AICPA's 28 Oct 2026 exposure draft would restructure the criteria and add points of focus on AI governance, model monitoring, prompt manipulation, data poisoning, training data and automated decisions; if approved, effective for engagements beginning on or after 31 Dec 2027."
   source: "https://www.aicpa-cima.com/news/article/aicpa-proposes-update-of-soc-2-r-trust-services-criteria-to-enhance-the-relevance-usability-and-value-of-cpas-reports"
+  last_reviewed: "2026-10-28"
+- id: global-aiuc-1
+  name: "AIUC-1 standard for AI agent safety, security and reliability"
+  region: GLOBAL
+  jurisdiction: "AI Underwriting Company (industry consortium)"
+  type: standard
+  status: in-force
+  key_dates:
+    - { date: "2026-10-19", what: "AICPA and AIUC launch joint SOC 2 + AIUC-1 assurance offering" }
+  sectors: [tech, saas, cloud]
+  applies_to_me: medium
+  summary: "An industry certification for AI agents, built by a consortium of over 250 security leaders and updated quarterly; controls span data and privacy, security, safety, reliability, accountability and society, with live testing of agent behaviour. Now available alongside SOC 2 in one CPA-led engagement."
+  source: "https://www.aicpa-cima.com/news/article/auditors-meet-urgent-demand-for-ai-assurance-with-new-offering-from-aicpa-and-aiuc"
   last_reviewed: "2026-10-28"
 - id: global-csa-star
   name: "CSA STAR, AI Controls Matrix (AICM) and STAR for AI"
@@ -1097,11 +1123,11 @@
   status: in-force
   key_dates:
     - { date: "2025-10-23", what: "STAR for AI launched with AI Controls Matrix implementation and auditing guidelines" }
-    - { date: "2025-11-20", what: "STAR for AI Level 2 designation (pairs ISO 42001 certification with a validated AI-CAIQ)" }
+    - { date: "2026-10-27", what: "STAR for AI Level 2 launched: ISO/IEC 27001 or 42001 certification (or both) plus AI Controls Matrix assessment" }
   sectors: [cloud, saas]
   applies_to_me: high
-  summary: "A public registry of cloud and AI assurance; its AI tier requires ISO 42001, and the AI Controls Matrix is mapped to ISO 42001."
-  source: "https://cloudsecurityalliance.org/star"
+  summary: "A public registry of cloud and AI assurance. STAR for AI Level 2 (launched 27 Oct 2026) adds third-party-verified AI assurance through three paths: ISO/IEC 27001 plus the AI Controls Matrix, ISO/IEC 42001 plus the AI Controls Matrix, or all three."
+  source: "https://cloudsecurityalliance.org/press-releases/2026/10/27/cloud-security-alliance-launches-star-for-ai-level-2-to-strengthen-ai-governance-and-trust"
   last_reviewed: "2026-10-28"
 - id: global-nist-sp-800-53
   name: "NIST SP 800-53 Rev 5, Release 5.2.0"
