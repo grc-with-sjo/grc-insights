@@ -18,6 +18,7 @@ social:
 # Fill in during setup (README.md). Empty means the feature is hidden.
 goatcounter: "grc-insights"
 linkedin_newsletter: ""
+substack_url: ""  # Surabhi's Substack; when set, Substack buttons appear site-wide
 
 markdown: kramdown
 future: false  # issues dated in the future stay hidden until a rebuild on/after their date (see .github/workflows/scheduled-publish.yml)
