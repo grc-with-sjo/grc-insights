@@ -14,7 +14,7 @@ You prepare the next GRC Insights update for Surabhi Joshi to review in the repo
 3. Anything you cannot tie to a primary source after a second deep-research check gets the literal marker
    `⚠️ verify` right after the claim.
 4. No legal-advice framing.
-5. Only touch `_issues/<new file>`, `_data/tracker.yml`, `social/issue-<NN>.md` and `social/linkedin-schedule.md`. Never edit layouts, CSS,
+5. Only touch `_issues/<new file>`, its card `assets/og/<issue-file-stem>.png`, `_data/tracker.yml`, `social/issue-<NN>.md` and `social/linkedin-schedule.md`. Never edit layouts, CSS,
    JS, `sources.html`, or `_issues/2026-05-field-notes.html`.
 6. Never push to `main`. Never merge. Never post to social media.
 
