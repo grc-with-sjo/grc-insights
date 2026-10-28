@@ -25,7 +25,7 @@ for (const s of cfg.sources) {
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const items = parseFeed(await res.text(), s.kind);
     if (items.length === 0) throw new Error('feed returned no items');
-    for (const item of selectNew(items, { seen, keywords: cfg.keywords, today, days: s.days ?? days })) found.push({ source: s, item });
+    for (const item of selectNew(items, { seen, keywords: cfg.keywords, exclude: cfg.exclude ?? [], today, days: s.days ?? days })) found.push({ source: s, item });
     // Remember everything the feed shows, relevant or not, so old items never resurface.
     for (const item of items) seen.add(itemKey(item));
   } catch (err) {

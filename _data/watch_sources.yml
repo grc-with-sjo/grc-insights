@@ -12,9 +12,15 @@ keywords:
   - AI
   - machine learning
   - automated decision
-  - algorithm
   - cyber
-  - security
+  - cybersecurity
+  - security standard
+  - data security
+  - security measures
+  - fined
+  - fines
+  - settlement over
+  - privacy settlement
   - incident report
   - breach
   - ransomware
@@ -27,18 +33,9 @@ keywords:
   - "27090"
   - "42001"
   - NIST
-  - framework
-  - guideline
-  - guidance
-  - regulation
   - consultation
   - exposure draft
-  - draft
   - code of practice
-  - enforcement
-  - penalty
-  - fine
-  - settlement
   - children
   - consumer data
   - surveillance pricing
@@ -56,6 +53,20 @@ keywords:
   - FedRAMP
   - CMMC
   - PCI DSS
+
+# Titles containing any of these are routine and never leads, whatever keyword they match.
+exclude:
+  - annual report
+  - safe drinking water
+  - notice of violation
+  - notice of intent to sue
+  - breach notification sample
+  - notice of data breach
+  - notifies individuals
+  - report a concern
+  - privacy resources for
+  - clinical trial
+  - medi-cal fraud
 
 sources:
   # Standards and assurance
