@@ -13,7 +13,7 @@ layout: default
       <div class="author-avatar">SJ</div>
       <div class="author-info">
         <div class="name">{{ site.author.name }}</div>
-        <div class="meta">{{ site.author.role }} · {{ site.author.location }}</div>
+        <div class="meta">{{ site.author.role | escape }} · {{ site.author.location }}</div>
       </div>
     </div>
     <div class="post-meta">
