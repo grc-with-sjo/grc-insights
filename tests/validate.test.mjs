@@ -144,3 +144,11 @@ test('countVerifyFlags counts markers with or without the emoji variation select
   assert.equal(countVerifyFlags('a ⚠️ verify b ⚠ verify c'), 2);
   assert.equal(countVerifyFlags('clean'), 0);
 });
+
+test('cover requires alt text and credit', () => {
+  const errs = validateIssue(issue({ cover: '/assets/covers/x.jpg' }), tax);
+  assert.ok(errs.some(e => e.includes('cover_alt')));
+  assert.ok(errs.some(e => e.includes('cover_credit')));
+  assert.deepEqual(validateIssue(issue({ cover: '/assets/covers/x.jpg', cover_alt: 'A padlock on a laptop',
+    cover_credit: 'Photo: A / Unsplash', cover_credit_url: 'https://unsplash.com/photos/x' }), tax), []);
+});

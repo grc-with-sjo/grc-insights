@@ -1,0 +1,11 @@
+{%- comment -%}Card for one post. include.post: the post. Image = cover or brand pattern.{%- endcomment -%}
+{%- assign p = include.post -%}
+{%- if p.series == 'field-notes' %}{% assign label = 'Field Notes' %}{% assign fmt = '%B %Y' %}{% else %}{% capture label %}Issue {{ p.issue }}{% endcapture %}{% assign fmt = '%-d %B %Y' %}{% endif -%}
+<a class="post-card" href="{{ p.url | relative_url }}">
+  <div class="card-image">{% if p.cover %}{% if p.cover contains '://' %}{% assign src = p.cover %}{% else %}{% assign src = p.cover | relative_url %}{% endif %}<img src="{{ src }}" alt="{{ p.cover_alt | escape }}" loading="lazy">{% else %}{% include brand-art.html class="brand-art--small" %}{% endif %}</div>
+  <div class="card-body">
+    <span class="type-label">{{ label }}</span>
+    <h3>{{ p.title }}</h3>
+    <div class="card-meta">{% assign shown = 0 %}{% for c in p.categories %}{% assign cat = site.data.taxonomy.categories | where: 'id', c | first %}{% if cat and shown < 2 %}{% if shown > 0 %} · {% endif %}{{ cat.label }}{% assign shown = shown | plus: 1 %}{% endif %}{% endfor %} · {{ p.date | date: fmt }}</div>
+  </div>
+</a>

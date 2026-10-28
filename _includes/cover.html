@@ -1,0 +1,11 @@
+{%- comment -%}Cover image for a post with its credit, or the brand pattern. include.post: the post.{%- endcomment -%}
+{%- assign p = include.post -%}
+<figure class="cover">
+  {%- if p.cover -%}
+  {%- if p.cover contains '://' %}{% assign src = p.cover %}{% else %}{% assign src = p.cover | relative_url %}{% endif %}
+  <img src="{{ src }}" alt="{{ p.cover_alt | escape }}" loading="lazy">
+  <figcaption><a href="{{ p.cover_credit_url }}" target="_blank" rel="noopener">{{ p.cover_credit | escape }}</a></figcaption>
+  {%- else -%}
+  {% include brand-art.html %}
+  {%- endif -%}
+</figure>

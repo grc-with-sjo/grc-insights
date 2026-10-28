@@ -60,6 +60,11 @@ export function validateIssue({ file, data, body }, tax) {
   }
   if (typeof data.description !== 'string' || !data.description.trim()) fail('description is required');
   else if (data.description.length > 200) fail('description must be 200 characters or fewer');
+  if (data.cover !== undefined) {
+    for (const f of ['cover_alt', 'cover_credit', 'cover_credit_url']) {
+      if (typeof data[f] !== 'string' || !data[f].trim()) fail(`${f} is required when cover is set`);
+    }
+  }
   for (const m of subsetErrors('regions', data.regions, tax.regions)) fail(m);
   for (const m of subsetErrors('sectors', data.sectors, tax.sectors)) fail(m);
   for (const m of subsetErrors('categories', data.categories, tax.categories)) fail(m);

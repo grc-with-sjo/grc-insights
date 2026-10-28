@@ -181,3 +181,9 @@ test('Substack button only when substack_url is set', { skip }, () => {
   if (config.substack_url) assert.ok(html.includes(config.substack_url));
   else assert.doesNotMatch(html, /Subscribe on Substack/);
 });
+
+test('every homepage card shows a cover image or the brand pattern, never nothing', { skip }, () => {
+  const cards = page('index.html').match(/<a class="post-card"[\s\S]*?<\/a>/g) || [];
+  assert.ok(cards.length >= 1, 'no post cards on homepage');
+  for (const c of cards) assert.ok(/<img [^>]*src="[^"]+"/.test(c) || c.includes('class="brand-art'), c.slice(0, 120));
+});
