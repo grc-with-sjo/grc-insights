@@ -9,6 +9,7 @@ regions: [US, CA, EU, GLOBAL]
 sectors: [cloud, saas, tech, hardware, banking]
 categories: [cybersecurity, frameworks, third-party-risk]
 description: "US and Canadian cyber dates keep moving, and Europe's reporting clock is already running. I would build one control and evidence layer that holds its value whichever date lands first."
+image: /assets/og/2026-11-22-cyber-deadlines-slip-assurance-travels.png
 ---
 
 ## In brief
