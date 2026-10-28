@@ -221,7 +221,8 @@ test('issue pages show kicker, title, author line, cover and reading time', { sk
   assert.match(html, /GRC &amp; AI Governance Practitioner · Vancouver, BC/);
   assert.match(html, /<figure class="cover"/);
   assert.match(html, /\d+ min read/);
-  assert.match(html, /class="unconfirmed"/);
+  // † rendering survives the new layout (Issue 3 carries unconfirmed claims; Issue 1 no longer does)
+  assert.match(page('issues/2026-10-18-europe-delayed-ai-rules-not-enforcement/index.html'), /class="unconfirmed"/);
 });
 
 test('legacy pages use the new palette and fonts', { skip }, () => {
