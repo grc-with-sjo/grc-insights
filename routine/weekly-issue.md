@@ -83,7 +83,8 @@ status update ("Update: …"), not as new news. Drop low-confidence findings unl
 3. Sources: numbered list of every URL cited.
 4. Tracker: update changed rows (status, key_dates, summary, source) and add new rows. Quote all dates, and set
    `last_reviewed: "<today>"` on every row you re-checked.
-5. Social: create `social/issue-<NN>.md` from `routine/social-template.md` (NN = nextIssue, zero-padded to 2), and add or
+5. Link-preview card: run `python3 scripts/make_og_cards.py` (adds `image:` to the new issue and writes `assets/og/<issue>.png`); include the PNG in the commit.
+6. Social: create `social/issue-<NN>.md` from `routine/social-template.md` (NN = nextIssue, zero-padded to 2), and add or
    update the issue's row in `social/linkedin-schedule.md` (next free Tuesday).
 
 ## Step 4b: Radar-only update (radar-check with changes)
@@ -110,7 +111,7 @@ Issue:
 ```bash
 BRANCH="issue/<NN>-<today>-<slug>"
 git switch -c "$BRANCH"
-git add "_issues/<file>" _data/tracker.yml "social/issue-<NN>.md" social/linkedin-schedule.md
+git add "_issues/<file>" "assets/og/<issue-file-stem>.png" _data/tracker.yml "social/issue-<NN>.md" social/linkedin-schedule.md
 git commit -m "Issue <NN> — <series label>: <theme>"
 git push -u origin "$BRANCH"
 BODY=$(mktemp)

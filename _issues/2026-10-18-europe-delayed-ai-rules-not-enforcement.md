@@ -9,6 +9,7 @@ regions: [EU, UK]
 sectors: [tech, saas, banking, retail]
 categories: [ai-governance, privacy-law, enforcement]
 description: "Europe gave high-risk AI more time, but its privacy regulators kept fining under existing law. I would spend the next quarter on rules that already apply, starting with automated decisions."
+image: /assets/og/2026-10-18-europe-delayed-ai-rules-not-enforcement.png
 ---
 
 ## In brief
