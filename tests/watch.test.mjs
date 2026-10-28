@@ -41,6 +41,16 @@ test('relevance keeps GRC items and drops noise, case-insensitively', () => {
   assert.ok(!isRelevant('Air quality report said fine', ['AI']), 'short keywords match whole words');
 });
 
+test('exclude phrases drop routine noise even when a keyword matches', () => {
+  const items = [
+    { title: '2025-2026 Annual Report to Parliament - Privacy Act - Canada.ca', link: 'https://c/1', date: '2026-10-27' },
+    { title: 'NOTICE OF VIOLATION California Safe Drinking Water and Toxic Enforcement Act', link: 'https://c/2', date: '2026-10-27' },
+    { title: 'Privacy Commissioner launches Children’s Privacy Code', link: 'https://c/3', date: '2026-10-27' },
+  ];
+  const got = selectNew(items, { seen: new Set(), keywords: ['privacy', 'enforcement'], exclude: ['annual report', 'safe drinking water'], today: '2026-10-28', days: 14 });
+  assert.deepEqual(got.map(i => i.link), ['https://c/3']);
+});
+
 test('selectNew returns unseen, recent, relevant items once, and records them as seen', () => {
   const items = [
     { title: 'SOC 2 criteria update', link: 'https://a/1', date: '2026-10-27' },

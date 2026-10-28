@@ -56,12 +56,14 @@ export function itemKey(item) {
 }
 
 // Unseen, relevant items dated within `days` of `today`; marks each returned item as seen.
-export function selectNew(items, { seen, keywords, today, days }) {
+// `exclude` phrases (case-insensitive) drop routine noise such as departmental annual reports.
+export function selectNew(items, { seen, keywords, exclude = [], today, days }) {
   const cutoff = new Date(Date.parse(today) - days * 86400000).toISOString().slice(0, 10);
   const out = [];
   for (const item of items) {
     const key = itemKey(item);
     if (seen.has(key) || !item.date || item.date < cutoff || !isRelevant(item.title, keywords)) continue;
+    if (exclude.some(x => item.title.toLowerCase().includes(String(x).toLowerCase()))) continue;
     seen.add(key);
     out.push(item);
   }
