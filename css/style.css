@@ -166,6 +166,9 @@ h1, h2, h3, h4 { font-family: var(--serif); color: var(--ink); letter-spacing: -
 /* Radar strip / upcoming */
 .radar-strip { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 28px; padding: 20px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .upcoming { list-style: none; display: flex; flex-direction: column; gap: 8px; margin: 6px 0 18px; }
+.change-log { list-style: none; display: flex; flex-direction: column; gap: 10px; margin: 6px 0 22px; font-size: 15px; }
+.change-log time { font-weight: 800; color: var(--label-text); margin-right: 6px; text-transform: uppercase; font-size: 13px; }
+.change-log a.muted { font-size: 13px; margin-left: 4px; }
 .radar-strip .upcoming { flex-direction: row; flex-wrap: wrap; gap: 10px 26px; margin: 0; }
 .upcoming time { font-weight: 800; color: var(--label-text); margin-right: 6px; text-transform: uppercase; font-size: 13px; }
 .upcoming a { color: var(--ink); font-weight: 700; text-decoration: none; font-family: var(--serif); }

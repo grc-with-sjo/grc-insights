@@ -1,0 +1,42 @@
+# Public "What changed" log for the Regulation Radar (newest first). Shown on /radar/ and in /radar/changes.xml.
+# Add an entry only after reading the primary source; `source` is that primary page.
+- date: "2026-10-28"
+  id: global-soc2
+  change: "AICPA exposure draft of updated SOC 2 Trust Services Criteria adds AI points of focus; comments close 15 Jan 2027, proposed effective for engagements beginning on or after 31 Dec 2027."
+  source: "https://www.aicpa-cima.com/news/article/aicpa-proposes-update-of-soc-2-r-trust-services-criteria-to-enhance-the-relevance-usability-and-value-of-cpas-reports"
+- date: "2026-10-28"
+  id: global-iso-27090
+  change: "Added ISO/IEC 27090:2026, guidance on security threats to AI systems (published October 2026)."
+  source: "https://www.iso.org/standard/27090"
+- date: "2026-10-28"
+  id: ca-opc-childrens-code
+  change: "Added the Privacy Commissioner's draft Children's Privacy Code; comments close 20 Jan 2027."
+  source: "https://www.priv.gc.ca/en/opc-news/news-and-announcements/2026/nr-c_261020/"
+- date: "2026-10-28"
+  id: eu-digital-omnibus-data
+  change: "EU governments agreed their negotiating position on the GDPR, ePrivacy and Data Act changes on 21 Oct 2026; still a proposal."
+  source: "https://www.consilium.europa.eu/en/press/press-releases/2026/10/21/digital-rulebook-council-agrees-position-to-simplify-data-protection-privacy-and-cyber-reporting-rules/"
+- date: "2026-10-28"
+  id: in-dpdp-act-rules
+  change: "Added official commencement dates from the gazette: consent managers from 13 Nov 2026, main duties from 13 May 2027."
+  source: "https://www.meity.gov.in/static/uploads/2025/11/53450e6e5dc0bfa85ebd78686cadad39.pdf"
+- date: "2026-10-28"
+  id: uk-duaa
+  change: "ICO replaced by the Information Commission on 30 Sep 2026; new erasure ground in force since 31 Mar 2026."
+  source: "https://www.gov.uk/guidance/data-use-and-access-act-2025-plans-for-commencement"
+- date: "2026-10-28"
+  id: uk-csr-bill
+  change: "Cyber Security and Resilience Bill completed Lords report stage on 26 Oct 2026."
+  source: "https://www.parliament.uk/business/news/2026/october-2026/cyber-security-and-resilience-network-and-information-systems-bill-undergoes-further-scrutiny-in-the-lords/"
+- date: "2026-10-28"
+  id: eu-nis2
+  change: "Commission referred Ireland, Spain, France and the Netherlands to the EU Court of Justice for late NIS2 transposition (8 Jul 2026)."
+  source: "https://digital-strategy.ec.europa.eu/en/news/commission-refers-ireland-spain-france-and-netherlands-court-justice-failing-transpose-rules"
+- date: "2026-10-28"
+  id: ca-c8-cyber
+  change: "Confirmed on Justice Laws that the Critical Cyber Systems Protection Act is not yet in force; no designations."
+  source: "https://laws-lois.justice.gc.ca/eng/acts/C-47.4/page-1.html"
+- date: "2026-10-28"
+  id: global-iso-27701
+  change: "Transition to ISO/IEC 27701:2025 set by accreditation bodies: certified organisations must move by 31 Oct 2028."
+  source: "https://www.ukas.com/resources/technical-bulletins/transition-arrangements-for-pims/"

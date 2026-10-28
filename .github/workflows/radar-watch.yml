@@ -1,0 +1,49 @@
+name: Radar watch
+# Daily: read the regulator and standards feeds in _data/watch_sources.yml and open an issue listing
+# new leads for the Regulation Radar. Leads are unverified; routine/radar-watch.md says how to check them.
+on:
+  schedule:
+    - cron: "0 14 * * *"   # 14:00 UTC = 06:00 PST / 07:00 PDT
+  workflow_dispatch:
+permissions:
+  contents: read
+  issues: write
+concurrency:
+  group: radar-watch
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - name: Restore the list of items already seen
+        uses: actions/cache/restore@v4
+        with:
+          path: .radar-watch
+          key: radar-watch-${{ github.run_id }}
+          restore-keys: radar-watch-
+      - name: Read feeds
+        id: watch
+        run: node scripts/radar-watch.mjs --state .radar-watch/seen.json --out radar-watch-report.md --days 14
+      - name: Save the list of items already seen
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: .radar-watch
+          key: radar-watch-${{ github.run_id }}
+      - name: Open an issue for new leads or unreadable sources
+        if: steps.watch.outputs.leads != '0' || steps.watch.outputs.failed != '0'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh label create radar-watch --color F2B544 --description "Daily Regulation Radar leads to verify" --force
+          gh issue create --label radar-watch \
+            --title "Radar watch $(date -u +%Y-%m-%d): ${{ steps.watch.outputs.leads }} lead(s) to verify" \
+            --body-file radar-watch-report.md
+      - name: Summary
+        if: always()
+        run: cat radar-watch-report.md >> "$GITHUB_STEP_SUMMARY"
