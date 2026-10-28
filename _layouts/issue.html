@@ -3,20 +3,27 @@ layout: default
 ---
 {% assign series = site.data.taxonomy.series | where: 'id', page.series | first %}
 {% if page.series == 'field-notes' %}{% assign fmt = '%B %Y' %}{% else %}{% assign fmt = '%-d %B %Y' %}{% endif %}
+{% assign minutes = content | number_of_words | divided_by: 200 | at_least: 1 %}
 <section class="hero">
   <div class="hero-inner">
-    <div class="hero-tag">{{ series.label }}{% if page.issue > 0 %} · Issue {{ page.issue }}{% endif %} · {{ page.date | date: fmt }}{% if page.last_modified_at %} · Updated {{ page.last_modified_at | date: fmt }}{% endif %}</div>
+    <span class="kicker">{{ series.label }}{% if page.issue > 0 %} · Issue {{ page.issue }}{% endif %} · {{ page.date | date: fmt }}{% if page.last_modified_at %} · Updated {{ page.last_modified_at | date: fmt }}{% endif %}</span>
     <h1>{% if page.hero_title_html %}{{ page.hero_title_html }}{% else %}{{ page.title }}{% endif %}</h1>
-    <p class="hero-intro">{{ page.hero_intro | default: page.description }}</p>
+    <p class="lede">{{ page.hero_intro | default: page.description }}</p>
     <div class="author-row">
       <div class="author-avatar">SJ</div>
       <div class="author-info">
         <div class="name">{{ site.author.name }}</div>
-        <div class="meta">{{ site.author.role }} · {{ site.author.location }} · {{ page.date | date: '%B %Y' }}</div>
+        <div class="meta">{{ site.author.role }} · {{ site.author.location }}</div>
       </div>
+    </div>
+    <div class="post-meta">
+      {% for c in page.categories %}{% assign cat = site.data.taxonomy.categories | where: 'id', c | first %}{% if cat %}<span class="chip">{{ cat.label }}</span>{% endif %}{% endfor %}
+      <span>{{ minutes }} min read</span>
     </div>
   </div>
 </section>
+
+{% include cover.html post=page %}
 
 <main class="content{% if page.series != 'field-notes' %} issue-body{% endif %}">
   {% include issue-body.html content=content %}
