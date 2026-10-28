@@ -198,9 +198,9 @@
     - { date: "2028-04-01", what: "Risk-assessment attestation and first cybersecurity audit certifications (large businesses)" }
   sectors: [tech, saas, cloud, hardware, banking, retail]
   applies_to_me: high
-  summary: "⚠️ verify: California privacy law now adds risk assessments, automated-decision notice and opt-out, and phased independent cybersecurity audits."
+  summary: "California privacy law now adds risk assessments, automated-decision notice and opt-out, and phased independent cybersecurity audits."
   source: "https://cppa.ca.gov/regulations/ccpa_updates.html"
-  last_reviewed: "2026-10-07"
+  last_reviewed: "2026-10-28"
 - id: us-co-ai-act
   name: "Colorado AI Act (SB 24-205), replaced by SB 26-189"
   region: US
@@ -208,13 +208,16 @@
   type: ai-law
   status: amended
   key_dates:
+    - { date: "2026-04-27", what: "Federal court order pauses enforcement of the old AI Act during xAI's challenge (DOJ joined 2026-04-24)" }
     - { date: "2026-05-14", what: "SB 26-189 signed, replacing SB 24-205" }
+    - { date: "2026-08-11", what: "Attorney General files proposed rules" }
+    - { date: "2026-10-26", what: "Attorney General rulemaking hearing" }
     - { date: "2027-01-01", what: "SB 26-189 takes effect" }
   sectors: [tech, saas, cloud, banking, retail]
   applies_to_me: high
-  summary: "⚠️ verify: Colorado swapped its impact-assessment AI law for a narrower notice, explanation and human-review regime starting 2027-01-01."
+  summary: "Colorado replaced its impact-assessment AI law with a narrower notice, explanation and human-review regime from 2027-01-01; the Attorney General's rules are still being finalised."
   source: "https://leg.colorado.gov/bill_files/116236/download"
-  last_reviewed: "2026-10-07"
+  last_reviewed: "2026-10-28"
 - id: us-tx-traiga
   name: "Texas Responsible AI Governance Act (TRAIGA, HB 149)"
   region: US
@@ -228,7 +231,7 @@
   applies_to_me: medium
   summary: "⚠️ verify: Bans specific intentionally harmful AI uses; AG-only enforcement with a cure period, safe harbors and a sandbox."
   source: "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=HB149"
-  last_reviewed: "2026-10-07"
+  last_reviewed: "2026-10-28"
 - id: us-state-privacy
   name: "US comprehensive state consumer privacy laws (combined)"
   region: US
@@ -237,13 +240,14 @@
   status: phasing-in
   key_dates:
     - { date: "2026-01-01", what: "Indiana, Kentucky and Rhode Island laws take effect" }
-    - { date: "2027-01-01", what: "Oklahoma law takes effect" }
+    - { date: "2026-10-01", what: "Connecticut amendments take effect (precise geolocation sale ban, surveillance-pricing limits)" }
+    - { date: "2027-01-01", what: "Oklahoma and Louisiana laws take effect" }
     - { date: "2027-05-01", what: "Alabama law takes effect" }
   sectors: [tech, saas, cloud, hardware, banking, retail]
   applies_to_me: high
-  summary: "⚠️ verify: Around 20 states have similar controller/processor privacy laws; more start in 2026-2027, and Massachusetts is still pending."
-  source: "https://iapp.org/resources/article/us-state-privacy-legislation-tracker/"
-  last_reviewed: "2026-10-07"
+  summary: "24 states have enacted comprehensive privacy laws and 20 are in force; Oklahoma, Louisiana, Alabama and Vermont start in 2027-2028, and Massachusetts is still in conference. ⚠️ verify: Vermont's start date."
+  source: "https://www.multistate.us/insider/2026/10/28/twenty-four-states-now-have-comprehensive-consumer-privacy-laws"
+  last_reviewed: "2026-10-28"
 - id: us-glba-safeguards
   name: "GLBA Safeguards Rule (FTC, 16 CFR Part 314)"
   region: US
@@ -265,11 +269,12 @@
   key_dates:
     - { date: "2025-12-11", what: "Executive order signed" }
     - { date: "2026-01-09", what: "DOJ AI Litigation Task Force established" }
+    - { date: "2026-04-24", what: "DOJ joins xAI's lawsuit against the Colorado AI Act" }
   sectors: [tech, saas, cloud, hardware, banking, retail]
   applies_to_me: medium
-  summary: "⚠️ verify: An executive push to preempt state AI laws; it is an order, not a statute, so state AI laws remain enforceable."
+  summary: "An executive push to preempt state AI laws; so far it has produced a paused Colorado lawsuit and a proposed FTC policy statement, but no statute, so state AI laws remain enforceable."
   source: "https://www.govinfo.gov/content/pkg/FR-2025-12-16/html/2025-23092.htm"
-  last_reviewed: "2026-10-07"
+  last_reviewed: "2026-10-28"
 - id: us-ca-sb53
   name: "California SB 53, Transparency in Frontier AI Act"
   region: US
@@ -282,8 +287,8 @@
   sectors: [tech, saas, cloud]
   applies_to_me: medium
   summary: "⚠️ verify: Large frontier AI developers must publish safety frameworks and report critical incidents to the state."
-  source: "https://leginfo.legislature.ca.gov"
-  last_reviewed: "2026-10-07"
+  source: "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB53"
+  last_reviewed: "2026-10-28"
 - id: eu-ai-act
   name: "EU AI Act (Regulation (EU) 2024/1689), as amended by the AI Digital Omnibus (Regulation (EU) 2026/1744)"
   region: EU
@@ -726,7 +731,7 @@
   applies_to_me: medium
   summary: "⚠️ verify: Requires generative-AI disclosure in consumer interactions on request or in high-risk contexts, and lapses 2027-07-01 unless extended."
   source: "https://le.utah.gov/"
-  last_reviewed: "2026-10-07"
+  last_reviewed: "2026-10-28"
 - id: us-nyc-ll144
   name: "NYC Local Law 144 (automated employment decision tools)"
   region: US
@@ -739,7 +744,7 @@
   applies_to_me: medium
   summary: "⚠️ verify: Employers using automated hiring tools in NYC need an annual independent bias audit, public posting and candidate notice."
   source: "https://www.osc.ny.gov/state-agencies/audits/2025/12/02/enforcement-local-law-144-automated-employment-decision-tools"
-  last_reviewed: "2026-10-07"
+  last_reviewed: "2026-10-28"
 - id: eu-pld
   name: "EU Product Liability Directive (Directive (EU) 2024/2853)"
   region: EU
@@ -862,7 +867,7 @@
   applies_to_me: high
   summary: "FedRAMP is replacing paper Rev5 packages with automated Key Security Indicators, so evidence for US agencies moves from documents to continuous, system-generated data."
   source: "https://www.fedramp.gov/20x/"
-  last_reviewed: "2026-10-08"
+  last_reviewed: "2026-10-28"
 - id: us-cmmc
   name: "Cybersecurity Maturity Model Certification (CMMC, 32 CFR part 170)"
   region: US
@@ -872,11 +877,12 @@
   key_dates:
     - { date: "2025-11-10", what: "Phase 1 took effect (self-assessment clauses)" }
     - { date: "2026-07-13", what: "Phase 2 (planned 2026-11-10) suspended pending a 60-day reform review; outcome unpublished" }
+    - { date: "2026-09-11", what: "60-day reform review window closed; report not yet public" }
   sectors: [tech, saas, cloud, hardware]
   applies_to_me: medium
   summary: "⚠️ verify: Defense contractors still self-assess against NIST SP 800-171; third-party certification (Phase 2) is paused pending a reform review with no published outcome."
   source: "https://www.crowell.com/en/insights/client-alerts/department-of-war-immediately-suspends-cmmc-phase-ii-requirements-launches-60-day-reform-review"
-  last_reviewed: "2026-10-08"
+  last_reviewed: "2026-10-28"
 - id: us-nydfs-part500
   name: "NYDFS 23 NYCRR Part 500 (Second Amendment)"
   region: US
@@ -900,11 +906,12 @@
   key_dates:
     - { date: "2023-07-26", what: "Rules adopted" }
     - { date: "2026-04-10", what: "Five trade associations asked the SEC to rescind or narrow Items 106 and 1.05" }
+    - { date: "2026-10-02", what: "CTIA letter urges the SEC to reform the cyber disclosure items" }
   sectors: [tech, saas, cloud, hardware, banking, retail]
   applies_to_me: medium
   summary: "⚠️ verify: Public companies file an 8-K within four business days of deciding a cyber incident is material; industry wants the rules scrapped or narrowed."
   source: "https://www.sec.gov/rules-regulations/2023/07/s7-09-22"
-  last_reviewed: "2026-10-08"
+  last_reviewed: "2026-10-28"
 - id: us-hipaa-security-nprm
   name: "HHS HIPAA Security Rule overhaul (proposed rule)"
   region: US
@@ -945,7 +952,7 @@
   applies_to_me: watch
   summary: "⚠️ verify: A voluntary IoT security label whose governance was reset after the first lead administrator quit; program rules and first labeled products are undated."
   source: "https://broadbandbreakfast.com/fcc-picks-ioxt-alliance-to-head-cyber-trust-mark-program/"
-  last_reviewed: "2026-10-08"
+  last_reviewed: "2026-10-28"
 - id: ca-cpcsc
   name: "Canadian Program for Cyber Security Certification (CPCSC)"
   region: CA
