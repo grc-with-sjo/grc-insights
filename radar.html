@@ -10,7 +10,7 @@ description: A living tracker of AI, privacy and cybersecurity laws, regulations
   <div class="hero-inner">
     <span class="kicker">Living tracker{% if reviewed %} · Last reviewed {{ reviewed | date: '%-d %B %Y' }}{% endif %}</span>
     <h1>Regulation <span>Radar</span></h1>
-    <p class="hero-intro">Every AI, privacy and cybersecurity law, rule and standard I'm watching, with status, key dates and who it hits. Each entry links to its primary source.</p>
+    <p class="hero-intro">Every AI, privacy and cybersecurity law, rule and standard I'm watching, with status, key dates and who it hits. Each entry links to its primary source, and a daily watch of regulator and standards-body feeds flags changes for checking.</p>
     <p class="hero-intro radar-key">Relevance is my call on how likely each item is to change a GRC programme's work: <strong>high</strong> means this year, <strong>medium</strong> means worth planning for, and <strong>watch</strong> means it could matter but hasn't moved yet.</p>
   </div>
 </section>
@@ -18,6 +18,16 @@ description: A living tracker of AI, privacy and cybersecurity laws, regulations
 <main class="content content-wide">
   <p class="section-label">Coming up in the next 90 days</p>
   <ul class="upcoming" data-upcoming data-days="90"></ul>
+
+  <section id="changes" class="radar-changes">
+    <p class="section-label">What changed</p>
+    <p class="muted">Every change to this Radar, newest first, with the primary source I checked. Follow it by <a href="{{ '/radar/changes.xml' | relative_url }}">RSS</a>.</p>
+    <ul class="change-log">
+      {% for c in site.data.radar_changes limit: 8 %}{% assign row = site.data.tracker | where: 'id', c.id | first %}
+      <li><time datetime="{{ c.date }}">{{ c.date | date: '%-d %b %Y' }}</time> <a href="#{{ c.id }}">{{ row.name }}</a>: {{ c.change }} <a class="muted" href="{{ c.source }}" target="_blank" rel="noopener">Source</a></li>
+      {% endfor %}
+    </ul>
+  </section>
 
   <section data-filter-root>
     <p class="section-label">Everything on the radar</p>
@@ -42,7 +52,7 @@ description: A living tracker of AI, privacy and cybersecurity laws, regulations
             <td>{{ r.sectors | join: ', ' }}</td>
             <td><span class="relevance relevance-{{ r.applies_to_me }}">{{ r.applies_to_me }}</span></td>
             {% assign summary = r.summary | escape %}{% if summary contains '⚠️ verify' %}{% assign summary = summary | remove: '⚠️ verify: ' | remove: '⚠️ verify:' | remove: ' ⚠️ verify' | remove: '⚠️ verify' | strip %}{% assign any_unconfirmed = true %}{% capture summary %}{{ summary }}<sup class="unconfirmed"><a href="#unconfirmed-note" title="Not yet confirmed against an official source">†</a></sup>{% endcapture %}{% endif %}
-            <td>{{ summary }}<div class="muted">Reviewed {{ r.last_reviewed | date: '%-d %b %Y' }}</div></td>
+            <td>{{ summary }}<div class="muted">Source checked {{ r.last_reviewed | date: '%-d %b %Y' }}</div></td>
           </tr>
           {% endfor %}
         </tbody>

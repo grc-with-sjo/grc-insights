@@ -5,7 +5,7 @@ import { fileURLToPath } from 'node:url';
 import { loadTaxonomy } from '../scripts/lib/taxonomy.mjs';
 import { isIsoDate } from '../scripts/lib/dates.mjs';
 import {
-  REQUIRED_SECTIONS, validateIssue, validateTrackerRows, validateEditorial, countVerifyFlags,
+  REQUIRED_SECTIONS, validateIssue, validateTrackerRows, validateEditorial, countVerifyFlags, validateRadarChanges,
 } from '../scripts/validate.mjs';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
@@ -162,4 +162,13 @@ test('hotlinked covers must be free Unsplash License photos, credited to their U
   }
   assert.ok(validateIssue(issue({ ...ok, cover: free, cover_credit_url: 'https://example.com/x' }), tax)
     .some(e => e.includes('cover_credit_url')));
+});
+
+test('radar change log entries need a date, a known row, a change and a primary source', () => {
+  const ids = new Set(['global-soc2']);
+  const ok = { date: '2026-10-28', id: 'global-soc2', change: 'AICPA exposure draft added', source: 'https://www.aicpa-cima.com/x' };
+  assert.deepEqual(validateRadarChanges([ok], ids), []);
+  const errs = validateRadarChanges([{ ...ok, date: '28 Oct' }, { ...ok, id: 'nope' }, { ...ok, change: ' ' }, { ...ok, source: 'aicpa' }], ids);
+  for (const m of ['date', 'unknown tracker id', 'change', 'source']) assert.ok(errs.some(e => e.includes(m)), m);
+  assert.deepEqual(validateRadarChanges(undefined, ids), ['radar_changes.yml must be a list']);
 });

@@ -217,7 +217,7 @@
   applies_to_me: high
   summary: "Colorado replaced its impact-assessment AI law with a narrower notice, explanation and human-review regime from 2027-01-01; the Attorney General's rules are still being finalised."
   source: "https://leg.colorado.gov/bill_files/116236/download"
-  last_reviewed: "2026-10-28"
+  last_reviewed: "2026-10-07"
 - id: us-tx-traiga
   name: "Texas Responsible AI Governance Act (TRAIGA, HB 149)"
   region: US
@@ -247,7 +247,7 @@
   applies_to_me: high
   summary: "24 states have enacted comprehensive privacy laws and 20 are in force; Oklahoma, Louisiana, Alabama and Vermont start in 2027-2028, and Massachusetts is still in conference. ⚠️ verify: Vermont's start date."
   source: "https://www.multistate.us/insider/2026/10/28/twenty-four-states-now-have-comprehensive-consumer-privacy-laws"
-  last_reviewed: "2026-10-28"
+  last_reviewed: "2026-10-07"
 - id: us-glba-safeguards
   name: "GLBA Safeguards Rule (FTC, 16 CFR Part 314)"
   region: US
@@ -274,7 +274,7 @@
   applies_to_me: medium
   summary: "An executive push to preempt state AI laws; so far it has produced a paused Colorado lawsuit and a proposed FTC policy statement, but no statute, so state AI laws remain enforceable."
   source: "https://www.govinfo.gov/content/pkg/FR-2025-12-16/html/2025-23092.htm"
-  last_reviewed: "2026-10-28"
+  last_reviewed: "2026-10-07"
 - id: us-ca-sb53
   name: "California SB 53, Transparency in Frontier AI Act"
   region: US

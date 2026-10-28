@@ -1,0 +1,193 @@
+# Radar watch: feeds checked daily by .github/workflows/radar-watch.yml (scripts/radar-watch.mjs).
+# A hit is only a lead. Every Radar change is verified on the primary site in `verify_at`
+# (read in a browser where the site blocks scripts) before the tracker or change log is edited.
+# Google News "site:" searches stand in for regulators whose own sites block automated readers.
+
+keywords:
+  - privacy
+  - personal data
+  - personal information
+  - data protection
+  - artificial intelligence
+  - AI
+  - machine learning
+  - automated decision
+  - algorithm
+  - cyber
+  - security
+  - incident report
+  - breach
+  - ransomware
+  - SOC 2
+  - Trust Services
+  - attestation
+  - ISO/IEC
+  - "27001"
+  - "27701"
+  - "27090"
+  - "42001"
+  - NIST
+  - framework
+  - guideline
+  - guidance
+  - regulation
+  - consultation
+  - exposure draft
+  - draft
+  - code of practice
+  - enforcement
+  - penalty
+  - fine
+  - settlement
+  - children
+  - consumer data
+  - surveillance pricing
+  - personalized pricing
+  - model risk
+  - third-party
+  - operational resilience
+  - DORA
+  - NIS2
+  - Cyber Resilience Act
+  - GDPR
+  - CCPA
+  - PIPEDA
+  - DPDP
+  - FedRAMP
+  - CMMC
+  - PCI DSS
+
+sources:
+  # Standards and assurance
+  - id: aicpa-soc
+    name: AICPA (SOC 2, attestation standards)
+    kind: rss
+    url: "https://news.google.com/rss/search?q=site:aicpa-cima.com+(SOC+OR+%22trust+services%22+OR+attestation+OR+%22exposure+draft%22)+when:14d&hl=en-US&gl=US&ceid=US:en"
+    verify_at: "https://www.aicpa-cima.com/news"
+  - id: iso-iec
+    name: ISO/IEC (security, privacy and AI standards)
+    kind: rss
+    url: "https://news.google.com/rss/search?q=site:iso.org+%22ISO/IEC%22+(AI+OR+security+OR+privacy+OR+cybersecurity)+when:14d&hl=en-US&gl=US&ceid=US:en"
+    verify_at: "https://www.iso.org/standards.html"
+  # Standards pages are indexed once, often weeks before anyone writes about them, so these look back 120 days.
+  - id: iso-2026-editions
+    name: ISO/IEC standards published in 2026
+    kind: rss
+    days: 120
+    url: "https://news.google.com/rss/search?q=site:iso.org+%22ISO/IEC%22+2026&hl=en-US&gl=US&ceid=US:en"
+    verify_at: "https://www.iso.org/standards.html"
+  - id: iso-cyber
+    name: ISO/IEC cybersecurity and privacy standards
+    kind: rss
+    days: 120
+    url: "https://news.google.com/rss/search?q=site:iso.org+%22ISO/IEC%22+cybersecurity&hl=en-US&gl=US&ceid=US:en"
+    verify_at: "https://www.iso.org/committee/45306.html"
+  - id: iso-ai
+    name: ISO/IEC AI standards
+    kind: rss
+    days: 120
+    url: "https://news.google.com/rss/search?q=site:iso.org+%22ISO/IEC%22+%22artificial+intelligence%22&hl=en-US&gl=US&ceid=US:en"
+    verify_at: "https://www.iso.org/committee/6794475.html"
+  - id: nist-news
+    name: NIST news
+    kind: rss
+    url: "https://www.nist.gov/news-events/news/rss.xml"
+    verify_at: "https://www.nist.gov"
+  - id: fedreg-nist
+    name: Federal Register (NIST)
+    kind: fedreg
+    url: "https://www.federalregister.gov/api/v1/documents.json?per_page=20&order=newest&conditions[agencies][]=national-institute-of-standards-and-technology"
+    verify_at: "https://www.federalregister.gov"
+  - id: pci-ssc
+    name: PCI Security Standards Council blog
+    kind: rss
+    url: "https://blog.pcisecuritystandards.org/rss.xml"
+    verify_at: "https://www.pcisecuritystandards.org"
+  - id: csa
+    name: Cloud Security Alliance blog
+    kind: rss
+    url: "https://cloudsecurityalliance.org/blog/feed"
+    verify_at: "https://cloudsecurityalliance.org"
+
+  # Canada
+  - id: opc
+    name: Office of the Privacy Commissioner of Canada
+    kind: rss
+    url: "https://news.google.com/rss/search?q=site:priv.gc.ca+when:14d&hl=en-CA&gl=CA&ceid=CA:en"
+    verify_at: "https://www.priv.gc.ca/en/opc-news/news-and-announcements/"
+  - id: osfi
+    name: OSFI
+    kind: rss
+    url: "https://news.google.com/rss/search?q=site:osfi-bsif.gc.ca+when:14d&hl=en-CA&gl=CA&ceid=CA:en"
+    verify_at: "https://www.osfi-bsif.gc.ca/en/news"
+  - id: ca-provincial-privacy
+    name: BC, Alberta, Ontario and Québec privacy regulators
+    kind: rss
+    url: "https://news.google.com/rss/search?q=(site:oipc.bc.ca+OR+site:oipc.ab.ca+OR+site:ipc.on.ca+OR+site:cai.gouv.qc.ca)+when:14d&hl=en-CA&gl=CA&ceid=CA:en"
+    verify_at: "https://www.oipc.bc.ca"
+  - id: ca-federal
+    name: Government of Canada (ISED, Public Safety, Justice Laws)
+    kind: rss
+    url: "https://news.google.com/rss/search?q=(site:ised-isde.canada.ca+OR+site:canada.ca+OR+site:laws-lois.justice.gc.ca)+(AI+OR+privacy+OR+cyber)+when:14d&hl=en-CA&gl=CA&ceid=CA:en"
+    verify_at: "https://www.canada.ca"
+
+  # United States
+  - id: ftc
+    name: Federal Trade Commission
+    kind: rss
+    url: "https://news.google.com/rss/search?q=site:ftc.gov+(privacy+OR+data+OR+AI+OR+security+OR+children)+when:14d&hl=en-US&gl=US&ceid=US:en"
+    verify_at: "https://www.ftc.gov/news-events/news/press-releases"
+  - id: fedreg-ftc
+    name: Federal Register (FTC)
+    kind: fedreg
+    url: "https://www.federalregister.gov/api/v1/documents.json?per_page=20&order=newest&conditions[agencies][]=federal-trade-commission"
+    verify_at: "https://www.federalregister.gov"
+  - id: ca-privacy
+    name: CalPrivacy and California Attorney General
+    kind: rss
+    url: "https://news.google.com/rss/search?q=(site:cppa.ca.gov+OR+site:privacy.ca.gov+OR+site:oag.ca.gov)+(privacy+OR+data+OR+AI)+when:14d&hl=en-US&gl=US&ceid=US:en"
+    verify_at: "https://privacy.ca.gov/news/"
+  - id: cisa
+    name: CISA news
+    kind: rss
+    url: "https://www.cisa.gov/news.xml"
+    verify_at: "https://www.cisa.gov"
+
+  # EU and UK
+  - id: edpb
+    name: European Data Protection Board
+    kind: rss
+    url: "https://www.edpb.europa.eu/feed/news_en"
+    verify_at: "https://www.edpb.europa.eu"
+  - id: eu-digital
+    name: European Commission digital strategy (AI Act, NIS2, CRA, Data Act)
+    kind: rss
+    url: "https://digital-strategy.ec.europa.eu/en/rss.xml"
+    verify_at: "https://digital-strategy.ec.europa.eu"
+  - id: eu-official-journal
+    name: EU Official Journal (L series)
+    kind: rss
+    url: "https://eur-lex.europa.eu/EN/display-feed.rss?rssId=162"
+    verify_at: "https://eur-lex.europa.eu"
+  - id: uk-ico
+    name: UK Information Commission
+    kind: atom
+    url: "https://www.gov.uk/search/news-and-communications.atom?organisations[]=information-commissioner-s-office"
+    verify_at: "https://ico.org.uk"
+  - id: uk-dsit
+    name: UK Department for Science, Innovation and Technology
+    kind: atom
+    url: "https://www.gov.uk/search/news-and-communications.atom?organisations[]=department-for-science-innovation-and-technology"
+    verify_at: "https://www.gov.uk"
+
+  # APAC and India
+  - id: apac-privacy
+    name: OAIC, PDPC Singapore, Korea and Japan privacy regulators
+    kind: rss
+    url: "https://news.google.com/rss/search?q=(site:oaic.gov.au+OR+site:pdpc.gov.sg+OR+site:ppc.go.jp)+when:14d&hl=en&gl=US&ceid=US:en"
+    verify_at: "https://www.oaic.gov.au"
+  - id: india-meity
+    name: India MeitY (DPDP Act and Rules)
+    kind: rss
+    url: "https://news.google.com/rss/search?q=site:meity.gov.in+(DPDP+OR+%22data+protection%22+OR+AI)+when:14d&hl=en-IN&gl=IN&ceid=IN:en"
+    verify_at: "https://www.meity.gov.in"

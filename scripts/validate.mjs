@@ -132,6 +132,20 @@ export function validateTrackerRows(rows, tax) {
   return errors;
 }
 
+// The public "What changed" log on the Radar: every entry names a tracker row and the primary source checked.
+export function validateRadarChanges(entries, trackerIds) {
+  if (!Array.isArray(entries)) return ['radar_changes.yml must be a list'];
+  const errors = [];
+  entries.forEach((e, i) => {
+    const fail = m => errors.push(`radar_changes[${i}]: ${m}`);
+    if (!isIsoDate(e?.date)) fail('date must be YYYY-MM-DD');
+    if (!trackerIds.has(e?.id)) fail(`unknown tracker id "${e?.id}"`);
+    if (typeof e?.change !== 'string' || !e.change.trim()) fail('change is required');
+    if (!URL_RE.test(e?.source ?? '')) fail('source must be an http(s) URL');
+  });
+  return errors;
+}
+
 export function validateEditorial(ed, tax) {
   if (!ed || typeof ed !== 'object') return ['editorial.yml: must be a mapping'];
   const errors = [];
@@ -173,7 +187,10 @@ export function validateRepo(root) {
   numbers.forEach(([file, n], i) => {
     if (numbers.findIndex(([, m]) => m === n) !== i) errors.push(`${file}: duplicate issue number ${n}`);
   });
-  errors.push(...validateTrackerRows(readYaml(join(root, '_data/tracker.yml')), tax));
+  const tracker = readYaml(join(root, '_data/tracker.yml'));
+  errors.push(...validateTrackerRows(tracker, tax));
+  const changesPath = join(root, '_data/radar_changes.yml');
+  if (existsSync(changesPath)) errors.push(...validateRadarChanges(readYaml(changesPath), new Set((tracker ?? []).map(r => r?.id))));
   const editorialPath = join(root, '_data/editorial.yml');
   if (existsSync(editorialPath)) errors.push(...validateEditorial(readYaml(editorialPath), tax));
   return { errors, verifyFlags };

@@ -249,3 +249,13 @@ test('card images request a small size; the issue cover loads eagerly', { skip }
   assert.doesNotMatch(cover, /loading="lazy"/);
   assert.match(cover, /fetchpriority="high"/);
 });
+
+test('the Radar shows what changed and publishes a change feed', { skip }, () => {
+  const html = page('radar/index.html');
+  assert.match(html, /id="changes"/);
+  assert.match(html, /What changed/);
+  assert.match(html, /href="[^"]*radar\/changes\.xml"/);
+  const feed = page('radar/changes.xml');
+  assert.match(feed, /<feed xmlns="http:\/\/www.w3.org\/2005\/Atom">/);
+  assert.match(feed, /SOC 2/);
+});
