@@ -187,3 +187,30 @@ test('every homepage card shows a cover image or the brand pattern, never nothin
   assert.ok(cards.length >= 1, 'no post cards on homepage');
   for (const c of cards) assert.ok(/<img [^>]*src="[^"]+"/.test(c) || c.includes('class="brand-art'), c.slice(0, 120));
 });
+
+test('homepage hero, latest band, areas and radar strip', { skip }, () => {
+  const html = page('index.html');
+  assert.match(html, /Digital trust, decoded/i);
+  assert.match(html, /Independent thinking on AI, privacy &amp; cyber risk\./);
+  assert.match(html, /class="latest-band"/);
+  assert.match(html, /href="\/grc-insights\/areas\/ai-governance\/"/);
+  assert.match(html, /data-upcoming/);
+  assert.match(html, /data-filter-root/);
+  assert.match(html, /class="latest-card"/);
+});
+
+test('each area page exists and lists only published issues in that area', { skip }, () => {
+  const areas = parseYaml(readFileSync('_data/areas.yml', 'utf8'));
+  const today = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Vancouver' }).format(new Date());
+  for (const a of areas) {
+    const html = page(`areas/${a.id}/index.html`);
+    for (const f of readdirSync('_issues')) {
+      const src = readFileSync(join('_issues', f), 'utf8');
+      const date = src.match(/^date: (\S+)$/m)[1];
+      const cats = (src.match(/^categories: \[(.*)\]$/m)?.[1] || '').split(',').map(s => s.trim());
+      const href = `/grc-insights/issues/${f.replace(/\.(md|html)$/, '')}/`;
+      const expected = date <= today && cats.some(c => a.categories.includes(c));
+      assert.equal(html.includes(href), expected, `${a.id} ${f}`);
+    }
+  }
+});
