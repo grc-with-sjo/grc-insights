@@ -64,6 +64,11 @@ export function validateIssue({ file, data, body }, tax) {
     for (const f of ['cover_alt', 'cover_credit', 'cover_credit_url']) {
       if (typeof data[f] !== 'string' || !data[f].trim()) fail(`${f} is required when cover is set`);
     }
+    // Hotlinked covers: free Unsplash License photos only (never Unsplash+ premium or other stock sites).
+    if (typeof data.cover === 'string' && data.cover.includes('://')) {
+      if (!/^https:\/\/images\.unsplash\.com\/photo-/.test(data.cover)) fail('cover must be a free Unsplash photo (images.unsplash.com/photo-…) or a local file');
+      else if (typeof data.cover_credit_url === 'string' && !/^https:\/\/unsplash\.com\/photos\//.test(data.cover_credit_url)) fail('cover_credit_url must link to the photo on unsplash.com/photos/');
+    }
   }
   for (const m of subsetErrors('regions', data.regions, tax.regions)) fail(m);
   for (const m of subsetErrors('sectors', data.sectors, tax.sectors)) fail(m);
