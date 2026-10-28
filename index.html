@@ -4,7 +4,7 @@ title: GRC Insights
 description: "Digital trust, decoded: a GRC practitioner's field notes on AI governance, privacy and cybersecurity, and how governance should adapt."
 ---
 {% assign issues = site.issues | where_exp: "i", "i.date <= site.time" | sort: 'issue' | reverse %}
-{% assign latest = issues | first %}
+{% assign latest = issues | where: 'featured', true | first %}
 <section class="hero">
   <div class="hero-inner hero-grid">
     <div>
@@ -37,7 +37,7 @@ description: "Digital trust, decoded: a GRC practitioner's field notes on AI gov
   <div class="latest-band-inner">
     <span class="section-label">Latest</span>
     <div class="card-grid">
-      {% for p in issues offset: 1 limit: 3 %}{% include post-card.html post=p %}{% endfor %}
+      {% for p in issues limit: 3 %}{% if p.url != latest.url %}{% include post-card.html post=p %}{% endif %}{% endfor %}
     </div>
   </div>
 </section>

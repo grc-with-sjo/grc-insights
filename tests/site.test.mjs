@@ -233,11 +233,13 @@ test('legacy pages use the new palette and fonts', { skip }, () => {
   assert.doesNotMatch(s, /Caveat|Nunito/);
 });
 
-test('the featured issue is not repeated in the Latest band', { skip }, () => {
+test('the Latest band starts with the newest issue; Featured is opt-in and not repeated', { skip }, () => {
   const html = page('index.html');
   const band = html.match(/<section class="latest-band"[\s\S]*?<\/section>/)[0];
-  const featured = html.match(/<a class="latest-card" href="([^"]+)"/)[1];
-  assert.ok(!band.includes(`href="${featured}"`), `featured ${featured} also in Latest band`);
+  const first = band.match(/<a class="post-card" href="([^"]+)"/)[1];
+  assert.match(first, /2026-10-18-europe-delayed-ai-rules-not-enforcement/, `newest issue should lead the Latest band, got ${first}`);
+  const featured = html.match(/<a class="latest-card" href="([^"]+)"/);
+  if (featured) assert.ok(!band.includes(`href="${featured[1]}"`), `featured ${featured[1]} also in Latest band`);
 });
 
 test('card images request a small size; the issue cover loads eagerly', { skip }, () => {
