@@ -16,7 +16,7 @@ social:
   links:
     - https://www.linkedin.com/in/surabhijo/
 # Fill in during setup (README.md). Empty means the feature is hidden.
-goatcounter: ""
+goatcounter: "grc-insights"
 linkedin_newsletter: ""
 
 markdown: kramdown
