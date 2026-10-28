@@ -120,7 +120,7 @@ test('radar page renders one row per tracker entry and embeds the data', { skip 
 });
 
 test('every page carries the default social card', { skip }, () => {
-  assert.match(page('index.html'), /<meta property="og:image" content="https:\/\/grc-with-sjo\.github\.io\/grc-insights\/assets\/og-card\.png"/);
+  assert.match(page('index.html'), /<meta property="og:image" content="https:\/\/grc-with-sjo\.github\.io\/grc-insights\/assets\/og-v2\/home\.png"/);
   assert.match(page('issues/2026-05-field-notes/index.html'), /og:image/);
 });
 
@@ -161,4 +161,89 @@ test('feed content uses absolute links and renders unconfirmed markers as a dagg
   assert.ok(!/⚠️? verify/.test(feed), 'literal marker left in feed');
   assert.ok(!/href=&quot;\//.test(feed), 'root-relative href in feed content breaks in feed readers');
   assert.ok(!/src=&quot;\//.test(feed), 'root-relative src in feed content breaks in feed readers');
+});
+
+test('pages load Fraunces and Inter, not the old fonts', { skip }, () => {
+  const html = page('index.html');
+  assert.match(html, /fonts\.googleapis\.com\/css2\?family=Fraunces[^"]*family=Inter/);
+  assert.doesNotMatch(html, /Caveat|Nunito/);
+});
+
+test('nav offers Issues, Regulation Radar and About, with the wordmark', { skip }, () => {
+  const nav = page('about/index.html').match(/<nav class="site-nav"[\s\S]*?<\/nav>/)[0];
+  for (const label of ['Issues', 'Regulation Radar', 'About']) assert.ok(nav.includes(`>${label}<`), label);
+  assert.match(nav, /class="brand"/);
+});
+
+test('Substack button only when substack_url is set', { skip }, () => {
+  const config = parseYaml(readFileSync('_config.yml', 'utf8'));
+  const html = page('index.html');
+  if (config.substack_url) assert.ok(html.includes(config.substack_url));
+  else assert.doesNotMatch(html, /Subscribe on Substack/);
+});
+
+test('every homepage card shows a cover image or the brand pattern, never nothing', { skip }, () => {
+  const cards = page('index.html').match(/<a class="post-card"[\s\S]*?<\/a>/g) || [];
+  assert.ok(cards.length >= 1, 'no post cards on homepage');
+  for (const c of cards) assert.ok(/<img [^>]*src="[^"]+"/.test(c) || c.includes('class="brand-art'), c.slice(0, 120));
+});
+
+test('homepage hero, latest band, areas and radar strip', { skip }, () => {
+  const html = page('index.html');
+  assert.match(html, /Digital trust, decoded/i);
+  assert.match(html, /<h1>Where AI, privacy and cyber risk meet practice\.<\/h1>/);
+  assert.match(html, /Making sense of AI, privacy and cyber risk, before it lands on your desk\./);
+  assert.match(html, /class="latest-band"/);
+  assert.match(html, /href="\/grc-insights\/areas\/ai-governance\/"/);
+  assert.match(html, /data-upcoming/);
+  assert.match(html, /data-filter-root/);
+  assert.match(html, /class="latest-card"/);
+});
+
+test('each area page exists and lists only published issues in that area', { skip }, () => {
+  const areas = parseYaml(readFileSync('_data/areas.yml', 'utf8'));
+  const today = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Vancouver' }).format(new Date());
+  for (const a of areas) {
+    const html = page(`areas/${a.id}/index.html`);
+    for (const f of readdirSync('_issues')) {
+      const src = readFileSync(join('_issues', f), 'utf8');
+      const date = src.match(/^date: (\S+)$/m)[1];
+      const cats = (src.match(/^categories: \[(.*)\]$/m)?.[1] || '').split(',').map(s => s.trim());
+      const href = `/grc-insights/issues/${f.replace(/\.(md|html)$/, '')}/`;
+      const expected = date <= today && cats.some(c => a.categories.includes(c));
+      assert.equal(html.includes(href), expected, `${a.id} ${f}`);
+    }
+  }
+});
+
+test('issue pages show kicker, title, author line, cover and reading time', { skip }, () => {
+  const html = page('issues/2026-10-11-canada-regulators-write-ai-rules/index.html');
+  assert.match(html, /class="kicker"[^>]*>[^<]*Issue 1/);
+  assert.match(html, /GRC &amp; AI Governance Practitioner · Vancouver, BC/);
+  assert.match(html, /<figure class="cover"/);
+  assert.match(html, /\d+ min read/);
+  // † rendering survives the new layout (Issue 3 carries unconfirmed claims; Issue 1 no longer does)
+  assert.match(page('issues/2026-10-18-europe-delayed-ai-rules-not-enforcement/index.html'), /class="unconfirmed"/);
+});
+
+test('legacy pages use the new palette and fonts', { skip }, () => {
+  assert.doesNotMatch(readFileSync('css/style.css', 'utf8'), /Caveat|Nunito|--rose\b/);
+  const s = page('sources.html');
+  assert.match(s, /css\/style\.css/);
+  assert.doesNotMatch(s, /Caveat|Nunito/);
+});
+
+test('the featured issue is not repeated in the Latest band', { skip }, () => {
+  const html = page('index.html');
+  const band = html.match(/<section class="latest-band"[\s\S]*?<\/section>/)[0];
+  const featured = html.match(/<a class="latest-card" href="([^"]+)"/)[1];
+  assert.ok(!band.includes(`href="${featured}"`), `featured ${featured} also in Latest band`);
+});
+
+test('card images request a small size; the issue cover loads eagerly', { skip }, () => {
+  const cards = page('index.html').match(/<a class="post-card"[\s\S]*?<\/a>/g) || [];
+  for (const c of cards) { const m = c.match(/<img [^>]*src="([^"]+)"/); if (m && m[1].includes('images.unsplash.com')) assert.match(m[1], /w=800/, m[1]); }
+  const cover = page('issues/2026-10-11-canada-regulators-write-ai-rules/index.html').match(/<figure class="cover">[\s\S]*?<\/figure>/)[0];
+  assert.doesNotMatch(cover, /loading="lazy"/);
+  assert.match(cover, /fetchpriority="high"/);
 });

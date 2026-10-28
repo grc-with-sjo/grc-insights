@@ -1,0 +1,14 @@
+# Areas of the site. Each area page lists published issues whose categories intersect its list.
+# Add a new area (e.g. climate) here plus a page in areas/ when it launches.
+- id: ai-governance
+  label: AI governance
+  intro: How AI is being regulated, assessed and overseen, and what that asks of the teams building and buying it.
+  categories: [ai-governance]
+- id: privacy
+  label: Privacy
+  intro: Privacy law, regulators' findings and enforcement, and what they mean for how organisations handle personal data.
+  categories: [privacy-law]
+- id: cybersecurity
+  label: Cybersecurity
+  intro: Cyber rules, security frameworks and certifications, and the assurance customers and regulators expect.
+  categories: [cybersecurity, frameworks]

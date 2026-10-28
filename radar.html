@@ -2,13 +2,13 @@
 layout: default
 title: Regulation Radar
 permalink: /radar/
-image: /assets/og-radar.png
+image: /assets/og-v2/radar.png
 description: A living tracker of AI, privacy and cybersecurity laws, regulations and standards across Canada, the US, EU/UK, APAC and India, with status, key dates and sector impact.
 ---
 {% assign reviewed = site.data.tracker | map: 'last_reviewed' | sort | last %}
 <section class="hero hero-compact">
   <div class="hero-inner">
-    <div class="hero-tag">Living tracker{% if reviewed %} · Last reviewed {{ reviewed | date: '%-d %B %Y' }}{% endif %}</div>
+    <span class="kicker">Living tracker{% if reviewed %} · Last reviewed {{ reviewed | date: '%-d %B %Y' }}{% endif %}</span>
     <h1>Regulation <span>Radar</span></h1>
     <p class="hero-intro">Every AI, privacy and cybersecurity law, rule and standard I'm watching, with status, key dates and who it hits. Each entry links to its primary source.</p>
     <p class="hero-intro radar-key">Relevance is my call on how likely each item is to change a GRC programme's work: <strong>high</strong> means this year, <strong>medium</strong> means worth planning for, and <strong>watch</strong> means it could matter but hasn't moved yet.</p>

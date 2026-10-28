@@ -144,3 +144,22 @@ test('countVerifyFlags counts markers with or without the emoji variation select
   assert.equal(countVerifyFlags('a ⚠️ verify b ⚠ verify c'), 2);
   assert.equal(countVerifyFlags('clean'), 0);
 });
+
+test('cover requires alt text and credit', () => {
+  const errs = validateIssue(issue({ cover: '/assets/covers/x.jpg' }), tax);
+  assert.ok(errs.some(e => e.includes('cover_alt')));
+  assert.ok(errs.some(e => e.includes('cover_credit')));
+  assert.deepEqual(validateIssue(issue({ cover: '/assets/covers/x.jpg', cover_alt: 'A padlock on a laptop',
+    cover_credit: 'Photo: A / Unsplash', cover_credit_url: 'https://unsplash.com/photos/x' }), tax), []);
+});
+
+test('hotlinked covers must be free Unsplash License photos, credited to their Unsplash page', () => {
+  const ok = { cover_alt: 'A padlock on a laptop', cover_credit: 'Photo: A / Unsplash', cover_credit_url: 'https://unsplash.com/photos/x' };
+  const free = 'https://images.unsplash.com/photo-1614064548237-096f735f344f?w=1600&q=75';
+  assert.deepEqual(validateIssue(issue({ ...ok, cover: free }), tax), []);
+  for (const cover of ['https://plus.unsplash.com/premium_photo-1661-abc?w=1600', 'https://example.com/stock.jpg']) {
+    assert.ok(validateIssue(issue({ ...ok, cover }), tax).some(e => e.includes('free Unsplash')), cover);
+  }
+  assert.ok(validateIssue(issue({ ...ok, cover: free, cover_credit_url: 'https://example.com/x' }), tax)
+    .some(e => e.includes('cover_credit_url')));
+});

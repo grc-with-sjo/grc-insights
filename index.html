@@ -5,47 +5,77 @@ description: "Digital trust, decoded: a GRC practitioner's field notes on AI gov
 ---
 {% assign issues = site.issues | where_exp: "i", "i.date <= site.time" | sort: 'issue' | reverse %}
 {% assign latest = issues | first %}
-{% assign founding = site.issues | where: 'issue', 0 | first %}
 <section class="hero">
-  <div class="hero-inner">
-    <div class="hero-tag">Digital trust, decoded · AI, privacy &amp; cyber governance</div>
-    <h1>GRC <span>Insights</span></h1>
-    <p class="hero-intro">How AI, privacy and security are evolving, and how governance should adapt. AI regulation, privacy law, cybersecurity rules and security certifications, and what they mean for tech, SaaS, cloud, hardware, banking and retail, from a practitioner who has to make it work.</p>
-    <div class="author-row">
-      <div class="author-avatar">SJ</div>
-      <div class="author-info">
-        <div class="name">{{ site.author.name }}</div>
-        <div class="meta">{{ site.author.role }} · {{ site.author.location }}</div>
+  <div class="hero-inner hero-grid">
+    <div>
+      <span class="kicker">Digital trust, decoded</span>
+      <h1>Where AI, privacy and cyber risk meet practice.</h1>
+      <p class="lede">Making sense of AI, privacy and cyber risk, before it lands on your desk. Field notes by {{ site.author.name }}, a GRC practitioner in Vancouver.</p>
+      {% if site.substack_url and site.substack_url != "" %}<a class="btn" href="{{ site.substack_url }}" target="_blank" rel="noopener">Subscribe on Substack</a>{% endif %}
+      <a class="btn{% if site.substack_url and site.substack_url != '' %} btn--secondary{% endif %}" href="{{ site.author.url }}" target="_blank" rel="noopener">Follow on LinkedIn</a>
+      <div class="author-row">
+        <div class="author-avatar">SJ</div>
+        <div class="author-info">
+          <div class="name">{{ site.author.name }}</div>
+          <div class="meta">{{ site.author.role | escape }} · {{ site.author.location }}</div>
+        </div>
       </div>
+    </div>
+    <div>
+      {% include brand-art.html %}
+      <ul class="creds" aria-label="About the author">
+        <li><b>Over a decade</b> in compliance, technology and risk</li>
+        <li>SOC 2 · ISO 27001 · SOX-ICFR programmes</li>
+        <li>GDPR · CCPA · PIPEDA · FOIPPA</li>
+        <li>Vancouver, BC · views are my own</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="latest-band" aria-label="Latest">
+  <div class="latest-band-inner">
+    <span class="section-label">Latest</span>
+    <div class="card-grid">
+      {% for p in issues offset: 1 limit: 3 %}{% include post-card.html post=p %}{% endfor %}
     </div>
   </div>
 </section>
 
 <main class="content">
-  <p class="section-label">Latest issue</p>
-  {% if latest.series == 'field-notes' %}{% assign latest_fmt = '%B %Y' %}{% else %}{% assign latest_fmt = '%-d %B %Y' %}{% endif %}
+  {% if latest %}
   {% assign latest_series = site.data.taxonomy.series | where: 'id', latest.series | first %}
+  {% if latest.series == 'field-notes' %}{% assign latest_fmt = '%B %Y' %}{% else %}{% assign latest_fmt = '%-d %B %Y' %}{% endif %}
+  <span class="section-label">Featured</span>
   <a class="latest-card" href="{{ latest.url | relative_url }}">
-    <span class="latest-meta">{{ latest_series.label }}{% if latest.issue > 0 %} · Issue {{ latest.issue }}{% endif %} · {{ latest.date | date: latest_fmt }}</span>
-    <span class="latest-title">{{ latest.title }}</span>
-    <span class="latest-desc">{{ latest.description }}</span>
-  </a>
-
-  {% if founding and founding.url != latest.url %}
-  <p class="section-label">Where it started</p>
-  <a class="latest-card" href="{{ founding.url | relative_url }}">
-    <span class="latest-meta">Field Notes · {{ founding.date | date: '%B %Y' }}</span>
-    <span class="latest-title">{{ founding.title }}</span>
-    <span class="latest-desc">{{ founding.description }}</span>
+    <div class="card-image">{% if latest.cover %}{% if latest.cover contains '://' %}{% assign src = latest.cover | replace: 'w=1600', 'w=1200' %}{% else %}{% assign src = latest.cover | relative_url %}{% endif %}<img src="{{ src }}" alt="{{ latest.cover_alt | escape }}" loading="lazy">{% else %}{% include brand-art.html class="brand-art--small" %}{% endif %}</div>
+    <div class="latest-text">
+      <span class="type-label">{{ latest_series.label }}{% if latest.issue > 0 %} · Issue {{ latest.issue }}{% endif %} · {{ latest.date | date: latest_fmt }}</span>
+      <span class="latest-title">{{ latest.title }}</span>
+      <span class="latest-desc">{{ latest.description }}</span>
+    </div>
   </a>
   {% endif %}
 
-  <p class="section-label">On the radar</p>
-  <ul class="upcoming" data-upcoming data-days="90" data-limit="3"></ul>
-  <p><a class="chip" href="{{ '/radar/' | relative_url }}">Open the Regulation Radar →</a></p>
+  <span class="section-label">Explore by area</span>
+  <div class="area-grid">
+    {% for a in site.data.areas %}
+    <a class="area-card" href="{{ '/areas/' | append: a.id | append: '/' | relative_url }}">
+      <h3>{{ a.label }}</h3>
+      <p>{{ a.intro }}</p>
+      <span class="go">Read {{ a.label }} →</span>
+    </a>
+    {% endfor %}
+  </div>
+
+  <span class="section-label">On the Radar</span>
+  <div class="radar-strip">
+    <ul class="upcoming" data-upcoming data-days="90" data-limit="3"></ul>
+    <a class="go" href="{{ '/radar/' | relative_url }}">Regulation Radar →</a>
+  </div>
 
   <section id="archive" data-filter-root>
-    <p class="section-label">All issues</p>
+    <span class="section-label">All issues</span>
     {% include filter-chips.html label="Topic" group="category" items=site.data.taxonomy.categories %}
     {% assign standing = site.data.taxonomy.sectors | where: 'standing', true %}
     {% include filter-chips.html label="Sector" group="sector" items=standing %}

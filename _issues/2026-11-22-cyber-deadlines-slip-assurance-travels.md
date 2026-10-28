@@ -9,7 +9,11 @@ regions: [US, CA, EU, GLOBAL]
 sectors: [cloud, saas, tech, hardware, banking]
 categories: [cybersecurity, frameworks, third-party-risk]
 description: "US and Canadian cyber dates keep moving, and Europe's reporting clock is already running. I would build one control and evidence layer that holds its value whichever date lands first."
-image: /assets/og/2026-11-22-cyber-deadlines-slip-assurance-travels.png
+image: /assets/og-v2/2026-11-22-cyber-deadlines-slip-assurance-travels.png
+cover: "https://images.unsplash.com/photo-1633526543814-9718c8922b7a?w=1600&q=75&auto=format&fit=crop"
+cover_alt: "Red pins marking dates across a month on a wall calendar, ending at a circled 30"
+cover_credit: "Photo: Towfiqu barbhuiya / Unsplash"
+cover_credit_url: "https://unsplash.com/photos/a-calendar-with-red-push-buttons-pinned-to-it-bwOAixLG0uc"
 ---
 
 ## In brief
