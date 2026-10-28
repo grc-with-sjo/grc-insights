@@ -36,3 +36,9 @@ test('social template forbids the marker in posts', () => {
   assert.match(t, /reportedly/);
   assert.match(t, /never the ⚠️ marker/);
 });
+
+test('routine commits the card from assets/og-v2, matching the generator', () => {
+  const prompt = readFileSync(new URL('../routine/weekly-issue.md', import.meta.url), 'utf8');
+  assert.ok(prompt.includes('assets/og-v2/'), 'routine should reference assets/og-v2/');
+  assert.ok(!/assets\/og\/</.test(prompt), 'routine still references old assets/og/ path');
+});

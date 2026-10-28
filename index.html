@@ -9,8 +9,8 @@ description: "Digital trust, decoded: a GRC practitioner's field notes on AI gov
   <div class="hero-inner hero-grid">
     <div>
       <span class="kicker">Digital trust, decoded</span>
-      <h1>Independent thinking on AI, privacy &amp; cyber risk.</h1>
-      <p class="lede">Field notes by {{ site.author.name }}, a GRC practitioner in Vancouver. What's changing, what it means, and what I'd do next.</p>
+      <h1>Where AI, privacy and cyber risk meet practice.</h1>
+      <p class="lede">Making sense of AI, privacy and cyber risk, before it lands on your desk. Field notes by {{ site.author.name }}, a GRC practitioner in Vancouver.</p>
       {% if site.substack_url and site.substack_url != "" %}<a class="btn" href="{{ site.substack_url }}" target="_blank" rel="noopener">Subscribe on Substack</a>{% endif %}
       <a class="btn{% if site.substack_url and site.substack_url != '' %} btn--secondary{% endif %}" href="{{ site.author.url }}" target="_blank" rel="noopener">Follow on LinkedIn</a>
       <div class="author-row">
@@ -48,7 +48,7 @@ description: "Digital trust, decoded: a GRC practitioner's field notes on AI gov
   {% if latest.series == 'field-notes' %}{% assign latest_fmt = '%B %Y' %}{% else %}{% assign latest_fmt = '%-d %B %Y' %}{% endif %}
   <span class="section-label">Featured</span>
   <a class="latest-card" href="{{ latest.url | relative_url }}">
-    <div class="card-image">{% if latest.cover %}{% if latest.cover contains '://' %}{% assign src = latest.cover %}{% else %}{% assign src = latest.cover | relative_url %}{% endif %}<img src="{{ src }}" alt="{{ latest.cover_alt | escape }}">{% else %}{% include brand-art.html class="brand-art--small" %}{% endif %}</div>
+    <div class="card-image">{% if latest.cover %}{% if latest.cover contains '://' %}{% assign src = latest.cover | replace: 'w=1600', 'w=1200' %}{% else %}{% assign src = latest.cover | relative_url %}{% endif %}<img src="{{ src }}" alt="{{ latest.cover_alt | escape }}" loading="lazy">{% else %}{% include brand-art.html class="brand-art--small" %}{% endif %}</div>
     <div class="latest-text">
       <span class="type-label">{{ latest_series.label }}{% if latest.issue > 0 %} · Issue {{ latest.issue }}{% endif %} · {{ latest.date | date: latest_fmt }}</span>
       <span class="latest-title">{{ latest.title }}</span>

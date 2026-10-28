@@ -191,7 +191,8 @@ test('every homepage card shows a cover image or the brand pattern, never nothin
 test('homepage hero, latest band, areas and radar strip', { skip }, () => {
   const html = page('index.html');
   assert.match(html, /Digital trust, decoded/i);
-  assert.match(html, /Independent thinking on AI, privacy &amp; cyber risk\./);
+  assert.match(html, /<h1>Where AI, privacy and cyber risk meet practice\.<\/h1>/);
+  assert.match(html, /Making sense of AI, privacy and cyber risk, before it lands on your desk\./);
   assert.match(html, /class="latest-band"/);
   assert.match(html, /href="\/grc-insights\/areas\/ai-governance\/"/);
   assert.match(html, /data-upcoming/);
@@ -237,4 +238,12 @@ test('the featured issue is not repeated in the Latest band', { skip }, () => {
   const band = html.match(/<section class="latest-band"[\s\S]*?<\/section>/)[0];
   const featured = html.match(/<a class="latest-card" href="([^"]+)"/)[1];
   assert.ok(!band.includes(`href="${featured}"`), `featured ${featured} also in Latest band`);
+});
+
+test('card images request a small size; the issue cover loads eagerly', { skip }, () => {
+  const cards = page('index.html').match(/<a class="post-card"[\s\S]*?<\/a>/g) || [];
+  for (const c of cards) { const m = c.match(/<img [^>]*src="([^"]+)"/); if (m && m[1].includes('images.unsplash.com')) assert.match(m[1], /w=800/, m[1]); }
+  const cover = page('issues/2026-10-11-canada-regulators-write-ai-rules/index.html').match(/<figure class="cover">[\s\S]*?<\/figure>/)[0];
+  assert.doesNotMatch(cover, /loading="lazy"/);
+  assert.match(cover, /fetchpriority="high"/);
 });

@@ -51,11 +51,15 @@ def issue_card(path):
     footer(draw, AUTHOR)
     out = save(img, f"{path.stem}.png")
     new_line = f"image: /assets/og-v2/{path.stem}.png"
-    if re.search(r"^image:.*$", fm, re.M):
-        new_fm = re.sub(r"^image:.*$", new_line, fm, count=1, flags=re.M)
-    else:
+    current = re.search(r"^image:\s*(\S+)\s*$", fm, re.M)
+    if current is None:
         new_fm = fm + "\n" + new_line
-    path.write_text(text.replace(fm, new_fm, 1), encoding="utf-8")
+    elif re.match(r"/assets/og(-v2)?/", current.group(1)):  # generated card (old or current folder)
+        new_fm = fm.replace(current.group(0), new_line, 1)
+    else:  # a hand-picked image: leave it alone
+        new_fm = fm
+    if new_fm != fm:
+        path.write_text(text.replace(fm, new_fm, 1), encoding="utf-8")
     return out
 
 
@@ -76,7 +80,7 @@ if __name__ == "__main__":
     for issue in sorted((ROOT / "_issues").glob("*.*")):
         print(issue_card(issue))
     print(page_card("home.png", "Digital trust, decoded", "GRC Insights",
-                    ["Independent thinking on AI,", "privacy & cyber risk."],
+                    ["Where AI, privacy and cyber", "risk meet practice."],
                     ["AI governance", "Privacy", "Cybersecurity"], AUTHOR))
     print(page_card("about.png", "GRC Insights · About", "Surabhi Joshi",
                     ["GRC & AI Governance Practitioner", "Independent field notes."],

@@ -26,3 +26,17 @@ class CardTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class GeneratorTests(unittest.TestCase):
+    def test_hand_picked_image_is_not_overwritten(self):
+        import make_og_cards
+        issue = ROOT / "_issues" / "2099-01-zz-generator-test.md"
+        issue.write_text('---\ntitle: "Generator test"\nissue: 99\nseries: monthly\ndate: 2099-01-03\n'
+                         'categories: [privacy-law]\nimage: /assets/custom/hand-picked.png\n---\nBody\n', encoding="utf-8")
+        try:
+            make_og_cards.issue_card(issue)
+            self.assertIn("image: /assets/custom/hand-picked.png", issue.read_text(encoding="utf-8"))
+        finally:
+            issue.unlink()
+            (ROOT / "assets" / "og-v2" / f"{issue.stem}.png").unlink(missing_ok=True)
