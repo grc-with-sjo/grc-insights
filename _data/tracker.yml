@@ -128,7 +128,7 @@
   applies_to_me: medium
   summary: "Alberta's private-sector privacy law is unamended; a 2026 consultation ran but no bill has been confirmed (the Assembly bill list was not checked)."
   source: "https://www.alberta.ca/personal-information-protection-act-engagement"
-  last_reviewed: "2026-10-28"
+  last_reviewed: "2026-10-11"
 - id: ca-osfi-e23
   name: "OSFI Guideline E-23, Model Risk Management (2027)"
   region: CA
@@ -231,7 +231,7 @@
   applies_to_me: medium
   summary: "⚠️ verify: Bans specific intentionally harmful AI uses; AG-only enforcement with a cure period, safe harbors and a sandbox."
   source: "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=HB149"
-  last_reviewed: "2026-10-28"
+  last_reviewed: "2026-10-07"
 - id: us-state-privacy
   name: "US comprehensive state consumer privacy laws (combined)"
   region: US
@@ -330,9 +330,9 @@
     - { date: "2027-04-02", what: "Applies to cross-border GDPR cases" }
   sectors: [tech, saas, cloud, hardware, banking, retail]
   applies_to_me: medium
-  summary: "Harmonises how regulators handle cross-border GDPR complaints and speeds up investigations."
+  summary: "⚠️ verify: Harmonises how regulators handle cross-border GDPR complaints and speeds up investigations."
   source: "https://data.europa.eu/eli/reg/2025/2518/oj"
-  last_reviewed: "2026-10-28"
+  last_reviewed: "2026-10-07"
 - id: eu-digital-omnibus-data
   name: "EU Digital Omnibus, data / GDPR / ePrivacy strand"
   region: EU
@@ -360,7 +360,7 @@
   applies_to_me: high
   summary: "EU operational-resilience rules for financial entities and their critical ICT providers."
   source: "https://eur-lex.europa.eu/eli/reg/2022/2554/oj"
-  last_reviewed: "2026-10-28"
+  last_reviewed: "2026-10-07"
 - id: eu-nis2
   name: "NIS2 Directive (Directive (EU) 2022/2555)"
   region: EU
@@ -392,7 +392,7 @@
   applies_to_me: high
   summary: "⚠️ verify: Data-access rules for connected products and cloud-switching rules for cloud and data-processing services."
   source: "https://eur-lex.europa.eu/eli/reg/2023/2854/oj"
-  last_reviewed: "2026-10-28"
+  last_reviewed: "2026-10-07"
 - id: eu-cra
   name: "EU Cyber Resilience Act (Regulation (EU) 2024/2847)"
   region: EU
@@ -455,7 +455,7 @@
   applies_to_me: medium
   summary: "⚠️ verify: Consent-based private-sector data law with mandatory breach notification and turnover-based fines."
   source: "https://sso.agc.gov.sg/Act/PDPA2012"
-  last_reviewed: "2026-10-28"
+  last_reviewed: "2026-10-07"
 - id: apac-au-privacy-tranche1
   name: "Australia Privacy Tranche 1 (Privacy and Other Legislation Amendment Act 2024)"
   region: APAC
@@ -483,7 +483,7 @@
   applies_to_me: watch
   summary: "⚠️ verify: Exposure draft with 41 proposed reforms, including a fair-and-reasonable test, a controller/processor split and a 72-hour breach statement."
   source: "https://www.minterellison.com/articles/draft-tranche-2-privacy-reforms-what-they-mean-for-businesses"
-  last_reviewed: "2026-10-28"
+  last_reviewed: "2026-10-07"
 - id: apac-cn-ai-labelling
   name: "China Measures for Labelling AI-Generated Synthetic Content (with GB 45438-2025)"
   region: APAC
@@ -510,7 +510,7 @@
   applies_to_me: watch
   summary: "⚠️ verify: Risk-based AI duties (high-impact AI, generative AI transparency, local representative for foreign firms) with a fine grace period."
   source: "https://www.cooley.com/news/insight/2026/2026-01-27-south-koreas-ai-basic-act-overview-and-key-takeaways"
-  last_reviewed: "2026-10-28"
+  last_reviewed: "2026-10-07"
 - id: apac-vn-ai-pdp-laws
   name: "Vietnam Law on Artificial Intelligence and Law on Personal Data Protection"
   region: APAC
@@ -556,6 +556,18 @@
   summary: "⚠️ verify: Landing as a voluntary, vendor-differentiating certificate asked for in diligence, not a legal requirement; no EU AI Act presumption of conformity."
   source: "https://www.iso.org/standard/81230.html"
   last_reviewed: "2026-10-08"
+- id: global-iso-27090
+  name: "ISO/IEC 27090:2026 Cybersecurity for AI: addressing security threats to AI systems"
+  region: GLOBAL
+  jurisdiction: "Global (ISO/IEC JTC 1/SC 27)"
+  type: standard
+  status: in-force
+  key_dates: []
+  sectors: [tech, saas, cloud, hardware, banking, retail]
+  applies_to_me: medium
+  summary: "Published October 2026: guidance on detecting and mitigating AI-specific threats such as data poisoning and model theft across the AI life cycle, complementing ISO/IEC 27001 and 27002. Guidance, not certifiable."
+  source: "https://www.iso.org/standard/27090"
+  last_reviewed: "2026-10-28"
 - id: global-iso-27001
   name: "ISO/IEC 27001:2022 with Amd 1:2024"
   region: GLOBAL
@@ -569,7 +581,7 @@
   applies_to_me: high
   summary: "The current ISMS certification standard; 2013-edition certificates expired or were withdrawn at the end of the transition on 2025-10-31, per certification bodies."
   source: "https://www.iso.org/standard/27001"
-  last_reviewed: "2026-10-28"
+  last_reviewed: "2026-10-08"
 - id: global-nist-ai-rmf
   name: "NIST AI Risk Management Framework 1.0 (AI 100-1)"
   region: GLOBAL
@@ -582,7 +594,7 @@
   applies_to_me: medium
   summary: "Voluntary Govern/Map/Measure/Manage framework for AI risk."
   source: "https://www.nist.gov/itl/ai-risk-management-framework"
-  last_reviewed: "2026-10-28"
+  last_reviewed: "2026-10-07"
 - id: global-nist-ai-600-1
   name: "NIST AI 600-1, Generative AI Profile"
   region: GLOBAL
@@ -744,7 +756,7 @@
   applies_to_me: medium
   summary: "⚠️ verify: Employers using automated hiring tools in NYC need an annual independent bias audit, public posting and candidate notice."
   source: "https://www.osc.ny.gov/state-agencies/audits/2025/12/02/enforcement-local-law-144-automated-employment-decision-tools"
-  last_reviewed: "2026-10-28"
+  last_reviewed: "2026-10-07"
 - id: eu-pld
   name: "EU Product Liability Directive (Directive (EU) 2024/2853)"
   region: EU
@@ -758,7 +770,7 @@
   applies_to_me: medium
   summary: "⚠️ verify: Treats software as a product for strict-liability purposes."
   source: "https://eur-lex.europa.eu/eli/dir/2024/2853/oj"
-  last_reviewed: "2026-10-28"
+  last_reviewed: "2026-10-07"
 - id: apac-au-childrens-privacy-code
   name: "Australia Privacy (Children's Online Privacy) Code 2026"
   region: APAC
@@ -801,7 +813,7 @@
   applies_to_me: watch
   summary: "⚠️ verify: A growing set of CAC-led measures on AI companions, data risk assessments and compliance audits; no comprehensive AI law yet."
   source: "https://www.hunton.com/privacy-and-cybersecurity-law-blog/chinas-first-regulatory-framework-for-virtual-companions-soon-to-take-effect"
-  last_reviewed: "2026-10-28"
+  last_reviewed: "2026-10-07"
 - id: apac-hk-pdpo
   name: "Hong Kong Personal Data (Privacy) Ordinance (Cap. 486) and PCPD AI compliance checks"
   region: APAC
@@ -867,7 +879,7 @@
   applies_to_me: high
   summary: "FedRAMP is replacing paper Rev5 packages with automated Key Security Indicators, so evidence for US agencies moves from documents to continuous, system-generated data."
   source: "https://www.fedramp.gov/20x/"
-  last_reviewed: "2026-10-28"
+  last_reviewed: "2026-10-08"
 - id: us-cmmc
   name: "Cybersecurity Maturity Model Certification (CMMC, 32 CFR part 170)"
   region: US
@@ -882,7 +894,7 @@
   applies_to_me: medium
   summary: "⚠️ verify: Defense contractors still self-assess against NIST SP 800-171; third-party certification (Phase 2) is paused pending a reform review with no published outcome."
   source: "https://www.crowell.com/en/insights/client-alerts/department-of-war-immediately-suspends-cmmc-phase-ii-requirements-launches-60-day-reform-review"
-  last_reviewed: "2026-10-28"
+  last_reviewed: "2026-10-08"
 - id: us-nydfs-part500
   name: "NYDFS 23 NYCRR Part 500 (Second Amendment)"
   region: US
@@ -952,7 +964,7 @@
   applies_to_me: watch
   summary: "⚠️ verify: A voluntary IoT security label whose governance was reset after the first lead administrator quit; program rules and first labeled products are undated."
   source: "https://broadbandbreakfast.com/fcc-picks-ioxt-alliance-to-head-cyber-trust-mark-program/"
-  last_reviewed: "2026-10-28"
+  last_reviewed: "2026-10-08"
 - id: ca-cpcsc
   name: "Canadian Program for Cyber Security Certification (CPCSC)"
   region: CA
@@ -980,7 +992,7 @@
   applies_to_me: high
   summary: "Proposal to repeal and replace Regulation (EU) 2019/881 (the Cybersecurity Act); no committee vote yet."
   source: "https://oeil.europarl.europa.eu/oeil/en/procedure-file?reference=2026/0011(COD)"
-  last_reviewed: "2026-10-28"
+  last_reviewed: "2026-10-08"
 - id: eu-nis2-amendments
   name: "NIS2 targeted amendments (COM(2026)13)"
   region: EU
@@ -993,7 +1005,7 @@
   applies_to_me: high
   summary: "Proposal to simplify NIS2 jurisdiction rules, streamline ransomware data collection and add a small mid-cap category; no adoption yet."
   source: "https://digital-strategy.ec.europa.eu/en/library/proposal-directive-regards-simplification-measures-and-alignment-cybersecurity-act"
-  last_reviewed: "2026-10-28"
+  last_reviewed: "2026-10-08"
 - id: eu-eucc
   name: "EUCC Common Criteria-based cybersecurity certification scheme (Reg. (EU) 2024/482)"
   region: EU
@@ -1007,7 +1019,7 @@
   applies_to_me: medium
   summary: "⚠️ verify: The first live EU-wide cybersecurity certification scheme, for ICT products assessed against Common Criteria."
   source: "https://eur-lex.europa.eu/eli/reg_impl/2024/482/2025-01-08/eng"
-  last_reviewed: "2026-10-28"
+  last_reviewed: "2026-10-08"
 - id: eu-eucs
   name: "EUCS cloud certification scheme (candidate, not adopted)"
   region: EU
@@ -1019,7 +1031,7 @@
   applies_to_me: high
   summary: "⚠️ verify: The EU cloud security label is still not adopted; sovereignty arguments over cloud certification now feature in CSA2 and the CADA proposal."
   source: "https://www.eurosmart.com/wp-content/uploads/2025/07/2025_06_19_Enhancing-the-Cybersecurity-Act-to-Finalise-a-Robust-EUCS-Scheme_Final.pdf"
-  last_reviewed: "2026-10-28"
+  last_reviewed: "2026-10-08"
 - id: eu-cada
   name: "EU Cloud and AI Development Act (CADA, COM(2026)502)"
   region: EU
@@ -1032,7 +1044,7 @@
   applies_to_me: high
   summary: "⚠️ verify: Proposal to reduce EU reliance on foreign cloud and AI providers, including cloud sovereignty aspects; in negotiation."
   source: "https://enterprise.gov.ie/en/consultations/consultations-files/public-consultation-cada-explanatory-note.pdf"
-  last_reviewed: "2026-10-28"
+  last_reviewed: "2026-10-08"
 - id: apac-au-ransomware-reporting
   name: "Australia Cyber Security Act 2024: ransomware payment reporting"
   region: APAC
@@ -1061,7 +1073,7 @@
   applies_to_me: watch
   summary: "⚠️ verify: Critical-infrastructure operators face stronger risk-management duties now; Tranche 2 may widen scope to cloud and supplier categories."
   source: "https://www.whitecase.com/insight-alert/review-soci-act"
-  last_reviewed: "2026-10-28"
+  last_reviewed: "2026-10-08"
 - id: global-soc2
   name: "SOC 2 (AICPA Trust Services Criteria)"
   region: GLOBAL
@@ -1069,11 +1081,13 @@
   type: guidance
   status: in-force
   key_dates:
-    - { date: "2026-02-26", what: "AICPA exposure draft revising attestation standards (AT-C), not the SOC 2 criteria" }
+    - { date: "2026-10-28", what: "AICPA exposure draft of updated Trust Services Criteria, with new AI points of focus" }
+    - { date: "2027-01-15", what: "Comment period on the exposure draft closes" }
+    - { date: "2027-12-31", what: "Proposed effective date: engagements beginning on or after this date, early adoption permitted" }
   sectors: [saas, cloud, tech]
   applies_to_me: high
-  summary: "The assurance report customers ask for first; criteria remain 2017 with 2022 points of focus and no AI-specific criteria (CSA note, 2026-08-30). ⚠️ verify: AICPA's 2026 exposure draft revises the attestation standards, not the SOC 2 criteria."
-  source: "https://www.aicpa-cima.com"
+  summary: "The assurance report customers ask for first. The AICPA's 28 Oct 2026 exposure draft would restructure the criteria and add points of focus on AI governance, model monitoring, prompt manipulation, data poisoning, training data and automated decisions; if approved, effective for engagements beginning on or after 31 Dec 2027."
+  source: "https://www.aicpa-cima.com/news/article/aicpa-proposes-update-of-soc-2-r-trust-services-criteria-to-enhance-the-relevance-usability-and-value-of-cpas-reports"
   last_reviewed: "2026-10-28"
 - id: global-csa-star
   name: "CSA STAR, AI Controls Matrix (AICM) and STAR for AI"
