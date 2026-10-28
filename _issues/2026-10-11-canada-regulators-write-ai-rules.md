@@ -10,6 +10,10 @@ sectors: [tech, saas, cloud, banking, retail]
 categories: [privacy-law, ai-governance, enforcement, third-party-risk]
 description: "Canada's privacy bill has stalled and there is no federal AI law, but regulators are already setting expectations. I would build on the evidence they ask for, not on the bill's timing."
 image: /assets/og-v2/2026-10-11-canada-regulators-write-ai-rules.png
+cover: "https://images.unsplash.com/photo-1573164574572-cb89e39749b4?w=1600&q=75&auto=format&fit=crop"
+cover_alt: "A team of colleagues working at a table with laptops"
+cover_credit: "Photo: Christina @ wocintechchat.com / Unsplash"
+cover_credit_url: "https://unsplash.com/photos/group-of-people-sitting-beside-rectangular-wooden-table-with-laptops-faEfWCdOKIg"
 ---
 
 ## In brief

@@ -10,6 +10,10 @@ sectors: [tech, saas, banking, retail]
 categories: [ai-governance, privacy-law, enforcement]
 description: "Europe gave high-risk AI more time, but its privacy regulators kept fining under existing law. I would spend the next quarter on rules that already apply, starting with automated decisions."
 image: /assets/og-v2/2026-10-18-europe-delayed-ai-rules-not-enforcement.png
+cover: "https://images.unsplash.com/photo-1774771759351-5ea38c80b041?w=1600&q=75&auto=format&fit=crop"
+cover_alt: "The EU flag reflected in the glass of a modern building"
+cover_credit: "Photo: Fabian Kleiser / Unsplash"
+cover_credit_url: "https://unsplash.com/photos/european-union-flag-reflected-on-modern-building-glass-PvjMWiOOCkw"
 ---
 
 ## In brief

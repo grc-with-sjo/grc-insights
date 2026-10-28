@@ -10,6 +10,10 @@ sectors: [cloud, saas, tech, hardware, banking]
 categories: [cybersecurity, frameworks, third-party-risk]
 description: "US and Canadian cyber dates keep moving, and Europe's reporting clock is already running. I would build one control and evidence layer that holds its value whichever date lands first."
 image: /assets/og-v2/2026-11-22-cyber-deadlines-slip-assurance-travels.png
+cover: "https://images.unsplash.com/photo-1614064548237-096f735f344f?w=1600&q=75&auto=format&fit=crop"
+cover_alt: "A padlock resting on a laptop keyboard"
+cover_credit: "Photo: FlyD / Unsplash"
+cover_credit_url: "https://unsplash.com/photos/padlock-on-laptop-with-light-trails-C5pXRFEjq3w"
 ---
 
 ## In brief
