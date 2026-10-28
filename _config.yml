@@ -33,7 +33,7 @@ collections:
 
 defaults:
   - scope: { path: "" }
-    values: { image: /assets/og-card.png }
+    values: { image: /assets/og-v2/home.png }
   - scope: { path: "", type: issues }
     values: { layout: issue }
 

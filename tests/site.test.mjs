@@ -120,7 +120,7 @@ test('radar page renders one row per tracker entry and embeds the data', { skip 
 });
 
 test('every page carries the default social card', { skip }, () => {
-  assert.match(page('index.html'), /<meta property="og:image" content="https:\/\/grc-with-sjo\.github\.io\/grc-insights\/assets\/og-card\.png"/);
+  assert.match(page('index.html'), /<meta property="og:image" content="https:\/\/grc-with-sjo\.github\.io\/grc-insights\/assets\/og-v2\/home\.png"/);
   assert.match(page('issues/2026-05-field-notes/index.html'), /og:image/);
 });
 
