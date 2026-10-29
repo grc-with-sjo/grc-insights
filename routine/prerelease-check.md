@@ -14,11 +14,14 @@ You check scheduled GRC Insights releases for anything that changed since they w
 ## Step 1: Find what is due
 
 ```bash
-cd /Users/surabhijoshi/projects/grc-insights && git switch main && git pull --ff-only
-TOMORROW=$(TZ=America/Vancouver date -v+1d +%F)
-grep -l "^date: $TOMORROW$" _issues/*.md
-gh pr list --state open --label issue --json number,title,headRefName,createdAt
+git -C /Users/surabhijoshi/projects/grc-insights switch main
+git -C /Users/surabhijoshi/projects/grc-insights pull --ff-only
+cd /Users/surabhijoshi/projects/grc-insights && node scripts/routine-status.mjs
 ```
+
+`routine-status.mjs` prints JSON: `tomorrow` (Vancouver date), `dueTomorrow` (issue files dated tomorrow) and
+`openIssuePrs` (with `createdAt`). Do not compute dates with `$(…)` or shell variables: unattended runs cannot
+approve them.
 
 Check two kinds of release:
 - **A. Scheduled:** every issue on `main` whose `date` is tomorrow (it goes live at the nightly rebuild, ~01:05 PT).
