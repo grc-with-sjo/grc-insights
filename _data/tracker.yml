@@ -1093,26 +1093,26 @@
   type: guidance
   status: in-force
   key_dates:
-    - { date: "2026-10-19", what: "AICPA and AIUC launch a joint offering: one CPA-led engagement delivering a SOC 2 report and AIUC-1 certification" }
+    - { date: "2026-10-19", what: "AICPA and AIUC begin rolling out a joint SOC 2 + AIUC-1 engagement through several CPA firms; full launch expected early 2027" }
     - { date: "2026-10-28", what: "AICPA exposure draft of updated Trust Services Criteria, with new AI points of focus" }
     - { date: "2027-01-15", what: "Comment period on the exposure draft closes" }
     - { date: "2027-12-31", what: "Proposed effective date: engagements beginning on or after this date, early adoption permitted" }
   sectors: [saas, cloud, tech]
   applies_to_me: high
-  summary: "The assurance report customers ask for first. The AICPA's 28 Oct 2026 exposure draft would restructure the criteria and add points of focus on AI governance, model monitoring, prompt manipulation, data poisoning, training data and automated decisions; if approved, effective for engagements beginning on or after 31 Dec 2027."
+  summary: "The assurance report customers ask for first: an independent CPA examination of controls over security, availability, processing integrity, confidentiality or privacy. The current criteria stay in force. The AICPA's 28 Oct 2026 exposure draft is a proposal: it would restructure the criteria and add points of focus on AI governance, model monitoring, prompt manipulation, data poisoning, transparency of AI-generated outputs, training data management and automated decision-making. If approved in 2027, it applies to engagements beginning on or after 31 Dec 2027, with early adoption permitted."
   source: "https://www.aicpa-cima.com/news/article/aicpa-proposes-update-of-soc-2-r-trust-services-criteria-to-enhance-the-relevance-usability-and-value-of-cpas-reports"
   last_reviewed: "2026-10-28"
 - id: global-aiuc-1
   name: "AIUC-1 standard for AI agent safety, security and reliability"
   region: GLOBAL
-  jurisdiction: "AI Underwriting Company (industry consortium)"
+  jurisdiction: "Artificial Intelligence Underwriting Company (AIUC)"
   type: standard
   status: in-force
   key_dates:
-    - { date: "2026-10-19", what: "AICPA and AIUC launch joint SOC 2 + AIUC-1 assurance offering" }
+    - { date: "2026-10-19", what: "AICPA and AIUC begin rolling out a joint SOC 2 + AIUC-1 engagement through several CPA firms; full launch expected early 2027" }
   sectors: [tech, saas, cloud]
   applies_to_me: medium
-  summary: "An industry certification for AI agents, built by a consortium of over 250 security leaders and updated quarterly; controls span data and privacy, security, safety, reliability, accountability and society, with live testing of agent behaviour. Now available alongside SOC 2 in one CPA-led engagement."
+  summary: "An industry certification for AI agents, developed by a consortium of over 250 CISOs and security leaders and updated quarterly. Controls span six principles (data and privacy, security, safety, reliability, accountability, society) and map to MITRE ATLAS, ISO 42001 and the EU AI Act; agents are live-tested, retested quarterly and recertified annually. As of 19 Oct 2026 several CPA firms were delivering it together with SOC 2 in one CPA-led engagement; the AICPA expects the full launch in early 2027."
   source: "https://www.aicpa-cima.com/news/article/auditors-meet-urgent-demand-for-ai-assurance-with-new-offering-from-aicpa-and-aiuc"
   last_reviewed: "2026-10-28"
 - id: global-csa-star

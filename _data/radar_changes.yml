@@ -1,6 +1,11 @@
 # Public "What changed" log for the Regulation Radar (newest first). Shown on /radar/ and in /radar/changes.xml.
 # Add an entry only after reading the primary source; `source` is that primary page.
 - date: "2026-10-28"
+  id: global-aiuc-1
+  change: "Correction: the joint SOC 2 + AIUC-1 engagement is in early rollout with several CPA firms, not fully launched; the AICPA expects the full launch in early 2027. Also corrected AIUC's name and clarified that the SOC 2 exposure draft is a proposal while current criteria stay in force."
+  source: "https://www.aicpa-cima.com/news/article/auditors-meet-urgent-demand-for-ai-assurance-with-new-offering-from-aicpa-and-aiuc"
+  quote: "Several CPA firms are now delivering a joint SOC 2® plus AIUC-1 offering to clients. Once initial engagements have concluded, a full launch of the joint certification is expected to take place in early 2027."
+- date: "2026-10-28"
   id: global-csa-star
   change: "CSA launched STAR for AI Level 2 on 27 Oct 2026, with paths through ISO/IEC 27001 or 42001 plus the AI Controls Matrix. Corrected an earlier date and the claim that the AI tier requires ISO/IEC 42001."
   source: "https://cloudsecurityalliance.org/press-releases/2026/10/27/cloud-security-alliance-launches-star-for-ai-level-2-to-strengthen-ai-governance-and-trust"

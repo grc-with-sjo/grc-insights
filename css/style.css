@@ -252,6 +252,8 @@ h1, h2, h3, h4 { font-family: var(--serif); color: var(--ink); letter-spacing: -
 .radar-table th { background: var(--card); font: 800 11px var(--sans); letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
 .radar-table td a { color: var(--ink); font-weight: 700; font-family: var(--serif); font-size: 15px; }
 .radar-type { display: block; font-size: 12px; color: var(--muted); }
+.radar-dates div + div { margin-top: 8px; }
+.radar-dates time { display: block; font-weight: 700; color: var(--ink); }
 .status, .relevance { display: inline-block; padding: 2px 10px; border-radius: 999px; font-size: 12px; font-weight: 700; white-space: nowrap; background: #EEF3F4; color: var(--teal); }
 .status-in-force { background: var(--teal); color: var(--white); }
 .status-phasing-in { background: #FDF0D5; color: #7A5410; }

@@ -17,11 +17,29 @@ A lead is a headline, not a fact. Nothing reaches the Radar until its primary so
      source was read today;
    - add an entry at the top of `_data/radar_changes.yml` with the date, row id, a one-sentence change and
      the primary source URL (`npm run validate` checks this);
+   - put the primary-source sentence the change rests on in that entry's `quote` (required from
+     29 Oct 2026; `npm run validate` fails without it);
    - anything that rests only on secondary sources keeps a `⚠️ verify` marker and its old `last_reviewed`.
-4. Run `npm run validate` and `npm test`, push a `radar/watch-<date>` branch and open a PR. Factual Radar
+4. **Wording check, claim by claim.** Reading the source is not enough. The Radar went wrong on
+   28 Oct 2026 because a source was read but its words were upgraded: "rolling out" with "full launch
+   expected early 2027" became "launch" and "now available". Before pushing, check every sentence you
+   wrote in `key_dates[].what`, `summary` and `radar_changes` against the source text:
+   - **Stage:** use the source's own stage words. Proposed, exposure draft, consultation, pilot, rolling
+     out, full launch, in force and effective are different things; never move one step up.
+   - **Qualifiers:** keep "if approved", "expected", "several", "early adoption permitted" and similar.
+     Dates the source calls expected or proposed say so.
+   - **Lists:** a list (points of focus, principles, sectors) is either complete or says "including".
+   - **Names:** organisations and instruments use the name in the source.
+   - **Row status vs news:** a proposal on an in-force row is described as a proposal; the summary says
+     what applies today.
+   - **No inference:** nothing the source does not say (for example "since <date>" when it says "now").
+   Then have a separate subagent do the same check cold: give it only the primary-source text and the
+   diff, and ask it to list every claim the source does not support word for word. Fix each one, or
+   mark it `⚠️ verify`, before opening the PR.
+5. Run `npm run validate` and `npm test`, push a `radar/watch-<date>` branch and open a PR. Factual Radar
    updates verified this way may be merged once CI passes (Surabhi approved this on 2026-10-28); anything
    with opinion goes to her first.
-5. Close the issue with a one-line summary: what changed, or "no Radar change".
+6. Close the issue with a one-line summary: what changed, or "no Radar change".
 
 ## Sources that could not be read
 
