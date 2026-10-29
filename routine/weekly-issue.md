@@ -20,14 +20,18 @@ You prepare the next GRC Insights update for Surabhi Joshi to review in the repo
 
 ## Step 1: Plan
 
+Unattended runs cannot approve shell variables or `$(…)`, so use literal values throughout.
+
 ```bash
-npm ci
-PENDING=$(gh pr list --state open --json headRefName --jq '[.[].headRefName | select(startswith("issue/"))] | join(",")')
-node scripts/plan-run.mjs --pending "$PENDING"
+npm --prefix /Users/surabhijoshi/projects/grc-insights ci
+cd /Users/surabhijoshi/projects/grc-insights && node scripts/routine-status.mjs
 ```
 
-If `gh` is unavailable, use
-`PENDING=$(git ls-remote --heads origin 'issue/*' | sed 's#.*refs/heads/##' | paste -sd, -)`.
+Copy the `pending` value it prints (a comma-separated list, possibly empty) into:
+
+```bash
+cd /Users/surabhijoshi/projects/grc-insights && node scripts/plan-run.mjs --pending "<pending value>"
+```
 
 Keep `mode`, `today`, `nextIssue`, `windowStart`, `series`, `theme`, `feature`, `pendingCount` from the JSON.
 (For a dry run only, a human may add `--today YYYY-MM-DD`.)
@@ -108,16 +112,15 @@ deep-research query. If it is still unconfirmed, add `⚠️ verify`. Get the co
 
 Issue:
 
+Use the literal branch name everywhere (no shell variables). Write the PR body with the Write tool to
+`/Users/surabhijoshi/projects/grc-insights/.superpowers/pr-body.md` first, then:
+
 ```bash
-BRANCH="issue/<NN>-<today>-<slug>"
-git switch -c "$BRANCH"
-git add "_issues/<file>" "assets/og-v2/<issue-file-stem>.png" _data/tracker.yml "social/issue-<NN>.md" social/linkedin-schedule.md
-git commit -m "Issue <NN> — <series label>: <theme>"
-git push -u origin "$BRANCH"
-BODY=$(mktemp)
-# write $BODY from routine/pr-body-template.md, filling every bracket, BEFORE running gh
-gh pr create --base main --head "$BRANCH" --label issue \
-  --title "Issue <NN> — <series label>: <theme>" --body-file "$BODY"
+git -C /Users/surabhijoshi/projects/grc-insights switch -c issue/<NN>-<today>-<slug>
+git -C /Users/surabhijoshi/projects/grc-insights add _issues/<file> assets/og-v2/<issue-file-stem>.png _data/tracker.yml social/issue-<NN>.md social/linkedin-schedule.md
+git -C /Users/surabhijoshi/projects/grc-insights commit -m "Issue <NN> — <series label>: <theme>"
+git -C /Users/surabhijoshi/projects/grc-insights push -u origin issue/<NN>-<today>-<slug>
+gh pr create -R grc-with-sjo/grc-insights --base main --head issue/<NN>-<today>-<slug> --label issue --title "Issue <NN> — <series label>: <theme>" --body-file /Users/surabhijoshi/projects/grc-insights/.superpowers/pr-body.md
 ```
 
 Write the body file from `routine/pr-body-template.md` first, filling every bracket. Series labels come from
