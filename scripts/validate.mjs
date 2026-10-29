@@ -132,6 +132,8 @@ export function validateTrackerRows(rows, tax) {
   return errors;
 }
 
+const QUOTE_REQUIRED_FROM = '2026-10-29';
+
 // The public "What changed" log on the Radar: every entry names a tracker row and the primary source checked.
 export function validateRadarChanges(entries, trackerIds) {
   if (!Array.isArray(entries)) return ['radar_changes.yml must be a list'];
@@ -142,6 +144,9 @@ export function validateRadarChanges(entries, trackerIds) {
     if (!trackerIds.has(e?.id)) fail(`unknown tracker id "${e?.id}"`);
     if (typeof e?.change !== 'string' || !e.change.trim()) fail('change is required');
     if (!URL_RE.test(e?.source ?? '')) fail('source must be an http(s) URL');
+    // From 29 Oct 2026, each entry carries the primary-source sentence it rests on, so wording can be checked against it.
+    const needsQuote = isIsoDate(e?.date) && e.date >= QUOTE_REQUIRED_FROM;
+    if (needsQuote && (typeof e?.quote !== 'string' || e.quote.trim().length < 20)) fail('quote (verbatim primary-source sentence) is required');
   });
   return errors;
 }
