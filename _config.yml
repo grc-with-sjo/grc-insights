@@ -21,7 +21,7 @@ linkedin_newsletter: ""
 substack_url: ""  # Surabhi's Substack; when set, Substack buttons appear site-wide
 
 markdown: kramdown
-future: false  # issues dated in the future stay hidden until a rebuild on/after their date (see .github/workflows/scheduled-publish.yml)
+future: true  # PREVIEW BRANCH ONLY — never merge
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
