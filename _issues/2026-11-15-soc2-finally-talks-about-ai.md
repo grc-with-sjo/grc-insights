@@ -43,7 +43,7 @@ The AICPA's guidance on applying the criteria to AI is marked "currently under d
 
 The most concrete controls have a second hurdle. "Pre-deployment validation, bias testing, and revalidation upon retraining" and "human review or override" sit under processing integrity, a category each vendor chooses whether to include. The draft itself notes that security is the category addressed in most engagements. A security-only report never gets that far, and those are exactly the controls I would want behind an AI that makes decisions about my customers.
 
-Then there is the calendar. If approved, the criteria apply to engagements beginning on or after 31 December 2027, with early adoption permitted. Agents are holding credentials and acting inside production systems today. The reports we rely on could stay on the old criteria for another full year.
+And even this version is more than a year away. If approved, the criteria apply to engagements beginning on or after 31 December 2027, with early adoption permitted. Agents are holding credentials and acting inside production systems today. The reports we rely on could stay on the old criteria for another full year.
 
 ## The biggest gap is the one nobody is demoing
 
