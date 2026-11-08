@@ -8,13 +8,20 @@ sectors: [saas, cloud, tech]
 categories: [frameworks, ai-governance, third-party-risk]
 description: "The AICPA's draft 2027 SOC 2 criteria name the right AI risks, then make every one optional. A clean report still won't tell you the thing you most need to know: where your vendor uses AI."
 image: /assets/og-v2/2026-11-15-soc2-finally-talks-about-ai.png
+essay: true
+cover: "https://images.unsplash.com/photo-1763568258235-f40425a94af9?w=1600&q=75&auto=format&fit=crop"
+cover_alt: "A code editor with an AI Actions menu open, offering options such as Generate Code and Find Problems"
+cover_credit: "Photo: Daniil Komov / Unsplash"
+cover_credit_url: "https://unsplash.com/photos/computer-screen-displaying-code-with-a-context-menu-bglsBQQwMWA"
 ---
 
-A clean SOC 2 report lands in my inbox. Access is reviewed. Changes are approved. The auditor has no exceptions to raise.
+No exceptions noted.
 
-And I still don't know the thing I opened it to find out: where this vendor uses AI.
+Three words every vendor wants, and I have stopped finding them reassuring.
 
-It might be running their support desk. It might be writing the code I'm about to depend on. It might be reading my data inside the product. Those are three different risks, and the report that is supposed to give me comfort treats them as one silence.
+A clean SOC 2 report lands in my inbox. Access reviewed. Changes approved. And I still can't tell you the one thing I opened it to find out: where this vendor uses AI.
+
+It might be running their support desk. It might be writing the code I'm about to depend on. It might be reading my data inside the product. Those are three different risks, and the report meant to reassure me is silent on all of them.
 
 So when the AICPA, the body behind SOC 2, published its draft 2027 criteria on 27 October, I read all 58 pages hoping that silence was over. It is, partly. The draft is late, it is welcome, and it still leaves the question I started with unanswered.
 
@@ -30,7 +37,9 @@ Then you reach paragraph .08.
 
 The AI items are points of focus, and the draft is direct about what that means: using the criteria "does not require an assessment of whether each point of focus is addressed", and "each point of focus does not require a specific control".
 
-A vendor can leave all of it unaddressed and still receive a clean opinion. The AICPA's guidance on applying the criteria to AI is marked "currently under development", so auditors do not yet have it either.
+> On paper, a vendor can leave every one of these unaddressed, and nothing in the criteria says the opinion has to change.
+
+The AICPA's guidance on applying the criteria to AI is marked "currently under development", so auditors do not yet have it either.
 
 The most concrete controls have a second hurdle. "Pre-deployment validation, bias testing, and revalidation upon retraining" and "human review or override" sit under processing integrity, a category each vendor chooses whether to include. The draft itself notes that security is the category addressed in most engagements. A security-only report never gets that far, and those are exactly the controls I would want behind an AI that makes decisions about my customers.
 
@@ -53,6 +62,14 @@ Nothing on the market closes this alone, but SOC 2 is no longer the only place t
 ISO/IEC 42001 is a certifiable management system standard for AI, which tells you whether anyone is governing it. ISO/IEC 27090, published in October, is guidance on AI-specific threats such as data poisoning and model theft. Cloud Security Alliance's STAR for AI Level 2, announced on 27 October, adds third-party-verified AI assurance on top of ISO certification and its AI Controls Matrix. AIUC-1 goes furthest on behaviour, with live testing of AI agents and quarterly updates.
 
 The detail I keep coming back to is that the AICPA is rolling out a joint SOC 2 and AIUC-1 engagement with AIUC, with full launch expected in early 2027. I read that as the AICPA conceding the point: for AI agents, SOC 2 on its own was not going to be enough.
+
+## So the rigour has to come from people
+
+SOC 2 is established, auditors know how to run it, and buyers trust the format. I don't expect that to change, and I wouldn't want to start over. But if we keep relying on it, the weight shifts to two groups.
+
+The first is auditors. The criteria let an engagement stop at the minimum, so it falls to them to dig deeper: to ask where AI is used, to test the AI risks that matter for that system, and to be plain about what was and wasn't examined.
+
+The second is in-house GRC teams. Enforcement and rigour can't wait for a criterion to demand them, and they can't depend on whether the AI touches the product. An agent with production access, a model drafting code and an assistant reading support tickets each need an owner, a control and evidence, whether or not a customer ever sees them.
 
 ## What I would do on Monday
 
