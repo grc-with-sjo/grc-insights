@@ -31,7 +31,7 @@ The list of risks is good. It names "prompt injection, jailbreak chaining, and d
 
 If you handed me that list and asked what keeps AI risk teams up at night, I would not change much.
 
-Then you reach paragraph .08.
+Then you turn back to the draft's Background section, to paragraph .08, where it explains how those items are meant to be used.
 
 ## Every word of it is optional
 
