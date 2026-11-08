@@ -53,7 +53,7 @@ Look at how software gets built now. Coding assistants draft the change, and age
 
 The closest it comes is a line about restricting "unilateral code development or configuration and implementation by a single user". It was written with a person in mind. I would like to know what the auditor does when that single user is an agent.
 
-So a vendor could ship AI-written code to production all year, and the report I read would have no particular reason to say so. The AICPA published a companion draft on what the system description must disclose. I have not read it yet, and it is the one place this could still be fixed.
+So a vendor could ship AI-written code to production all year, and nothing in these criteria would make the report say so. The one place that could still change is the description criteria, the rules for what a vendor must tell you about its system. The AICPA's draft page lists them as "[Coming Soon](https://www.aicpa-cima.com/resources/download/aicpa-exposure-drafts-proposed-2027-soc-2-trust-services-criteria-and-description-criteria)". That is the document I will be waiting for.
 
 ## Others are moving faster, in pieces
 
