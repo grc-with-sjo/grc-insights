@@ -39,15 +39,15 @@ The AI items are points of focus, and the draft is direct about what that means:
 
 > On paper, a vendor can leave every one of these unaddressed, and nothing in the criteria says the opinion has to change.
 
-The AICPA's guidance on applying the criteria to AI is marked "currently under development", so auditors do not yet have it either.
+The Cloud Security Alliance [warned in August](https://labs.cloudsecurityalliance.org/research/csa-research-note-soc2-ai-controls-gap-20260830-csa-styled/) that a vendor can hold a clean SOC 2 report with no tested controls around model accuracy. As drafted, the 2027 criteria do not change that. The AICPA's guidance on applying the criteria to AI is marked "currently under development", so auditors do not yet have it either.
 
 The most concrete controls have a second hurdle. "Pre-deployment validation, bias testing, and revalidation upon retraining" and "human review or override" sit under processing integrity, a category each vendor chooses whether to include. The draft itself notes that security is the category addressed in most engagements. A security-only report never gets that far, and those are exactly the controls I would want behind an AI that makes decisions about my customers.
 
-And even this version is more than a year away. If approved, the criteria apply to engagements beginning on or after 31 December 2027, with early adoption permitted. Agents are holding credentials and acting inside production systems today. The reports we rely on could stay on the old criteria for another full year.
+And even this version is more than a year away. If approved, the criteria apply to engagements beginning on or after 31 December 2027, with early adoption permitted. The AI these criteria describe is already in production. The reports we rely on could stay on the old criteria for another full year.
 
 ## The biggest gap is the one nobody is demoing
 
-Almost all of this draft looks at AI in the product. Its language keeps returning to "AI components of the system".
+Most of the draft's AI language looks at AI in the product, and keeps returning to "AI components of the system". The exceptions are useful but narrow: access for AI agents and detection of unsanctioned AI tools apply whatever the product does.
 
 Look at how software gets built now. Coding assistants draft the change, and agents increasingly open the pull request. The draft's change-management section does add AI points, but they cover training data and adversarial inputs. The points on authorising, testing and approving a change do not mention AI at all. Nothing asks who reviewed code a model wrote, what an agent is allowed to merge, or what evidence that review left behind.
 
