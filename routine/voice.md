@@ -14,3 +14,16 @@ Applies to every issue and every social post. Surabhi's own brief, verbatim:
 - Dates as readers say them ("2 December 2026"), never ISO in reader-facing text.
 - Address readers as "you/your" in questions, never "our/we" (which can read as the author's employer).
 - Social posts: one argument per post. If a point doesn't serve the hook and the takeaway, it stays in the issue.
+
+## Originality check (before any issue or essay goes to Surabhi for approval)
+
+Run the `anthropic-skills:deep-research` skill on the finished draft. It must look for anyone who has already
+published the same argument or similar wording: audit firms, the AICPA or other standard-setters, compliance
+and security vendors, trade press, and practitioners on LinkedIn, Substack and Medium, plus exact-phrase
+searches for the headline and the draft's most distinctive lines.
+
+- Rewrite any sentence or phrase that closely matches published text.
+- Where someone has made the same argument, either credit them or sharpen what this piece adds.
+- Report a per-section verdict (original / shared argument / close wording) alongside the draft.
+
+The aim is independence: the voice and the angle have to be hers, not an echo of what is already out there.
