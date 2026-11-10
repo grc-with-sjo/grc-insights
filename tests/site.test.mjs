@@ -237,7 +237,7 @@ test('the Latest band starts with the newest issue; Featured is opt-in and not r
   const html = page('index.html');
   const band = html.match(/<section class="latest-band"[\s\S]*?<\/section>/)[0];
   const first = band.match(/<a class="post-card" href="([^"]+)"/)[1];
-  assert.match(first, /2026-10-18-europe-delayed-ai-rules-not-enforcement/, `newest issue should lead the Latest band, got ${first}`);
+  assert.match(first, /2026-11-15-soc2-finally-talks-about-ai/, `newest issue should lead the Latest band, got ${first}`);
   const featured = html.match(/<a class="latest-card" href="([^"]+)"/);
   if (featured) assert.ok(!band.includes(`href="${featured[1]}"`), `featured ${featured[1]} also in Latest band`);
 });
