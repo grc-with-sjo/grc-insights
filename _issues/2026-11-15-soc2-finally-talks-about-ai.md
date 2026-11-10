@@ -1,6 +1,6 @@
 ---
 title: "SOC 2 finally talks about AI. Your vendor still doesn't have to."
-issue: 6
+issue: 4
 series: field-notes
 date: 2026-11-09
 regions: [US, GLOBAL]
@@ -23,7 +23,7 @@ A clean SOC 2 report lands in my inbox. Access reviewed. Changes approved. And I
 
 It might be running their support desk. It might be writing the code I'm about to depend on. It might be reading my data inside the product. Those are three different risks, and the report meant to reassure me is silent on all of them.
 
-So when the AICPA, the body behind SOC 2, published its draft 2027 criteria, dated 27 October, I read all 58 pages hoping that silence was over. It is, partly. The draft is late, it is welcome, and it still leaves the question I started with unanswered.
+So when the AICPA, the body behind SOC 2, published its draft 2027 criteria, dated 27 October, I opened it hoping that silence was over. It is, partly. The draft is late, it is welcome, and it still leaves the question I started with unanswered.
 
 ## The people who wrote this have been paying attention
 
@@ -49,7 +49,7 @@ And even this version is more than a year away. If approved, the criteria apply 
 
 Most of the draft's AI language looks at AI in the product, and keeps returning to "AI components of the system". A-LIGN reads two of the new points, on access for AI agents and on unsanctioned AI tools, as applying "[even if AI isn't part of the product](https://www.a-lign.com/articles/proposed-soc-2-trust-services-criteria-updates-what-you-need-to-know)". That is useful, and narrow.
 
-Look at how software gets built now. Coding assistants draft the change, and agents increasingly open the pull request. The draft's change-management section does add AI points, but they cover training data and adversarial inputs. The points on authorising, testing and approving a change do not mention AI at all. Nothing asks who reviewed code a model wrote, what an agent is allowed to merge, or what evidence that review left behind.
+Look at how software gets built now. Coding assistants draft the change, and it is not a stretch to picture an agent opening the pull request too. The draft's change-management section does add AI points, but they cover training data and adversarial inputs. The points on authorising, testing and approving a change do not mention AI at all. Nothing asks who reviewed code a model wrote, what an agent is allowed to merge, or what evidence that review left behind.
 
 The closest it comes is a line about restricting "unilateral code development or configuration and implementation by a single user". It was written with a person in mind. I would like to know what the auditor does when that single user is an agent.
 
