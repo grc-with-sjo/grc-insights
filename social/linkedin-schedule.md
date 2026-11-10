@@ -9,8 +9,8 @@ Newsletter: not launched yet. Decide in December (or after 3–4 issues, if the 
 | # | LinkedIn date | Post | Site date | Status |
 |---|---|---|---|---|
 | 1 | Tue 2026-10-13 | Issue 01: Canada's AI privacy rules arrive through regulators' findings | 2026-10-08 | Posted |
-| 2 | Tue 2026-10-20 | Issue 02: security assurance angle (incident-reporting angle held for later) | 2026-10-11 | Next |
-| 3 | Tue 2026-10-27 | Issue 03: Europe moved its AI deadlines; its privacy regulators did not wait | 2026-10-14 | |
+| 2 | Tue 2026-10-20 | Issue 02: security assurance angle (incident-reporting angle held for later) | 2026-10-11 | Posted |
+| 3 | Tue 2026-10-27 | Issue 03: Europe moved its AI deadlines; its privacy regulators did not wait | 2026-10-14 | Next |
 | 4 | Tue 2026-11-03 | Regulation Radar: "the tracker behind the series" (Radar link in the first comment) | — | |
 | 5 | Tue 2026-11-10 | Issue 04: US state privacy & AI laws + FTC | 2026-10-25 (planned) | |
 | 6 | Tue 2026-11-17 | Issue 05: Banking/FinServ: OSFI E-23, DORA, model risk | 2026-11-01 (planned) | |
