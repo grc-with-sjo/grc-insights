@@ -2,7 +2,7 @@
 title: "SOC 2 finally talks about AI. Your vendor still doesn't have to."
 issue: 6
 series: field-notes
-date: 2026-11-15
+date: 2026-11-09
 regions: [US, GLOBAL]
 sectors: [saas, cloud, tech]
 categories: [frameworks, ai-governance, third-party-risk]
@@ -47,7 +47,7 @@ And even this version is more than a year away. If approved, the criteria apply 
 
 ## The biggest gap is the one nobody is demoing
 
-Most of the draft's AI language looks at AI in the product, and keeps returning to "AI components of the system". The exceptions are useful but narrow: access for AI agents and detection of unsanctioned AI tools apply whatever the product does.
+Most of the draft's AI language looks at AI in the product, and keeps returning to "AI components of the system". A-LIGN reads two of the new points, on access for AI agents and on unsanctioned AI tools, as applying "[even if AI isn't part of the product](https://www.a-lign.com/articles/proposed-soc-2-trust-services-criteria-updates-what-you-need-to-know)". That is useful, and narrow.
 
 Look at how software gets built now. Coding assistants draft the change, and agents increasingly open the pull request. The draft's change-management section does add AI points, but they cover training data and adversarial inputs. The points on authorising, testing and approving a change do not mention AI at all. Nothing asks who reviewed code a model wrote, what an agent is allowed to merge, or what evidence that review left behind.
 
