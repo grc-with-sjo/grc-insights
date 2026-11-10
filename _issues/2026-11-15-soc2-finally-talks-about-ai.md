@@ -39,15 +39,15 @@ The AI items are points of focus, and the draft is direct about what that means:
 
 > On paper, a vendor can leave every one of these unaddressed, and nothing in the criteria says the opinion has to change.
 
-The AICPA's guidance on applying the criteria to AI is marked "currently under development", so auditors do not yet have it either.
+The Cloud Security Alliance [warned in August](https://labs.cloudsecurityalliance.org/research/csa-research-note-soc2-ai-controls-gap-20260830-csa-styled/) that a vendor can hold a clean SOC 2 report with no tested controls around model accuracy. As drafted, the 2027 criteria do not change that. The AICPA's guidance on applying the criteria to AI is marked "currently under development", so auditors do not yet have it either.
 
 The most concrete controls have a second hurdle. "Pre-deployment validation, bias testing, and revalidation upon retraining" and "human review or override" sit under processing integrity, a category each vendor chooses whether to include. The draft itself notes that security is the category addressed in most engagements. A security-only report never gets that far, and those are exactly the controls I would want behind an AI that makes decisions about my customers.
 
-And even this version is more than a year away. If approved, the criteria apply to engagements beginning on or after 31 December 2027, with early adoption permitted. Agents are holding credentials and acting inside production systems today. The reports we rely on could stay on the old criteria for another full year.
+And even this version is more than a year away. If approved, the criteria apply to engagements beginning on or after 31 December 2027, with early adoption permitted. The AI these criteria describe is already in production. The reports we rely on could stay on the old criteria for another full year.
 
 ## The biggest gap is the one nobody is demoing
 
-Almost all of this draft looks at AI in the product. Its language keeps returning to "AI components of the system".
+Most of the draft's AI language looks at AI in the product, and keeps returning to "AI components of the system". The exceptions are useful but narrow: access for AI agents and detection of unsanctioned AI tools apply whatever the product does.
 
 Look at how software gets built now. Coding assistants draft the change, and agents increasingly open the pull request. The draft's change-management section does add AI points, but they cover training data and adversarial inputs. The points on authorising, testing and approving a change do not mention AI at all. Nothing asks who reviewed code a model wrote, what an agent is allowed to merge, or what evidence that review left behind.
 
@@ -71,17 +71,17 @@ The first is auditors. The criteria let an engagement stop at the minimum, so it
 
 The second is in-house GRC teams. Enforcement and rigour can't wait for a criterion to demand them, and they can't depend on whether the AI touches the product. An agent with production access, a model drafting code and an assistant reading support tickets each need an owner, a control and evidence, whether or not a customer ever sees them.
 
-## What I would do on Monday
+## Where I've landed
 
-I would keep asking for the SOC 2 report, and stop letting it end the conversation.
+I'm not giving up on SOC 2. It's still the first thing I ask a vendor for, and I'll keep asking for it. What has changed is how much I let it settle.
 
-For every critical vendor I would ask one question the report cannot answer: where do you use AI, to run the business, to build the software, or inside what I am buying? The answer decides everything after it. AI in the product points me to processing integrity and an AI-specific assurance. AI in the build points me to how code gets reviewed. AI in operations points me to access and data handling.
+The conversation I find most useful now starts with a plain question: where do you use AI? To run the business, to build the software, or inside the product I'm buying? Each answer sends me somewhere different. AI in the product makes me want to see processing integrity in scope and some AI-specific assurance. AI in the build makes me curious about who reviews what the model wrote. AI in operations brings me back to access and how data is handled.
 
-I would put the answer in the contract, because a questionnaire goes stale the day it is signed. And I would use the draft's AI points of focus as a checklist on my own programme now, since it is the best preview we have of what auditors will eventually ask.
+When the answer matters, I would rather it lived in the contract than in a questionnaire nobody opens again. On my own side, the draft's AI points of focus have quietly become a checklist. It is the closest thing we have to a preview of what auditors will eventually ask.
 
-It will slow some procurement, and vendors will push back while their auditors are not asking yet. I can live with that. What I cannot do any more is read "no exceptions noted" and assume that AI was part of what got examined.
+None of this is free. It slows procurement, and vendors push back when their own auditors aren't asking yet. I've made my peace with that. What I can't do any more is read "no exceptions noted" and assume AI was part of what got looked at.
 
-The comment window closes on 15 January 2027. If you depend on these reports, tell the AICPA what you need them to say about how software gets built.
+If you rely on these reports too, the comment window is open until 15 January 2027. I would love the AICPA to hear from the people who read SOC 2 reports, not only the people who produce them, especially about how software gets built.
 
 ## Sources
 
