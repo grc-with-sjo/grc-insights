@@ -23,7 +23,7 @@ A clean SOC 2 report lands in my inbox. Access reviewed. Changes approved. And I
 
 It might be running their support desk. It might be writing the code I'm about to depend on. It might be reading my data inside the product. Those are three different risks, and the report meant to reassure me is silent on all of them.
 
-So when the AICPA, the body behind SOC 2, published its draft 2027 criteria on 27 October, I read all 58 pages hoping that silence was over. It is, partly. The draft is late, it is welcome, and it still leaves the question I started with unanswered.
+So when the AICPA, the body behind SOC 2, published its draft 2027 criteria, dated 27 October, I read all 58 pages hoping that silence was over. It is, partly. The draft is late, it is welcome, and it still leaves the question I started with unanswered.
 
 ## The people who wrote this have been paying attention
 
