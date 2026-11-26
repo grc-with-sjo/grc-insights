@@ -1089,12 +1089,12 @@
   type: sector-rule
   status: proposed
   key_dates:
-    - { date: "2026-06-03", what: "Adopted by the Commission; now in Parliament and Council" }
+    - { date: "2026-06-03", what: "Commission adopts the proposal (COM(2026) 502)" }
   sectors: [cloud, saas, tech]
   applies_to_me: high
-  summary: "⚠️ verify: Proposal to reduce EU reliance on foreign cloud and AI providers, including cloud sovereignty aspects; in negotiation."
-  source: "https://enterprise.gov.ie/en/consultations/consultations-files/public-consultation-cada-explanatory-note.pdf"
-  last_reviewed: "2026-10-08"
+  summary: "Commission proposal on three objectives: research, development and innovation; capacity, including at least tripling the EU's data centre capacity within 5 to 7 years and faster permitting; and autonomy, through a single EU-wide cloud and AI sovereignty framework with four assurance levels that public sector bodies use based on their risk assessments, with cloud providers recognised by Member States after an audit. It is a proposal, not yet law."
+  source: "https://digital-strategy.ec.europa.eu/en/library/proposal-cloud-and-ai-development-act-cada"
+  last_reviewed: "2026-11-26"
 - id: apac-au-ransomware-reporting
   name: "Australia Cyber Security Act 2024: ransomware payment reporting"
   region: APAC

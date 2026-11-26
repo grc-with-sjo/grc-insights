@@ -1,6 +1,11 @@
 # Public "What changed" log for the Regulation Radar (newest first). Shown on /radar/ and in /radar/changes.xml.
 # Add an entry only after reading the primary source; `source` is that primary page.
 - date: "2026-11-26"
+  id: eu-cada
+  change: "Verified the Cloud and AI Development Act row on the Commission's pages and removed the verify marker: it is a Commission proposal (COM(2026) 502) that would set a single EU-wide cloud and AI sovereignty framework with four assurance levels for public sector bodies. Dropped the unsourced claim that it is in Parliament and Council."
+  source: "https://digital-strategy.ec.europa.eu/en/policies/cloud-and-ai-development-act"
+  quote: "The Cloud and AI Development Act defines cloud and AI sovereignty comprising four assurance levels, to be used by public sector bodies based on their risk assessments."
+- date: "2026-11-26"
   id: global-iso-27001
   change: "Noted ISO/IEC 27000:2026 (edition 6, published July 2026), the overview of the ISMS family, which no longer serves as a terminology document. ISO/IEC 27001:2022 with Amd 1:2024 remains the current certification standard."
   source: "https://www.iso.org/standard/27000"
