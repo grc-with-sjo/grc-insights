@@ -1,5 +1,10 @@
 # Public "What changed" log for the Regulation Radar (newest first). Shown on /radar/ and in /radar/changes.xml.
 # Add an entry only after reading the primary source; `source` is that primary page.
+- date: "2026-11-26"
+  id: global-aiuc-1
+  change: "Added the next quarterly AIUC-1 release (15 Jan 2027), which AIUC says will carry details of its advisory group's governance review. The AICPA's joint SOC 2 + AIUC-1 offering is still described as rolling out, with full launch expected in early 2027."
+  source: "https://standard.aiuc-1.com/standard-governance.md"
+  quote: "AIUC-1 advisory group has been formed to review standard governance"
 - date: "2026-10-28"
   id: global-aiuc-1
   change: "Correction: the joint SOC 2 + AIUC-1 engagement is in early rollout with several CPA firms, not fully launched; the AICPA expects the full launch in early 2027. Also corrected AIUC's name and clarified that the SOC 2 exposure draft is a proposal while current criteria stay in force."

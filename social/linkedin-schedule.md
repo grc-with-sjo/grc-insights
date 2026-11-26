@@ -16,7 +16,7 @@ Newsletter: not launched yet. Decide in December (or after 3–4 issues, if the 
 | 6 | Tue 2026-11-17 | Issue 05: Banking/FinServ: OSFI E-23, DORA, model risk | 2026-11-01 (planned) | |
 | 7 | Tue 2026-11-24 | Issue 06: Tech, SaaS, cloud, hardware: AI supply chain | 2026-11-08 (planned) | |
 | 8 | Tue 2026-12-01 | Issue 07: APAC, India DPDP, global standards + 2027 outlook | 2026-11-15 (planned) | |
-| 9 | Tue 2026-12-08 | Issue 08: AIUC-1 explained (feature) | 2026-11-29 (planned) | |
+| 9 | Tue 2026-12-08 | Issue 05: AIUC-1 certifies the AI agent; the risk sits in what you let it do (feature) | 2026-11-24 (calendar 2026-11-29) | |
 
 Planned issues follow `_data/editorial.yml`; adjust rows if the routine's numbering or dates differ. The 2026-11-22 cyber theme is already covered by Issue 02.
 
