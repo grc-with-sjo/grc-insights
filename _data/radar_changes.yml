@@ -1,6 +1,11 @@
 # Public "What changed" log for the Regulation Radar (newest first). Shown on /radar/ and in /radar/changes.xml.
 # Add an entry only after reading the primary source; `source` is that primary page.
 - date: "2026-11-26"
+  id: global-pci-dss
+  change: "PCI SSC released a new information supplement, Understanding PCI DSS Service Providers, on 10 Nov 2026, explaining Requirements 12.8 and 12.9 for customers and third-party service providers (TPSPs) and the evidence TPSPs are expected to provide."
+  source: "https://blog.pcisecuritystandards.org/pci-ssc-publishes-new-guidance-on-understanding-pci-dss-third-party-service-providers"
+  quote: "The PCI Security Standards Council (PCI SSC) has released a new information supplement, Understanding PCI DSS Service Providers"
+- date: "2026-11-26"
   id: us-ca-ccpa-regs
   change: "CalPrivacy began formal rulemaking on 13 Nov 2026 on proposed Data Broker Updates and DROP Audit regulations, setting auditor qualifications, independence, evidence and audit report contents for the Delete Act audits that begin 1 Jan 2028; written comments are due 6 Jan 2027."
   source: "https://privacy.ca.gov/2026/11/calprivacy-releases-notice-of-proposed-regulatory-action-for-delete-request-and-opt-out-platform-audits/"

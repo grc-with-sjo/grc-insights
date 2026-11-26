@@ -675,6 +675,7 @@
   key_dates:
     - { date: "2024-12-31", what: "PCI DSS v4.0 retired" }
     - { date: "2026-06-03", what: "Request for comments opened on a future revision (AI and mobile impacts); closed 2026-07-20" }
+    - { date: "2026-11-10", what: "PCI SSC releases the information supplement Understanding PCI DSS Service Providers (customer and TPSP duties under Requirements 12.8 and 12.9)" }
   sectors: [banking, retail, saas, cloud, tech]
   applies_to_me: medium
   summary: "v4.0.1 is still the card-data security standard; a revision is under consultation with no successor or date announced."
