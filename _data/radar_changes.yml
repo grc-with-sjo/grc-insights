@@ -1,6 +1,11 @@
 # Public "What changed" log for the Regulation Radar (newest first). Shown on /radar/ and in /radar/changes.xml.
 # Add an entry only after reading the primary source; `source` is that primary page.
 - date: "2026-11-26"
+  id: ca-bill-c22
+  change: "Added Bill C-22, the Lawful Access Act, 2026: it completed third reading in the House of Commons on 18 Jun 2026 and is at committee in the Senate. The Privacy Commissioner recommended further amendments on 2 Nov 2026."
+  source: "https://www.parl.ca/legisinfo/en/bill/45-1/c-22"
+  quote: "Bill C-22 is expressly designed to address some of those challenges, including by requiring electronic service providers to provide reasonable assistance to state actors in exercising lawful authorities."
+- date: "2026-11-26"
   id: eu-cada
   change: "Verified the Cloud and AI Development Act row on the Commission's pages and removed the verify marker: it is a Commission proposal (COM(2026) 502) that would set a single EU-wide cloud and AI sovereignty framework with four assurance levels for public sector bodies. Dropped the unsourced claim that it is in Parliament and Council."
   source: "https://digital-strategy.ec.europa.eu/en/policies/cloud-and-ai-development-act"

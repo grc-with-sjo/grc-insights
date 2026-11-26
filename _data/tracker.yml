@@ -27,6 +27,21 @@
   summary: "Federal bill to replace PIPEDA Part 1, stalled at first reading: new Commission, penalties up to the greater of $10M or 3% of global revenue, a private right of action and automated-decision transparency; no AI Part; commencement by order in council."
   source: "https://www.parl.ca/legisinfo/en/bill/45-1/c-36"
   last_reviewed: "2026-10-28"
+- id: ca-bill-c22
+  name: "Bill C-22, Lawful Access Act, 2026"
+  region: CA
+  jurisdiction: "Canada (federal)"
+  type: sector-rule
+  status: proposed
+  key_dates:
+    - { date: "2026-03-12", what: "Introduction and first reading in the House of Commons" }
+    - { date: "2026-06-18", what: "House committee report presented with amendments; third reading in the House" }
+    - { date: "2026-10-22", what: "Referred to committee in the Senate" }
+  sectors: [tech, saas, cloud]
+  applies_to_me: medium
+  summary: "Government bill at consideration in committee in the Senate; not yet law. The Privacy Commissioner says it requires electronic service providers to provide reasonable assistance to state actors exercising lawful authorities and creates a new production order for subscriber information, and that House amendments preclude requirements to decrypt end-to-end encrypted information. On 2 Nov 2026 he recommended further amendments."
+  source: "https://www.parl.ca/legisinfo/en/bill/45-1/c-22"
+  last_reviewed: "2026-11-26"
 - id: ca-federal-ai-strategy
   name: "Canada federal AI law (AIDA lapsed) and national AI strategy"
   region: CA
