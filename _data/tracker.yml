@@ -138,12 +138,13 @@
   key_dates:
     - { date: "2025-09-11", what: "Final guideline issued" }
     - { date: "2026-10-08", what: "OSFI fall risk update focuses on frontier AI; existing guidelines, including E-23, apply to AI" }
+    - { date: "2026-10-15", what: "OSFI endorses the Financial Stability Board's Sound Practices for Responsible Adoption of AI (12 practices), which it says complement its own guidelines, including E-23" }
     - { date: "2027-05-01", what: "Guideline takes effect" }
   sectors: [banking]
   applies_to_me: high
   summary: "Enterprise-wide model risk management expectations, explicitly covering AI/ML models, for federally regulated banks and insurers from May 2027."
   source: "https://www.osfi-bsif.gc.ca/en/guidance/guidance-library/guideline-e-23-model-risk-management-2027"
-  last_reviewed: "2026-10-28"
+  last_reviewed: "2026-11-26"
 - id: ca-osfi-b13
   name: "OSFI Guideline B-13, Technology and Cyber Risk Management"
   region: CA

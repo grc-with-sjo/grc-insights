@@ -1,6 +1,11 @@
 # Public "What changed" log for the Regulation Radar (newest first). Shown on /radar/ and in /radar/changes.xml.
 # Add an entry only after reading the primary source; `source` is that primary page.
 - date: "2026-11-26"
+  id: ca-osfi-e23
+  change: "OSFI endorsed the Financial Stability Board's Sound Practices for Responsible Adoption of Artificial Intelligence on 15 Oct 2026, saying the 12 practices complement its own guidelines, including E-23; E-23 still takes effect on 1 May 2027."
+  source: "https://www.osfi-bsif.gc.ca/en/news/osfi-statement-financial-stability-boards-publication-sound-practices-responsible-adoption"
+  quote: "OSFI endorses the Sound Practices."
+- date: "2026-11-26"
   id: global-nist-ir-8547
   change: "Added NIST IR 8547, NIST's finalized report on transitioning to post-quantum cryptography standards (27 Oct 2026), which supports federal migration timelines of 2030 to 2035."
   source: "https://www.nist.gov/news-events/news/2026/10/nist-report-provides-guidelines-transition-post-quantum-cryptography"
