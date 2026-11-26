@@ -1,6 +1,16 @@
 # Public "What changed" log for the Regulation Radar (newest first). Shown on /radar/ and in /radar/changes.xml.
 # Add an entry only after reading the primary source; `source` is that primary page.
 - date: "2026-11-26"
+  id: global-nist-ir-8547
+  change: "Added NIST IR 8547, NIST's finalized report on transitioning to post-quantum cryptography standards (27 Oct 2026), which supports federal migration timelines of 2030 to 2035."
+  source: "https://www.nist.gov/news-events/news/2026/10/nist-report-provides-guidelines-transition-post-quantum-cryptography"
+  quote: "NISTIR 8547 supports these migration timelines."
+- date: "2026-11-26"
+  id: eu-gdpr
+  change: "The EDPB adopted a statement on 13 Nov 2026 welcoming the Commission's updated SCC FAQs, which recognise that the Council of Europe and Ibero-American Data Protection Network (RIPD) model contractual clauses may also be used for onward transfers of personal data received under the EU SCCs."
+  source: "https://www.edpb.europa.eu/news/edpb-supports-use-of-other-models-of-contractual-clauses-for-onward-transfers-of-personal-data_en"
+  quote: "At its latest plenary, the EDPB adopted a statement on the use of other models of contractual clauses for onward transfers of personal data"
+- date: "2026-11-26"
   id: global-pci-dss
   change: "PCI SSC released a new information supplement, Understanding PCI DSS Service Providers, on 10 Nov 2026, explaining Requirements 12.8 and 12.9 for customers and third-party service providers (TPSPs) and the evidence TPSPs are expected to provide."
   source: "https://blog.pcisecuritystandards.org/pci-ssc-publishes-new-guidance-on-understanding-pci-dss-third-party-service-providers"

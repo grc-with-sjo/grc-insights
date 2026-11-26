@@ -319,7 +319,8 @@
   jurisdiction: "EU"
   type: privacy-law
   status: in-force
-  key_dates: []
+  key_dates:
+    - { date: "2026-11-13", what: "EDPB statement welcomes the Commission's updated SCC FAQs: the Council of Europe and Ibero-American Data Protection Network (RIPD) model contractual clauses may also be used for onward transfers of data received under the EU SCCs, under the conditions in those FAQs" }
   sectors: [tech, saas, cloud, hardware, banking, retail]
   applies_to_me: high
   summary: "The EU baseline data-protection law; unchanged, with proposed changes in the Digital Omnibus still under negotiation."
@@ -640,6 +641,19 @@
   summary: "Voluntary outcomes framework with six functions: Govern, Identify, Protect, Detect, Respond, Recover."
   source: "https://www.nist.gov/cyberframework"
   last_reviewed: "2026-10-07"
+- id: global-nist-ir-8547
+  name: "NIST IR 8547, Transition to Post-Quantum Cryptography Standards"
+  region: GLOBAL
+  jurisdiction: "US (NIST)"
+  type: guidance
+  status: in-force
+  key_dates:
+    - { date: "2026-10-27", what: "NIST releases the finalized report" }
+  sectors: [tech, saas, cloud, hardware, banking]
+  applies_to_me: medium
+  summary: "NIST's finalized road map for moving from quantum-vulnerable algorithms in its existing standards to the post-quantum standards it published in 2024. It supports the federal timelines: 2035 as the primary target under National Security Memorandum 10 and, under Executive Order 14412, 2030 for key establishment and 2031 for digital signatures in federal high-value assets and high-impact systems. The memorandum applies to federal systems; NIST says many organizations that work with the federal government will be affected as well."
+  source: "https://www.nist.gov/news-events/news/2026/10/nist-report-provides-guidelines-transition-post-quantum-cryptography"
+  last_reviewed: "2026-11-26"
 - id: global-oecd-ai-principles
   name: "OECD AI Principles (Recommendation on Artificial Intelligence)"
   region: GLOBAL
