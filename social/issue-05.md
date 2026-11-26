@@ -61,7 +61,7 @@ AI agents act, and the assurance we lean on was not built for that. This issue l
 
 **One company, every role.** AIUC finalises the standard, runs the technical evaluations, accredits the auditors and issues the certificate. Lenny Zeltser, relaying Zack Korman, has argued this creates conflicts of interest; AIUC's answer, as Zeltser reports it, is that it pays when certified agents fail. An advisory group on governance reports with the 15 January 2027 release.
 
-**The AICPA is rolling it out.** Several CPA firms are delivering a joint SOC 2 plus AIUC-1 engagement, with full launch expected in early 2027. The release names no firms and does not say who runs the technical tests.
+**The AICPA is rolling it out.** Several CPA firms are delivering a joint SOC 2 plus AIUC-1 engagement, with full launch expected in early 2027. The AICPA release names no firms; AIUC's own page lists nine and says AIUC or an accredited evaluation body runs the quarterly testing.
 
 **Insurance gives it teeth.** ElevenLabs says its voice-agent cover is enabled through AIUC-1 certification. AIUC's pages do not name the insurer or the limits.
 
@@ -84,7 +84,7 @@ The trade-off is time. I would rather spend it than inherit an agent's permissio
 - Add contract notice and re-testing when the underlying model changes.
 - Confirm with your broker how current policies treat AI-caused losses.
 
-The full issue covers the sector guide, upcoming dates and 11 sources:
+The full issue covers the sector guide, upcoming dates and 14 sources:
 https://grc-with-sjo.github.io/grc-insights/issues/2026-11-29-aiuc1-certifies-agent-not-permissions/
 
 ## Bluesky post (single post, ≤ 300 chars without the URL; 1–3 hashtags)
