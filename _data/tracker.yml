@@ -487,7 +487,7 @@
   status: phasing-in
   key_dates:
     - { date: "2025-06-10", what: "Statutory tort for serious privacy invasions commences" }
-    - { date: "2026-05-18", what: "OAIC issues paper to inform its guidance on the ADM transparency obligation (submissions closed 15 June 2026; guidance not yet published)" }
+    - { date: "2026-05-18", what: "OAIC issues paper to inform its guidance on the ADM transparency obligation (submissions closed 15 June 2026)" }
     - { date: "2026-12-10", what: "ADM transparency obligation starts: APP entities that use personal information in ADM with the potential to affect rights or interests must describe in their privacy policies the kinds of personal information used and the kinds of decisions made using ADM" }
   sectors: [tech, saas, cloud, hardware, banking, retail]
   applies_to_me: medium
