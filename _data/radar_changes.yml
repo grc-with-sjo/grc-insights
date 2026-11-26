@@ -1,6 +1,11 @@
 # Public "What changed" log for the Regulation Radar (newest first). Shown on /radar/ and in /radar/changes.xml.
 # Add an entry only after reading the primary source; `source` is that primary page.
 - date: "2026-11-26"
+  id: apac-au-privacy-tranche1
+  change: "Confirmed on the OAIC site what the automated decision-making (ADM) transparency obligation requires from 10 Dec 2026, and added the OAIC's issues paper consultation (closed 15 Jun 2026) that will inform its guidance."
+  source: "https://www.oaic.gov.au/engage-with-us/consultations/consultation-on-guidance-for-transparency-in-automated-decision-making"
+  quote: "From 10 December 2026, APP entities that use personal information in ADM with the potential to affect rights or interests will be required to provide information in their privacy policies about the kinds of personal information used and the kinds of decisions made using ADM."
+- date: "2026-11-26"
   id: ca-gc-ai-security-rmf
   change: "Added the Government of Canada Artificial Intelligence Security Risk Management Framework (published 18 Nov 2026), guidance for federal departments and agencies on cyber security risks to and from AI systems, including AI they procure."
   source: "https://www.canada.ca/en/government/system/digital-government/online-security-privacy/cyber-security-guidance-policy/government-canada-artificial-intelligence-security-risk-management-framework.html"
