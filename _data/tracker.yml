@@ -603,9 +603,9 @@
     - { date: "2025-10-31", what: "End of the three-year transition; 2013-edition certificates expired or were withdrawn" }
   sectors: [tech, saas, cloud, hardware, banking, retail]
   applies_to_me: high
-  summary: "The current ISMS certification standard; 2013-edition certificates expired or were withdrawn at the end of the transition on 2025-10-31, per certification bodies."
+  summary: "The current ISMS certification standard; 2013-edition certificates expired or were withdrawn at the end of the transition on 2025-10-31, per certification bodies. ISO/IEC 27000, the overview of the ISO/IEC 27000 family, was revised to edition 6 in July 2026 and now focuses on overview, concepts and relationships rather than serving as a terminology document."
   source: "https://www.iso.org/standard/27001"
-  last_reviewed: "2026-10-08"
+  last_reviewed: "2026-11-26"
 - id: global-iso-27017
   name: "ISO/IEC 27017:2026 information security controls for cloud services"
   region: GLOBAL

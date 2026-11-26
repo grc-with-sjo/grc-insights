@@ -1,6 +1,11 @@
 # Public "What changed" log for the Regulation Radar (newest first). Shown on /radar/ and in /radar/changes.xml.
 # Add an entry only after reading the primary source; `source` is that primary page.
 - date: "2026-11-26"
+  id: global-iso-27001
+  change: "Noted ISO/IEC 27000:2026 (edition 6, published July 2026), the overview of the ISMS family, which no longer serves as a terminology document. ISO/IEC 27001:2022 with Amd 1:2024 remains the current certification standard."
+  source: "https://www.iso.org/standard/27000"
+  quote: "This sixth edition has been revised to focus on overview, concepts and relationships rather than serving as a terminology document."
+- date: "2026-11-26"
   id: apac-au-privacy-tranche1
   change: "Confirmed on the OAIC site what the automated decision-making (ADM) transparency obligation requires from 10 Dec 2026, and added the OAIC's issues paper consultation (closed 15 Jun 2026) that will inform its guidance."
   source: "https://www.oaic.gov.au/engage-with-us/consultations/consultation-on-guidance-for-transparency-in-automated-decision-making"
