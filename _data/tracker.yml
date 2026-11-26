@@ -194,13 +194,17 @@
   key_dates:
     - { date: "2025-09-22", what: "OAL approved and filed the CPPA regulations" }
     - { date: "2026-01-01", what: "Regulations effective; risk-assessment compliance begins" }
+    - { date: "2026-09-27", what: "Governor signs the Expanding Privacy Rights Act (SB 923): the right to delete covers personal information obtained from third parties, and online-only businesses must offer an online submission method" }
+    - { date: "2026-11-13", what: "CalPrivacy begins formal rulemaking on proposed Data Broker Updates and DROP Audit regulations (Delete Act); written comments due 6 January 2027" }
     - { date: "2027-01-01", what: "ADMT requirements for significant decisions" }
+    - { date: "2027-01-01", what: "SB 923 takes effect" }
+    - { date: "2028-01-01", what: "Delete Act: independent third-party audits of data brokers every three years begin" }
     - { date: "2028-04-01", what: "Risk-assessment attestation and first cybersecurity audit certifications (large businesses)" }
   sectors: [tech, saas, cloud, hardware, banking, retail]
   applies_to_me: high
-  summary: "California privacy law now adds risk assessments, automated-decision notice and opt-out, and phased independent cybersecurity audits."
+  summary: "California privacy law now adds risk assessments, automated-decision notice and opt-out, and phased independent cybersecurity audits. SB 923, signed 27 Sep 2026 and effective 1 Jan 2027, extends the right to delete to personal information a business obtained from third parties. CalPrivacy's proposed data broker DROP audit regulations are a proposal, open for comment until 6 Jan 2027."
   source: "https://cppa.ca.gov/regulations/ccpa_updates.html"
-  last_reviewed: "2026-10-28"
+  last_reviewed: "2026-11-26"
 - id: us-co-ai-act
   name: "Colorado AI Act (SB 24-205), replaced by SB 26-189"
   region: US

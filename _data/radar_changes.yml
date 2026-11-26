@@ -1,6 +1,16 @@
 # Public "What changed" log for the Regulation Radar (newest first). Shown on /radar/ and in /radar/changes.xml.
 # Add an entry only after reading the primary source; `source` is that primary page.
 - date: "2026-11-26"
+  id: us-ca-ccpa-regs
+  change: "CalPrivacy began formal rulemaking on 13 Nov 2026 on proposed Data Broker Updates and DROP Audit regulations, setting auditor qualifications, independence, evidence and audit report contents for the Delete Act audits that begin 1 Jan 2028; written comments are due 6 Jan 2027."
+  source: "https://privacy.ca.gov/2026/11/calprivacy-releases-notice-of-proposed-regulatory-action-for-delete-request-and-opt-out-platform-audits/"
+  quote: "All written comments must be received by January 6, 2027, at 5 p.m. Pacific Time to be considered."
+- date: "2026-11-26"
+  id: us-ca-ccpa-regs
+  change: "Added the Expanding Privacy Rights Act (SB 923), signed 27 Sep 2026 and effective 1 Jan 2027: the CCPA right to delete now covers personal information obtained from third parties, and online-only businesses must offer an online submission method such as a webform."
+  source: "https://privacy.ca.gov/2026/09/california-expands-privacy-protections-by-strengthening-deletion-rights/"
+  quote: "Today, Governor Newsom signed the Expanding Privacy Rights Act (SB 923, Becker), closing a loophole in the California Consumer Privacy Act’s (CCPA) right to delete"
+- date: "2026-11-26"
   id: eu-cra
   change: "The first European standard supporting the Cyber Resilience Act was published on 18 Nov 2026. It sets generic cybersecurity principles for products with digital elements; the Commission says over 30 standards are in the making."
   source: "https://digital-strategy.ec.europa.eu/en/news/first-european-standard-published-support-cyber-resilience-act"
