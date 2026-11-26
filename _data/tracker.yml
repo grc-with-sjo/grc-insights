@@ -42,6 +42,19 @@
   summary: "Canada has no binding AI law after AIDA lapsed; ISED's 2026 AI transparency consultation (closed 2026-09-23, report pending) proposes no bill yet."
   source: "https://www.pm.gc.ca/en/news/news-releases/2026/06/04/prime-minister-carney-launches-ai-all-canadas-new-national-artificial"
   last_reviewed: "2026-10-28"
+- id: ca-gc-ai-security-rmf
+  name: "Government of Canada Artificial Intelligence Security Risk Management Framework"
+  region: CA
+  jurisdiction: "Canada (federal departments and agencies)"
+  type: guidance
+  status: in-force
+  key_dates:
+    - { date: "2026-11-18", what: "Framework published on Canada.ca" }
+  sectors: [public-sector, saas, cloud]
+  applies_to_me: watch
+  summary: "Guidance for departments and agencies under Treasury Board authorities on cyber security risks to and from AI systems, organised in five pillars (Govern, Define, Protect, Validate, Operate) and covering embedded AI in products, AI-as-a-Service and on-premises AI. Departments should seek appropriate assurance about components supplied or operated by others. It is guidance: binding requirements stay in Treasury Board policy instruments."
+  source: "https://www.canada.ca/en/government/system/digital-government/online-security-privacy/cyber-security-guidance-policy/government-canada-artificial-intelligence-security-risk-management-framework.html"
+  last_reviewed: "2026-11-26"
 - id: ca-opc-childrens-code
   name: "OPC draft Children's Privacy Code"
   region: CA

@@ -1,6 +1,11 @@
 # Public "What changed" log for the Regulation Radar (newest first). Shown on /radar/ and in /radar/changes.xml.
 # Add an entry only after reading the primary source; `source` is that primary page.
 - date: "2026-11-26"
+  id: ca-gc-ai-security-rmf
+  change: "Added the Government of Canada Artificial Intelligence Security Risk Management Framework (published 18 Nov 2026), guidance for federal departments and agencies on cyber security risks to and from AI systems, including AI they procure."
+  source: "https://www.canada.ca/en/government/system/digital-government/online-security-privacy/cyber-security-guidance-policy/government-canada-artificial-intelligence-security-risk-management-framework.html"
+  quote: "This framework provides guidance, while binding requirements are set out in applicable Treasury Board policy instruments."
+- date: "2026-11-26"
   id: ca-osfi-e23
   change: "OSFI endorsed the Financial Stability Board's Sound Practices for Responsible Adoption of Artificial Intelligence on 15 Oct 2026, saying the 12 practices complement its own guidelines, including E-23; E-23 still takes effect on 1 May 2027."
   source: "https://www.osfi-bsif.gc.ca/en/news/osfi-statement-financial-stability-boards-publication-sound-practices-responsible-adoption"
