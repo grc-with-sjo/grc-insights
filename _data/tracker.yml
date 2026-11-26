@@ -40,7 +40,7 @@
     - { date: "2026-10-22", what: "Referred to committee in the Senate" }
   sectors: [tech, saas, cloud]
   applies_to_me: medium
-  summary: "Government bill at consideration in committee in the Senate; not yet law. The Privacy Commissioner says it requires electronic service providers to provide reasonable assistance to state actors exercising lawful authorities and creates a new production order for subscriber information, and that House amendments preclude requirements to decrypt end-to-end encrypted information. On 2 Nov 2026 he recommended further amendments."
+  summary: "Government bill at consideration in committee in the Senate. The Privacy Commissioner says it requires electronic service providers to provide reasonable assistance to state actors exercising lawful authorities and creates a new production order for subscriber information, and that House amendments preclude requirements to decrypt end-to-end encrypted information. On 2 Nov 2026 he recommended further amendments."
   source: "https://www.parl.ca/legisinfo/en/bill/45-1/c-22"
   last_reviewed: "2026-11-26"
 - id: ca-federal-ai-strategy
@@ -224,7 +224,7 @@
   key_dates:
     - { date: "2025-09-22", what: "OAL approved and filed the CPPA regulations" }
     - { date: "2026-01-01", what: "Regulations effective; risk-assessment compliance begins" }
-    - { date: "2026-09-27", what: "Governor signs the Expanding Privacy Rights Act (SB 923): the right to delete covers personal information obtained from third parties, and online-only businesses must offer an online submission method" }
+    - { date: "2026-09-27", what: "Governor signs the Expanding Privacy Rights Act (SB 923): from 1 January 2027 the right to delete will extend to personal information obtained from third parties, and online-only businesses will have to offer an online submission method" }
     - { date: "2026-11-13", what: "CalPrivacy begins formal rulemaking on proposed Data Broker Updates and DROP Audit regulations (Delete Act); written comments due 6 January 2027" }
     - { date: "2027-01-01", what: "ADMT requirements for significant decisions" }
     - { date: "2027-01-01", what: "SB 923 takes effect" }
@@ -350,7 +350,7 @@
   type: privacy-law
   status: in-force
   key_dates:
-    - { date: "2026-11-13", what: "EDPB statement welcomes the Commission's updated SCC FAQs: the Council of Europe and Ibero-American Data Protection Network (RIPD) model contractual clauses may also be used for onward transfers of data received under the EU SCCs, under the conditions in those FAQs" }
+    - { date: "2026-11-13", what: "EDPB announces a statement, adopted at its latest plenary, on the Commission's updated SCC FAQs: the Council of Europe and Ibero-American Data Protection Network (RIPD) model contractual clauses may also be used for onward transfers of data received under the EU SCCs, under the conditions in those FAQs" }
   sectors: [tech, saas, cloud, hardware, banking, retail]
   applies_to_me: high
   summary: "The EU baseline data-protection law; unchanged, with proposed changes in the Digital Omnibus still under negotiation."
@@ -1108,8 +1108,8 @@
     - { date: "2026-06-03", what: "Commission adopts the proposal (COM(2026) 502)" }
   sectors: [cloud, saas, tech]
   applies_to_me: high
-  summary: "Commission proposal on three objectives: research, development and innovation; capacity, including at least tripling the EU's data centre capacity within 5 to 7 years and faster permitting; and autonomy, through a single EU-wide cloud and AI sovereignty framework with four assurance levels that public sector bodies use based on their risk assessments, with cloud providers recognised by Member States after an audit. It is a proposal, not yet law."
-  source: "https://digital-strategy.ec.europa.eu/en/library/proposal-cloud-and-ai-development-act-cada"
+  summary: "Commission proposal on three objectives: research, development and innovation; capacity, including at least tripling the EU's data centre capacity within 5 to 7 years and faster permitting; and autonomy, through a single EU-wide cloud and AI sovereignty framework with four assurance levels that public sector bodies use based on their risk assessments, with cloud providers recognised by Member States after an audit. It is a proposal."
+  source: "https://digital-strategy.ec.europa.eu/en/policies/cloud-and-ai-development-act"
   last_reviewed: "2026-11-26"
 - id: apac-au-ransomware-reporting
   name: "Australia Cyber Security Act 2024: ransomware payment reporting"

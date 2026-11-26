@@ -17,7 +17,7 @@
   quote: "Bill C-22 is expressly designed to address some of those challenges, including by requiring electronic service providers to provide reasonable assistance to state actors in exercising lawful authorities."
 - date: "2026-11-26"
   id: eu-cada
-  change: "Verified the Cloud and AI Development Act row on the Commission's pages and removed the verify marker: it is a Commission proposal (COM(2026) 502) that would set a single EU-wide cloud and AI sovereignty framework with four assurance levels for public sector bodies. Dropped the unsourced claim that it is in Parliament and Council."
+  change: "Verified the Cloud and AI Development Act row on the Commission's pages and removed the verify marker: it is a Commission proposal (COM(2026) 502, per the Commission's proposal page at digital-strategy.ec.europa.eu/en/library/proposal-cloud-and-ai-development-act-cada) that would set a single EU-wide cloud and AI sovereignty framework with four assurance levels for public sector bodies. Dropped the unsourced claim that it is in Parliament and Council."
   source: "https://digital-strategy.ec.europa.eu/en/policies/cloud-and-ai-development-act"
   quote: "The Cloud and AI Development Act defines cloud and AI sovereignty comprising four assurance levels, to be used by public sector bodies based on their risk assessments."
 - date: "2026-11-26"
@@ -47,7 +47,7 @@
   quote: "NISTIR 8547 supports these migration timelines."
 - date: "2026-11-26"
   id: eu-gdpr
-  change: "The EDPB adopted a statement on 13 Nov 2026 welcoming the Commission's updated SCC FAQs, which recognise that the Council of Europe and Ibero-American Data Protection Network (RIPD) model contractual clauses may also be used for onward transfers of personal data received under the EU SCCs."
+  change: "The EDPB announced on 13 Nov 2026 that it had adopted a statement at its latest plenary welcoming the Commission's updated SCC FAQs, which recognise that the Council of Europe and Ibero-American Data Protection Network (RIPD) model contractual clauses may also be used for onward transfers of personal data received under the EU SCCs."
   source: "https://www.edpb.europa.eu/news/edpb-supports-use-of-other-models-of-contractual-clauses-for-onward-transfers-of-personal-data_en"
   quote: "At its latest plenary, the EDPB adopted a statement on the use of other models of contractual clauses for onward transfers of personal data"
 - date: "2026-11-26"
@@ -57,12 +57,12 @@
   quote: "The PCI Security Standards Council (PCI SSC) has released a new information supplement, Understanding PCI DSS Service Providers"
 - date: "2026-11-26"
   id: us-ca-ccpa-regs
-  change: "CalPrivacy began formal rulemaking on 13 Nov 2026 on proposed Data Broker Updates and DROP Audit regulations, setting auditor qualifications, independence, evidence and audit report contents for the Delete Act audits that begin 1 Jan 2028; written comments are due 6 Jan 2027."
+  change: "CalPrivacy began formal rulemaking on 13 Nov 2026 on proposed Data Broker Updates and DROP Audit regulations, which would set the timing, scope, qualifications and independence of auditors, the evidence required and the contents of the audit report for the Delete Act audits that begin 1 Jan 2028; written comments are due 6 Jan 2027."
   source: "https://privacy.ca.gov/2026/11/calprivacy-releases-notice-of-proposed-regulatory-action-for-delete-request-and-opt-out-platform-audits/"
   quote: "All written comments must be received by January 6, 2027, at 5 p.m. Pacific Time to be considered."
 - date: "2026-11-26"
   id: us-ca-ccpa-regs
-  change: "Added the Expanding Privacy Rights Act (SB 923), signed 27 Sep 2026 and effective 1 Jan 2027: the CCPA right to delete now covers personal information obtained from third parties, and online-only businesses must offer an online submission method such as a webform."
+  change: "Added the Expanding Privacy Rights Act (SB 923), signed 27 Sep 2026 and effective 1 Jan 2027: from that date the CCPA right to delete will extend to personal information obtained from third parties, and online-only businesses will have to offer an online submission method such as a webform."
   source: "https://privacy.ca.gov/2026/09/california-expands-privacy-protections-by-strengthening-deletion-rights/"
   quote: "Today, Governor Newsom signed the Expanding Privacy Rights Act (SB 923, Becker), closing a loophole in the California Consumer Privacy Act’s (CCPA) right to delete"
 - date: "2026-11-26"
