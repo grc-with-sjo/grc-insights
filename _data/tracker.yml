@@ -9,6 +9,7 @@
   key_dates:
     - { date: "2026-06-15", what: "Bill C-36 introduced to replace PIPEDA; no repeal date set" }
     - { date: "2026-08-28", what: "OPC files Federal Court application against Google, as the Commissioner cannot issue binding orders" }
+    - { date: "2026-11-23", what: "Privacy Commissioner announces an exploratory consultation on personalized algorithmic pricing, with a view to developing guidance in the new year" }
   sectors: [tech, saas, cloud, hardware, banking, retail]
   applies_to_me: high
   summary: "Federal private-sector privacy law; stays in force while C-36 sits at first reading. The Commissioner cannot issue binding orders, so enforcement runs through findings and Federal Court applications."
@@ -27,6 +28,21 @@
   summary: "Federal bill to replace PIPEDA Part 1, stalled at first reading: new Commission, penalties up to the greater of $10M or 3% of global revenue, a private right of action and automated-decision transparency; no AI Part; commencement by order in council."
   source: "https://www.parl.ca/legisinfo/en/bill/45-1/c-36"
   last_reviewed: "2026-10-28"
+- id: ca-bill-c22
+  name: "Bill C-22, Lawful Access Act, 2026"
+  region: CA
+  jurisdiction: "Canada (federal)"
+  type: sector-rule
+  status: proposed
+  key_dates:
+    - { date: "2026-03-12", what: "Introduction and first reading in the House of Commons" }
+    - { date: "2026-06-18", what: "House committee report presented with amendments; third reading in the House" }
+    - { date: "2026-10-22", what: "Referred to committee in the Senate" }
+  sectors: [tech, saas, cloud]
+  applies_to_me: medium
+  summary: "Government bill at consideration in committee in the Senate. The Privacy Commissioner says it requires electronic service providers to provide reasonable assistance to state actors exercising lawful authorities and creates a new production order for subscriber information, and that House amendments preclude requirements to decrypt end-to-end encrypted information. On 2 Nov 2026 he recommended further amendments."
+  source: "https://www.parl.ca/legisinfo/en/bill/45-1/c-22"
+  last_reviewed: "2026-11-26"
 - id: ca-federal-ai-strategy
   name: "Canada federal AI law (AIDA lapsed) and national AI strategy"
   region: CA
@@ -42,6 +58,19 @@
   summary: "Canada has no binding AI law after AIDA lapsed; ISED's 2026 AI transparency consultation (closed 2026-09-23, report pending) proposes no bill yet."
   source: "https://www.pm.gc.ca/en/news/news-releases/2026/06/04/prime-minister-carney-launches-ai-all-canadas-new-national-artificial"
   last_reviewed: "2026-10-28"
+- id: ca-gc-ai-security-rmf
+  name: "Government of Canada Artificial Intelligence Security Risk Management Framework"
+  region: CA
+  jurisdiction: "Canada (federal departments and agencies)"
+  type: guidance
+  status: in-force
+  key_dates:
+    - { date: "2026-11-18", what: "Framework published on Canada.ca" }
+  sectors: [public-sector, saas, cloud]
+  applies_to_me: watch
+  summary: "Guidance for departments and agencies under Treasury Board authorities on cyber security risks to and from AI systems, organised in five pillars (Govern, Define, Protect, Validate, Operate) and covering embedded AI in products, AI-as-a-Service and on-premises AI. Departments should seek appropriate assurance about components supplied or operated by others. It is guidance: binding requirements stay in Treasury Board policy instruments."
+  source: "https://www.canada.ca/en/government/system/digital-government/online-security-privacy/cyber-security-guidance-policy/government-canada-artificial-intelligence-security-risk-management-framework.html"
+  last_reviewed: "2026-11-26"
 - id: ca-opc-childrens-code
   name: "OPC draft Children's Privacy Code"
   region: CA
@@ -138,12 +167,13 @@
   key_dates:
     - { date: "2025-09-11", what: "Final guideline issued" }
     - { date: "2026-10-08", what: "OSFI fall risk update focuses on frontier AI; existing guidelines, including E-23, apply to AI" }
+    - { date: "2026-10-15", what: "OSFI endorses the Financial Stability Board's Sound Practices for Responsible Adoption of AI (12 practices), which it says complement its own guidelines, including E-23" }
     - { date: "2027-05-01", what: "Guideline takes effect" }
   sectors: [banking]
   applies_to_me: high
   summary: "Enterprise-wide model risk management expectations, explicitly covering AI/ML models, for federally regulated banks and insurers from May 2027."
   source: "https://www.osfi-bsif.gc.ca/en/guidance/guidance-library/guideline-e-23-model-risk-management-2027"
-  last_reviewed: "2026-10-28"
+  last_reviewed: "2026-11-26"
 - id: ca-osfi-b13
   name: "OSFI Guideline B-13, Technology and Cyber Risk Management"
   region: CA
@@ -194,13 +224,17 @@
   key_dates:
     - { date: "2025-09-22", what: "OAL approved and filed the CPPA regulations" }
     - { date: "2026-01-01", what: "Regulations effective; risk-assessment compliance begins" }
+    - { date: "2026-09-27", what: "Governor signs the Expanding Privacy Rights Act (SB 923): from 1 January 2027 the right to delete will extend to personal information obtained from third parties, and online-only businesses will have to offer an online submission method" }
+    - { date: "2026-11-13", what: "CalPrivacy begins formal rulemaking on proposed Data Broker Updates and DROP Audit regulations (Delete Act); written comments due 6 January 2027" }
     - { date: "2027-01-01", what: "ADMT requirements for significant decisions" }
+    - { date: "2027-01-01", what: "SB 923 takes effect" }
+    - { date: "2028-01-01", what: "Delete Act: independent third-party audits of data brokers every three years begin" }
     - { date: "2028-04-01", what: "Risk-assessment attestation and first cybersecurity audit certifications (large businesses)" }
   sectors: [tech, saas, cloud, hardware, banking, retail]
   applies_to_me: high
-  summary: "California privacy law now adds risk assessments, automated-decision notice and opt-out, and phased independent cybersecurity audits."
+  summary: "California privacy law now adds risk assessments, automated-decision notice and opt-out, and phased independent cybersecurity audits. SB 923, signed 27 Sep 2026 and effective 1 Jan 2027, extends the right to delete to personal information a business obtained from third parties. CalPrivacy's proposed data broker DROP audit regulations are a proposal, open for comment until 6 Jan 2027."
   source: "https://cppa.ca.gov/regulations/ccpa_updates.html"
-  last_reviewed: "2026-10-28"
+  last_reviewed: "2026-11-26"
 - id: us-co-ai-act
   name: "Colorado AI Act (SB 24-205), replaced by SB 26-189"
   region: US
@@ -298,21 +332,25 @@
   key_dates:
     - { date: "2026-07-08", what: "AI Digital Omnibus amending the AI Act signed" }
     - { date: "2026-07-27", what: "AI Digital Omnibus in force" }
+    - { date: "2026-07-20", what: "Commission publishes guidelines on the Article 50 transparency obligations for providers and deployers of certain AI systems" }
+    - { date: "2026-08-02", what: "Article 50 transparency obligations apply" }
     - { date: "2026-10-19", what: "Commission announces the first harmonised standard (EN 18286, quality management)" }
+    - { date: "2026-11-16", what: "Commission seeks feedback on a draft template for the Article 27 fundamental rights impact assessment; feedback open until 15 January 2027" }
     - { date: "2027-12-02", what: "Annex III stand-alone high-risk obligations apply" }
     - { date: "2028-08-02", what: "Annex I product-embedded high-risk obligations apply" }
   sectors: [tech, saas, cloud, hardware, banking, retail]
   applies_to_me: high
-  summary: "The EU's risk-based AI law, amended in 2026: high-risk duties are postponed to December 2027 and August 2028."
+  summary: "The EU's risk-based AI law, amended in 2026 by the AI Omnibus. Article 50 transparency obligations apply from 2 August 2026. A further prohibition, on AI systems that generate non-consensual sexually explicit and intimate content or child sexual abuse material, such as AI 'nudification' apps, comes into effect in December 2026. High-risk duties are postponed to 2 December 2027 (Annex III) and 2 August 2028 (Annex I)."
   source: "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai"
-  last_reviewed: "2026-10-28"
+  last_reviewed: "2026-11-26"
 - id: eu-gdpr
   name: "General Data Protection Regulation (GDPR, Regulation (EU) 2016/679)"
   region: EU
   jurisdiction: "EU"
   type: privacy-law
   status: in-force
-  key_dates: []
+  key_dates:
+    - { date: "2026-11-13", what: "EDPB announces a statement, adopted at its latest plenary, on the Commission's updated SCC FAQs: the Council of Europe and Ibero-American Data Protection Network (RIPD) model contractual clauses may also be used for onward transfers of data received under the EU SCCs, under the conditions in those FAQs" }
   sectors: [tech, saas, cloud, hardware, banking, retail]
   applies_to_me: high
   summary: "The EU baseline data-protection law; unchanged, with proposed changes in the Digital Omnibus still under negotiation."
@@ -402,12 +440,13 @@
   key_dates:
     - { date: "2026-07-27", what: "Commission non-binding guidance" }
     - { date: "2026-09-11", what: "Reporting of exploited vulnerabilities and severe incidents applies (24-hour early warning, 72-hour notification)" }
+    - { date: "2026-11-18", what: "First European standard supporting the CRA published (generic cybersecurity principles for products with digital elements); over 30 standards in the making" }
     - { date: "2027-12-11", what: "Main obligations apply" }
   sectors: [tech, saas, hardware, retail, banking]
   applies_to_me: high
   summary: "Manufacturers of products with digital elements must report exploited vulnerabilities and severe incidents on a 24h/72h clock through ENISA's platform (live since 2026-09-11); full duties from 2027-12-11."
   source: "https://digital-strategy.ec.europa.eu/en/policies/cra-reporting"
-  last_reviewed: "2026-10-28"
+  last_reviewed: "2026-11-26"
 - id: uk-duaa
   name: "Data (Use and Access) Act 2025"
   region: UK
@@ -464,7 +503,8 @@
   status: phasing-in
   key_dates:
     - { date: "2025-06-10", what: "Statutory tort for serious privacy invasions commences" }
-    - { date: "2026-12-10", what: "Automated-decision transparency obligations start" }
+    - { date: "2026-05-18", what: "OAIC issues paper to inform its guidance on the ADM transparency obligation (submissions closed 15 June 2026)" }
+    - { date: "2026-12-10", what: "ADM transparency obligation starts: APP entities that use personal information in ADM with the potential to affect rights or interests must describe in their privacy policies the kinds of personal information used and the kinds of decisions made using ADM" }
   sectors: [tech, saas, cloud, hardware, banking, retail]
   applies_to_me: medium
   summary: "⚠️ verify: Adds a statutory privacy tort, stronger OAIC powers and penalties, overseas-disclosure rules and automated-decision transparency."
@@ -579,9 +619,9 @@
     - { date: "2025-10-31", what: "End of the three-year transition; 2013-edition certificates expired or were withdrawn" }
   sectors: [tech, saas, cloud, hardware, banking, retail]
   applies_to_me: high
-  summary: "The current ISMS certification standard; 2013-edition certificates expired or were withdrawn at the end of the transition on 2025-10-31, per certification bodies."
+  summary: "The current ISMS certification standard; 2013-edition certificates expired or were withdrawn at the end of the transition on 2025-10-31, per certification bodies. ISO/IEC 27000, the overview of the ISO/IEC 27000 family, was revised to edition 6 in July 2026 and now focuses on overview, concepts and relationships rather than serving as a terminology document."
   source: "https://www.iso.org/standard/27001"
-  last_reviewed: "2026-10-08"
+  last_reviewed: "2026-11-26"
 - id: global-iso-27017
   name: "ISO/IEC 27017:2026 information security controls for cloud services"
   region: GLOBAL
@@ -632,6 +672,19 @@
   summary: "Voluntary outcomes framework with six functions: Govern, Identify, Protect, Detect, Respond, Recover."
   source: "https://www.nist.gov/cyberframework"
   last_reviewed: "2026-10-07"
+- id: global-nist-ir-8547
+  name: "NIST IR 8547, Transition to Post-Quantum Cryptography Standards"
+  region: GLOBAL
+  jurisdiction: "US (NIST)"
+  type: guidance
+  status: in-force
+  key_dates:
+    - { date: "2026-10-27", what: "NIST releases the finalized report" }
+  sectors: [tech, saas, cloud, hardware, banking]
+  applies_to_me: medium
+  summary: "NIST's finalized road map for moving from quantum-vulnerable algorithms in its existing standards to the post-quantum standards it published in 2024. It supports the federal timelines: 2035 as the primary target under National Security Memorandum 10 and, under Executive Order 14412, 2030 for key establishment and 2031 for digital signatures in federal high-value assets and high-impact systems. The memorandum applies to federal systems; NIST says many organizations that work with the federal government will be affected as well."
+  source: "https://www.nist.gov/news-events/news/2026/10/nist-report-provides-guidelines-transition-post-quantum-cryptography"
+  last_reviewed: "2026-11-26"
 - id: global-oecd-ai-principles
   name: "OECD AI Principles (Recommendation on Artificial Intelligence)"
   region: GLOBAL
@@ -667,6 +720,7 @@
   key_dates:
     - { date: "2024-12-31", what: "PCI DSS v4.0 retired" }
     - { date: "2026-06-03", what: "Request for comments opened on a future revision (AI and mobile impacts); closed 2026-07-20" }
+    - { date: "2026-11-10", what: "PCI SSC releases the information supplement Understanding PCI DSS Service Providers (customer and TPSP duties under Requirements 12.8 and 12.9)" }
   sectors: [banking, retail, saas, cloud, tech]
   applies_to_me: medium
   summary: "v4.0.1 is still the card-data security standard; a revision is under consultation with no successor or date announced."
@@ -1051,12 +1105,12 @@
   type: sector-rule
   status: proposed
   key_dates:
-    - { date: "2026-06-03", what: "Adopted by the Commission; now in Parliament and Council" }
+    - { date: "2026-06-03", what: "Commission adopts the proposal (COM(2026) 502)" }
   sectors: [cloud, saas, tech]
   applies_to_me: high
-  summary: "⚠️ verify: Proposal to reduce EU reliance on foreign cloud and AI providers, including cloud sovereignty aspects; in negotiation."
-  source: "https://enterprise.gov.ie/en/consultations/consultations-files/public-consultation-cada-explanatory-note.pdf"
-  last_reviewed: "2026-10-08"
+  summary: "Commission proposal on three objectives: research, development and innovation; capacity, including at least tripling the EU's data centre capacity within 5 to 7 years and faster permitting; and autonomy, through a single EU-wide cloud and AI sovereignty framework with four assurance levels that public sector bodies use based on their risk assessments, with cloud providers recognised by Member States after an audit. It is a proposal."
+  source: "https://digital-strategy.ec.europa.eu/en/policies/cloud-and-ai-development-act"
+  last_reviewed: "2026-11-26"
 - id: apac-au-ransomware-reporting
   name: "Australia Cyber Security Act 2024: ransomware payment reporting"
   region: APAC

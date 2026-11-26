@@ -1,5 +1,90 @@
 # Public "What changed" log for the Regulation Radar (newest first). Shown on /radar/ and in /radar/changes.xml.
 # Add an entry only after reading the primary source; `source` is that primary page.
+- date: "2026-11-26"
+  id: ca-pipeda
+  change: "The Privacy Commissioner announced on 23 Nov 2026 that the OPC will launch an exploratory consultation on personalized algorithmic pricing, with a view to developing guidance in the new year."
+  source: "https://www.priv.gc.ca/en/opc-news/news-and-announcements/2026/nr-c_261123/"
+  quote: "Commissioner Dufresne announced that the OPC will be launching an exploratory consultation on personal algorithmic pricing with a view to developing guidance in the new year."
+- date: "2026-11-26"
+  id: ca-bill-c22
+  change: "Added Bill C-22, the Lawful Access Act, 2026: it completed third reading in the House of Commons on 18 Jun 2026 and is at consideration in committee in the Senate."
+  source: "https://www.parl.ca/legisinfo/en/bill/45-1/c-22"
+  quote: "Referral to committee on Thursday, October 22, 2026 (Senate)"
+- date: "2026-11-26"
+  id: ca-bill-c22
+  change: "The Privacy Commissioner told the Senate committee on 2 Nov 2026 that the bill requires electronic service providers to provide reasonable assistance to state actors, and recommended further amendments."
+  source: "https://www.priv.gc.ca/en/opc-actions-and-decisions/advice-to-parliament/2026/parl_261102/"
+  quote: "Bill C-22 is expressly designed to address some of those challenges, including by requiring electronic service providers to provide reasonable assistance to state actors in exercising lawful authorities."
+- date: "2026-11-26"
+  id: eu-cada
+  change: "Verified the Cloud and AI Development Act row on the Commission's pages and removed the verify marker: it is a Commission proposal (COM(2026) 502, per the Commission's proposal page at digital-strategy.ec.europa.eu/en/library/proposal-cloud-and-ai-development-act-cada) that would set a single EU-wide cloud and AI sovereignty framework with four assurance levels for public sector bodies. Dropped the unsourced claim that it is in Parliament and Council."
+  source: "https://digital-strategy.ec.europa.eu/en/policies/cloud-and-ai-development-act"
+  quote: "The Cloud and AI Development Act defines cloud and AI sovereignty comprising four assurance levels, to be used by public sector bodies based on their risk assessments."
+- date: "2026-11-26"
+  id: global-iso-27001
+  change: "Noted ISO/IEC 27000:2026 (edition 6, published July 2026), the overview of the ISMS family, which no longer serves as a terminology document. ISO/IEC 27001:2022 with Amd 1:2024 remains the current certification standard."
+  source: "https://www.iso.org/standard/27000"
+  quote: "This sixth edition has been revised to focus on overview, concepts and relationships rather than serving as a terminology document."
+- date: "2026-11-26"
+  id: apac-au-privacy-tranche1
+  change: "Confirmed on the OAIC site what the automated decision-making (ADM) transparency obligation requires from 10 Dec 2026, and added the OAIC's issues paper consultation (closed 15 Jun 2026) that will inform its guidance."
+  source: "https://www.oaic.gov.au/engage-with-us/consultations/consultation-on-guidance-for-transparency-in-automated-decision-making"
+  quote: "From 10 December 2026, APP entities that use personal information in ADM with the potential to affect rights or interests will be required to provide information in their privacy policies about the kinds of personal information used and the kinds of decisions made using ADM."
+- date: "2026-11-26"
+  id: ca-gc-ai-security-rmf
+  change: "Added the Government of Canada Artificial Intelligence Security Risk Management Framework (published 18 Nov 2026), guidance for federal departments and agencies on cyber security risks to and from AI systems, including AI they procure."
+  source: "https://www.canada.ca/en/government/system/digital-government/online-security-privacy/cyber-security-guidance-policy/government-canada-artificial-intelligence-security-risk-management-framework.html"
+  quote: "This framework provides guidance, while binding requirements are set out in applicable Treasury Board policy instruments."
+- date: "2026-11-26"
+  id: ca-osfi-e23
+  change: "OSFI endorsed the Financial Stability Board's Sound Practices for Responsible Adoption of Artificial Intelligence on 15 Oct 2026, saying the 12 practices complement its own guidelines, including E-23; E-23 still takes effect on 1 May 2027."
+  source: "https://www.osfi-bsif.gc.ca/en/news/osfi-statement-financial-stability-boards-publication-sound-practices-responsible-adoption"
+  quote: "OSFI endorses the Sound Practices."
+- date: "2026-11-26"
+  id: global-nist-ir-8547
+  change: "Added NIST IR 8547, NIST's finalized report on transitioning to post-quantum cryptography standards (27 Oct 2026), which supports federal migration timelines of 2030 to 2035."
+  source: "https://www.nist.gov/news-events/news/2026/10/nist-report-provides-guidelines-transition-post-quantum-cryptography"
+  quote: "NISTIR 8547 supports these migration timelines."
+- date: "2026-11-26"
+  id: eu-gdpr
+  change: "The EDPB announced on 13 Nov 2026 that it had adopted a statement at its latest plenary welcoming the Commission's updated SCC FAQs, which recognise that the Council of Europe and Ibero-American Data Protection Network (RIPD) model contractual clauses may also be used for onward transfers of personal data received under the EU SCCs."
+  source: "https://www.edpb.europa.eu/news/edpb-supports-use-of-other-models-of-contractual-clauses-for-onward-transfers-of-personal-data_en"
+  quote: "At its latest plenary, the EDPB adopted a statement on the use of other models of contractual clauses for onward transfers of personal data"
+- date: "2026-11-26"
+  id: global-pci-dss
+  change: "PCI SSC released a new information supplement, Understanding PCI DSS Service Providers, on 10 Nov 2026, explaining Requirements 12.8 and 12.9 for customers and third-party service providers (TPSPs) and the evidence TPSPs are expected to provide."
+  source: "https://blog.pcisecuritystandards.org/pci-ssc-publishes-new-guidance-on-understanding-pci-dss-third-party-service-providers"
+  quote: "The PCI Security Standards Council (PCI SSC) has released a new information supplement, Understanding PCI DSS Service Providers"
+- date: "2026-11-26"
+  id: us-ca-ccpa-regs
+  change: "CalPrivacy began formal rulemaking on 13 Nov 2026 on proposed Data Broker Updates and DROP Audit regulations, which would set the timing, scope, qualifications and independence of auditors, the evidence required and the contents of the audit report for the Delete Act audits that begin 1 Jan 2028; written comments are due 6 Jan 2027."
+  source: "https://privacy.ca.gov/2026/11/calprivacy-releases-notice-of-proposed-regulatory-action-for-delete-request-and-opt-out-platform-audits/"
+  quote: "All written comments must be received by January 6, 2027, at 5 p.m. Pacific Time to be considered."
+- date: "2026-11-26"
+  id: us-ca-ccpa-regs
+  change: "Added the Expanding Privacy Rights Act (SB 923), signed 27 Sep 2026 and effective 1 Jan 2027: from that date the CCPA right to delete will extend to personal information obtained from third parties, and online-only businesses will have to offer an online submission method such as a webform."
+  source: "https://privacy.ca.gov/2026/09/california-expands-privacy-protections-by-strengthening-deletion-rights/"
+  quote: "Today, Governor Newsom signed the Expanding Privacy Rights Act (SB 923, Becker), closing a loophole in the California Consumer Privacy Act’s (CCPA) right to delete"
+- date: "2026-11-26"
+  id: eu-cra
+  change: "The first European standard supporting the Cyber Resilience Act was published on 18 Nov 2026. It sets generic cybersecurity principles for products with digital elements; the Commission says over 30 standards are in the making."
+  source: "https://digital-strategy.ec.europa.eu/en/news/first-european-standard-published-support-cyber-resilience-act"
+  quote: "On 18 November, the first European standard supporting the implementation of the Cyber Resilience Act (CRA) was published."
+- date: "2026-11-26"
+  id: eu-ai-act
+  change: "The Commission is seeking feedback on a draft template for the fundamental rights impact assessment that certain deployers of high-risk AI systems must carry out under Article 27; feedback is open until 15 Jan 2027, and the obligation applies from 2 Dec 2027."
+  source: "https://digital-strategy.ec.europa.eu/en/news/commission-seeks-feedback-draft-template-fundamental-rights-impact-assessment-under-ai-act"
+  quote: "The draft template is open for public feedback until 15 January 2027."
+- date: "2026-11-26"
+  id: eu-ai-act
+  change: "Added the AI Omnibus prohibition on AI systems that generate non-consensual sexually explicit and intimate content or child sexual abuse material, such as AI 'nudification' apps, which the Commission says comes into effect in December 2026."
+  source: "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai"
+  quote: "Prohibition 9 comes into effect in December 2026 and was introduced as a part of the AI Omnibus."
+- date: "2026-11-26"
+  id: eu-ai-act
+  change: "Added that the Article 50 transparency obligations apply from 2 Aug 2026, and the Commission guidelines on them published on 20 Jul 2026."
+  source: "https://digital-strategy.ec.europa.eu/en/library/guidelines-transparency-obligations-providers-and-deployers-ai-systems"
+  quote: "These transparency obligations apply from 2 August 2026."
 - date: "2026-10-28"
   id: global-aiuc-1
   change: "Correction: the joint SOC 2 + AIUC-1 engagement is in early rollout with several CPA firms, not fully launched; the AICPA expects the full launch in early 2027. Also corrected AIUC's name and clarified that the SOC 2 exposure draft is a proposal while current criteria stay in force."
