@@ -1,5 +1,25 @@
 # Public "What changed" log for the Regulation Radar (newest first). Shown on /radar/ and in /radar/changes.xml.
 # Add an entry only after reading the primary source; `source` is that primary page.
+- date: "2026-11-26"
+  id: eu-cra
+  change: "The first European standard supporting the Cyber Resilience Act was published on 18 Nov 2026. It sets generic cybersecurity principles for products with digital elements; the Commission says over 30 standards are in the making."
+  source: "https://digital-strategy.ec.europa.eu/en/news/first-european-standard-published-support-cyber-resilience-act"
+  quote: "On 18 November, the first European standard supporting the implementation of the Cyber Resilience Act (CRA) was published."
+- date: "2026-11-26"
+  id: eu-ai-act
+  change: "The Commission is seeking feedback on a draft template for the fundamental rights impact assessment that certain deployers of high-risk AI systems must carry out under Article 27; feedback is open until 15 Jan 2027, and the obligation applies from 2 Dec 2027."
+  source: "https://digital-strategy.ec.europa.eu/en/news/commission-seeks-feedback-draft-template-fundamental-rights-impact-assessment-under-ai-act"
+  quote: "The draft template is open for public feedback until 15 January 2027."
+- date: "2026-11-26"
+  id: eu-ai-act
+  change: "Added the AI Omnibus prohibition on AI systems that generate non-consensual sexually explicit and intimate content or child sexual abuse material, such as AI 'nudification' apps, which the Commission says comes into effect in December 2026."
+  source: "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai"
+  quote: "Prohibition 9 comes into effect in December 2026 and was introduced as a part of the AI Omnibus."
+- date: "2026-11-26"
+  id: eu-ai-act
+  change: "Added that the Article 50 transparency obligations apply from 2 Aug 2026, and the Commission guidelines on them published on 20 Jul 2026."
+  source: "https://digital-strategy.ec.europa.eu/en/library/guidelines-transparency-obligations-providers-and-deployers-ai-systems"
+  quote: "These transparency obligations apply from 2 August 2026."
 - date: "2026-10-28"
   id: global-aiuc-1
   change: "Correction: the joint SOC 2 + AIUC-1 engagement is in early rollout with several CPA firms, not fully launched; the AICPA expects the full launch in early 2027. Also corrected AIUC's name and clarified that the SOC 2 exposure draft is a proposal while current criteria stay in force."
