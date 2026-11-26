@@ -9,6 +9,7 @@
   key_dates:
     - { date: "2026-06-15", what: "Bill C-36 introduced to replace PIPEDA; no repeal date set" }
     - { date: "2026-08-28", what: "OPC files Federal Court application against Google, as the Commissioner cannot issue binding orders" }
+    - { date: "2026-11-23", what: "Privacy Commissioner announces an exploratory consultation on personalized algorithmic pricing, with a view to developing guidance in the new year" }
   sectors: [tech, saas, cloud, hardware, banking, retail]
   applies_to_me: high
   summary: "Federal private-sector privacy law; stays in force while C-36 sits at first reading. The Commissioner cannot issue binding orders, so enforcement runs through findings and Federal Court applications."

@@ -1,6 +1,11 @@
 # Public "What changed" log for the Regulation Radar (newest first). Shown on /radar/ and in /radar/changes.xml.
 # Add an entry only after reading the primary source; `source` is that primary page.
 - date: "2026-11-26"
+  id: ca-pipeda
+  change: "The Privacy Commissioner announced on 23 Nov 2026 that the OPC will launch an exploratory consultation on personalized algorithmic pricing, with a view to developing guidance in the new year."
+  source: "https://www.priv.gc.ca/en/opc-news/news-and-announcements/2026/nr-c_261123/"
+  quote: "Commissioner Dufresne announced that the OPC will be launching an exploratory consultation on personal algorithmic pricing with a view to developing guidance in the new year."
+- date: "2026-11-26"
   id: ca-bill-c22
   change: "Added Bill C-22, the Lawful Access Act, 2026: it completed third reading in the House of Commons on 18 Jun 2026 and is at consideration in committee in the Senate."
   source: "https://www.parl.ca/legisinfo/en/bill/45-1/c-22"
